@@ -1,0 +1,232 @@
+'use strict';
+(async () => {
+  const canvas = document.querySelector('#timeline-canvas');
+  const viewport = document.querySelector('#timeline-viewport');
+  const detail = document.querySelector('#card-detail');
+  const status = document.querySelector('#timeline-status');
+  const mobile = window.matchMedia('(max-width: 700px)');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let data, view = 'full', selected = null;
+  const el = (tag, text, className) => {
+    const node = document.createElement(tag);
+    if (text) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  };
+  const scrollToCard = id => {
+    const node = document.getElementById(`card-${id}`);
+    if (!node) return;
+    node.focus({preventScroll: true});
+    node.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest', inline: 'center'});
+  };
+  function reference(id) {
+    const ref = data.references[id];
+    const li = el('li');
+    if (ref.url) {
+      const a = el('a', `${id} · ${ref.title}`);
+      a.href = ref.url;
+      li.append(a);
+    } else li.append(el('span', `${id} · ${ref.title}`));
+    if (ref.note) li.append(el('p', ref.note, 'source-note'));
+    return li;
+  }
+  function openCard(id, reveal = true) {
+    selected = id;
+    const c = data.cards.find(card => card.id === id);
+    document.querySelectorAll('.timeline-card').forEach(b => b.setAttribute('aria-expanded', String(b.dataset.id === id)));
+    detail.replaceChildren();
+    detail.hidden = false;
+    detail.dataset.track = c.track;
+    detail.append(el('p', `${c.track === 'history' ? 'History' : 'Poetry'} / ${c.dateLabel}`, 'eyebrow'));
+    const heading = el('h3', c.title);
+    heading.id = 'detail-title';
+    detail.append(heading, el('p', c.description));
+    if (c.dateRange?.openEnd) detail.append(el('p', 'Span: 1947 onward. The endpoint is illustrative, not a fixed end to displacement.', 'source-note'));
+    if (c.track === 'poetry') {
+      const dl = el('dl');
+      [['Written / dated', 'composition'], ['Published', 'publication'], ['Exhibit edition / translation', 'edition']].forEach(([label, key]) => dl.append(el('dt', label), el('dd', c[key])));
+      detail.append(dl);
+    }
+    if (c.editorialNote) detail.append(el('p', c.editorialNote, 'editorial-note'));
+    detail.append(el('h4', 'Sources'));
+    const list = el('ul');
+    c.referenceIds.forEach(ref => list.append(reference(ref)));
+    detail.append(list);
+    if (c.relatedCardIds.length) {
+      detail.append(el('h4', 'Related cards'));
+      const links = el('div', null, 'related-links');
+      c.relatedCardIds.forEach(relatedId => {
+        const other = data.cards.find(card => card.id === relatedId);
+        const button = el('button', `${other.dateLabel} · ${other.title} ↗`);
+        button.type = 'button';
+        button.dataset.related = relatedId;
+        button.addEventListener('click', () => {
+          if (view === 'august' && !['independence', 'radcliffe', 'faiz', 'displacement'].includes(relatedId)) setView('full');
+          openCard(relatedId, false);
+          scrollToCard(relatedId);
+          status.textContent = `Selected related card: ${other.title}, ${other.dateLabel}. Details updated below the timeline.`;
+        });
+        links.append(button);
+      });
+      detail.append(links);
+    }
+    const close = el('button', 'Close details ↑', 'close-detail');
+    close.type = 'button';
+    close.addEventListener('click', closeDetail);
+    detail.append(close);
+    if (reveal) detail.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest'});
+  }
+  function closeDetail() {
+    const id = selected;
+    detail.hidden = true;
+    selected = null;
+    document.querySelectorAll('.timeline-card').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    scrollToCard(id);
+  }
+  function render() {
+    canvas.replaceChildren();
+    const august = view === 'august';
+    const ordered = [...data.cards].sort((a, b) => a.axisDate - b.axisDate);
+    const groups = august ? data.views.august.markers : ordered.map(c => ({label: c.dateLabel, ids: [c.id]}));
+    const step = 244;
+    canvas.style.setProperty('--length', `${groups.length * step}px`);
+    canvas.classList.toggle('august-view', august);
+    groups.forEach((g, index) => {
+      const cell = el('div', null, 'date-cell');
+      cell.style.setProperty('--position', `${index * step}px`);
+      const tick = el('span', g.label, 'axis-date');
+      cell.append(tick);
+      g.ids.forEach(id => {
+        const c = data.cards.find(card => card.id === id);
+        cell.append(cardButton(c));
+      });
+      canvas.append(cell);
+    });
+    if (august) {
+      const month = el('div', null, 'month-marker');
+      month.append(el('span', 'August 1947 · month-level marker', 'month-label'), cardButton(data.cards.find(c => c.id === 'faiz')));
+      canvas.append(month);
+      const span = el('button', 'History · Punjab displacement · throughout this period and beyond →', 'august-displacement');
+      span.type = 'button';
+      span.id = 'card-displacement';
+      span.dataset.id = 'displacement';
+      span.classList.add('timeline-card');
+      span.setAttribute('aria-controls', 'card-detail');
+      span.setAttribute('aria-expanded', String(selected === 'displacement'));
+      span.addEventListener('click', () => openCard('displacement'));
+      canvas.append(span);
+    } else {
+      // Span ends share the same chronological positions as the event markers.
+      const anchorYears = ordered.map(c => c.axisDate);
+      const position = year => {
+        let i = anchorYears.findIndex(y => y >= year);
+        const offset = mobile.matches ? 53 : 22;
+        if (i === -1) return (anchorYears.length - 1) * step + offset;
+        if (i === 0) return offset;
+        return (i - 1 + (year - anchorYears[i - 1]) / (anchorYears[i] - anchorYears[i - 1])) * step + offset;
+      };
+      data.cards.filter(c => c.dateRange && c.id !== 'independence').forEach((c, i) => {
+        const band = el('div', `${c.dateLabel}${c.dateRange.openEnd ? ' →' : ''}`, 'duration-band');
+        band.style.setProperty('--start', `${position(c.dateRange.start)}px`);
+        band.style.setProperty('--span', `${Math.max(18, position(c.dateRange.end) - position(c.dateRange.start))}px`);
+        band.style.setProperty('--lane', String(i % 3));
+        band.setAttribute('aria-label', `${c.title}: ${c.dateLabel}`);
+        canvas.append(band);
+      });
+    }
+  }
+  function cardButton(c) {
+    const b = el('button', null, `timeline-card ${c.track}`);
+    b.type = 'button'; b.id = `card-${c.id}`; b.dataset.id = c.id;
+    b.setAttribute('aria-expanded', String(selected === c.id));
+    b.setAttribute('aria-controls', 'card-detail');
+    b.append(el('span', `${c.track === 'history' ? 'History' : 'Poetry'} · ${c.dateLabel}`, 'card-date'), el('strong', c.title), el('span', c.dateRange ? 'Explore span ↗' : 'Read more ↗', 'card-action'));
+    b.onclick = () => openCard(c.id);
+    if (!c.poetId) return b;
+    const poet = data.poets.find(p => p.id === c.poetId);
+    const name = el('a', poet.name, 'poet-link');
+    name.href = `#poet-${poet.id}`;
+    name.setAttribute('aria-label', `Meet ${poet.name}`);
+    name.addEventListener('click', event => {
+      event.preventDefault();
+      const intro = document.getElementById(`poet-${poet.id}`);
+      intro.focus({preventScroll: true});
+      intro.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'center'});
+      history.replaceState(null, '', name.hash);
+    });
+    const fragment = document.createDocumentFragment();
+    fragment.append(name, b);
+    return fragment;
+  }
+  function setView(next) {
+    view = next;
+    document.querySelector('#view-title').textContent = next === 'august' ? 'August 1947 detail' : 'Full timeline';
+    document.querySelector('#scale-note').textContent = next === 'august' ? 'Expanded August view · day markers spaced for reading; Faiz is dated to the month' : 'Chronological overview · spacing expanded for reading, not proportional to elapsed time';
+    document.querySelectorAll('[data-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === next)));
+    detail.hidden = true; selected = null;
+    render(); viewport.scrollTo(0, 0);
+    status.textContent = next === 'august' ? 'August 1947 detail opened.' : 'Full timeline opened.';
+  }
+  try {
+    const response = await fetch('timeline-data.json');
+    if (!response.ok) throw new Error('Timeline data could not be loaded.');
+    data = await response.json();
+    const poets = [...data.poets].sort((a, b) => data.cards.find(c => c.id === a.firstCardId).axisDate - data.cards.find(c => c.id === b.firstCardId).axisDate);
+    poets.forEach(poet => {
+      const card = el('article', null, 'poet-intro');
+      card.id = `poet-${poet.id}`;
+      card.tabIndex = -1;
+      card.setAttribute('aria-labelledby', `poet-name-${poet.id}`);
+      const heading = el('h3', poet.name);
+      heading.id = `poet-name-${poet.id}`;
+      const link = el('a', 'Find on timeline ↓', 'find-poet');
+      link.href = `#card-${poet.firstCardId}`;
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        setView('full');
+        scrollToCard(poet.firstCardId);
+        history.replaceState(null, '', link.hash);
+        status.textContent = `Timeline entry: ${poet.name}.`;
+      });
+      if (poet.image) {
+        const image = poet.image;
+        const figure = el('figure', null, 'poet-portrait');
+        const portrait = el('img');
+        portrait.src = image.src;
+        portrait.alt = image.alt;
+        portrait.width = image.width;
+        portrait.height = image.height;
+        portrait.loading = 'lazy';
+        portrait.decoding = 'async';
+        portrait.style.objectPosition = image.position;
+        const caption = el('figcaption');
+        const credit = el('a', image.credit);
+        credit.href = image.sourceUrl;
+        const license = el('a', image.license);
+        license.href = image.licenseUrl;
+        caption.append(credit, document.createTextNode(' · '), license);
+        figure.append(portrait, caption);
+        card.append(figure);
+      }
+      card.append(heading, el('p', poet.description), link);
+      document.querySelector('#poet-list').append(card);
+    });
+    render();
+    document.querySelector('#reference-list').append(...Object.keys(data.references).map(reference));
+    document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => {setView(b.dataset.view); viewport.focus({preventScroll: true});}));
+    document.querySelectorAll('[data-jump]').forEach(b => b.addEventListener('click', () => {setView('full'); scrollToCard(b.dataset.jump);}));
+    document.querySelectorAll('a[href="#timeline"]').forEach(a => a.addEventListener('click', () => setView('full')));
+    mobile.addEventListener('change', render);
+    viewport.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !detail.hidden) {closeDetail(); return;}
+      if (e.target !== viewport || !['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(e.key)) return;
+      e.preventDefault();
+      if (e.key === 'Home' || e.key === 'End') viewport.scrollTo({left: e.key === 'Home' ? 0 : viewport.scrollWidth, top: e.key === 'Home' ? 0 : viewport.scrollHeight});
+      else viewport.scrollBy({left: mobile.matches ? 0 : (e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -244 : 244), top: mobile.matches ? (e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -244 : 244) : 0});
+    });
+    detail.addEventListener('keydown', e => {if (e.key === 'Escape') closeDetail();});
+  } catch (error) {
+    canvas.replaceChildren(el('p', 'The timeline could not load. Serve this exhibit with a static web server and try again.'));
+    status.textContent = error.message;
+  }
+})();

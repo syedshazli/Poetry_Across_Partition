@@ -1,15 +1,54 @@
 # Poetry Across the Partition
 
-A static digital exhibit skeleton. No dependencies or build step.
+A static digital exhibit with an interactive, two-track timeline of history and poetry. No dependencies or build step.
 
-Open `dist/index.html` in a browser, or serve `dist/` with any static web server.
+Serve `dist/` with any static web server so the browser can load the timeline JSON.
 
-## Fill in the exhibit
+## Interactive timeline
 
-- Edit the introduction placeholder in `dist/index.html`.
-- Rename the three sections and their matching navigation links.
-- Replace each `.empty-space` block with your content.
-- Duplicate or remove sections as needed; keep each section ID unique.
-- Change colors, typography, and spacing in `dist/styles.css`.
+Serve the static files (the timeline loads its JSON over HTTP):
 
-The placeholders are intentionally neutral. No poems, historical material, analysis, or timeline have been added.
+```sh
+python3 -m http.server 8000 --directory poetry-exhibit/dist
+```
+
+Then open http://localhost:8000. No dependencies or build step are required.
+
+- `dist/timeline-data.json` holds all 21 cards, references, relationships, and August markers. Edit content here without changing rendering code.
+- Each card has a stable `id`, `dateLabel`, `datePrecision`, `track`, `title`, `description`, `referenceIds`, and `relatedCardIds`. Poetry adds separate `composition`, `publication`, and `edition` fields.
+- `axisDate` is a numeric chronological sorting coordinate (fractional years for dates within a year). Approximate coordinates are presentation aids, not claims of exact dates. The displayed date and precision are authoritative.
+- Optional `dateRange` stores numeric `start` and `end` coordinates and `openEnd`. The displacement endpoint is illustrative and explicitly labeled as open. Span geometry is calculated from the same shared axis as the cards.
+- `views.august.markers` defines the expanded day markers. Faiz has one month-level marker; it is never assigned a particular day.
+- Related IDs must resolve to existing cards and link back in both directions. Selecting one opens its details and moves focus to its card.
+- Desktop uses horizontal scrolling; mobile uses a vertical axis with History left and Poetry right. Tab reaches cards and jump buttons, Enter/Space activates native buttons, arrows scroll a focused timeline, Home/End reach its edges, and Escape closes details and restores focus.
+- The overview expands chronological spacing for readability; it does not imply proportional elapsed time. The August view explicitly identifies its expanded scale.
+
+## Editorial status
+
+The references are attached to their cards. The dedicated Punjab annexation source and Allahabad Address text have been added. Unverified references, first-publication dates, and translation/poem selections are marked for review. No poem texts are reproduced. Add verified URLs to reference records when available; references without a URL display their bibliographic citation and editorial note.
+
+## Browser checks
+
+With the server running and Google Chrome installed:
+
+```sh
+python3 poetry-exhibit/tests/verify_timeline.py http://127.0.0.1:8000
+```
+
+The dependency-free smoke runner checks all cards and reference IDs, reciprocal links, focus movement in all eight requested directions, August marker overlap, mobile track placement, closing details, period jumps, keyboard scrolling, and page overflow. It creates and removes a temporary QA page. Requested window widths are 1440, 390, and 320 pixels; the report includes actual browser width.
+
+## GitHub Pages
+
+The repository's `.github/workflows/deploy-pages.yml` publishes only `poetry-exhibit/dist/` when changes are pushed to `main`. No build step or dependency installation is required.
+
+In the GitHub repository, open **Settings → Pages** and select **GitHub Actions** as the publishing source. Push the workflow to `main`, or run **Deploy exhibit to GitHub Pages** manually from the Actions tab after enabling Pages.
+
+Expected address after a successful deployment: https://syedshazli.github.io/Poetry_Across_Partition/
+
+## Meet the Poets
+
+The five short introductions live in `timeline-data.json` under `poets`, with `firstCardId` pointing to each poet’s first timeline entry. Their order follows those entries. Poetry cards use `poetId` for a separate, keyboard-accessible name link back to the introduction. Iqbal’s introduction starts at “Taranah-i-Hindi”; its related-card link opens “Taranah-i-Milli” and vice versa.
+
+## Portrait images
+
+The five poet portraits are stored locally in `dist/images/poets/`. Each poet’s `image` record in `timeline-data.json` holds its alt text, dimensions, focal position, source, creator credit, and license. The cards link to the Commons source pages and license terms. Original image files are preserved (Iqbal uses a Commons thumbnail); monochrome styling and framing are applied with CSS. CC BY-SA portraits remain available under CC BY-SA 4.0.
