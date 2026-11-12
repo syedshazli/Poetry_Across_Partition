@@ -471,8 +471,27 @@
             "dictionaryName": "Collins English Dictionary",
             "dictionaryUrl": "https://www.collinsdictionary.com/dictionary/english/mangle",
             "analysis": "One possible interpretation of this is that dawn symbolizes the hope for a shared future without any partition. The imagery of the night’s fangs make the darkness seem violent, as they have torn and damaged that hope for a shared future. The use of fangs suggests themes of violence and destruction upon something that was once in order."
+          },
+          {
+            "id": "freedoms-dawn-uncertain-dawn",
+            "term": "An uncertain dawn",
+            "segments": [
+              {
+                "lineId": "freedoms-dawn-line-02",
+                "quote": "This is not that long-looked-for break of day,"
+              },
+              {
+                "lineId": "freedoms-dawn-line-03",
+                "quote": "Not that clear dawn in quest of which those comrades"
+              }
+            ],
+            "analysis": "The repeated “not” suggests that the approaching dawn is not the new beginning the comrades had hoped for: a time when their shared goal would finally be achieved. Instead, this dawn can be read as one of uncertainty, with mourning, loss, and further suffering looming ahead."
           }
-        ]
+        ],
+        "wholePoemAnalysis": {
+          "claim": "",
+          "analysis": ""
+        }
       }
     },
     {

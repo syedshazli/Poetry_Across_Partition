@@ -65,12 +65,25 @@
     assert(note.hidden, 'Annotation starts closed');
     highlight.click();
     assert(!note.hidden && highlight.getAttribute('aria-expanded') === 'true', 'Click opens annotation');
-    assert(note.textContent.includes('Severely damaged') && note.textContent.includes('One possible reading'), 'Definition and interpretation shown separately');
+    assert(note.textContent.includes('Severely damaged') && note.querySelector('h5').textContent === 'A possible reading', 'Definition and interpretation shown separately');
     note.querySelector('.close-annotation').click();
     assert(note.hidden && document.activeElement === highlight, 'Closing annotation restores focus');
     highlight.click();
     note.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape',bubbles:true}));
     assert(note.hidden && document.activeElement === highlight, 'Escape dismisses annotation');
+    const dawnHighlights = [...document.querySelectorAll('[aria-controls="freedoms-dawn-uncertain-dawn"]')];
+    const dawnNote = document.querySelector('#freedoms-dawn-uncertain-dawn');
+    assert(dawnHighlights.length === 2 && dawnNote.hidden, 'Two dawn lines share one initially closed annotation');
+    dawnHighlights[1].click();
+    assert(!dawnNote.hidden && dawnHighlights.every(button => button.getAttribute('aria-expanded') === 'true'), 'Either dawn line opens the shared annotation');
+    assert(dawnNote.textContent.includes('mourning, loss') && !dawnNote.textContent.includes('Definition adapted'), 'Dawn annotation shows interpretation without an unrelated definition');
+    dawnNote.querySelector('.close-annotation').click();
+    assert(dawnNote.hidden && document.activeElement === dawnHighlights[1], 'Closing dawn note restores focus to the activated line');
+    dawnHighlights[0].click();
+    assert(!dawnNote.hidden, 'First dawn line also opens the note');
+    dawnNote.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}));
+    assert(dawnNote.hidden && document.activeElement === dawnHighlights[0], 'Escape returns focus to first dawn line');
+
     document.querySelector('.poem-reader .text-link').click();
     assert(document.activeElement.id === 'card-faiz', 'Poem return link focuses Faiz on full timeline');
     document.querySelector('[data-view="august"]').click();

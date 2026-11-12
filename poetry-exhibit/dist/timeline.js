@@ -45,65 +45,89 @@
       text.id = poem.id;
       text.lang = poem.language;
       text.setAttribute('aria-label', poem.title);
+      const notes = new Map();
+      function annotation(note) {
+        if (notes.has(note.id)) return notes.get(note.id);
+        const panel = el('aside', null, 'poem-annotation');
+        panel.id = note.id;
+        panel.hidden = true;
+        panel.setAttribute('aria-labelledby', `${note.id}-heading`);
+        const title = el('h4', note.term);
+        title.id = `${note.id}-heading`;
+        panel.append(title);
+        if (note.definition) {
+          panel.append(el('p', note.definition));
+          if (note.dictionaryUrl) {
+            const dictionary = el('a', `Definition adapted from ${note.dictionaryName}`);
+            dictionary.href = note.dictionaryUrl;
+            panel.append(dictionary);
+          }
+        }
+        panel.append(el('h5', 'A possible reading'), el('p', note.analysis));
+        const state = {panel, triggers: [], active: null};
+        const dismiss = () => {
+          panel.hidden = true;
+          state.triggers.forEach(trigger => trigger.setAttribute('aria-expanded', 'false'));
+          state.active?.focus({preventScroll: true});
+        };
+        const close = el('button', 'Close note', 'close-annotation');
+        close.type = 'button';
+        close.addEventListener('click', dismiss);
+        panel.addEventListener('keydown', event => {if (event.key === 'Escape') {event.preventDefault(); dismiss();}});
+        panel.append(close);
+        notes.set(note.id, state);
+        return state;
+      }
       poem.stanzas.forEach(stanza => {
         const paragraph = el('p', null, 'poem-stanza');
         paragraph.id = stanza.id;
+        const stanzaNotes = new Set();
         stanza.lines.forEach((line, index) => {
-          const span = el('span', line.text, 'poem-line');
+          const span = el('span', null, 'poem-line');
           span.id = line.id;
           span.dataset.lineId = line.id;
-          const annotations = (poem.annotations || []).filter(note => note.lineId === line.id);
+          const annotations = (poem.annotations || []).flatMap(note =>
+            (note.segments || [{lineId: note.lineId, quote: note.quote}])
+              .filter(segment => segment.lineId === line.id)
+              .map(segment => ({note, quote: segment.quote})))
+            .sort((a, b) => line.text.indexOf(a.quote) - line.text.indexOf(b.quote));
           let offset = 0;
-          if (annotations.length) {
-            span.replaceChildren();
-            annotations.forEach(note => {
-              const start = line.text.indexOf(note.quote, offset);
-              if (start < offset) return;
-              span.append(document.createTextNode(line.text.slice(offset, start)));
-              const highlight = el('button', note.quote, 'poem-highlight');
-              highlight.type = 'button';
-              highlight.id = `${note.id}-trigger`;
-              highlight.setAttribute('aria-expanded', 'false');
-              highlight.setAttribute('aria-controls', note.id);
-              const panel = el('aside', null, 'poem-annotation');
-              panel.id = note.id;
-              panel.hidden = true;
-              panel.setAttribute('aria-labelledby', `${note.id}-heading`);
-              const title = el('h4', note.term);
-              title.id = `${note.id}-heading`;
-              const definition = el('p', note.definition);
-              const dictionary = el('a', `Definition adapted from ${note.dictionaryName}`);
-              dictionary.href = note.dictionaryUrl;
-              const label = el('h5', 'A possible reading');
-              const close = el('button', 'Close note', 'close-annotation');
-              close.type = 'button';
-              const dismiss = () => {
-                panel.hidden = true;
-                highlight.setAttribute('aria-expanded', 'false');
-                highlight.focus({preventScroll: true});
-              };
-              close.addEventListener('click', dismiss);
-              panel.addEventListener('keydown', event => {if (event.key === 'Escape') {event.preventDefault(); dismiss();}});
-              highlight.addEventListener('click', () => {
-                panel.hidden = !panel.hidden;
-                highlight.setAttribute('aria-expanded', String(!panel.hidden));
-                if (!panel.hidden) panel.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest'});
-              });
-              panel.append(title, definition, dictionary, label, el('p', note.analysis), close);
-              span.append(highlight);
-              // Place the note after its stanza, outside the poem's line text.
-              paragraph.afterNotes = paragraph.afterNotes || [];
-              paragraph.afterNotes.push(panel);
-              offset = start + note.quote.length;
+          annotations.forEach(({note, quote}) => {
+            const start = line.text.indexOf(quote, offset);
+            if (start < offset) return;
+            span.append(document.createTextNode(line.text.slice(offset, start)));
+            const highlight = el('button', quote, 'poem-highlight');
+            highlight.type = 'button';
+            highlight.id = `${note.id}-${line.id}-trigger`;
+            highlight.setAttribute('aria-expanded', 'false');
+            highlight.setAttribute('aria-controls', note.id);
+            const state = annotation(note);
+            state.triggers.push(highlight);
+            highlight.addEventListener('click', () => {
+              state.active = highlight;
+              state.panel.hidden = !state.panel.hidden;
+              state.triggers.forEach(trigger => trigger.setAttribute('aria-expanded', String(!state.panel.hidden)));
+              if (!state.panel.hidden) state.panel.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest'});
             });
-            span.append(document.createTextNode(line.text.slice(offset)));
-          }
+            span.append(highlight);
+            stanzaNotes.add(note.id);
+            offset = start + quote.length;
+          });
+          span.append(document.createTextNode(line.text.slice(offset)));
           paragraph.append(span);
           if (index < stanza.lines.length - 1) paragraph.append(el('br'));
         });
-        text.append(paragraph, ...(paragraph.afterNotes || []));
+        text.append(paragraph, ...[...stanzaNotes].map(id => notes.get(id).panel));
       });
       article.append(text);
+      const wholePoem = el('section', null, 'whole-poem-analysis');
+      wholePoem.setAttribute('aria-labelledby', `${poem.id}-analysis-title`);
+      const analysisTitle = el('h4', 'Whole-poem claim & analysis');
+      analysisTitle.id = `${poem.id}-analysis-title`;
+      wholePoem.append(analysisTitle);
+      if (poem.wholePoemAnalysis?.claim) wholePoem.append(el('p', poem.wholePoemAnalysis.claim, 'whole-poem-claim'));
+      if (poem.wholePoemAnalysis?.analysis) wholePoem.append(el('p', poem.wholePoemAnalysis.analysis));
+      article.append(wholePoem);
 
       const sources = el('details', null, 'poem-sources');
       sources.append(el('summary', 'Text & translation source'));
