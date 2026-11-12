@@ -32,6 +32,18 @@
       assert(portrait.naturalWidth > 0 && portrait.alt.includes(poet.name), `Portrait loads with descriptive alt text: ${poet.id}`);
 
     }
+    for (const poet of data.poets) {
+      const trigger = document.querySelector(`#poet-${poet.id} .poet-background-button`);
+      trigger.click();
+      const popup = document.querySelector('#poet-background');
+      assert(popup.open && popup.matches(':modal'), `Poet background opens modally: ${poet.id}`);
+      assert(document.querySelector('#poet-background-title').textContent === poet.name, `Background identifies poet: ${poet.id}`);
+      assert(popup.querySelectorAll('#poet-background-content p').length >= 2 && popup.querySelectorAll('a').length > 0, `Biography and sources present: ${poet.id}`);
+      assert(popup.getBoundingClientRect().width <= innerWidth && popup.scrollWidth <= popup.clientWidth, `Biography fits viewport: ${poet.id}`);
+      document.querySelector('#close-poet-background').click();
+      await wait();
+      assert(!popup.open && document.activeElement === trigger, `Closing background restores focus: ${poet.id}`);
+    }
     document.querySelector('#poet-iqbal .find-poet').click();
     document.querySelector('#card-iqbal-hindi').click();
     document.querySelector('[data-related="iqbal"]').click();
@@ -58,14 +70,16 @@
     assert(document.querySelectorAll('.poem-stanza br').length === 20, 'Explicit breaks separate lines within stanzas');
     assert(new Set([...document.querySelectorAll('.poem-line')].map(line => line.id)).size === 25, 'Poem lines have unique annotation IDs');
     assert(document.querySelector('#freedoms-dawn-line-25').textContent === 'Let us go on, our goal is not reached yet.', 'Poem ends with supplied final line');
-    assert(document.querySelector('.poem-text').scrollWidth <= document.querySelector('.poem-text').clientWidth, 'Poem fits the reading panel');
+    assert(getComputedStyle(document.querySelector('.poem-text')).overflowX === 'auto', 'Long verse lines scroll within the poem');
+    assert([...document.querySelectorAll('.poem-line')].every(line => line.getBoundingClientRect().height <= parseFloat(getComputedStyle(line).lineHeight) + 4), 'Each printed verse line remains one visual line');
+    assert([...document.querySelectorAll('.poem-stanza')].map(stanza => stanza.querySelectorAll('.poem-line').length).join(',') === '4,3,7,2,9', 'Stanza breaks match the supplied scan');
     const highlight = document.querySelector('.poem-highlight');
     assert(highlight.textContent === "night's fangs have mangled", 'Correct phrase highlighted');
     const note = document.getElementById(highlight.getAttribute('aria-controls'));
     assert(note.hidden, 'Annotation starts closed');
     highlight.click();
     assert(!note.hidden && highlight.getAttribute('aria-expanded') === 'true', 'Click opens annotation');
-    assert(note.textContent.includes('Severely damaged') && note.querySelector('h5').textContent === 'A possible reading', 'Definition and interpretation shown separately');
+    assert(note.textContent.includes('Severely damaged') && [...note.querySelectorAll('h5')].some(heading => heading.textContent === 'A possible reading'), 'Definition and interpretation shown separately');
     note.querySelector('.close-annotation').click();
     assert(note.hidden && document.activeElement === highlight, 'Closing annotation restores focus');
     highlight.click();
@@ -76,13 +90,40 @@
     assert(dawnHighlights.length === 2 && dawnNote.hidden, 'Two dawn lines share one initially closed annotation');
     dawnHighlights[1].click();
     assert(!dawnNote.hidden && dawnHighlights.every(button => button.getAttribute('aria-expanded') === 'true'), 'Either dawn line opens the shared annotation');
-    assert(dawnNote.textContent.includes('mourning, loss') && !dawnNote.textContent.includes('Definition adapted'), 'Dawn annotation shows interpretation without an unrelated definition');
+    assert(dawnNote.textContent.toLowerCase().includes('mourning, loss') && !dawnNote.textContent.includes('Definition adapted'), 'Dawn annotation shows interpretation without an unrelated definition');
     dawnNote.querySelector('.close-annotation').click();
     assert(dawnNote.hidden && document.activeElement === dawnHighlights[1], 'Closing dawn note restores focus to the activated line');
     dawnHighlights[0].click();
     assert(!dawnNote.hidden, 'First dawn line also opens the note');
     dawnNote.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape', bubbles:true}));
     assert(dawnNote.hidden && document.activeElement === dawnHighlights[0], 'Escape returns focus to first dawn line');
+    for (const id of ['freedoms-dawn-bright-cheek', 'freedoms-dawn-light-winged']) {
+      const trigger = document.querySelector(`[aria-controls="${id}"]`);
+      const panel = document.getElementById(id);
+      assert(trigger && panel.hidden, `Stanza three annotation starts closed: ${id}`);
+      trigger.click();
+      assert(!panel.hidden && panel.textContent.includes('travelers'), `Stanza three annotation opens: ${id}`);
+      panel.querySelector('.close-annotation').click();
+      assert(panel.hidden && document.activeElement === trigger, `Stanza three annotation restores focus: ${id}`);
+    }
+    assert(document.querySelector('#freedoms-dawn-bright-cheek .annotation-source a').textContent.includes('Thomas C. Foster'), 'Quest annotation credits Foster');
+    const festive = [...document.querySelectorAll('[aria-controls="freedoms-dawn-festive-looks"]')];
+    assert(festive.length === 9, 'Whole final stanza shares one reading across all nine lines');
+    festive[1].click();
+    const finalNote = document.querySelector('#freedoms-dawn-festive-looks');
+    assert(!finalNote.hidden && finalNote.textContent.toLowerCase().includes('medicine'), 'Last stanza note opens with physic definition');
+    finalNote.querySelector('.close-annotation').click();
+    assert(document.activeElement === festive[1], 'Last stanza note restores focus');
+    assert(finalNote.querySelectorAll('.word-meaning').length === 4, 'Final stanza defines physic, reproved, unslaked, and severance');
+    const dictionaryLinks = [...document.querySelectorAll('.word-meaning a')];
+    assert(dictionaryLinks.length === 6, 'All six word meanings have dictionary links');
+    assert(dictionaryLinks.every(link => /^(www\.)?(merriam-webster\.com|collinsdictionary\.com)$/.test(new URL(link.href).hostname)), 'Definitions link directly to dictionary publishers');
+    assert(dictionaryLinks.every(link => link.target === '_blank' && link.rel.includes('noopener')), 'Dictionary entries open safely without leaving the poem');
+
+    assert(document.querySelector('.whole-poem-analysis h4').textContent === 'Reading the Poem', 'Whole-poem section has requested heading');
+    assert(document.querySelector('.whole-poem-analysis').textContent.includes('Let us go on'), 'Whole-poem reading connects the opening and ending');
+
+
 
     document.querySelector('.poem-reader .text-link').click();
     assert(document.activeElement.id === 'card-faiz', 'Poem return link focuses Faiz on full timeline');

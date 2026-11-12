@@ -81,7 +81,7 @@
       "datePrecision": "range",
       "track": "history",
       "title": "British colonial rule takes hold",
-      "description": "The East India Company expands its power through the victories at Plassey (1757) and Buxar (1764). In 1765 it gains revenue collection rights in Bengal, Bihar, and Orissa.\n Personal note: My grandfather on my mothers side is from Bihar. He chose to immigrate to Saudi Arabia after growing up there, while his brother decided to stay in India. My grandfather only recently decided to relocate to Pakistan to retire, after living in Saudi Arabia for his entire professional career. My father's side is also from Bihar, but his grandfather decided to relocate to Pakistan once the partition was announced.",
+      "description": "The East India Company expands its power through the victories at Plassey (1757) and Buxar (1764). In 1765 it gains revenue collection rights in Bengal, Bihar, and Orissa.\n Personal note\n My grandfather on my mothers side is from Bihar. He chose to immigrate to Saudi Arabia after growing up there, while his brother decided to stay in India. My grandfather only recently decided to relocate to Pakistan to retire, after living in Saudi Arabia for his entire professional career. My father's side is also from Bihar, but his grandfather decided to relocate to Pakistan once the partition was announced.",
       "referenceIds": [
         "H1"
       ],
@@ -99,7 +99,7 @@
       "datePrecision": "year",
       "track": "history",
       "title": "Punjab is annexed",
-      "description": "The East India Company annexes Punjab after the Second Sikh War, ending the Sikh kingdom’s sovereignty. Punjab lies in the northwestern subcontinent: its western and eastern regions would become parts of Pakistan and India in 1947.",
+      "description": "The East India Company annexes Punjab after the Second Sikh War, ending the Sikh kingdom’s rule. Punjab is in the northwestern part of the subcontinent. Its western and eastern regions would become parts of Pakistan and India in 1947.",
       "referenceIds": [
         "H8"
       ],
@@ -130,7 +130,7 @@
       "datePrecision": "range",
       "track": "history",
       "title": "Organization and representation",
-      "description": "The Indian National Congress is founded in 1885. The All-India Muslim League is then founded in 1906. \nReforms made in 1909 introduce separate Muslim electorates: Muslim voters elect representatives to seats reserved for Muslims.",
+      "description": "The Indian National Congress is founded in 1885. The All-India Muslim League is then founded in 1906.\nReforms made in 1909 introduce separate Muslim electorates. This means that Muslim voters elect representatives to seats reserved for Muslims.",
       "referenceIds": [
         "H2"
       ],
@@ -150,7 +150,7 @@
       "datePrecision": "year",
       "track": "poetry",
       "title": "Iqbal · Taranah-i-Hindi",
-      "description": "Muhammad Iqbal imagines India as a homeland shared across religious communities. Read this earlier poem alongside “Taranah-i-Milli” to consider the changing relationship between home, geography, and community.",
+      "description": "Muhammad Iqbal imagines India as a home shared by people from different religious communities. Reading this poem alongside “Taranah-i-Milli” gives us a way to look at how his ideas about home and community change.",
       "referenceIds": [
         "P1"
       ],
@@ -168,7 +168,7 @@
       "datePrecision": "approximate",
       "track": "poetry",
       "title": "Iqbal · Taranah-i-Milli",
-      "description": "Muhammad Iqbal imagines a Muslim community that crosses geographic boundaries. Compare the poem’s imagined community with his later discussion of political organization at Allahabad.",
+      "description": "Muhammad Iqbal imagines a Muslim community that crosses geographic boundaries. His later Allahabad Address gives us another way to look at how he thinks about community and political organization.",
       "referenceIds": [
         "P1"
       ],
@@ -176,7 +176,7 @@
         "iqbal-hindi",
         "allahabad"
       ],
-      "composition": "Circa 1910; primary edition and translation still under review",
+      "composition": "Circa 1910. Primary edition and translation still under review",
       "publication": "Not yet verified",
       "edition": "Primary text and credited translation pending. No translated excerpt is displayed.",
       "axisDate": 1910,
@@ -188,7 +188,7 @@
       "datePrecision": "range",
       "track": "history",
       "title": "World War I",
-      "description": "Troops from British India serve on several fronts, including Europe, the Middle East, and East Africa. Their wartime service leads into the unsettled postwar years under the Raj.",
+      "description": "Troops from British India serve in several parts of the world, including Europe, the Middle East, and East Africa. Their service in the war is part of the background to the unsettled years that follow under British rule.",
       "referenceIds": [
         "H3"
       ],
@@ -268,7 +268,7 @@
       "datePrecision": "year",
       "track": "history",
       "title": "Cabinet Mission and escalating violence",
-      "description": "The Cabinet Mission attempts to reach a constitutional settlement. Communal violence escalates as negotiations over the transfer of power continue.",
+      "description": "The Cabinet Mission tries to reach an agreement on how India will be governed after British rule. Communal violence grows as negotiations over the transfer of power continue.",
       "referenceIds": [
         "H6",
         "H7"
@@ -295,7 +295,7 @@
       "datePrecision": "day-range",
       "track": "history",
       "title": "Independence celebrations",
-      "description": "Ceremonies take place in Karachi on August 14 and in New Delhi on August 15. These celebrations precede the public announcement of the boundary awards. Faiz’s damaged dawn asks what freedom has yet to deliver.",
+      "description": "Independence ceremonies take place in Karachi on August 14 and in New Delhi on August 15. The borders have not yet been publicly announced. Faiz’s poem gives us a way to ask whether these celebrations bring the freedom people had hoped for.",
       "referenceIds": [
         "H6",
         "H7"
@@ -316,7 +316,7 @@
       "datePrecision": "month",
       "track": "poetry",
       "title": "Faiz · Freedom’s Dawn",
-      "description": "Faiz Ahmad Faiz’s Urdu poem, dated August 1947, presented in V. G. Kiernan’s English translation.",
+      "description": "Faiz Ahmad Faiz’s Urdu poem is dated August 1947. The English translation shown here is by V. G. Kiernan.",
       "referenceIds": [
         "P2"
       ],
@@ -325,7 +325,7 @@
       ],
       "composition": "Dated August 1947",
       "publication": "First publication not yet verified",
-      "edition": "English translation by V. G. Kiernan. Text supplied for the exhibit; line breaks and stanza spacing checked against the linked transcription of Poems by Faiz (Oxford University Press, 1971/2000).",
+      "edition": "English translation by V. G. Kiernan. Text supplied for the exhibit. Line breaks and stanza spacing checked against the linked transcription of Poems by Faiz (Oxford University Press, 1971/2000).",
       "axisDate": 1947.6,
       "poetId": "faiz",
       "poem": {
@@ -467,10 +467,16 @@
             "lineId": "freedoms-dawn-line-01",
             "quote": "night's fangs have mangled",
             "term": "Mangled",
-            "definition": "Severely damaged or disfigured, especially by tearing, cutting, or crushing.",
-            "dictionaryName": "Collins English Dictionary",
-            "dictionaryUrl": "https://www.collinsdictionary.com/dictionary/english/mangle",
-            "analysis": "One possible interpretation of this is that dawn symbolizes the hope for a shared future without any partition. The imagery of the night’s fangs make the darkness seem violent, as they have torn and damaged that hope for a shared future. The use of fangs suggests themes of violence and destruction upon something that was once in order."
+            "analysis": "One possible interpretation is that dawn represents the hope for a shared future without partition. The image of the night’s fangs makes the darkness seem violent because it has torn and damaged that hope. The use of fangs suggests that something people once hoped for has been hurt by violence and destruction.",
+            "definitions": [
+              {
+                "word": "Mangled",
+                "definition": "Severely damaged or disfigured, especially by tearing, cutting, or crushing.",
+                "dictionaryName": "Collins English Dictionary",
+                "dictionaryUrl": "https://www.collinsdictionary.com/dictionary/english/mangle",
+                "checkedOn": "2026-11-12"
+              }
+            ]
           },
           {
             "id": "freedoms-dawn-uncertain-dawn",
@@ -485,12 +491,159 @@
                 "quote": "Not that clear dawn in quest of which those comrades"
               }
             ],
-            "analysis": "The repeated “not” suggests that the approaching dawn is not the new beginning the comrades had hoped for: a time when their shared goal would finally be achieved. Instead, this dawn can be read as one of uncertainty, with mourning, loss, and further suffering looming ahead."
+            "analysis": "The repetition of “not” suggests that the approaching dawn is different from the new beginning the comrades had hoped for. They expected a time when they would finally achieve their shared goal. However, this dawn seems to bring uncertainty instead. Mourning, loss, and more suffering may be approaching rather than the future they had imagined."
+          },
+          {
+            "id": "freedoms-dawn-stars",
+            "lineId": "freedoms-dawn-line-05",
+            "quote": "the stars' last halting-place",
+            "term": "The stars’ last halting-place",
+            "analysis": "The stars’ last halting-place gives the travelers a destination on the scale of the bright stars in the sky."
+          },
+          {
+            "id": "freedoms-dawn-tide",
+            "lineId": "freedoms-dawn-line-06",
+            "quote": "the verge of night's slow-washing tide",
+            "term": "Night’s slow-washing tide",
+            "analysis": "This image turns darkness into water. If night is a tide, the travelers can imagine it reaching a shore. The use of “slow-washing” makes the wait feel longer. The washing imagery could also suggest a symbolic baptism. In this reading, the travelers hope to emerge from the darkness and begin a new life. The tide gives them hope for this new beginning, but its slow movement suggests that they still have to wait for it."
+          },
+          {
+            "id": "freedoms-dawn-anchorage",
+            "lineId": "freedoms-dawn-line-07",
+            "quote": "Somewhere an anchorage for the ship of heartache",
+            "term": "An anchorage for the ship of heartache",
+            "analysis": "After the stars and the tide, this image brings the search down to a human scale. An anchorage is a place where a ship can stop and rest. Giving heartache a ship makes sorrow feel like something the travelers have been carrying with them. They are looking for a new beginning, but they also want somewhere their grief can finally come to rest.\n\nOne important aspect of this line is the final repetition of “Somewhere.” The word begins three lines in a row, which gives the search a steady rhythm. The travelers keep imagining that there must be a place where they can arrive. However, they never name that place. This makes their hope feel uncertain because they are still searching for somewhere to rest.",
+            "definitions": [
+              {
+                "word": "Anchorage",
+                "definition": "A place where a ship can anchor.",
+                "dictionaryName": "Merriam-Webster",
+                "dictionaryUrl": "https://www.merriam-webster.com/dictionary/anchorage",
+                "checkedOn": "2026-11-12"
+              }
+            ]
+          },
+          {
+            "id": "freedoms-dawn-bright-cheek",
+            "lineId": "freedoms-dawn-line-12",
+            "quote": "But dearer was the lure of dawn's bright cheek",
+            "term": "The promise of dawn",
+            "analysis": "One important aspect of this line is the word “But,” which changes the direction of the stanza. Before this point, hands pull at the travelers’ sleeves, soft arms call to them, and “flesh cried out.” However, the travelers are more drawn to dawn. Dawn is given a cheek and a robe, which makes it seem like another person they long to reach. They are leaving one kind of closeness because they believe another is more important.\n\nAuthor of How to Read Literature Like a Professor, Thomas C. Foster, reads a journey as a quest gives us a way to ask what the travelers are really seeking. The words “we friends” make this a shared journey. In the context of August 1947, their longing can be read as hope for the life independence might make possible. The earlier stanza imagines places where they could stop, while this stanza makes their destination seem like someone they want to be close to.\n\nThe intimate imagery helps explain how personal this shared hope is. “Panting casements” gives the windows a bodily quality, while “flesh cried out” makes the invitation something the travelers can hear. In Kiernan’s translation, the words “dearer” and “closer” suggest that dawn’s promise feels even more immediate. Looking back at the wounded dawn in the opening, we can see how different it is from the beautiful dawn they once imagined.",
+            "source": {
+              "title": "Thomas C. Foster, How to Read Literature Like a Professor",
+              "url": "https://www.si.edu/object/how-read-literature-professor-lively-and-entertaining-guide-reading-between-lines-thomas-c-foster%3Asiris_sil_1082887",
+              "note": "Foster provides the reading approach. Its application to this poem is the exhibit’s interpretation."
+            }
+          },
+          {
+            "id": "freedoms-dawn-light-winged",
+            "lineId": "freedoms-dawn-line-14",
+            "quote": "Light-winged that longing, feather-light that toil.",
+            "term": "When the work felt light",
+            "analysis": "The repetition of “light” connects the travelers’ longing with the work it takes to keep moving. “Light-winged” and “feather-light” suggest that both their desire and their effort feel easy to carry. One possible interpretation is that the work felt lighter because they believed the dawn they wanted was close.\n\nThis gives us a stark contrast with the earlier “ship of heartache.” In that image, grief needs somewhere to stop and rest. Here, the memory of setting out is connected to wings and feathers, which suggest lifting rather than being weighed down by an anchor. This makes the disappointment in the opening more painful because we can see how hopeful the travelers had been."
+          },
+          {
+            "id": "freedoms-dawn-birth-of-day",
+            "lineId": "freedoms-dawn-line-15",
+            "quote": "But now, word goes, the birth of day from darkness",
+            "term": "The birth of day",
+            "analysis": "The birth of day brings back the idea that something new is approaching. Birth can symbolize a new beginning and the potential for a life that has not yet been experienced. The movement from darkness into light suggests hope for this new life. However, “word goes” introduces this change as something people are saying has happened, but the author not confirming if it's really felt. This gives us a reason to question whether the hopeful beginning has actually arrived."
+          },
+          {
+            "id": "freedoms-dawn-wandering-feet",
+            "lineId": "freedoms-dawn-line-16",
+            "quote": "Is finished, wandering feet stand at their goal;",
+            "term": "Wandering feet at their goal",
+            "analysis": "The wandering feet suggest how long and tiring the journey has been. The travelers seem like people who have just finished a grueling marathon, desperate to cross the finish line and finally rest. The word “stand” gives us a change from movement to stillness, as though their effort is finally over. Read alongside “word goes” in the previous line, this is the claim that the journey has ended, rather than a guarantee that the travelers have received everything they hoped for."
+          },
+          {
+            "id": "freedoms-dawn-festive-looks",
+            "term": "Celebration and discontent",
+            "segments": [
+              {
+                "lineId": "freedoms-dawn-line-17",
+                "quote": "Our leaders' ways are altering, festive looks"
+              },
+              {
+                "lineId": "freedoms-dawn-line-18",
+                "quote": "Are all the fashion, discontent reproved; --"
+              },
+              {
+                "lineId": "freedoms-dawn-line-19",
+                "quote": "And yet this physic still on unslaked eye"
+              },
+              {
+                "lineId": "freedoms-dawn-line-20",
+                "quote": "Or heart fevered by severance works no cure."
+              },
+              {
+                "lineId": "freedoms-dawn-line-21",
+                "quote": "Where did that fine breeze, that the wayside lamp"
+              },
+              {
+                "lineId": "freedoms-dawn-line-22",
+                "quote": "Has not once felt, blow from -- where has it fled?"
+              },
+              {
+                "lineId": "freedoms-dawn-line-23",
+                "quote": "Night's heaviness is unlessened still, the hour"
+              },
+              {
+                "lineId": "freedoms-dawn-line-24",
+                "quote": "Of mind and spirit's ransom has not struck;"
+              },
+              {
+                "lineId": "freedoms-dawn-line-25",
+                "quote": "Let us go on, our goal is not reached yet."
+              }
+            ],
+            "analysis": "In Kiernan’s translation, “fashion” makes celebration sound like something people are expected to wear. The word “reproved” suggests that people who express disappointment are criticized for it. This gives us a way to use Foster’s political reading approach. The poem asks who gets to decide what independence means, especially when some people’s experiences do not match the celebrations.\n\nThe medical imagery tests this celebration against the pain that remains. The “unslaked eye” can be read as still thirsty for what it hoped to see, while the “heart fevered by severance” is still suffering from separation from a past life. In the context of Partition, this separation can suggest the division of places and communities. Independence is being presented as a new beginning, but this “physic” has not cured what people are still experiencing.\n\nThe breeze and the lamp also suggest that the promised change has not reached everyone. The speaker asks where the breeze came from and where it went, while the lamp by the road has never felt it. This connects the image to the road the travelers have been following. They are still looking for signs that something has changed. The return to night’s heaviness suggests that the weight of darkness remains even after dawn has appeared.",
+            "source": {
+              "title": "Thomas C. Foster, How to Read Literature Like a Professor",
+              "url": "https://www.si.edu/object/how-read-literature-professor-lively-and-entertaining-guide-reading-between-lines-thomas-c-foster%3Asiris_sil_1082887",
+              "note": "Foster provides the reading approach. Its application to this poem is the exhibit’s interpretation."
+            },
+            "definitions": [
+              {
+                "word": "Physic",
+                "definition": "Medicine or a medicinal preparation.",
+                "dictionaryName": "Merriam-Webster",
+                "dictionaryUrl": "https://www.merriam-webster.com/dictionary/physic",
+                "checkedOn": "2026-11-12"
+              },
+              {
+                "word": "Reproved",
+                "definition": "Criticized or met with disapproval.",
+                "dictionaryName": "Merriam-Webster",
+                "dictionaryUrl": "https://www.merriam-webster.com/dictionary/reprove",
+                "checkedOn": "2026-11-12"
+              },
+              {
+                "word": "Unslaked",
+                "definition": "Still unquenched or unsatisfied.",
+                "dictionaryName": "Merriam-Webster",
+                "dictionaryUrl": "https://www.merriam-webster.com/dictionary/unslaked",
+                "checkedOn": "2026-11-12"
+              },
+              {
+                "word": "Severance",
+                "definition": "The process of separating or the state of being separated.",
+                "dictionaryName": "Merriam-Webster",
+                "dictionaryUrl": "https://www.merriam-webster.com/dictionary/severance",
+                "checkedOn": "2026-11-12"
+              }
+            ]
           }
         ],
         "wholePoemAnalysis": {
-          "claim": "",
-          "analysis": ""
+          "title": "Reading the Poem",
+          "claim": "The poem suggests that reaching independence does not mean the travelers have reached the future they hoped for.",
+          "analysis": "The opening asks whether this is the dawn the travelers had been waiting for. It describes a dawn that has already been wounded, which makes the promised new beginning seem uncertain. The memories of the journey show how much the friends believed in that promise. They imagined a place where their grief could rest, and their hope made even the work of traveling feel light.\n\nHowever, the final stanza shows that the celebrations have not ended their suffering. The poem moves from “Our leaders” to “Let us,” which changes who is speaking about the journey. The travelers are no longer just listening to claims that they have arrived. They decide that their goal has not yet been reached.\n\nFoster’s quest approach gives us a way to connect this ending to the earlier search. The travelers have reached the moment of independence, but they have learned that it has not brought the rest they imagined. The ending responds to the opening’s question through an action. “Let us go on” calls for them to keep moving toward the freedom they still hope to experience.",
+          "source": {
+            "title": "Thomas C. Foster, How to Read Literature Like a Professor",
+            "url": "https://www.si.edu/object/how-read-literature-professor-lively-and-entertaining-guide-reading-between-lines-thomas-c-foster%3Asiris_sil_1082887",
+            "note": "Foster provides the reading approach. Its application to this poem is the exhibit’s interpretation."
+          }
         }
       }
     },
@@ -500,7 +653,7 @@
       "datePrecision": "day",
       "track": "history",
       "title": "Radcliffe boundary awards made public",
-      "description": "The awards announce the borders through Punjab and Bengal. In Punjab, Lahore falls in Pakistan and Amritsar in India; Bengal is divided between West Bengal in India and East Bengal in Pakistan (now Bangladesh). The source includes a contemporary boundary map. Compare Auden’s later account of drawing the border.",
+      "description": "The boundary awards announce the borders through Punjab and Bengal. In Punjab, Lahore becomes part of Pakistan and Amritsar becomes part of India. Bengal is divided between West Bengal in India and East Bengal in Pakistan, which is now Bangladesh. The source includes a map of these borders. Auden’s poem later looks back at how the border was drawn.",
       "referenceIds": [
         "H6",
         "H7"
@@ -538,7 +691,7 @@
       "datePrecision": "reported-year",
       "track": "poetry",
       "title": "Pritam · To Waris Shah",
-      "description": "Amrita Pritam calls on Waris Shah, poet of the Punjabi romance Heer, to witness Punjab’s suffering. The reported composition date is distinct from the later English translation.",
+      "description": "Amrita Pritam calls on Waris Shah, who wrote the Punjabi romance Heer, to witness Punjab’s suffering. The reported date when she wrote the poem is different from the date when its English translation was published.",
       "referenceIds": [
         "P3",
         "P4"
@@ -558,14 +711,14 @@
       "datePrecision": "approximate",
       "track": "poetry",
       "title": "Auden · Partition",
-      "description": "W. H. Auden looks back at the drawing of the border from a later vantage point. This retrospective poem belongs to the memory of Partition as well as to the history of its boundaries.",
+      "description": "W. H. Auden looks back at how the border was drawn. Although the poem describes the events of 1947, it was written years later. This gives us a way to look at how Partition is remembered after it happens.",
       "referenceIds": [
         "P5"
       ],
       "relatedCardIds": [
         "radcliffe"
       ],
-      "composition": "Late 1960s; approximate placement",
+      "composition": "Late 1960s. Approximate placement",
       "publication": "First publication not yet verified",
       "edition": "Collected Poems, edited by Edward Mendelson, Modern Library, 2007, pp. 802–03.",
       "axisDate": 1968,
@@ -577,7 +730,7 @@
       "datePrecision": "day-range",
       "track": "history",
       "title": "Bangladesh’s War of Liberation and independence",
-      "description": "The eastern part of Pakistan, formed from East Bengal in the 1947 Partition and later known as East Pakistan, becomes Bangladesh in 1971. Following the Pakistani army’s crackdown on March 25, Bengali nationalists declare independence on March 26. The ensuing War of Liberation brings mass violence and displacement, with millions seeking refuge in India. India intervenes militarily in December; Pakistani forces surrender in Dhaka on December 16. The two dates mark the declaration of independence and the end of the war, respectively.",
+      "description": "The eastern part of Pakistan, formed from East Bengal in the 1947 Partition and later known as East Pakistan, becomes Bangladesh in 1971. Following the Pakistani army’s crackdown on March 25, Bengali nationalists declare independence on March 26. The War of Liberation that follows brings mass violence and displacement, with millions seeking refuge in India. India intervenes militarily in December. Pakistani forces surrender in Dhaka on December 16. March 26 marks the declaration of independence, while December 16 marks the end of the war.",
       "referenceIds": [
         "H10",
         "H11"
@@ -598,7 +751,7 @@
       "datePrecision": "publication-year",
       "track": "poetry",
       "title": "Gulzar · Footprints on Zero Line",
-      "description": "The English collection gathers writing on Partition and its continuing presence in memory. The individual poem remains open while “Eyes Don’t Need a Visa” and “Bhameri” are checked.",
+      "description": "This English collection brings together Gulzar’s writing about Partition and how it continues to affect people’s memories. The individual poem is still being chosen while “Eyes Don’t Need a Visa” and “Bhameri” are checked.",
       "referenceIds": [
         "P6",
         "P7"
@@ -606,7 +759,7 @@
       "relatedCardIds": [],
       "composition": "Individual poem dates unverified",
       "publication": "English collection published 2017",
-      "edition": "Translated by Rakhshanda Jalil; Harper Perennial, 2017. Individual selection pending.",
+      "edition": "Translated by Rakhshanda Jalil. Harper Perennial, 2017. Individual selection pending.",
       "axisDate": 2017,
       "poetId": "gulzar"
     }
@@ -645,7 +798,7 @@
       "id": "iqbal",
       "name": "Muhammad Iqbal",
       "firstCardId": "iqbal-hindi",
-      "description": "His poems ask what home meant before Partition. “Taranah-i-Hindi” imagines India as a shared homeland; “Taranah-i-Milli” turns toward a Muslim community that crosses borders.",
+      "description": "His poems give us a way to ask what home meant before Partition. “Taranah-i-Hindi” imagines India as a shared homeland, while “Taranah-i-Milli” imagines a Muslim community that crosses borders.",
       "image": {
         "src": "images/poets/iqbal.png",
         "alt": "Portrait of Muhammad Iqbal",
@@ -656,6 +809,22 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muhammad_Iqbal_in_1935.png",
         "license": "Public domain",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "background": {
+        "paragraphs": [
+          "Muhammad Iqbal was born in Sialkot in 1877 and wrote poetry in Urdu and Persian. He also worked as a philosopher and lawyer. His writing explores questions about community, religion, and how people understand their place in the world.",
+          "His poems give this exhibit a way to look at ideas of home before the 1947 Partition. “Taranah-i-Hindi” imagines India as a shared homeland, while “Taranah-i-Milli” imagines a Muslim community across geographic boundaries. His Allahabad Address brings these questions into political discussion."
+        ],
+        "sources": [
+          {
+            "title": "Iqbal Academy Pakistan · Biography",
+            "url": "https://www.allamaiqbal.com/biography/en/index.php"
+          },
+          {
+            "title": "Academy of American Poets · Muhammad Allama Iqbal",
+            "url": "https://poets.org/poet/muhammad-allama-iqbal"
+          }
+        ]
       }
     },
     {
@@ -673,13 +842,25 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Faiz%2C_London_1983.jpg",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "background": {
+        "paragraphs": [
+          "Faiz Ahmad Faiz, also spelled Faiz Ahmed Faiz, was born in Sialkot in 1911. He was an Urdu poet, teacher, and journalist. His writing connects love and beauty with questions about politics, community, and the lives people share.",
+          "His political commitments also shaped his own life. He was imprisoned in Pakistan and later spent periods in exile. In this exhibit, “Freedom’s Dawn,” dated August 1947, gives us a way to look at the difference between independence celebrations and the freedom people had hoped to experience."
+        ],
+        "sources": [
+          {
+            "title": "Academy of American Poets · Faiz Ahmed Faiz",
+            "url": "https://poets.org/poet/faiz-ahmed-faiz"
+          }
+        ]
       }
     },
     {
       "id": "pritam",
       "name": "Amrita Pritam",
       "firstCardId": "pritam",
-      "description": "Her Punjabi poem “To Waris Shah” calls on an earlier Punjabi poet to witness the suffering of a divided Punjab. Waris Shah wrote Heer, a Punjabi romance rooted in the same landscape.",
+      "description": "Her Punjabi poem “To Waris Shah” calls on an earlier Punjabi poet to witness the suffering of a divided Punjab. Waris Shah wrote Heer, a Punjabi love story set in the same region.",
       "image": {
         "src": "images/poets/pritam.jpg",
         "alt": "Portrait of Amrita Pritam",
@@ -690,6 +871,18 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amrita_Pritam.jpg",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "background": {
+        "paragraphs": [
+          "Amrita Pritam was born in Gujranwala in 1919, in what is now Pakistan. She began writing in Punjabi and later also wrote in Hindi. She worked in poetry and fiction, and moved to Delhi following Partition.",
+          "Her place in this exhibit comes from “To Waris Shah,” which addresses the suffering of Punjab through an earlier Punjabi poet. Her own move across the new border makes Partition part of her life as well as a subject of her writing."
+        ],
+        "sources": [
+          {
+            "title": "Sahitya Akademi · Amrita Pritam fellowship profile",
+            "url": "https://sahitya-akademi.gov.in/library/fellowship_pdf/Amrita-Pritam.pdf"
+          }
+        ]
       }
     },
     {
@@ -707,6 +900,22 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:W._H._Auden_%281956_press_photo%29.jpg",
         "license": "Public domain (US)",
         "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "background": {
+        "paragraphs": [
+          "Wystan Hugh Auden was born in York, England, in 1907. He wrote poetry, plays, and criticism, and later moved to the United States. His work often deals with political events alongside questions about responsibility and how people live together.",
+          "His poem “Partition” looks back at Cyril Radcliffe’s role in drawing the border. Auden gives the exhibit a later view of the decisions made in 1947. His perspective is different from the writers whose own homes and communities were directly affected by Partition."
+        ],
+        "sources": [
+          {
+            "title": "Academy of American Poets · W. H. Auden",
+            "url": "https://poets.org/poet/w-h-auden"
+          },
+          {
+            "title": "Poetry Foundation · W. H. Auden",
+            "url": "https://www.poetryfoundation.org/poets/w-h-auden"
+          }
+        ]
       }
     },
     {
@@ -724,6 +933,22 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gulzar.jpg",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "background": {
+        "paragraphs": [
+          "Gulzar is the pen name of Sampuran Singh Kalra. He was born in Dina, in what is now Pakistan, and his family was displaced during Partition. He became a poet, lyricist, and filmmaker, writing about both everyday experiences and memories of the past.",
+          "His writing gives this exhibit a way to look at how Partition continues to affect people after they leave their childhood homes. The English collection Footprints on Zero Line brings together his writing about these experiences. The individual poem for the exhibit is still being chosen."
+        ],
+        "sources": [
+          {
+            "title": "Rekhta · Gulzar biography",
+            "url": "https://www.rekhta.org/poets/gulzar/profile"
+          },
+          {
+            "title": "Rakhshanda Jalil · Gulzar and Partition",
+            "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
+          }
+        ]
       }
     }
   ]

@@ -85,6 +85,13 @@ try:
                 cdp.evaluate('document.querySelector("#freedoms-dawn-title").scrollIntoView();')
                 screenshot=cdp.command('Page.captureScreenshot', {'format':'png'})
                 Path(f'/tmp/freedoms-dawn-{width}.png').write_bytes(base64.b64decode(screenshot['data']))
+                cdp.evaluate('document.querySelector("#poet-faiz .poet-background-button").click();')
+                cdp.command('Input.dispatchKeyEvent', {'type':'keyDown','key':'Escape','code':'Escape','windowsVirtualKeyCode':27})
+                cdp.command('Input.dispatchKeyEvent', {'type':'keyUp','key':'Escape','code':'Escape','windowsVirtualKeyCode':27})
+                time.sleep(.05)
+                if not cdp.evaluate('!document.querySelector("#poet-background").open && document.activeElement.matches("#poet-faiz .poet-background-button")'):
+                    raise RuntimeError('Escape did not dismiss the biography and restore focus')
+                print(f'{width}px: native Escape dismissal and focus return passed', flush=True)
             cdp.command('Browser.close')
             cdp.sock.close()
             process.wait(timeout=10)

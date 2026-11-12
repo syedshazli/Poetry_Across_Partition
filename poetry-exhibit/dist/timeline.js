@@ -30,6 +30,39 @@
     if (ref.note) li.append(el('p', ref.note, 'source-note'));
     return li;
   }
+  const poetDialog = document.querySelector('#poet-background');
+  let backgroundTrigger = null;
+  function openPoetBackground(poet, trigger) {
+    backgroundTrigger = trigger;
+    document.querySelector('#poet-background-title').textContent = poet.name;
+    const content = document.querySelector('#poet-background-content');
+    content.replaceChildren();
+    poet.background.paragraphs.forEach(paragraph => content.append(el('p', paragraph)));
+    content.append(el('h3', 'Sources'));
+    const sources = el('ul');
+    poet.background.sources.forEach(source => {
+      const item = el('li');
+      const link = el('a', source.title);
+      link.href = source.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      item.append(link);
+      sources.append(item);
+    });
+    content.append(sources);
+    poetDialog.showModal();
+    document.body.classList.add('poet-popup-open');
+    document.querySelector('#poet-background-title').focus();
+  }
+  document.querySelector('#close-poet-background').addEventListener('click', () => poetDialog.close());
+  poetDialog.addEventListener('close', () => {
+    document.body.classList.remove('poet-popup-open');
+    backgroundTrigger?.focus({preventScroll: true});
+  });
+  poetDialog.addEventListener('click', event => {
+    const rect = poetDialog.getBoundingClientRect();
+    if (event.target === poetDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) poetDialog.close();
+  });
   function renderPoems() {
     const list = document.querySelector('#poem-list');
     data.cards.filter(c => c.poem).forEach(c => {
@@ -45,6 +78,11 @@
       text.id = poem.id;
       text.lang = poem.language;
       text.setAttribute('aria-label', poem.title);
+      text.tabIndex = 0;
+      const readingHelp = el('p', 'Scroll sideways if needed to read each line as printed.', 'poem-scroll-help');
+      readingHelp.id = `${poem.id}-scroll-help`;
+      text.setAttribute('aria-describedby', readingHelp.id);
+      article.append(readingHelp);
       const notes = new Map();
       function annotation(note) {
         if (notes.has(note.id)) return notes.get(note.id);
@@ -55,15 +93,35 @@
         const title = el('h4', note.term);
         title.id = `${note.id}-heading`;
         panel.append(title);
-        if (note.definition) {
-          panel.append(el('p', note.definition));
-          if (note.dictionaryUrl) {
-            const dictionary = el('a', `Definition adapted from ${note.dictionaryName}`);
-            dictionary.href = note.dictionaryUrl;
-            panel.append(dictionary);
-          }
+        const definitions = note.definitions || (note.definition ? [{word: note.term, definition: note.definition, dictionaryName: note.dictionaryName, dictionaryUrl: note.dictionaryUrl}] : []);
+        if (definitions.length) {
+          const meanings = el('div', null, 'word-meanings');
+          meanings.append(el('h5', 'Word meanings'));
+          definitions.forEach(entry => {
+            const item = el('div', null, 'word-meaning');
+            item.append(el('h6', entry.word), el('p', entry.definition));
+            if (entry.dictionaryUrl) {
+              const dictionary = el('a', `Read the ${entry.dictionaryName} entry ↗`);
+              dictionary.href = entry.dictionaryUrl;
+              dictionary.target = '_blank';
+              dictionary.rel = 'noopener noreferrer';
+              dictionary.setAttribute('aria-label', `Read ${entry.word} in ${entry.dictionaryName} (opens in a new tab)`);
+              item.append(dictionary);
+            }
+            meanings.append(item);
+          });
+          meanings.append(el('p', 'Meanings are paraphrased from the linked dictionaries.', 'dictionary-note'));
+          panel.append(meanings);
         }
         panel.append(el('h5', 'A possible reading'), el('p', note.analysis));
+        if (note.source) {
+          const source = el('p', null, 'annotation-source');
+          const link = el('a', note.source.title);
+          link.href = note.source.url;
+          source.append(link);
+          if (note.source.note) source.append(document.createTextNode(`. ${note.source.note}`));
+          panel.append(source);
+        }
         const state = {panel, triggers: [], active: null};
         const dismiss = () => {
           panel.hidden = true;
@@ -122,11 +180,19 @@
       article.append(text);
       const wholePoem = el('section', null, 'whole-poem-analysis');
       wholePoem.setAttribute('aria-labelledby', `${poem.id}-analysis-title`);
-      const analysisTitle = el('h4', 'Whole-poem claim & analysis');
+      const analysisTitle = el('h4', poem.wholePoemAnalysis?.title || 'Whole-poem claim & analysis');
       analysisTitle.id = `${poem.id}-analysis-title`;
       wholePoem.append(analysisTitle);
       if (poem.wholePoemAnalysis?.claim) wholePoem.append(el('p', poem.wholePoemAnalysis.claim, 'whole-poem-claim'));
       if (poem.wholePoemAnalysis?.analysis) wholePoem.append(el('p', poem.wholePoemAnalysis.analysis));
+      if (poem.wholePoemAnalysis?.source) {
+        const source = poem.wholePoemAnalysis.source;
+        const credit = el('p', null, 'annotation-source');
+        const link = el('a', source.title);
+        link.href = source.url;
+        credit.append(link, document.createTextNode(`. ${source.note}`));
+        wholePoem.append(credit);
+      }
       article.append(wholePoem);
 
       const sources = el('details', null, 'poem-sources');
@@ -339,7 +405,13 @@
         figure.append(portrait, caption);
         card.append(figure);
       }
-      card.append(heading, el('p', poet.description), link);
+      const background = el('button', 'Background ↗', 'poet-background-button');
+      background.type = 'button';
+      background.setAttribute('aria-label', `Read about ${poet.name}`);
+      background.setAttribute('aria-haspopup', 'dialog');
+      background.setAttribute('aria-controls', 'poet-background');
+      background.addEventListener('click', () => openPoetBackground(poet, background));
+      card.append(heading, el('p', poet.description), background, link);
       document.querySelector('#poet-list').append(card);
     });
     render();

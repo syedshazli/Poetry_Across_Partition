@@ -58,3 +58,9 @@ The five poet portraits are stored locally in `dist/images/poets/`. Each poet’
 The Faiz card’s `poem` field contains the supplied translation, stored as five stanzas and 25 separate lines. Wording and ASCII punctuation are preserved; line breaks and stanza spacing follow the linked IIT Kanpur transcription. Each stanza and line has a stable ID. The reader preserves the poem text and translator credit. Optional `poem.annotations` records identify a line ID and exact phrase, plus definition, dictionary source, and interpretation. Highlights are native buttons that reveal notes after their stanza; Close or Escape dismisses a note and restores focus. Keep line IDs stable when adding annotations.
 
 The full poem is rendered once in the permanent **Poems** section immediately below the timeline. The main navigation links to that section; the Faiz timeline details link directly to the poem heading, and the reader links back to the timeline.
+
+The whole-poem analysis is now populated under **Reading the Poem**, connecting the opening question with the final call to keep going. The shared last-stanza highlight opens a note on public celebration, criticism of discontent, medical imagery, and continuing darkness.
+
+## Poet backgrounds
+
+Each poet card has a Background button that opens a native modal dialog. Edit `poets[].background.paragraphs` and `poets[].background.sources` in `timeline-data.json` to update the biography and citations. The popup closes with its Close button, Escape, or a click outside it, and restores focus to the opening button.
