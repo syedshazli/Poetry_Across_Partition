@@ -64,3 +64,5 @@ The whole-poem analysis is now populated under **Reading the Poem**, connecting 
 ## Poet backgrounds
 
 Each poet card has a Background button that opens a native modal dialog. Edit `poets[].background.paragraphs` and `poets[].background.sources` in `timeline-data.json` to update the biography and citations. The popup closes with its Close button, Escape, or a click outside it, and restores focus to the opening button.
+
+The final reading now puts Foster’s quest approach in conversation with Gopi Chand Narang’s “How not to Read Faiz Ahmad Faiz,” translated by Baidar Bakht (2009). `poem.wholePoemAnalysis.sources` holds the secondary citations. The discussion includes printed page references and distinguishes Narang’s own example from the exhibit’s application to “Freedom’s Dawn.”

@@ -72,6 +72,11 @@
     "H11": {
       "title": "Banglapedia · War of Liberation, The",
       "url": "https://en.banglapedia.org/index.php?title=War_of_Liberation%2C_The"
+    },
+    "P8": {
+      "title": "Gopi Chand Narang, “How not to Read Faiz Ahmad Faiz,” translated from Urdu by Baidar Bakht. Indian Literature 53, no. 1 (249), January–February 2009, pp. 44–56. Sahitya Akademi.",
+      "url": "https://www.jstor.org/stable/23348482",
+      "note": "Used here especially on pp. 44–45 and 52–54. Narang mainly analyzes “Dast-e Teh-e Sang Amada.” The application to “Freedom’s Dawn” is the exhibit’s interpretation."
     }
   },
   "cards": [
@@ -637,13 +642,20 @@
         ],
         "wholePoemAnalysis": {
           "title": "Reading the Poem",
-          "claim": "The poem suggests that reaching independence does not mean the travelers have reached the future they hoped for.",
-          "analysis": "The opening asks whether this is the dawn the travelers had been waiting for. It describes a dawn that has already been wounded, which makes the promised new beginning seem uncertain. The memories of the journey show how much the friends believed in that promise. They imagined a place where their grief could rest, and their hope made even the work of traveling feel light.\n\nHowever, the final stanza shows that the celebrations have not ended their suffering. The poem moves from “Our leaders” to “Let us,” which changes who is speaking about the journey. The travelers are no longer just listening to claims that they have arrived. They decide that their goal has not yet been reached.\n\nFoster’s quest approach gives us a way to connect this ending to the earlier search. The travelers have reached the moment of independence, but they have learned that it has not brought the rest they imagined. The ending responds to the opening’s question through an action. “Let us go on” calls for them to keep moving toward the freedom they still hope to experience.",
-          "source": {
-            "title": "Thomas C. Foster, How to Read Literature Like a Professor",
-            "url": "https://www.si.edu/object/how-read-literature-professor-lively-and-entertaining-guide-reading-between-lines-thomas-c-foster%3Asiris_sil_1082887",
-            "note": "Foster provides the reading approach. Its application to this poem is the exhibit’s interpretation."
-          }
+          "claim": "The poem suggests that reaching independence does not mean the travelers have reached the future they hoped for. However, its meaning also comes from the language of love and longing that makes this hope feel personal.",
+          "analysis": "The opening asks whether this is the dawn the travelers had been waiting for. It describes a dawn that has already been wounded, which makes the promised new beginning seem uncertain. The memories of the journey show how much the friends believed in that promise. They imagined a place where their grief could rest, and their hope made even the work of traveling feel light.\n\nFoster’s quest approach gives us a way to connect this journey to the ending. The travelers have reached the moment of independence, but they have learned that it has not brought the rest they imagined. The movement from “Our leaders” to “Let us” suggests that they are no longer just listening to claims that they have arrived. They decide that their goal has not yet been reached. This is the exhibit’s application of Foster’s reading approach.\n\nHowever, Gopi Chand Narang’s “How not to Read Faiz Ahmad Faiz” gives us a reason to question whether a political explanation is enough. Narang acknowledges Faiz’s political commitments, but argues that a reading can become restrictive when it allows only one political meaning. He asks readers to pay attention to how the language creates meaning, including what is left unsaid (pp. 44–45). Later, he examines the tension between political commitment and the inherited language of love and beauty in Faiz’s poetry (pp. 52–54).\n\nNarang’s main example is “Dast-e Teh-e Sang Amada,” rather than “Freedom’s Dawn.” Applying his argument to this poem is a step taken in this exhibit. One important example is the stanza where hands pull at the travelers’ sleeves and bodies call to them. Dawn then takes on a cheek and a robe of its own. We can connect that dawn to the promise of independence, but calling it only a political symbol would leave out how the stanza makes that promise feel like someone the travelers long to reach. The words “dearer” and “closer” in Kiernan’s translation make their shared hope feel personal.\n\nNarang’s attention to what remains unsaid also gives us another way to look at “Somewhere.” The word begins three lines, but the poem never names the place where the travelers’ grief can rest. We might connect that place to a hoped-for political future. However, the absence of a name keeps that interpretation from becoming the only possible answer. This is our reading of the repeated word, rather than an example Narang discusses himself.\n\nReading Foster alongside Narang lets us keep the political disappointment in view while also asking how the poem makes us feel it. The wounded dawn, the beautiful cheek, and the ship carrying heartache give that disappointment different forms. The ending responds to the opening’s question through an action. “Let us go on” calls for the travelers to keep moving toward what they still hope to experience, even though the poem has not given that destination a final name.",
+          "sources": [
+            {
+              "title": "Thomas C. Foster, How to Read Literature Like a Professor",
+              "url": "https://www.si.edu/object/how-read-literature-professor-lively-and-entertaining-guide-reading-between-lines-thomas-c-foster%3Asiris_sil_1082887",
+              "note": "Foster provides the reading approach. Its application to this poem is the exhibit’s interpretation."
+            },
+            {
+              "title": "Gopi Chand Narang, “How not to Read Faiz Ahmad Faiz,” translated from Urdu by Baidar Bakht. Indian Literature 53, no. 1 (249), January–February 2009, pp. 44–56. Sahitya Akademi.",
+              "url": "https://www.jstor.org/stable/23348482",
+              "note": "Used here especially on pp. 44–45 and 52–54. Narang mainly analyzes “Dast-e Teh-e Sang Amada.” The application to “Freedom’s Dawn” is the exhibit’s interpretation."
+            }
+          ]
         }
       }
     },

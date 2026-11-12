@@ -122,6 +122,11 @@
 
     assert(document.querySelector('.whole-poem-analysis h4').textContent === 'Reading the Poem', 'Whole-poem section has requested heading');
     assert(document.querySelector('.whole-poem-analysis').textContent.includes('Let us go on'), 'Whole-poem reading connects the opening and ending');
+    const secondary = document.querySelector('.whole-poem-analysis .reading-sources');
+    assert(secondary.querySelectorAll('li').length === 2, 'Whole-poem analysis cites Foster and Narang');
+    assert(secondary.querySelector('a[href="https://www.jstor.org/stable/23348482"]'), 'Narang citation links to the supplied essay');
+    assert(secondary.textContent.includes('Baidar Bakht') && secondary.textContent.includes('Dast-e Teh-e Sang Amada'), 'Narang translator and distinct poem are identified');
+
 
 
 

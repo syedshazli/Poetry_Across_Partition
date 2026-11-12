@@ -185,13 +185,19 @@
       wholePoem.append(analysisTitle);
       if (poem.wholePoemAnalysis?.claim) wholePoem.append(el('p', poem.wholePoemAnalysis.claim, 'whole-poem-claim'));
       if (poem.wholePoemAnalysis?.analysis) wholePoem.append(el('p', poem.wholePoemAnalysis.analysis));
-      if (poem.wholePoemAnalysis?.source) {
-        const source = poem.wholePoemAnalysis.source;
-        const credit = el('p', null, 'annotation-source');
-        const link = el('a', source.title);
-        link.href = source.url;
-        credit.append(link, document.createTextNode(`. ${source.note}`));
-        wholePoem.append(credit);
+      const readingSources = poem.wholePoemAnalysis?.sources || (poem.wholePoemAnalysis?.source ? [poem.wholePoemAnalysis.source] : []);
+      if (readingSources.length) {
+        wholePoem.append(el('h5', 'Secondary sources'));
+        const sourceList = el('ul', null, 'reading-sources');
+        readingSources.forEach(source => {
+          const credit = el('li', null, 'annotation-source');
+          const link = el('a', source.title);
+          link.href = source.url;
+          credit.append(link);
+          if (source.note) credit.append(el('p', source.note));
+          sourceList.append(credit);
+        });
+        wholePoem.append(sourceList);
       }
       article.append(wholePoem);
 
