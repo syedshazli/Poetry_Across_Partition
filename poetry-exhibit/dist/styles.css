@@ -39,3 +39,21 @@ button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,summary:fo
 /* Local archival portraits, with image-specific focal points and linked credits. */
 .poet-portrait{margin:0 0 18px}.poet-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1);background:var(--line)}.poet-portrait figcaption{font-size:10px;line-height:1.6;color:var(--muted);margin-top:8px;min-height:32px}.poet-portrait figcaption a{text-decoration:underline;text-underline-offset:2px}.poet-portrait figcaption a:hover{color:var(--accent)}
 @media(max-width:700px){.poet-portrait img{aspect-ratio:1/1}.poet-portrait figcaption{font-size:11px;min-height:0}}
+
+
+/* Plain poem text: stable line IDs support future annotations without changing text. */
+.poem-byline{font-size:13px;color:var(--muted);margin-bottom:32px}.poem-text{max-width:70ch;font:normal clamp(17px,1.5vw,21px)/1.8 Georgia,'Times New Roman',serif;margin:32px 0 40px}.poem-text .poem-stanza{margin:0 0 1.5em;line-height:inherit;max-width:none}.poem-text .poem-line{display:inline-block;max-width:100%;padding-left:1.25em;text-indent:-1.25em;vertical-align:top;overflow-wrap:break-word}.poem-text .poem-stanza:last-child{margin-bottom:0}
+@media(max-width:700px){.poem-text{font-size:17px;line-height:1.8}.poem-byline{line-height:1.6}.card-detail:has(.poem-text){padding:18px}}
+
+
+.poems-section{padding:56px 0;border-bottom:1px solid var(--line)}.poems-section>h2{margin:24px 0 32px}.poem-reader{padding:36px;background:#fff9;border-left:4px solid var(--accent)}.poem-reader+ .poem-reader{margin-top:32px}.poem-reader h3{font:normal clamp(25px,3vw,36px)/1.25 Georgia,serif;margin:0 0 18px;scroll-margin-top:30px}.poem-sources{font-size:13px;line-height:1.7}.poem-sources a{text-decoration:underline;text-underline-offset:3px}.poem-sources summary{min-height:44px}.poem-reader .text-link{margin-top:12px}
+@media(max-width:700px){.poems-section{padding:34px 0}.poem-reader{padding:18px}.poem-reader h3{font-size:25px}}
+
+/* Preserve intentional line breaks in editable descriptions. */
+.poet-intro p,
+.card-detail > p {
+  white-space: pre-line;
+}
+
+
+.poem-highlight{font:inherit;line-height:inherit;color:inherit;background:#e9c66a66;border:0;border-bottom:2px solid var(--accent);padding:0;text-indent:0;display:inline;text-align:left;box-decoration-break:clone;-webkit-box-decoration-break:clone}.poem-highlight:hover,.poem-highlight[aria-expanded=true]{background:#e9c66aaa}.poem-annotation{font:14px/1.7 Arial,Helvetica,sans-serif;background:var(--paper);border-left:3px solid var(--accent);padding:22px;margin:0 0 30px;max-width:68ch;text-indent:0}.poem-annotation h4{font:normal 24px Georgia,serif;margin:0 0 10px}.poem-annotation h5{font:600 12px Arial,Helvetica,sans-serif;letter-spacing:1px;text-transform:uppercase;margin:24px 0 8px}.poem-annotation p{margin:0 0 12px}.poem-annotation a{font-size:12px;text-decoration:underline;text-underline-offset:3px}.close-annotation{display:block;font-size:12px;border:1px solid var(--line);background:transparent;padding:10px 14px;min-height:44px;margin-top:18px}

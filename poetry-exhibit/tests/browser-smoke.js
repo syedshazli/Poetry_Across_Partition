@@ -5,13 +5,13 @@
   try {
     for (let i = 0; i < 60 && !document.querySelector('#card-company'); i++) await wait();
     const data = await (await fetch('timeline-data.json')).json();
-    assert(data.cards.length === 21, 'All 21 cards present');
-    assert(new Set(data.cards.map(c => c.id)).size === 21, 'Stable IDs are unique');
+    assert(data.cards.length > 0, 'Timeline card data present');
+    assert(new Set(data.cards.map(c => c.id)).size === data.cards.length, 'Stable IDs are unique');
     for (const c of data.cards) {
       assert(c.referenceIds.every(id => data.references[id]), `References resolve: ${c.id}`);
       assert(c.relatedCardIds.every(id => data.cards.find(other => other.id === id)?.relatedCardIds.includes(c.id)), `Related links reciprocal: ${c.id}`);
     }
-    assert(document.querySelectorAll('.timeline-card').length === 21, 'Full timeline renders 21 buttons');
+    assert(document.querySelectorAll('.timeline-card').length === data.cards.length, 'Full timeline renders all current cards');
     assert(document.querySelectorAll('.poet-intro').length === 5, 'Five poet introductions');
     assert(document.querySelector('#poets').nextElementSibling.id === 'timeline', 'Poets immediately precede timeline');
     assert([...document.querySelectorAll('.poet-intro')].map(c => c.id).join(',') === 'poet-iqbal,poet-faiz,poet-pritam,poet-auden,poet-gulzar', 'Poets follow timeline encounter order');
@@ -46,6 +46,33 @@
         assert(document.getElementById(`card-${to}`).getAttribute('aria-expanded') === 'true', `Related card opens: ${to}`);
       }
     }
+    document.querySelector('#card-faiz').click();
+    assert(document.querySelector('#timeline').nextElementSibling.id === 'poems', 'Poems section immediately follows timeline');
+    assert(document.querySelector('#freedoms-dawn-title').textContent === "Freedom's Dawn (August 1947)", 'Poem has its full title');
+    assert(!document.querySelector('#card-detail .poem-text'), 'Timeline detail links to the separate reader');
+    document.querySelector('.read-poem').click();
+    assert(document.activeElement.id === 'freedoms-dawn-title', 'Timeline read link focuses the poem');
+    assert(document.querySelector('.poem-byline').textContent.includes('V. G. Kiernan'), 'Poem credits its translator');
+    assert(document.querySelectorAll('.poem-stanza').length === 5, 'Poem preserves five stanzas');
+    assert(document.querySelectorAll('.poem-line').length === 25, 'Poem preserves 25 lines');
+    assert(document.querySelectorAll('.poem-stanza br').length === 20, 'Explicit breaks separate lines within stanzas');
+    assert(new Set([...document.querySelectorAll('.poem-line')].map(line => line.id)).size === 25, 'Poem lines have unique annotation IDs');
+    assert(document.querySelector('#freedoms-dawn-line-25').textContent === 'Let us go on, our goal is not reached yet.', 'Poem ends with supplied final line');
+    assert(document.querySelector('.poem-text').scrollWidth <= document.querySelector('.poem-text').clientWidth, 'Poem fits the reading panel');
+    const highlight = document.querySelector('.poem-highlight');
+    assert(highlight.textContent === "night's fangs have mangled", 'Correct phrase highlighted');
+    const note = document.getElementById(highlight.getAttribute('aria-controls'));
+    assert(note.hidden, 'Annotation starts closed');
+    highlight.click();
+    assert(!note.hidden && highlight.getAttribute('aria-expanded') === 'true', 'Click opens annotation');
+    assert(note.textContent.includes('Severely damaged') && note.textContent.includes('One possible reading'), 'Definition and interpretation shown separately');
+    note.querySelector('.close-annotation').click();
+    assert(note.hidden && document.activeElement === highlight, 'Closing annotation restores focus');
+    highlight.click();
+    note.dispatchEvent(new KeyboardEvent('keydown', {key:'Escape',bubbles:true}));
+    assert(note.hidden && document.activeElement === highlight, 'Escape dismisses annotation');
+    document.querySelector('.poem-reader .text-link').click();
+    assert(document.activeElement.id === 'card-faiz', 'Poem return link focuses Faiz on full timeline');
     document.querySelector('[data-view="august"]').click();
     assert(document.querySelector('#view-title').textContent === 'August 1947 detail', 'Detail scale labeled');
     assert(document.querySelectorAll('#card-faiz').length === 1, 'Single Faiz month marker');

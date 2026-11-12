@@ -64,6 +64,14 @@
     "P7": {
       "title": "Rakhshanda Jalil · Why the Partition Is Not Just a Historical Event but a Work in Progress for Gulzar",
       "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
+    },
+    "H10": {
+      "title": "World Bank Group Archives · Travel briefs: Burma and Bangladesh (1976), historical background",
+      "url": "https://thedocs.worldbank.org/en/doc/52191391205376083-0560011976/original/WorldBankGroupArchivesFolder1772834.pdf"
+    },
+    "H11": {
+      "title": "Banglapedia · War of Liberation, The",
+      "url": "https://en.banglapedia.org/index.php?title=War_of_Liberation%2C_The"
     }
   },
   "cards": [
@@ -73,7 +81,7 @@
       "datePrecision": "range",
       "track": "history",
       "title": "British colonial rule takes hold",
-      "description": "The East India Company expands its power through the victories at Plassey (1757) and Buxar (1764). In 1765 it gains revenue collection rights in Bengal, Bihar, and Orissa.",
+      "description": "The East India Company expands its power through the victories at Plassey (1757) and Buxar (1764). In 1765 it gains revenue collection rights in Bengal, Bihar, and Orissa.\n Personal note: My grandfather on my mothers side is from Bihar. He chose to immigrate to Saudi Arabia after growing up there, while his brother decided to stay in India. My grandfather only recently decided to relocate to Pakistan to retire, after living in Saudi Arabia for his entire professional career. My father's side is also from Bihar, but his grandfather decided to relocate to Pakistan once the partition was announced.",
       "referenceIds": [
         "H1"
       ],
@@ -91,7 +99,7 @@
       "datePrecision": "year",
       "track": "history",
       "title": "Punjab is annexed",
-      "description": "The East India Company annexes Punjab after the Second Sikh War, ending the Sikh kingdom’s sovereignty. Punjab lies in the northwestern subcontinent: its western and eastern regions would become parts of Pakistan and India in 1947. Lahore and Amritsar offer geographic points of reference.",
+      "description": "The East India Company annexes Punjab after the Second Sikh War, ending the Sikh kingdom’s sovereignty. Punjab lies in the northwestern subcontinent: its western and eastern regions would become parts of Pakistan and India in 1947.",
       "referenceIds": [
         "H8"
       ],
@@ -122,7 +130,7 @@
       "datePrecision": "range",
       "track": "history",
       "title": "Organization and representation",
-      "description": "The Indian National Congress is founded in 1885; the All-India Muslim League follows in 1906. The 1909 reforms introduce separate Muslim electorates: Muslim voters elect representatives to seats reserved for Muslims.",
+      "description": "The Indian National Congress is founded in 1885. The All-India Muslim League is then founded in 1906. \nReforms made in 1909 introduce separate Muslim electorates: Muslim voters elect representatives to seats reserved for Muslims.",
       "referenceIds": [
         "H2"
       ],
@@ -193,25 +201,12 @@
       "axisDate": 1914
     },
     {
-      "id": "jallianwala",
-      "dateLabel": "13 April 1919",
-      "datePrecision": "day",
-      "track": "history",
-      "title": "Jallianwala Bagh massacre",
-      "description": "British troops fire on a gathering in Amritsar, Punjab. The date is commemorated by the Jallianwala Bagh National Memorial.",
-      "referenceIds": [
-        "H4"
-      ],
-      "relatedCardIds": [],
-      "axisDate": 1919.28
-    },
-    {
       "id": "allahabad",
       "dateLabel": "1930",
       "datePrecision": "year",
       "track": "history",
       "title": "Iqbal’s Allahabad Address",
-      "description": "In his presidential address to the Muslim League, Iqbal discusses political organization in Muslim-majority regions of northwestern India. Read this speech alongside the poem without treating poetry as a direct blueprint for a later border.",
+      "description": "In his presidential address to the Muslim League, Iqbal discusses political organization in Muslim-majority regions of northwestern India.",
       "referenceIds": [
         "H9"
       ],
@@ -245,7 +240,7 @@
       "datePrecision": "month",
       "track": "history",
       "title": "Lahore Resolution",
-      "description": "The Muslim League sets out demands for political arrangements in Muslim-majority regions. Return to Iqbal’s Allahabad Address to compare earlier political proposals.",
+      "description": "The Muslim League sets out demands for political arrangements in Muslim-majority regions..",
       "referenceIds": [
         "H6"
       ],
@@ -321,7 +316,7 @@
       "datePrecision": "month",
       "track": "poetry",
       "title": "Faiz · Freedom’s Dawn",
-      "description": "Faiz Ahmad Faiz’s damaged dawn and unfinished journey invite readers to consider the distance between independence and the freedom still being sought. This is a month-level date; no particular day is assigned.",
+      "description": "Faiz Ahmad Faiz’s Urdu poem, dated August 1947, presented in V. G. Kiernan’s English translation.",
       "referenceIds": [
         "P2"
       ],
@@ -330,9 +325,155 @@
       ],
       "composition": "Dated August 1947",
       "publication": "First publication not yet verified",
-      "edition": "English version translated by V. G. Kiernan. This card provides interpretation; the poem text is not reproduced.",
+      "edition": "English translation by V. G. Kiernan. Text supplied for the exhibit; line breaks and stanza spacing checked against the linked transcription of Poems by Faiz (Oxford University Press, 1971/2000).",
       "axisDate": 1947.6,
-      "poetId": "faiz"
+      "poetId": "faiz",
+      "poem": {
+        "id": "freedoms-dawn",
+        "title": "Freedom's Dawn (August 1947)",
+        "author": "Faiz Ahmad Faiz",
+        "translator": "V. G. Kiernan",
+        "language": "en",
+        "stanzas": [
+          {
+            "id": "freedoms-dawn-stanza-1",
+            "lines": [
+              {
+                "id": "freedoms-dawn-line-01",
+                "text": "This leprous daybreak, dawn night's fangs have mangled --"
+              },
+              {
+                "id": "freedoms-dawn-line-02",
+                "text": "This is not that long-looked-for break of day,"
+              },
+              {
+                "id": "freedoms-dawn-line-03",
+                "text": "Not that clear dawn in quest of which those comrades"
+              },
+              {
+                "id": "freedoms-dawn-line-04",
+                "text": "Set out, believing that in heaven's wide void"
+              }
+            ]
+          },
+          {
+            "id": "freedoms-dawn-stanza-2",
+            "lines": [
+              {
+                "id": "freedoms-dawn-line-05",
+                "text": "Somewhere must be the stars' last halting-place,"
+              },
+              {
+                "id": "freedoms-dawn-line-06",
+                "text": "Somewhere the verge of night's slow-washing tide,"
+              },
+              {
+                "id": "freedoms-dawn-line-07",
+                "text": "Somewhere an anchorage for the ship of heartache."
+              }
+            ]
+          },
+          {
+            "id": "freedoms-dawn-stanza-3",
+            "lines": [
+              {
+                "id": "freedoms-dawn-line-08",
+                "text": "When we set out, we friends, taking youth's secret"
+              },
+              {
+                "id": "freedoms-dawn-line-09",
+                "text": "Pathways, how many hands plucked at our sleeves!"
+              },
+              {
+                "id": "freedoms-dawn-line-10",
+                "text": "From beauty's dwellings and their panting casements"
+              },
+              {
+                "id": "freedoms-dawn-line-11",
+                "text": "Soft arms invoked us, flesh cried out to us;"
+              },
+              {
+                "id": "freedoms-dawn-line-12",
+                "text": "But dearer was the lure of dawn's bright cheek,"
+              },
+              {
+                "id": "freedoms-dawn-line-13",
+                "text": "Closer her shimmering robe of fairy rays;"
+              },
+              {
+                "id": "freedoms-dawn-line-14",
+                "text": "Light-winged that longing, feather-light that toil."
+              }
+            ]
+          },
+          {
+            "id": "freedoms-dawn-stanza-4",
+            "lines": [
+              {
+                "id": "freedoms-dawn-line-15",
+                "text": "But now, word goes, the birth of day from darkness"
+              },
+              {
+                "id": "freedoms-dawn-line-16",
+                "text": "Is finished, wandering feet stand at their goal;"
+              }
+            ]
+          },
+          {
+            "id": "freedoms-dawn-stanza-5",
+            "lines": [
+              {
+                "id": "freedoms-dawn-line-17",
+                "text": "Our leaders' ways are altering, festive looks"
+              },
+              {
+                "id": "freedoms-dawn-line-18",
+                "text": "Are all the fashion, discontent reproved; --"
+              },
+              {
+                "id": "freedoms-dawn-line-19",
+                "text": "And yet this physic still on unslaked eye"
+              },
+              {
+                "id": "freedoms-dawn-line-20",
+                "text": "Or heart fevered by severance works no cure."
+              },
+              {
+                "id": "freedoms-dawn-line-21",
+                "text": "Where did that fine breeze, that the wayside lamp"
+              },
+              {
+                "id": "freedoms-dawn-line-22",
+                "text": "Has not once felt, blow from -- where has it fled?"
+              },
+              {
+                "id": "freedoms-dawn-line-23",
+                "text": "Night's heaviness is unlessened still, the hour"
+              },
+              {
+                "id": "freedoms-dawn-line-24",
+                "text": "Of mind and spirit's ransom has not struck;"
+              },
+              {
+                "id": "freedoms-dawn-line-25",
+                "text": "Let us go on, our goal is not reached yet."
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "id": "freedoms-dawn-mangled",
+            "lineId": "freedoms-dawn-line-01",
+            "quote": "night's fangs have mangled",
+            "term": "Mangled",
+            "definition": "Severely damaged or disfigured, especially by tearing, cutting, or crushing.",
+            "dictionaryName": "Collins English Dictionary",
+            "dictionaryUrl": "https://www.collinsdictionary.com/dictionary/english/mangle",
+            "analysis": "One possible interpretation of this is that dawn symbolizes the hope for a shared future without any partition. The imagery of the night’s fangs make the darkness seem violent, as they have torn and damaged that hope for a shared future. The use of fangs suggests themes of violence and destruction upon something that was once in order."
+          }
+        ]
+      }
     },
     {
       "id": "radcliffe",
@@ -346,7 +487,8 @@
         "H7"
       ],
       "relatedCardIds": [
-        "auden"
+        "auden",
+        "bangladesh"
       ],
       "axisDate": 1947.625
     },
@@ -356,7 +498,7 @@
       "datePrecision": "open-range",
       "track": "history",
       "title": "Displacement and violence in Punjab",
-      "description": "Across the Partition period, mass displacement and communal violence transform Punjab. Muslims move toward Pakistan; Sikhs and Hindus toward India. The span has no single end date. Pritam’s lament addresses the Punjabi poet Waris Shah through this shared landscape of loss.",
+      "description": "Across the Partition period, mass displacement and communal violence transform Punjab. Muslims move toward Pakistan, while Sikhs and Hindus toward India. The span has no single end date, as it's ongoing till today. Amrita Pritam’s lament addresses the Punjabi poet Waris Shah through this shared landscape of loss.",
       "referenceIds": [
         "H6",
         "H7"
@@ -409,6 +551,27 @@
       "edition": "Collected Poems, edited by Edward Mendelson, Modern Library, 2007, pp. 802–03.",
       "axisDate": 1968,
       "poetId": "auden"
+    },
+    {
+      "id": "bangladesh",
+      "dateLabel": "26 March–16 December 1971",
+      "datePrecision": "day-range",
+      "track": "history",
+      "title": "Bangladesh’s War of Liberation and independence",
+      "description": "The eastern part of Pakistan, formed from East Bengal in the 1947 Partition and later known as East Pakistan, becomes Bangladesh in 1971. Following the Pakistani army’s crackdown on March 25, Bengali nationalists declare independence on March 26. The ensuing War of Liberation brings mass violence and displacement, with millions seeking refuge in India. India intervenes militarily in December; Pakistani forces surrender in Dhaka on December 16. The two dates mark the declaration of independence and the end of the war, respectively.",
+      "referenceIds": [
+        "H10",
+        "H11"
+      ],
+      "relatedCardIds": [
+        "radcliffe"
+      ],
+      "dateRange": {
+        "start": 1971.2301369863014,
+        "end": 1971.9561643835616,
+        "openEnd": false
+      },
+      "axisDate": 1971.2301369863014
     },
     {
       "id": "gulzar",

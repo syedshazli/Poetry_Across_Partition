@@ -30,6 +30,98 @@
     if (ref.note) li.append(el('p', ref.note, 'source-note'));
     return li;
   }
+  function renderPoems() {
+    const list = document.querySelector('#poem-list');
+    data.cards.filter(c => c.poem).forEach(c => {
+      const article = el('article', null, 'poem-reader');
+      article.setAttribute('aria-labelledby', `${c.poem.id}-title`);
+      const heading = el('h3', c.poem.title);
+      heading.id = `${c.poem.id}-title`;
+      heading.tabIndex = -1;
+      article.append(heading);
+      const poem = c.poem;
+      article.append(el('p', `${poem.author} · Translated by ${poem.translator}`, 'poem-byline'));
+      const text = el('div', null, 'poem-text');
+      text.id = poem.id;
+      text.lang = poem.language;
+      text.setAttribute('aria-label', poem.title);
+      poem.stanzas.forEach(stanza => {
+        const paragraph = el('p', null, 'poem-stanza');
+        paragraph.id = stanza.id;
+        stanza.lines.forEach((line, index) => {
+          const span = el('span', line.text, 'poem-line');
+          span.id = line.id;
+          span.dataset.lineId = line.id;
+          const annotations = (poem.annotations || []).filter(note => note.lineId === line.id);
+          let offset = 0;
+          if (annotations.length) {
+            span.replaceChildren();
+            annotations.forEach(note => {
+              const start = line.text.indexOf(note.quote, offset);
+              if (start < offset) return;
+              span.append(document.createTextNode(line.text.slice(offset, start)));
+              const highlight = el('button', note.quote, 'poem-highlight');
+              highlight.type = 'button';
+              highlight.id = `${note.id}-trigger`;
+              highlight.setAttribute('aria-expanded', 'false');
+              highlight.setAttribute('aria-controls', note.id);
+              const panel = el('aside', null, 'poem-annotation');
+              panel.id = note.id;
+              panel.hidden = true;
+              panel.setAttribute('aria-labelledby', `${note.id}-heading`);
+              const title = el('h4', note.term);
+              title.id = `${note.id}-heading`;
+              const definition = el('p', note.definition);
+              const dictionary = el('a', `Definition adapted from ${note.dictionaryName}`);
+              dictionary.href = note.dictionaryUrl;
+              const label = el('h5', 'A possible reading');
+              const close = el('button', 'Close note', 'close-annotation');
+              close.type = 'button';
+              const dismiss = () => {
+                panel.hidden = true;
+                highlight.setAttribute('aria-expanded', 'false');
+                highlight.focus({preventScroll: true});
+              };
+              close.addEventListener('click', dismiss);
+              panel.addEventListener('keydown', event => {if (event.key === 'Escape') {event.preventDefault(); dismiss();}});
+              highlight.addEventListener('click', () => {
+                panel.hidden = !panel.hidden;
+                highlight.setAttribute('aria-expanded', String(!panel.hidden));
+                if (!panel.hidden) panel.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest'});
+              });
+              panel.append(title, definition, dictionary, label, el('p', note.analysis), close);
+              span.append(highlight);
+              // Place the note after its stanza, outside the poem's line text.
+              paragraph.afterNotes = paragraph.afterNotes || [];
+              paragraph.afterNotes.push(panel);
+              offset = start + note.quote.length;
+            });
+            span.append(document.createTextNode(line.text.slice(offset)));
+          }
+          paragraph.append(span);
+          if (index < stanza.lines.length - 1) paragraph.append(el('br'));
+        });
+        text.append(paragraph, ...(paragraph.afterNotes || []));
+      });
+      article.append(text);
+
+      const sources = el('details', null, 'poem-sources');
+      sources.append(el('summary', 'Text & translation source'));
+      const references = el('ul');
+      c.referenceIds.forEach(id => references.append(reference(id)));
+      sources.append(references);
+      article.append(sources);
+      const back = el('a', 'Find on timeline ↑', 'text-link');
+      back.href = `#card-${c.id}`;
+      back.addEventListener('click', event => {
+        event.preventDefault();
+        setView('full');
+        scrollToCard(c.id);
+      });
+      article.append(back);
+      list.append(article);
+    });
+  }
   function openCard(id, reveal = true) {
     selected = id;
     const c = data.cards.find(card => card.id === id);
@@ -38,9 +130,21 @@
     detail.hidden = false;
     detail.dataset.track = c.track;
     detail.append(el('p', `${c.track === 'history' ? 'History' : 'Poetry'} / ${c.dateLabel}`, 'eyebrow'));
-    const heading = el('h3', c.title);
+    const heading = el('h3', c.poem ? c.poem.title : c.title);
     heading.id = 'detail-title';
-    detail.append(heading, el('p', c.description));
+    detail.append(heading);
+    detail.append(el('p', c.description));
+    if (c.poem) {
+      const link = el('a', 'Read the poem ↓', 'text-link read-poem');
+      link.href = `#${c.poem.id}-title`;
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const target = document.getElementById(`${c.poem.id}-title`);
+        target.focus({preventScroll: true});
+        target.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'start'});
+      });
+      detail.append(link);
+    }
     if (c.dateRange?.openEnd) detail.append(el('p', 'Span: 1947 onward. The endpoint is illustrative, not a fixed end to displacement.', 'source-note'));
     if (c.track === 'poetry') {
       const dl = el('dl');
@@ -74,7 +178,9 @@
     close.type = 'button';
     close.addEventListener('click', closeDetail);
     detail.append(close);
-    if (reveal) detail.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest'});
+    if (reveal) {
+      detail.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'nearest'});
+    }
   }
   function closeDetail() {
     const id = selected;
@@ -140,7 +246,7 @@
     b.type = 'button'; b.id = `card-${c.id}`; b.dataset.id = c.id;
     b.setAttribute('aria-expanded', String(selected === c.id));
     b.setAttribute('aria-controls', 'card-detail');
-    b.append(el('span', `${c.track === 'history' ? 'History' : 'Poetry'} · ${c.dateLabel}`, 'card-date'), el('strong', c.title), el('span', c.dateRange ? 'Explore span ↗' : 'Read more ↗', 'card-action'));
+    b.append(el('span', `${c.track === 'history' ? 'History' : 'Poetry'} · ${c.dateLabel}`, 'card-date'), el('strong', c.title), el('span', c.poem ? 'Read poem ↗' : c.dateRange ? 'Explore span ↗' : 'Read more ↗', 'card-action'));
     b.onclick = () => openCard(c.id);
     if (!c.poetId) return b;
     const poet = data.poets.find(p => p.id === c.poetId);
@@ -171,6 +277,7 @@
     const response = await fetch('timeline-data.json');
     if (!response.ok) throw new Error('Timeline data could not be loaded.');
     data = await response.json();
+    renderPoems();
     const poets = [...data.poets].sort((a, b) => data.cards.find(c => c.id === a.firstCardId).axisDate - data.cards.find(c => c.id === b.firstCardId).axisDate);
     poets.forEach(poet => {
       const card = el('article', null, 'poet-intro');

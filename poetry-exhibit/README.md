@@ -14,7 +14,7 @@ python3 -m http.server 8000 --directory poetry-exhibit/dist
 
 Then open http://localhost:8000. No dependencies or build step are required.
 
-- `dist/timeline-data.json` holds all 21 cards, references, relationships, and August markers. Edit content here without changing rendering code.
+- `dist/timeline-data.json` holds all 22 cards, references, relationships, and August markers. Edit content here without changing rendering code.
 - Each card has a stable `id`, `dateLabel`, `datePrecision`, `track`, `title`, `description`, `referenceIds`, and `relatedCardIds`. Poetry adds separate `composition`, `publication`, and `edition` fields.
 - `axisDate` is a numeric chronological sorting coordinate (fractional years for dates within a year). Approximate coordinates are presentation aids, not claims of exact dates. The displayed date and precision are authoritative.
 - Optional `dateRange` stores numeric `start` and `end` coordinates and `openEnd`. The displacement endpoint is illustrative and explicitly labeled as open. Span geometry is calculated from the same shared axis as the cards.
@@ -25,7 +25,7 @@ Then open http://localhost:8000. No dependencies or build step are required.
 
 ## Editorial status
 
-The references are attached to their cards. The dedicated Punjab annexation source and Allahabad Address text have been added. Unverified references, first-publication dates, and translation/poem selections are marked for review. No poem texts are reproduced. Add verified URLs to reference records when available; references without a URL display their bibliographic citation and editorial note.
+The references are attached to their cards. The dedicated Punjab annexation source and Allahabad Address text have been added. Unverified references, first-publication dates, and translation/poem selections are marked for review. “Freedom’s Dawn” is presented using the text supplied for the exhibit; other poem texts remain pending. Add verified URLs to reference records when available; references without a URL display their bibliographic citation and editorial note.
 
 ## Browser checks
 
@@ -52,3 +52,9 @@ The five short introductions live in `timeline-data.json` under `poets`, with `f
 ## Portrait images
 
 The five poet portraits are stored locally in `dist/images/poets/`. Each poet’s `image` record in `timeline-data.json` holds its alt text, dimensions, focal position, source, creator credit, and license. The cards link to the Commons source pages and license terms. Original image files are preserved (Iqbal uses a Commons thumbnail); monochrome styling and framing are applied with CSS. CC BY-SA portraits remain available under CC BY-SA 4.0.
+
+## Freedom’s Dawn
+
+The Faiz card’s `poem` field contains the supplied translation, stored as five stanzas and 25 separate lines. Wording and ASCII punctuation are preserved; line breaks and stanza spacing follow the linked IIT Kanpur transcription. Each stanza and line has a stable ID. The reader preserves the poem text and translator credit. Optional `poem.annotations` records identify a line ID and exact phrase, plus definition, dictionary source, and interpretation. Highlights are native buttons that reveal notes after their stanza; Close or Escape dismisses a note and restores focus. Keep line IDs stable when adding annotations.
+
+The full poem is rendered once in the permanent **Poems** section immediately below the timeline. The main navigation links to that section; the Faiz timeline details link directly to the poem heading, and the reader links back to the timeline.
