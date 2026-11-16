@@ -1,5 +1,6 @@
 (async () => {
   const results = [];
+  window.timelineQaProgress = results;
   const assert = (condition, message) => { if (!condition) throw new Error(message); results.push(message); };
   const wait = () => new Promise(resolve => setTimeout(resolve, 50));
   try {
@@ -44,6 +45,52 @@
       await wait();
       assert(!popup.open && document.activeElement === trigger, `Closing background restores focus: ${poet.id}`);
     }
+    document.querySelector('#poet-pritam .poet-background-button').click();
+    for (let i = 0; i < 60 && !document.querySelector('.journey-frame svg'); i++) await wait();
+    const map = document.querySelector('.journey-map');
+    assert(Boolean(map.querySelector('svg')), 'Pritam journey map loads from local data');
+    const basemaps = await (await fetch('pritam-basemaps.json')).json();
+    assert(basemaps.projection === 'Web Mercator' && basemaps.before.featureCount > 100 && basemaps.after.featureCount > 100, 'Detailed basemaps were exported from real geographic features');
+    assert(basemaps.before.placeNames.includes('Gujranwala') && basemaps.before.placeNames.includes('Lahore'), 'Early-life basemap contains the correct cities');
+    assert(basemaps.after.placeNames.includes('Dehradun') && basemaps.after.placeNames.includes('New Delhi'), 'Later basemap covers Dehradun and Delhi');
+    assert(map.querySelector('image.map-basemap').getAttribute('href') === basemaps.before.src, 'Before Partition uses the local detailed map image');
+    assert(map.querySelector('.map-attribution a[href="https://www.openstreetmap.org/copyright"]'), 'Map visibly credits OpenStreetMap');
+
+    assert(map.querySelectorAll('.map-city').length === 2 && !map.querySelector('.map-border'), 'Before Partition shows two cities and no border');
+    assert(!map.textContent.includes('PAKISTAN') && !map.textContent.includes('INDIA'), 'Before Partition does not show modern country labels');
+    map.querySelector('.journey-after').click();
+    assert(map.querySelectorAll('.map-city').length === 3 && Boolean(map.querySelector('.map-border')), 'After Partition shows border, Lahore, Dehradun, and Delhi');
+    assert(map.querySelector('image.map-basemap').getAttribute('href') === basemaps.after.src, '1947 view switches to its georeferenced basemap');
+    const cityLabel = map.querySelector('.map-city-label');
+    const labelPixels = parseFloat(cityLabel.style.fontSize) * map.querySelector('svg').getBoundingClientRect().width / Number(map.querySelector('svg').getAttribute('viewBox').split(' ')[2]);
+    assert(labelPixels >= 12 && labelPixels <= 16, 'City labels stay readable without becoming oversized');
+
+    assert(map.querySelectorAll('.map-mile-marker').length > 0, 'Post-Partition route has mile markers');
+    const mile = map.querySelector('.map-mile-marker');
+    mile.dispatchEvent(new KeyboardEvent('keydown', {key:'Enter',bubbles:true}));
+    assert(map.querySelector('.journey-place-detail').textContent.includes('not a documented stop'), 'Mile marker explains approximate distance without inventing a stop');
+    map.querySelector('.journey-stops [data-stop="delhi"]').click();
+    assert(map.querySelector('.journey-place-detail').textContent.includes('return train journey'), 'Delhi stop includes the return journey context');
+    map.querySelector('.journey-stops [data-stop="dehradun"]').click();
+    assert(map.querySelector('.journey-place-detail h4').textContent === 'Dehradun', 'City selection updates journey detail');
+    const mapSvg = map.querySelector('svg');
+    const originalView = mapSvg.getAttribute('viewBox');
+    map.querySelector('.map-zoom-in').click();
+    assert(mapSvg.getAttribute('viewBox') !== originalView, 'Map zoom changes the view');
+    map.querySelector('.map-reset').click();
+    assert(mapSvg.getAttribute('viewBox') === originalView, 'Reset restores the route view');
+    const frame = map.querySelector('.journey-frame');
+    map.querySelector('.map-zoom-in').click();
+    const zoomedView = mapSvg.getAttribute('viewBox');
+    frame.focus();frame.dispatchEvent(new KeyboardEvent('keydown', {key:'ArrowRight',bubbles:true}));
+    assert(mapSvg.getAttribute('viewBox') !== zoomedView, 'Focused map supports keyboard panning within the basemap');
+    map.querySelector('.map-mile-toggle input').click();
+    assert(!map.querySelector('.map-mile-marker'), 'Mile markers can be hidden');
+    map.querySelector('.journey-before').click();
+    assert(!map.querySelector('.map-border'), 'Switching back removes the border');
+    assert(document.querySelector('#poet-background').scrollWidth <= document.querySelector('#poet-background').clientWidth, 'Map does not overflow the popup');
+    assert(map.textContent.includes('straight-line') && map.textContent.includes('not her exact'), 'Approximate mileage and route limits are visible');
+    document.querySelector('#close-poet-background').click();await wait();
     document.querySelector('#poet-iqbal .find-poet').click();
     document.querySelector('#card-iqbal-hindi').click();
     document.querySelector('[data-related="iqbal"]').click();

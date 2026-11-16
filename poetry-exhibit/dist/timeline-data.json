@@ -926,6 +926,79 @@
         "died": "2005-10-31",
         "sourceUrl": "https://www.theguardian.com/news/2005/nov/04/guardianobituaries.india",
         "checkedOn": "2026-11-15"
+      },
+      "journey": {
+        "title": "A life across a divided Punjab",
+        "distanceNote": "Mile markers show approximate straight-line distances between verified city reference points. The lines connect documented places, not her exact road or rail route.",
+        "borderNote": "The background uses present-day OpenStreetMap geography. The early-life image has political boundaries and country/state labels removed. The later image retains modern boundaries for context. Neither image claims to reproduce a historical road network or the exact 1947 boundary awards.",
+        "stops": [
+          {
+            "id": "gujranwala",
+            "name": "Gujranwala",
+            "date": "1919",
+            "coordinates": [
+              74.1933745,
+              32.1525312
+            ],
+            "description": "Born here as Amrit Kaur on August 31, 1919. Her father, Kartar Singh Hitkari, was a poet and scholar.",
+            "era": "before",
+            "coordinatesSource": "https://www.openstreetmap.org/relation/16108369"
+          },
+          {
+            "id": "lahore",
+            "name": "Lahore",
+            "date": "c. 1930–1947",
+            "coordinates": [
+              74.3141829,
+              31.5656822
+            ],
+            "description": "After her mother died when she was eleven, she moved here with her father. She began writing at an early age. Her first poetry collection, Amrit Lehran, appeared in 1936.",
+            "era": "before",
+            "coordinatesSource": "https://www.openstreetmap.org/node/1886594378"
+          },
+          {
+            "id": "dehradun",
+            "name": "Dehradun",
+            "date": "1947 displacement",
+            "coordinates": [
+              78.0436813,
+              30.3255646
+            ],
+            "description": "After leaving Lahore, she stayed in Dehradun for a time. Her autobiography recalls this stay while describing the upheaval of Partition. The exact route and date of her departure are not established by this map.",
+            "era": "after",
+            "coordinatesSource": "https://www.openstreetmap.org/node/299531301"
+          },
+          {
+            "id": "delhi",
+            "name": "Delhi",
+            "date": "1947 onward",
+            "coordinates": [
+              77.2169781,
+              28.6664535
+            ],
+            "description": "She went to Delhi looking for work and a place to live, and later made it her home. She also recalls a return train journey toward Dehradun. The map shows the principal places in her account rather than every trip.",
+            "era": "after",
+            "coordinatesSource": "https://www.openstreetmap.org/relation/21180767"
+          }
+        ],
+        "sources": [
+          {
+            "title": "District Gujranwala · Amrita Pritam’s early life",
+            "url": "https://gujranwala.punjab.gov.pk/important_personalities"
+          },
+          {
+            "title": "Nirupama Dutt · Pritam’s account of Dehradun and Delhi",
+            "url": "https://scroll.in/article/847004/when-amrita-pritam-called-out-to-waris-shah-in-a-heartrending-ode-while-fleeing-the-partition-riots"
+          },
+          {
+            "title": "Sahitya Akademi · Amrita Pritam",
+            "url": "https://sahitya-akademi.gov.in/library/fellowship_pdf/Amrita-Pritam.pdf"
+          },
+          {
+            "title": "OpenStreetMap · Geographic data and city coordinates",
+            "url": "https://www.openstreetmap.org/copyright"
+          }
+        ]
       }
     },
     {

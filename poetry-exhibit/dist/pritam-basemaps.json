@@ -1,0 +1,108 @@
+{
+  "projection": "Web Mercator",
+  "width": 900,
+  "height": 650,
+  "attribution": [
+    {
+      "title": "© OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/copyright"
+    },
+    {
+      "title": "© OpenMapTiles",
+      "url": "https://openmaptiles.org/"
+    },
+    {
+      "title": "OpenFreeMap",
+      "url": "https://openfreemap.org/"
+    }
+  ],
+  "note": "Present-day OpenStreetMap geography. Political boundaries and country/state labels are removed from the before-Partition basemap. This is not a historical road map.",
+  "before": {
+    "src": "images/maps/pritam-before.png",
+    "bounds": [
+      73.16997432779027,
+      31.075164211632952,
+      75.53002567221128,
+      32.52373101864747
+    ],
+    "featureCount": 233,
+    "placeNames": [
+      "Kamoke",
+      "Hafizabad",
+      "Gujranwala",
+      "Daska",
+      "Wazirabad",
+      "Narowal",
+      "Shakargarh",
+      "Pasrur",
+      "Kathua",
+      "Sialkot",
+      "Pattoki",
+      "Tandlianwala",
+      "Kasur",
+      "Raiwind",
+      "Jaranwala",
+      "Lahore",
+      "Sheikhupura",
+      "Muridke",
+      "Patti",
+      "Jalandhar",
+      "Kapurthala",
+      "Tarn Taran Sahib",
+      "Amritsar",
+      "Batala",
+      "Qadian",
+      "Qadirabad",
+      "Gojra",
+      "Phalia",
+      "Nankana Sahib",
+      "Shahkot",
+      "Sangla Hill",
+      "Sukheke",
+      "Bhikhiwind",
+      "Manhala",
+      "Bhulath"
+    ]
+  },
+  "after": {
+    "src": "images/maps/pritam-after.png",
+    "bounds": [
+      72.24831963593206,
+      28.0016479365721,
+      79.85168036407151,
+      32.737190049203775
+    ],
+    "featureCount": 300,
+    "placeNames": [
+      "New Delhi",
+      "Sargodha",
+      "Gujranwala",
+      "Pathankot",
+      "Jammu",
+      "Jhang",
+      "Faisalabad",
+      "Bikaner",
+      "Faridabad",
+      "Meerut",
+      "Panipat",
+      "Sirsa",
+      "Karnal",
+      "Saharanpur",
+      "Abohar",
+      "Dehradun",
+      "Patiala",
+      "Chandigarh",
+      "Okara",
+      "Ludhiana",
+      "Kasur",
+      "Jalandhar",
+      "Lahore",
+      "Amritsar",
+      "Bareilly",
+      "Moradabad",
+      "Himachal Pradesh",
+      "Haryana",
+      "Uttarakhand"
+    ]
+  }
+}

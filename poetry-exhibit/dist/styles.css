@@ -82,3 +82,43 @@ button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,summary:fo
 .whole-poem-analysis h5{font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:28px 0 12px}.reading-sources{padding-left:20px}.reading-sources li{margin-bottom:16px;line-height:1.7}.reading-sources .annotation-source p{font-size:12px;margin:6px 0}
 
 .poet-intro .poet-life-dates{font-size:12px;line-height:1.7;color:var(--muted);margin:-4px 0 16px}
+
+/* Pritam’s journey over georeferenced OpenStreetMap imagery. */
+.poet-background.has-journey-map{width:min(1040px,calc(100dvw - 28px));max-width:calc(100dvw - 28px);min-width:0}
+.journey-map{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:28px;min-width:0;max-width:100%}
+.journey-map .journey-title{font:normal 28px/1.25 Georgia,serif;text-transform:none;letter-spacing:0;margin:10px 0 20px}
+.journey-map .journey-eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:0}
+.journey-modes{display:flex;gap:8px;flex-wrap:wrap}
+.journey-map button{min-height:44px;border:1px solid var(--line);background:transparent;font-size:12px;padding:10px 14px}
+.journey-map button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.journey-map .journey-caption{font-size:13px;color:var(--muted);margin:12px 0}
+.journey-toolbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0}
+.journey-toolbar>button{min-width:44px}
+.map-mile-toggle{display:flex;align-items:center;gap:8px;font-size:12px;margin-left:auto;min-height:44px;cursor:pointer}
+.map-mile-toggle input{width:18px;height:18px;accent-color:var(--accent)}
+.journey-frame{border:1px solid var(--line);overflow:hidden;touch-action:none;cursor:grab;background:#edf1eb;min-width:0;max-width:100%;contain:layout paint}
+.journey-frame:active{cursor:grabbing}
+.journey-frame svg{display:block;width:100%;height:auto;aspect-ratio:900/650;touch-action:none;overflow:hidden}
+.journey-frame [role=button]{cursor:pointer;outline:none}
+.journey-frame [role=button]:focus-visible circle{stroke:var(--indigo)!important;stroke-width:4;vector-effect:non-scaling-stroke}
+.map-city-dot{fill:var(--ink);stroke:var(--paper)}
+.map-city[aria-pressed=true] .map-city-dot{fill:var(--accent)}
+.map-city-label{font-family:Arial,sans-serif;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-linejoin:round}
+.map-mile-label{font-family:Arial,sans-serif;fill:var(--accent);paint-order:stroke;stroke:var(--paper)}
+.journey-map .map-help,.journey-map .map-geography-note{font-size:11px;line-height:1.6;color:var(--muted);margin:8px 0}
+.journey-map .map-attribution{font-size:10px;line-height:1.6;margin:8px 0 0}
+.map-attribution a{text-decoration:underline;text-underline-offset:2px}
+.journey-stops{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.journey-place-detail{background:#fff7;padding:18px;border-left:3px solid var(--accent);min-height:150px}
+.journey-place-detail h4{font:normal 24px Georgia,serif;margin:6px 0 12px}
+.journey-map .journey-stop-date{font-size:11px;letter-spacing:1px;text-transform:uppercase;margin:0;color:var(--muted)}
+.journey-place-detail p{margin-bottom:0}
+.journey-map .journey-distance{font-size:12px;color:var(--muted);margin:14px 0}
+.journey-notes,.journey-notes p{font-size:12px}.journey-notes li{font-size:11px}
+html.poet-popup-open{overflow:hidden;width:100dvw}body.poet-popup-open{position:fixed;left:0;width:100dvw}
+@media(max-width:700px){
+ .poet-background.has-journey-map{padding:18px;width:calc(100dvw - 20px);max-width:calc(100dvw - 20px);position:fixed;inset:auto;left:10px;top:6dvh;margin:0;height:88dvh}
+ .journey-map .journey-title{font-size:24px}.journey-toolbar{gap:4px}
+ .map-mile-toggle{margin-left:0;width:100%}.journey-place-detail{padding:14px}.journey-place-detail p{font-size:14px}
+ .map-half-century text{display:none}
+}

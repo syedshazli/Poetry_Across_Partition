@@ -32,11 +32,14 @@
   }
   const poetDialog = document.querySelector('#poet-background');
   let backgroundTrigger = null;
+  let backgroundScroll = 0;
   function openPoetBackground(poet, trigger) {
     backgroundTrigger = trigger;
     document.querySelector('#poet-background-title').textContent = poet.name;
     const content = document.querySelector('#poet-background-content');
     content.replaceChildren();
+    poetDialog.classList.toggle('has-journey-map', Boolean(poet.journey));
+    if (poet.journey) window.createPritamMap(poet.journey, content);
     poet.background.paragraphs.forEach(paragraph => content.append(el('p', paragraph)));
     content.append(el('h3', 'Sources'));
     const sources = el('ul');
@@ -50,13 +53,20 @@
       sources.append(item);
     });
     content.append(sources);
-    poetDialog.showModal();
+    backgroundScroll = window.scrollY;
+    document.documentElement.classList.add('poet-popup-open');
+    document.body.style.top = `-${backgroundScroll}px`;
     document.body.classList.add('poet-popup-open');
-    document.querySelector('#poet-background-title').focus();
+    window.scrollTo(0, 0);
+    poetDialog.showModal();
+    document.querySelector('#poet-background-title').focus({preventScroll:true});
   }
   document.querySelector('#close-poet-background').addEventListener('click', () => poetDialog.close());
   poetDialog.addEventListener('close', () => {
     document.body.classList.remove('poet-popup-open');
+    document.documentElement.classList.remove('poet-popup-open');
+    document.body.style.top = '';
+    window.scrollTo({top:backgroundScroll, left:0, behavior:'instant'});
     backgroundTrigger?.focus({preventScroll: true});
   });
   poetDialog.addEventListener('click', event => {
@@ -431,6 +441,7 @@
           addDate('Died', poet.lifeDates.died);
         }
       }
+      if (poet.journey) { background.textContent = 'Explore her journey ↗'; background.setAttribute('aria-label', `Explore ${poet.name}’s journey and background`); }
       card.append(heading, dates, el('p', poet.description), background, link);
       document.querySelector('#poet-list').append(card);
     });

@@ -66,3 +66,15 @@ The whole-poem analysis is now populated under **Reading the Poem**, connecting 
 Each poet card has a Background button that opens a native modal dialog. Edit `poets[].background.paragraphs` and `poets[].background.sources` in `timeline-data.json` to update the biography and citations. The popup closes with its Close button, Escape, or a click outside it, and restores focus to the opening button.
 
 The final reading now puts Foster’s quest approach in conversation with Gopi Chand Narang’s “How not to Read Faiz Ahmad Faiz,” translated by Baidar Bakht (2009). `poem.wholePoemAnalysis.sources` holds the secondary citations. The discussion includes printed page references and distinguishes Narang’s own example from the exhibit’s application to “Freedom’s Dawn.”
+
+## Amrita Pritam’s journey map
+
+Her card’s **Explore her journey** button opens the map in the biography dialog. The early-life view overlays Gujranwala and Lahore on a detailed geographic basemap without political borders. The 1947 view shows Lahore, Dehradun, and Delhi with modern boundaries for context. Both images are present-day geography, not historical road maps.
+
+- `poets[].journey` holds verified city reference coordinates, biography details, and source links. Coordinate records link to their OpenStreetMap features.
+- `dist/images/maps/pritam-before.png` and `pritam-after.png` are local, high-resolution basemap exports from OpenStreetMap data via OpenFreeMap/OpenMapTiles. Their visible attribution appears below the map.
+- `dist/pritam-basemaps.json` records each image’s geographic bounds, projection, and attribution. `dist/pritam-map.js` uses Web Mercator to align journey markers with those images. It needs no network access once the static site loads.
+- City labels and marker sizes stay constant on screen while zooming. Panning is constrained to the available map image. Zoom, drag, keyboard panning, city details, mileage toggles, and before/after controls remain available.
+- Mileage is an approximate sum of straight-line city-to-city distances. The overlay does not reconstruct her exact road, railway, or border-crossing itinerary. Her account also describes a return journey from Delhi toward Dehradun.
+
+To regenerate the basemaps, run `python3 poetry-exhibit/scripts/generate_pritam_basemaps.py` with Google Chrome, Python requests, and network access. The exporter uses MapLibre GL JS 5.6.2 temporarily, limits upstream requests to four at a time, identifies the project, and enforces a 50 MB download limit. Modern boundary layers and country/state labels are excluded from the early-life export. Runtime map imagery and attribution stay local.
