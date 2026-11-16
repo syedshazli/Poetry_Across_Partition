@@ -417,7 +417,21 @@
       background.setAttribute('aria-haspopup', 'dialog');
       background.setAttribute('aria-controls', 'poet-background');
       background.addEventListener('click', () => openPoetBackground(poet, background));
-      card.append(heading, el('p', poet.description), background, link);
+      const dates = el('p', null, 'poet-life-dates');
+      if (poet.lifeDates) {
+        const format = new Intl.DateTimeFormat('en-GB', {day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'});
+        const addDate = (label, value) => {
+          const time = el('time', format.format(new Date(`${value}T00:00:00Z`)));
+          time.dateTime = value;
+          dates.append(document.createTextNode(`${label} `), time);
+        };
+        addDate('Born', poet.lifeDates.born);
+        if (poet.lifeDates.died) {
+          dates.append(el('br'));
+          addDate('Died', poet.lifeDates.died);
+        }
+      }
+      card.append(heading, dates, el('p', poet.description), background, link);
       document.querySelector('#poet-list').append(card);
     });
     render();

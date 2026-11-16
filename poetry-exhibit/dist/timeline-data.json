@@ -842,6 +842,12 @@
             "url": "https://poets.org/poet/muhammad-allama-iqbal"
           }
         ]
+      },
+      "lifeDates": {
+        "born": "1877-11-09",
+        "died": "1938-04-21",
+        "sourceUrl": "https://poets.org/poet/muhammad-allama-iqbal",
+        "checkedOn": "2026-11-15"
       }
     },
     {
@@ -869,8 +875,18 @@
           {
             "title": "Academy of American Poets · Faiz Ahmed Faiz",
             "url": "https://poets.org/poet/faiz-ahmed-faiz"
+          },
+          {
+            "title": "Faiz Ahmad Faiz · Birth and death dates",
+            "url": "https://www.rekhta.org/poets/faiz-ahmad-faiz/profile"
           }
         ]
+      },
+      "lifeDates": {
+        "born": "1911-02-13",
+        "died": "1984-11-20",
+        "sourceUrl": "https://www.rekhta.org/poets/faiz-ahmad-faiz/profile",
+        "checkedOn": "2026-11-15"
       }
     },
     {
@@ -898,8 +914,18 @@
           {
             "title": "Sahitya Akademi · Amrita Pritam fellowship profile",
             "url": "https://sahitya-akademi.gov.in/library/fellowship_pdf/Amrita-Pritam.pdf"
+          },
+          {
+            "title": "Amrita Pritam · Birth and death dates",
+            "url": "https://www.theguardian.com/news/2005/nov/04/guardianobituaries.india"
           }
         ]
+      },
+      "lifeDates": {
+        "born": "1919-08-31",
+        "died": "2005-10-31",
+        "sourceUrl": "https://www.theguardian.com/news/2005/nov/04/guardianobituaries.india",
+        "checkedOn": "2026-11-15"
       }
     },
     {
@@ -931,8 +957,18 @@
           {
             "title": "Poetry Foundation · W. H. Auden",
             "url": "https://www.poetryfoundation.org/poets/w-h-auden"
+          },
+          {
+            "title": "W. H. Auden · Birth and death dates",
+            "url": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972"
           }
         ]
+      },
+      "lifeDates": {
+        "born": "1907-02-21",
+        "died": "1973-09-29",
+        "sourceUrl": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972",
+        "checkedOn": "2026-11-15"
       }
     },
     {
@@ -966,6 +1002,12 @@
             "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
           }
         ]
+      },
+      "lifeDates": {
+        "born": "1934-08-18",
+        "died": null,
+        "sourceUrl": "https://www.rekhta.org/poets/gulzar/profile",
+        "checkedOn": "2026-11-15"
       }
     }
   ]
