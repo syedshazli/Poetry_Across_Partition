@@ -76,6 +76,16 @@ try:
                 screenshot=cdp.command('Page.captureScreenshot', {'format':'png', 'captureBeyondViewport':False})
                 Path(f'/tmp/pritam-map-before-{width}.png').write_bytes(base64.b64decode(screenshot['data']))
                 cdp.evaluate('document.querySelector("#close-poet-background").click();')
+                for poet_id in ('faiz', 'gulzar'):
+                    cdp.evaluate(f'document.querySelector("#poet-{poet_id} .poet-background-button").click();')
+                    for _ in range(100):
+                        if cdp.evaluate('Boolean(document.querySelector(".journey-frame svg"))'): break
+                        time.sleep(.05)
+                    for era in ('before', 'after'):
+                        cdp.evaluate(f'document.querySelector(".journey-{era}").click(); document.querySelector("#poet-background").scrollTop=0;')
+                        screenshot=cdp.command('Page.captureScreenshot', {'format':'png', 'captureBeyondViewport':False})
+                        Path(f'/tmp/{poet_id}-map-{era}-{width}.png').write_bytes(base64.b64decode(screenshot['data']))
+                    cdp.evaluate('document.querySelector("#close-poet-background").click();')
             cdp.command('Browser.close')
             cdp.sock.close()
             process.wait(timeout=10)

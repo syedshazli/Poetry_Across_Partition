@@ -39,7 +39,22 @@
     const content = document.querySelector('#poet-background-content');
     content.replaceChildren();
     poetDialog.classList.toggle('has-journey-map', Boolean(poet.journey));
-    if (poet.journey) window.createPritamMap(poet.journey, content);
+    const context = poet.background.partitionContext;
+    if (context) {
+      const box = el('section', null, 'poet-partition-context');
+      box.append(el('h3', context.label), el('p', context.text));
+      const links = el('p', null, 'source-note');
+      (context.sourceIds || []).forEach((id, index) => {
+        const source = poet.background.sources.find(s => s.id === id);
+        if (!source) return;
+        const link = el('a', `Read source ${index + 1} ↗`);link.setAttribute('aria-label', source.title);link.href = source.url;link.target = '_blank';link.rel = 'noopener noreferrer';
+        if (links.childNodes.length) links.append(document.createTextNode(' · '));
+        links.append(link);
+      });
+      box.append(links);content.append(box);
+    }
+    if (poet.journey) window.createPoetJourneyMap(poet.journey, content);
+    if (poet.background.sectionTitle) content.append(el('h3', poet.background.sectionTitle));
     poet.background.paragraphs.forEach(paragraph => content.append(el('p', paragraph)));
     content.append(el('h3', 'Sources'));
     const sources = el('ul');
@@ -441,7 +456,7 @@
           addDate('Died', poet.lifeDates.died);
         }
       }
-      if (poet.journey) { background.textContent = 'Explore her journey ↗'; background.setAttribute('aria-label', `Explore ${poet.name}’s journey and background`); }
+      if (poet.journey) { background.textContent = poet.journey.buttonLabel; background.setAttribute('aria-label', `Explore ${poet.name}’s journey and background`); }
       card.append(heading, dates, el('p', poet.description), background, link);
       document.querySelector('#poet-list').append(card);
     });

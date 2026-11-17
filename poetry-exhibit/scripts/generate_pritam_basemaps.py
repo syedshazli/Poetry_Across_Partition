@@ -18,6 +18,8 @@ from urllib.request import urlopen
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
+POET = sys.argv[1] if len(sys.argv) > 1 else 'pritam'
+journey = next(p['journey'] for p in json.loads((ROOT/'dist'/'timeline-data.json').read_text())['poets'] if p['id'] == POET and p.get('journey'))
 sys.path.insert(0, str(ROOT / 'tests'))
 sys.dont_write_bytecode = True
 from chrome_devtools import DevTools
@@ -76,7 +78,7 @@ class Handler(BaseHTTPRequestHandler):
                 selected = json.loads(json.dumps(style).replace('/proxy?url=', f'http://127.0.0.1:{self.server.server_port}/proxy?url='))
                 if era == 'before':
                     selected['layers'] = [layer for layer in selected['layers'] if layer.get('source-layer') != 'boundary' and not any(word in layer['id'] for word in ['label_country','label_state','label_province'])]
-                bounds = [[73.65,31.15],[75.05,32.45]] if era == 'before' else [[73.6,28.25],[78.5,32.5]]
+                bounds = journey.get('basemapBounds', {'before':[[73.65,31.15],[75.05,32.45]],'after':[[73.6,28.25],[78.5,32.5]]})[era]
                 html = '''<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="/maplibre.css"><style>html,body,#map{margin:0;width:100%;height:100%;overflow:hidden}</style><div id="map"></div><script src="/maplibre.js"></script><script>
                 window.renderReady=false;window.renderErrors=[];
                 maplibregl.setMaxParallelImageRequests(4);
@@ -127,16 +129,17 @@ try:
                 errors=cdp.evaluate('window.renderErrors')
                 if not ready or not count or count < 50:raise RuntimeError(f'Map failed: ready={ready}, features={count}, errors={errors}')
                 if errors:raise RuntimeError(f'Basemap errors: {errors}')
-                output=ROOT/'dist'/'images'/'maps'/f'pritam-{era}.png'
+                output=ROOT/'dist'/'images'/'maps'/f'{POET}-{era}.png'
                 output.parent.mkdir(parents=True,exist_ok=True)
                 shot=cdp.command('Page.captureScreenshot',{'format':'png','captureBeyondViewport':False})
                 output.write_bytes(base64.b64decode(shot['data']))
-                metadata[era]={'src':f'images/maps/pritam-{era}.png','bounds':cdp.evaluate('window.mapBounds'),'featureCount':count,'placeNames':cdp.evaluate('window.placeNames')}
+                metadata[era]={'src':f'images/maps/{POET}-{era}.png','bounds':cdp.evaluate('window.mapBounds'),'featureCount':count,'placeNames':cdp.evaluate('window.placeNames')}
                 print(era,output.stat().st_size,'bytes,',count,'map features, bounds',metadata[era]['bounds'],flush=True)
+                cdp.evaluate('window.map.remove()')
             cdp.command('Browser.close');cdp.sock.close();browser.wait(timeout=10)
         finally:
             if browser.poll() is None:browser.terminate();browser.wait(timeout=10)
-    output=ROOT/'dist'/'pritam-basemaps.json'
+    output=ROOT/'dist'/f'{POET}-basemaps.json'
     output.write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n')
     print('Downloaded',bytes_received,'bytes across',len(cache),'resources',flush=True)
 finally:server.shutdown();server.server_close()

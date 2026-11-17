@@ -829,19 +829,29 @@
       },
       "background": {
         "paragraphs": [
-          "Muhammad Iqbal was born in Sialkot in 1877 and wrote poetry in Urdu and Persian. He also worked as a philosopher and lawyer. His writing explores questions about community, religion, and how people understand their place in the world.",
-          "His poems give this exhibit a way to look at ideas of home before the 1947 Partition. “Taranah-i-Hindi” imagines India as a shared homeland, while “Taranah-i-Milli” imagines a Muslim community across geographic boundaries. His Allahabad Address brings these questions into political discussion."
+          "Muhammad Iqbal was born in Sialkot in 1877 and was educated in Sialkot and Lahore. He later studied at Cambridge and earned a doctorate in Munich. He returned to Lahore to practise law and develop his work as a poet and thinker.",
+          "His early education and writing connected him with Urdu and Persian literary traditions. The questions about home and community in his poems came from this world before the division of British India.",
+          "Iqbal died in Lahore on April 21, 1938, nine years before Partition. His card therefore focuses on upbringing and intellectual background rather than showing a 1947 migration that he could not have made."
         ],
         "sources": [
           {
             "title": "Iqbal Academy Pakistan · Biography",
-            "url": "https://www.allamaiqbal.com/biography/en/index.php"
+            "url": "https://www.allamaiqbal.com/biography/en/index.php",
+            "id": "I1"
           },
           {
             "title": "Academy of American Poets · Muhammad Allama Iqbal",
             "url": "https://poets.org/poet/muhammad-allama-iqbal"
           }
-        ]
+        ],
+        "sectionTitle": "Upbringing before Partition",
+        "partitionContext": {
+          "label": "Before the events of 1947",
+          "text": "Iqbal died in 1938. He did not experience the 1947 Partition.",
+          "sourceIds": [
+            "I1"
+          ]
+        }
       },
       "lifeDates": {
         "born": "1877-11-09",
@@ -868,25 +878,190 @@
       },
       "background": {
         "paragraphs": [
-          "Faiz Ahmad Faiz, also spelled Faiz Ahmed Faiz, was born in Sialkot in 1911. He was an Urdu poet, teacher, and journalist. His writing connects love and beauty with questions about politics, community, and the lives people share.",
-          "His political commitments also shaped his own life. He was imprisoned in Pakistan and later spent periods in exile. In this exhibit, “Freedom’s Dawn,” dated August 1947, gives us a way to look at the difference between independence celebrations and the freedom people had hoped to experience."
+          "Faiz grew up in the Sialkot region of Punjab. His schooling included Urdu, Persian, and Arabic. He later studied English and Arabic at colleges in Lahore.",
+          "He began teaching at M.A.O. College in Amritsar in 1935 and later taught at Hailey College in Lahore. His work moved between poetry, education, and journalism.",
+          "Baran Farooqi’s introduction places him at the Pakistan Times in Lahore in early 1947. The map distinguishes these documented places from a refugee journey. It does not claim that his move to Lahore was caused by the August division."
         ],
         "sources": [
           {
-            "title": "Academy of American Poets · Faiz Ahmed Faiz",
+            "id": "F1",
+            "title": "Academy of American Poets · Faiz’s schooling and teaching",
             "url": "https://poets.org/poet/faiz-ahmed-faiz"
+          },
+          {
+            "id": "F2",
+            "title": "Baran Farooqi · Introduction to Colours of My Heart (Penguin, 2017), excerpt on Scroll",
+            "url": "https://scroll.in/article/840401/between-patriotism-partition-and-pakistan-heres-how-faiz-ahmed-faiz-became-a-poet"
           },
           {
             "title": "Faiz Ahmad Faiz · Birth and death dates",
             "url": "https://www.rekhta.org/poets/faiz-ahmad-faiz/profile"
           }
-        ]
+        ],
+        "sectionTitle": "Upbringing and work",
+        "partitionContext": {
+          "label": "His place in 1947",
+          "text": "Faiz was working in Lahore in early 1947. His movements for education and employment are not presented here as a forced Partition crossing.",
+          "sourceIds": [
+            "F2"
+          ]
+        }
       },
       "lifeDates": {
         "born": "1911-02-13",
         "died": "1984-11-20",
         "sourceUrl": "https://www.rekhta.org/poets/faiz-ahmad-faiz/profile",
         "checkedOn": "2026-11-15"
+      },
+      "journey": {
+        "poetName": "Faiz Ahmad Faiz",
+        "title": "From the classroom to Lahore in 1947",
+        "eyebrow": "Schooling · teaching · journalism",
+        "buttonLabel": "Explore his early life ↗",
+        "basemapFile": "faiz-basemaps.json",
+        "basemapBounds": {
+          "before": [
+            [
+              73.7,
+              31.2
+            ],
+            [
+              75.45,
+              32.8
+            ]
+          ],
+          "after": [
+            [
+              73.7,
+              31.2
+            ],
+            [
+              75.45,
+              32.8
+            ]
+          ]
+        },
+        "borderNote": "Present-day OpenStreetMap geography is used for context. Political boundaries and country/state labels are removed from the early-life image. The later image retains modern boundaries. Neither is a historical road map or a survey of the original 1947 border.",
+        "distanceNote": "Mile markers are approximate straight-line distances between city reference points. Connecting lines do not establish the exact road, railway, intermediate stops, or border crossing used.",
+        "sources": [
+          {
+            "id": "F1",
+            "title": "Academy of American Poets · Faiz’s schooling and teaching",
+            "url": "https://poets.org/poet/faiz-ahmed-faiz"
+          },
+          {
+            "id": "F2",
+            "title": "Baran Farooqi · Introduction to Colours of My Heart (Penguin, 2017), excerpt on Scroll",
+            "url": "https://scroll.in/article/840401/between-patriotism-partition-and-pakistan-heres-how-faiz-ahmed-faiz-became-a-poet"
+          }
+        ],
+        "stops": [
+          {
+            "id": "sialkot",
+            "name": "Sialkot",
+            "date": "School years · 1910s–1920s",
+            "coordinates": [
+              74.5415636,
+              32.4944866
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/node/2408222266",
+            "description": "Faiz attended school in Sialkot, where he studied Urdu, Persian, and Arabic. The marker identifies the city of his schooling, not an exact birth house.",
+            "sourceIds": [
+              "F1"
+            ],
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, Pakistan",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://sialkot.punjab.gov.pk/"
+            }
+          },
+          {
+            "id": "lahore",
+            "name": "Lahore",
+            "date": "Student years · early 1930s",
+            "coordinates": [
+              74.3141829,
+              31.5656822
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/node/1886594378",
+            "description": "He studied at Government College and Oriental College in Lahore, earning degrees in English and Arabic.",
+            "sourceIds": [
+              "F1"
+            ],
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, Pakistan",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://lahore.punjab.gov.pk/"
+            }
+          },
+          {
+            "id": "amritsar",
+            "name": "Amritsar",
+            "date": "Teaching · from 1935",
+            "coordinates": [
+              74.8787496,
+              31.6356659
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/node/245772397",
+            "description": "He began teaching English at M.A.O. College here in 1935. This move belongs to his working life before Partition.",
+            "sourceIds": [
+              "F1",
+              "F2"
+            ],
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, India",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://amritsar.nic.in/"
+            }
+          },
+          {
+            "id": "lahore-1947",
+            "name": "Lahore",
+            "date": "1947 · newspaper work",
+            "coordinates": [
+              74.3141829,
+              31.5656822
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/node/1886594378",
+            "description": "Farooqi places Faiz’s editorial work in Lahore in early 1947. This point shows where he worked. It does not reconstruct a refugee crossing or claim that he moved here after the August border announcement.",
+            "sourceIds": [
+              "F2"
+            ],
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, Pakistan",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://lahore.punjab.gov.pk/"
+            }
+          }
+        ],
+        "views": [
+          {
+            "id": "before",
+            "label": "Upbringing & teaching",
+            "caption": "Schooling in Sialkot and Lahore, then teaching in Amritsar · before 1947",
+            "stopIds": [
+              "sialkot",
+              "lahore",
+              "amritsar"
+            ],
+            "showRoute": true,
+            "mileInterval": 50
+          },
+          {
+            "id": "after",
+            "label": "Lahore in 1947",
+            "caption": "A documented workplace · not a reconstructed refugee journey",
+            "stopIds": [
+              "lahore-1947"
+            ],
+            "showRoute": false,
+            "mileInterval": 50
+          }
+        ]
       }
     },
     {
@@ -942,7 +1117,13 @@
             ],
             "description": "Born here as Amrit Kaur on August 31, 1919. Her father, Kartar Singh Hitkari, was a poet and scholar.",
             "era": "before",
-            "coordinatesSource": "https://www.openstreetmap.org/relation/16108369"
+            "coordinatesSource": "https://www.openstreetmap.org/relation/16108369",
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, Pakistan",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://gujranwala.punjab.gov.pk/"
+            }
           },
           {
             "id": "lahore",
@@ -954,7 +1135,13 @@
             ],
             "description": "After her mother died when she was eleven, she moved here with her father. She began writing at an early age. Her first poetry collection, Amrit Lehran, appeared in 1936.",
             "era": "before",
-            "coordinatesSource": "https://www.openstreetmap.org/node/1886594378"
+            "coordinatesSource": "https://www.openstreetmap.org/node/1886594378",
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, Pakistan",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://lahore.punjab.gov.pk/"
+            }
           },
           {
             "id": "dehradun",
@@ -966,7 +1153,13 @@
             ],
             "description": "After leaving Lahore, she stayed in Dehradun for a time. Her autobiography recalls this stay while describing the upheaval of Partition. The exact route and date of her departure are not established by this map.",
             "era": "after",
-            "coordinatesSource": "https://www.openstreetmap.org/node/299531301"
+            "coordinatesSource": "https://www.openstreetmap.org/node/299531301",
+            "historicalLocation": "British India",
+            "presentDayLocation": "Uttarakhand, India",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://dehradun.nic.in/"
+            }
           },
           {
             "id": "delhi",
@@ -978,7 +1171,13 @@
             ],
             "description": "She went to Delhi looking for work and a place to live, and later made it her home. She also recalls a return train journey toward Dehradun. The map shows the principal places in her account rather than every trip.",
             "era": "after",
-            "coordinatesSource": "https://www.openstreetmap.org/relation/21180767"
+            "coordinatesSource": "https://www.openstreetmap.org/relation/21180767",
+            "historicalLocation": "British India",
+            "presentDayLocation": "Delhi, India",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://delhi.gov.in/"
+            }
           }
         ],
         "sources": [
@@ -997,6 +1196,35 @@
           {
             "title": "OpenStreetMap · Geographic data and city coordinates",
             "url": "https://www.openstreetmap.org/copyright"
+          }
+        ],
+        "poetName": "Amrita Pritam",
+        "eyebrow": "1919 → 1947 → a new home",
+        "buttonLabel": "Explore her journey ↗",
+        "basemapFile": "pritam-basemaps.json",
+        "views": [
+          {
+            "id": "before",
+            "label": "Before Partition",
+            "caption": "Growing up in Punjab · Gujranwala to Lahore",
+            "stopIds": [
+              "gujranwala",
+              "lahore"
+            ],
+            "showRoute": true,
+            "mileInterval": 50
+          },
+          {
+            "id": "after",
+            "label": "1947 & after",
+            "caption": "Displacement and rebuilding · Lahore, Dehradun, Delhi",
+            "stopIds": [
+              "lahore",
+              "dehradun",
+              "delhi"
+            ],
+            "showRoute": true,
+            "mileInterval": 50
           }
         ]
       }
@@ -1019,13 +1247,15 @@
       },
       "background": {
         "paragraphs": [
-          "Wystan Hugh Auden was born in York, England, in 1907. He wrote poetry, plays, and criticism, and later moved to the United States. His work often deals with political events alongside questions about responsibility and how people live together.",
-          "His poem “Partition” looks back at Cyril Radcliffe’s role in drawing the border. Auden gives the exhibit a later view of the decisions made in 1947. His perspective is different from the writers whose own homes and communities were directly affected by Partition."
+          "Wystan Hugh Auden was born in York in 1907 and grew up in Birmingham. At Oxford, his interest in poetry developed alongside friendships with Stephen Spender and Christopher Isherwood.",
+          "He travelled beyond Britain and moved to the United States in 1939. That move was separate from the 1947 Partition of British India. His place in this exhibit is as a poet looking back at the border’s creation, rather than as someone displaced across it.",
+          "His upbringing and education help place his later writing in a different context from Pritam’s and Gulzar’s accounts of losing a home. The contrast lets readers consider who is speaking about Partition and how close they were to its effects."
         ],
         "sources": [
           {
             "title": "Academy of American Poets · W. H. Auden",
-            "url": "https://poets.org/poet/w-h-auden"
+            "url": "https://poets.org/poet/w-h-auden",
+            "id": "A1"
           },
           {
             "title": "Poetry Foundation · W. H. Auden",
@@ -1035,7 +1265,15 @@
             "title": "W. H. Auden · Birth and death dates",
             "url": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972"
           }
-        ]
+        ],
+        "sectionTitle": "Upbringing and a later view of Partition",
+        "partitionContext": {
+          "label": "An outside perspective",
+          "text": "Auden’s move to the United States was in 1939. The biography does not place him on a 1947 Partition migration route.",
+          "sourceIds": [
+            "A1"
+          ]
+        }
       },
       "lifeDates": {
         "born": "1907-02-21",
@@ -1062,11 +1300,23 @@
       },
       "background": {
         "paragraphs": [
-          "Gulzar is the pen name of Sampuran Singh Kalra. He was born in Dina, in what is now Pakistan, and his family was displaced during Partition. He became a poet, lyricist, and filmmaker, writing about both everyday experiences and memories of the past.",
-          "His writing gives this exhibit a way to look at how Partition continues to affect people after they leave their childhood homes. The English collection Footprints on Zero Line brings together his writing about these experiences. The individual poem for the exhibit is still being chosen."
+          "Gulzar was born as Sampuran Singh Kalra in Dina. In his interview with Asif Noorani, he recalls writing Urdu there and moving to Delhi shortly before Partition. His early move should not be dated as a flight after the August border announcement.",
+          "In his Youthink interview, he describes his father bringing relatives and people from their village into the family’s Delhi home during Partition. He later moved to Bombay, where his elder brother helped support part of the family. He also describes interrupted studies and work in a motor garage.",
+          "These accounts connect his writing to the loss of a childhood home and the pressure of rebuilding family life. The map shows those places without filling in an unverified route between them."
         ],
         "sources": [
           {
+            "id": "G1",
+            "title": "Asif Noorani · Interview with Gulzar, The Statesman, May 12, 2018",
+            "url": "https://www.thestatesman.com/supplements/marquee/first-love-literature-1502634604.html/amp/"
+          },
+          {
+            "id": "G2",
+            "title": "Gulzar interviewed by Soham Chakraborty, Ayush Tharad, and Madhav Poddar · Youthink 2021, pp. 54–55 (St. Xavier’s College)",
+            "url": "https://youthink.sxccal.edu/images/Gulzar_Interview.pdf"
+          },
+          {
+            "id": "G3",
             "title": "Rekhta · Gulzar biography",
             "url": "https://www.rekhta.org/poets/gulzar/profile"
           },
@@ -1074,13 +1324,158 @@
             "title": "Rakhshanda Jalil · Gulzar and Partition",
             "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
           }
-        ]
+        ],
+        "sectionTitle": "Childhood and family displacement",
+        "partitionContext": {
+          "label": "A family divided by Partition",
+          "text": "Gulzar’s own account places the move to Delhi before Partition. His later move to Bombay followed the pressure of accommodating family and refugees in Delhi.",
+          "sourceIds": [
+            "G1",
+            "G2"
+          ]
+        }
       },
       "lifeDates": {
         "born": "1934-08-18",
         "died": null,
         "sourceUrl": "https://www.rekhta.org/poets/gulzar/profile",
         "checkedOn": "2026-11-15"
+      },
+      "journey": {
+        "poetName": "Gulzar",
+        "title": "Dina, Delhi, and a life rebuilt in Bombay",
+        "eyebrow": "Childhood · Partition’s aftermath · work",
+        "buttonLabel": "Explore his journey ↗",
+        "basemapFile": "gulzar-basemaps.json",
+        "basemapBounds": {
+          "before": [
+            [
+              72.85,
+              28.3
+            ],
+            [
+              77.7,
+              33.5
+            ]
+          ],
+          "after": [
+            [
+              72.4,
+              18.6
+            ],
+            [
+              77.7,
+              29.1
+            ]
+          ]
+        },
+        "borderNote": "Present-day OpenStreetMap geography is used for context. Political boundaries and country/state labels are removed from the early-life image. The later image retains modern boundaries. Neither is a historical road map or a survey of the original 1947 border.",
+        "distanceNote": "Mile markers are approximate straight-line distances between city reference points. Connecting lines do not establish the exact road, railway, intermediate stops, or border crossing used.",
+        "sources": [
+          {
+            "id": "G1",
+            "title": "Asif Noorani · Interview with Gulzar, The Statesman, May 12, 2018",
+            "url": "https://www.thestatesman.com/supplements/marquee/first-love-literature-1502634604.html/amp/"
+          },
+          {
+            "id": "G2",
+            "title": "Gulzar interviewed by Soham Chakraborty, Ayush Tharad, and Madhav Poddar · Youthink 2021, pp. 54–55 (St. Xavier’s College)",
+            "url": "https://youthink.sxccal.edu/images/Gulzar_Interview.pdf"
+          },
+          {
+            "id": "G3",
+            "title": "Rekhta · Gulzar biography",
+            "url": "https://www.rekhta.org/poets/gulzar/profile"
+          }
+        ],
+        "stops": [
+          {
+            "id": "dina",
+            "name": "Dina",
+            "date": "Childhood",
+            "coordinates": [
+              73.6010809,
+              33.0279237
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/node/2643906022",
+            "description": "His birthplace and an early place of schooling. He remembers learning to write Urdu here.",
+            "sourceIds": [
+              "G1",
+              "G3"
+            ],
+            "historicalLocation": "Punjab, British India",
+            "presentDayLocation": "Punjab, Pakistan",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://jhelum.punjab.gov.pk/district_profile"
+            }
+          },
+          {
+            "id": "delhi",
+            "name": "Delhi",
+            "date": "Before Partition & the 1947 aftermath",
+            "coordinates": [
+              77.2169781,
+              28.6664535
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/relation/21180767",
+            "description": "He says he moved to Delhi shortly before Partition and studied Urdu at Delhi United Christian School. In his later interview, he describes his father sheltering displaced relatives and people from their village here.",
+            "sourceIds": [
+              "G1",
+              "G2"
+            ],
+            "historicalLocation": "British India",
+            "presentDayLocation": "Delhi, India",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://delhi.gov.in/"
+            }
+          },
+          {
+            "id": "mumbai",
+            "name": "Bombay / Mumbai",
+            "date": "After 1947 · work and family support",
+            "coordinates": [
+              72.8692035,
+              19.054999
+            ],
+            "coordinatesSource": "https://www.openstreetmap.org/node/16173235",
+            "description": "Gulzar describes joining his elder brother in Bombay because of the strain on the family in Delhi. His studies were interrupted, and he worked in a motor garage. This was a later move for family support, not a claim about a particular train in August 1947.",
+            "sourceIds": [
+              "G2"
+            ],
+            "historicalLocation": "British India",
+            "presentDayLocation": "Maharashtra, India",
+            "locationSource": {
+              "title": "Present-day location · official government website",
+              "url": "https://mumbaicity.gov.in/"
+            }
+          }
+        ],
+        "views": [
+          {
+            "id": "before",
+            "label": "Dina to Delhi",
+            "caption": "A childhood move before Partition · the exact travel date is not established here",
+            "stopIds": [
+              "dina",
+              "delhi"
+            ],
+            "showRoute": true,
+            "mileInterval": 100
+          },
+          {
+            "id": "after",
+            "label": "After Partition",
+            "caption": "Delhi to Bombay · family pressures and employment after 1947",
+            "stopIds": [
+              "delhi",
+              "mumbai"
+            ],
+            "showRoute": true,
+            "mileInterval": 200
+          }
+        ]
       }
     }
   ]

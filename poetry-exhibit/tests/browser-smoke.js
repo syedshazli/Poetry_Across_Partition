@@ -45,6 +45,30 @@
       await wait();
       assert(!popup.open && document.activeElement === trigger, `Closing background restores focus: ${poet.id}`);
     }
+    for (const id of ['faiz', 'gulzar']) {
+      document.querySelector(`#poet-${id} .poet-background-button`).click();
+      for (let i = 0; i < 100 && !document.querySelector('.journey-frame svg'); i++) await wait();
+      const host = document.querySelector('.journey-map');
+      assert(Boolean(host.querySelector('svg')), `${id} geographic map loads`);
+      assert(host.querySelectorAll('.map-city').length === (id === 'faiz' ? 3 : 2), `${id} early places mapped`);
+      assert(!host.querySelector('.map-border'), `${id} early view hides political borders`);
+      assert(host.querySelector('.journey-stop-sources a'), `${id} selected place has a biography source`);
+      host.querySelector('.journey-after').click();
+      assert(host.querySelectorAll('.map-city').length === (id === 'faiz' ? 1 : 2), `${id} later places mapped`);
+      if (id === 'faiz') assert(!host.querySelector('.map-route') && !host.querySelector('.map-mile-marker') && host.querySelector('.journey-distance').textContent.includes('no journey distance inferred'), 'Faiz workplace does not imply a refugee journey');
+      else {
+        host.querySelector('.journey-stops [data-stop="mumbai"]').click();
+        assert(host.querySelector('.map-mile-marker') && host.textContent.includes('After 1947'), 'Gulzar later journey has approximate miles and dates');
+      }
+      const popup = document.querySelector('#poet-background');
+      assert(popup.scrollWidth <= popup.clientWidth, `${id} map fits popup`);
+      document.querySelector('#close-poet-background').click();await wait();
+    }
+    for (const id of ['iqbal', 'auden']) {
+      document.querySelector(`#poet-${id} .poet-background-button`).click();
+      assert(!document.querySelector('.journey-map') && document.querySelector('.poet-partition-context a'), `${id} has sourced upbringing instead of an invented migration`);
+      document.querySelector('#close-poet-background').click();await wait();
+    }
     document.querySelector('#poet-pritam .poet-background-button').click();
     for (let i = 0; i < 60 && !document.querySelector('.journey-frame svg'); i++) await wait();
     const map = document.querySelector('.journey-map');
