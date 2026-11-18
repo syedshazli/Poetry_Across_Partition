@@ -739,7 +739,131 @@
       "publication": "First publication not yet verified",
       "edition": "Collected Poems, edited by Edward Mendelson, Modern Library, 2007, pp. 802–03.",
       "axisDate": 1968,
-      "poetId": "auden"
+      "poetId": "auden",
+      "poem": {
+        "id": "auden-partition",
+        "title": "Partition",
+        "author": "W. H. Auden",
+        "language": "en",
+        "stanzas": [
+          {
+            "id": "auden-partition-stanza-1",
+            "lines": [
+              {
+                "id": "auden-partition-line-01",
+                "text": "Unbiased at least he was when he arrived on his mission,"
+              },
+              {
+                "id": "auden-partition-line-02",
+                "text": "Having never set eyes on the land he was called to partition"
+              },
+              {
+                "id": "auden-partition-line-03",
+                "text": "Between two peoples fanatically at odds,"
+              },
+              {
+                "id": "auden-partition-line-04",
+                "text": "With their different diets and incompatible gods."
+              },
+              {
+                "id": "auden-partition-line-05",
+                "text": "\"Time,\" they had briefed him in London, \"is short. It's too late"
+              },
+              {
+                "id": "auden-partition-line-06",
+                "text": "For mutual reconciliation or rational debate:"
+              },
+              {
+                "id": "auden-partition-line-07",
+                "text": "The only solution now lies in separation."
+              },
+              {
+                "id": "auden-partition-line-08",
+                "text": "The Viceroy thinks, as you will see from his letter,"
+              },
+              {
+                "id": "auden-partition-line-09",
+                "text": "That the less you are seen in his company the better,"
+              },
+              {
+                "id": "auden-partition-line-10",
+                "text": "So we've arranged to provide you with other accommodation."
+              },
+              {
+                "id": "auden-partition-line-11",
+                "text": "We can give you four judges, two Moslem and two Hindu,"
+              },
+              {
+                "id": "auden-partition-line-12",
+                "text": "To consult with, but the final decision must rest with you.\""
+              }
+            ]
+          },
+          {
+            "id": "auden-partition-stanza-2",
+            "lines": [
+              {
+                "id": "auden-partition-line-13",
+                "text": "Shut up in a lonely mansion, with police night and day"
+              },
+              {
+                "id": "auden-partition-line-14",
+                "text": "Patrolling the gardens to keep the assassins away,"
+              },
+              {
+                "id": "auden-partition-line-15",
+                "text": "He got down to work, to the task of settling the fate"
+              },
+              {
+                "id": "auden-partition-line-16",
+                "text": "Of millions. The maps at his disposal were out of date"
+              },
+              {
+                "id": "auden-partition-line-17",
+                "text": "And the Census Returns almost certainly incorrect,"
+              },
+              {
+                "id": "auden-partition-line-18",
+                "text": "But there was no time to check them, no time to inspect"
+              },
+              {
+                "id": "auden-partition-line-19",
+                "text": "Contested areas. The weather was frightfully hot,"
+              },
+              {
+                "id": "auden-partition-line-20",
+                "text": "And a bout of dysentery kept him constantly on the trot,"
+              },
+              {
+                "id": "auden-partition-line-21",
+                "text": "But in seven weeks it was done, the frontiers decided,"
+              },
+              {
+                "id": "auden-partition-line-22",
+                "text": "A continent for better or worse divided."
+              }
+            ]
+          },
+          {
+            "id": "auden-partition-stanza-3",
+            "lines": [
+              {
+                "id": "auden-partition-line-23",
+                "text": "The next day he sailed for England, where he could quickly forget"
+              },
+              {
+                "id": "auden-partition-line-24",
+                "text": "The case, as a good lawyer must. Return he would not,"
+              },
+              {
+                "id": "auden-partition-line-25",
+                "text": "Afraid, as he told his Club, that he might get shot."
+              }
+            ]
+          }
+        ],
+        "annotations": []
+      }
     },
     {
       "id": "bangladesh",
@@ -778,7 +902,12 @@
       "publication": "English collection published 2017",
       "edition": "Translated by Rakhshanda Jalil. Harper Perennial, 2017. Individual selection pending.",
       "axisDate": 2017,
-      "poetId": "gulzar"
+      "poetId": "gulzar",
+      "readerPlaceholder": {
+        "id": "gulzar-selection",
+        "title": "Gulzar · poem selection pending",
+        "message": "The individual poem from Footprints on Zero Line is still being selected. The text will appear here once the selection is ready."
+      }
     }
   ],
   "views": {
@@ -1230,59 +1359,6 @@
       }
     },
     {
-      "id": "auden",
-      "name": "W. H. Auden",
-      "firstCardId": "auden",
-      "description": "His poem “Partition” looks back at the drawing of the border through Cyril Radcliffe, the British official who chaired the boundary commissions.",
-      "image": {
-        "src": "images/poets/auden.jpg",
-        "alt": "Portrait of W. H. Auden",
-        "width": 756,
-        "height": 1024,
-        "position": "50% 28%",
-        "credit": "George Cserna",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:W._H._Auden_%281956_press_photo%29.jpg",
-        "license": "Public domain (US)",
-        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
-      },
-      "background": {
-        "paragraphs": [
-          "Wystan Hugh Auden was born in York in 1907 and grew up in Birmingham. At Oxford, his interest in poetry developed alongside friendships with Stephen Spender and Christopher Isherwood.",
-          "He travelled beyond Britain and moved to the United States in 1939. That move was separate from the 1947 Partition of British India. His place in this exhibit is as a poet looking back at the border’s creation, rather than as someone displaced across it.",
-          "His upbringing and education help place his later writing in a different context from Pritam’s and Gulzar’s accounts of losing a home. The contrast lets readers consider who is speaking about Partition and how close they were to its effects."
-        ],
-        "sources": [
-          {
-            "title": "Academy of American Poets · W. H. Auden",
-            "url": "https://poets.org/poet/w-h-auden",
-            "id": "A1"
-          },
-          {
-            "title": "Poetry Foundation · W. H. Auden",
-            "url": "https://www.poetryfoundation.org/poets/w-h-auden"
-          },
-          {
-            "title": "W. H. Auden · Birth and death dates",
-            "url": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972"
-          }
-        ],
-        "sectionTitle": "Upbringing and a later view of Partition",
-        "partitionContext": {
-          "label": "An outside perspective",
-          "text": "Auden’s move to the United States was in 1939. The biography does not place him on a 1947 Partition migration route.",
-          "sourceIds": [
-            "A1"
-          ]
-        }
-      },
-      "lifeDates": {
-        "born": "1907-02-21",
-        "died": "1973-09-29",
-        "sourceUrl": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972",
-        "checkedOn": "2026-11-15"
-      }
-    },
-    {
       "id": "gulzar",
       "name": "Gulzar",
       "firstCardId": "gulzar",
@@ -1476,6 +1552,59 @@
             "mileInterval": 200
           }
         ]
+      }
+    },
+    {
+      "id": "auden",
+      "name": "W. H. Auden",
+      "firstCardId": "auden",
+      "description": "His poem “Partition” looks back at the drawing of the border through Cyril Radcliffe, the British official who chaired the boundary commissions.",
+      "image": {
+        "src": "images/poets/auden.jpg",
+        "alt": "Portrait of W. H. Auden",
+        "width": 756,
+        "height": 1024,
+        "position": "50% 28%",
+        "credit": "George Cserna",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:W._H._Auden_%281956_press_photo%29.jpg",
+        "license": "Public domain (US)",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "background": {
+        "paragraphs": [
+          "Wystan Hugh Auden was born in York in 1907 and grew up in Birmingham. At Oxford, his interest in poetry developed alongside friendships with Stephen Spender and Christopher Isherwood.",
+          "He travelled beyond Britain and moved to the United States in 1939. That move was separate from the 1947 Partition of British India. His place in this exhibit is as a poet looking back at the border’s creation, rather than as someone displaced across it.",
+          "His upbringing and education help place his later writing in a different context from Pritam’s and Gulzar’s accounts of losing a home. The contrast lets readers consider who is speaking about Partition and how close they were to its effects."
+        ],
+        "sources": [
+          {
+            "title": "Academy of American Poets · W. H. Auden",
+            "url": "https://poets.org/poet/w-h-auden",
+            "id": "A1"
+          },
+          {
+            "title": "Poetry Foundation · W. H. Auden",
+            "url": "https://www.poetryfoundation.org/poets/w-h-auden"
+          },
+          {
+            "title": "W. H. Auden · Birth and death dates",
+            "url": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972"
+          }
+        ],
+        "sectionTitle": "Upbringing and a later view of Partition",
+        "partitionContext": {
+          "label": "An outside perspective",
+          "text": "Auden’s move to the United States was in 1939. The biography does not place him on a 1947 Partition migration route.",
+          "sourceIds": [
+            "A1"
+          ]
+        }
+      },
+      "lifeDates": {
+        "born": "1907-02-21",
+        "died": "1973-09-29",
+        "sourceUrl": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972",
+        "checkedOn": "2026-11-15"
       }
     }
   ]

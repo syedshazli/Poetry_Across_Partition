@@ -15,7 +15,7 @@
     assert(document.querySelectorAll('.timeline-card').length === data.cards.length, 'Full timeline renders all current cards');
     assert(document.querySelectorAll('.poet-intro').length === 5, 'Five poet introductions');
     assert(document.querySelector('#poets').nextElementSibling.id === 'timeline', 'Poets immediately precede timeline');
-    assert([...document.querySelectorAll('.poet-intro')].map(c => c.id).join(',') === 'poet-iqbal,poet-faiz,poet-pritam,poet-auden,poet-gulzar', 'Poets follow timeline encounter order');
+    assert([...document.querySelectorAll('.poet-intro')].map(c => c.id).join(',') === 'poet-iqbal,poet-faiz,poet-pritam,poet-gulzar,poet-auden', 'Auden follows Gulzar at the right end of the poet introductions');
     for (const poet of data.poets) {
       document.querySelector('[data-view="august"]').click();
       document.querySelector(`#poet-${poet.id} .find-poet`).click();
@@ -133,6 +133,16 @@
     assert(document.querySelector('#timeline').nextElementSibling.id === 'poems', 'Poems section immediately follows timeline');
     assert(document.querySelector('#freedoms-dawn-title').textContent === "Freedom's Dawn (August 1947)", 'Poem has its full title');
     assert(!document.querySelector('#card-detail .poem-text'), 'Timeline detail links to the separate reader');
+    const readers = [...document.querySelectorAll('.poem-reader')];
+    assert(readers.map(r => r.querySelector('h3').id).join(',') === 'freedoms-dawn-title,gulzar-selection-title,auden-partition-title', 'Auden dropdown follows Gulzar');
+    const audenReader = document.querySelector('#auden-partition-title').closest('.poem-reader');
+    assert(!audenReader.open, 'Auden poem starts collapsed');
+    audenReader.querySelector('summary').click();
+    assert(audenReader.open && audenReader.querySelectorAll('.poem-line').length === 25, 'Auden reader opens with all 25 supplied lines');
+    assert([...audenReader.querySelectorAll('.poem-stanza')].map(s => s.querySelectorAll('.poem-line').length).join(',') === '12,10,3', 'Auden preserves supplied stanza breaks');
+    assert(audenReader.querySelector('.poem-byline').textContent === 'W. H. Auden', 'Original English poem has no translator credit');
+    assert(!audenReader.querySelector('.poem-highlight') && !audenReader.querySelector('.whole-poem-analysis'), 'Auden has no added annotations or analysis');
+    audenReader.querySelector('summary').click();
     const poemReader = document.querySelector('.poem-reader');
     assert(!poemReader.open, 'Poem starts collapsed');
     poemReader.querySelector('.poem-summary').click();
@@ -143,14 +153,14 @@
     assert(poemReader.open, 'Timeline read link expands the collapsed poem');
     assert(document.activeElement.id === 'freedoms-dawn-title', 'Timeline read link focuses the poem');
     assert(document.querySelector('.poem-byline').textContent.includes('V. G. Kiernan'), 'Poem credits its translator');
-    assert(document.querySelectorAll('.poem-stanza').length === 5, 'Poem preserves five stanzas');
-    assert(document.querySelectorAll('.poem-line').length === 25, 'Poem preserves 25 lines');
-    assert(document.querySelectorAll('.poem-stanza br').length === 20, 'Explicit breaks separate lines within stanzas');
-    assert(new Set([...document.querySelectorAll('.poem-line')].map(line => line.id)).size === 25, 'Poem lines have unique annotation IDs');
+    assert(document.querySelectorAll('#freedoms-dawn .poem-stanza').length === 5, 'Poem preserves five stanzas');
+    assert(document.querySelectorAll('#freedoms-dawn .poem-line').length === 25, 'Poem preserves 25 lines');
+    assert(document.querySelectorAll('#freedoms-dawn .poem-stanza br').length === 20, 'Explicit breaks separate lines within stanzas');
+    assert(new Set([...document.querySelectorAll('#freedoms-dawn .poem-line')].map(line => line.id)).size === 25, 'Poem lines have unique annotation IDs');
     assert(document.querySelector('#freedoms-dawn-line-25').textContent === 'Let us go on, our goal is not reached yet.', 'Poem ends with supplied final line');
     assert(getComputedStyle(document.querySelector('.poem-text')).overflowX === 'auto', 'Long verse lines scroll within the poem');
-    assert([...document.querySelectorAll('.poem-line')].every(line => line.getBoundingClientRect().height <= parseFloat(getComputedStyle(line).lineHeight) + 4), 'Each printed verse line remains one visual line');
-    assert([...document.querySelectorAll('.poem-stanza')].map(stanza => stanza.querySelectorAll('.poem-line').length).join(',') === '4,3,7,2,9', 'Stanza breaks match the supplied scan');
+    assert([...document.querySelectorAll('#freedoms-dawn .poem-line')].every(line => line.getBoundingClientRect().height <= parseFloat(getComputedStyle(line).lineHeight) + 4), 'Each printed verse line remains one visual line');
+    assert([...document.querySelectorAll('#freedoms-dawn .poem-stanza')].map(stanza => stanza.querySelectorAll('.poem-line').length).join(',') === '4,3,7,2,9', 'Stanza breaks match the supplied scan');
     const highlight = document.querySelector('.poem-highlight');
     assert(highlight.textContent === "night's fangs have mangled", 'Correct phrase highlighted');
     const note = document.getElementById(highlight.getAttribute('aria-controls'));

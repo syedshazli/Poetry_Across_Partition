@@ -90,11 +90,13 @@
   });
   function renderPoems() {
     const list = document.querySelector('#poem-list');
-    data.cards.filter(c => c.poem).forEach(c => {
+    const poetOrder = data.poets.map(poet => poet.id);
+    data.cards.filter(c => c.poem || c.readerPlaceholder).sort((a, b) => poetOrder.indexOf(a.poetId) - poetOrder.indexOf(b.poetId)).forEach(c => {
+      const poem = c.poem || c.readerPlaceholder;
       const article = el('details', null, 'poem-reader');
-      article.setAttribute('aria-labelledby', `${c.poem.id}-title`);
-      const heading = el('h3', c.poem.title);
-      heading.id = `${c.poem.id}-title`;
+      article.setAttribute('aria-labelledby', `${poem.id}-title`);
+      const heading = el('h3', poem.title);
+      heading.id = `${poem.id}-title`;
       heading.tabIndex = -1;
       const summary = el('summary', null, 'poem-summary');
       const state = el('span', 'View poem', 'poem-disclosure-label');
@@ -102,8 +104,14 @@
       const body = el('div', null, 'poem-reader-body');
       article.append(summary, body);
       article.addEventListener('toggle', () => {state.textContent = article.open ? 'Hide poem' : 'View poem';});
-      const poem = c.poem;
-      body.append(el('p', `${poem.author} · Translated by ${poem.translator}`, 'poem-byline'));
+      if (c.readerPlaceholder && !c.poem) {
+        body.append(el('p', poem.message));
+        const back = el('a', 'Explore Gulzar on the timeline ↑', 'text-link');
+        back.href = `#card-${c.id}`;
+        back.addEventListener('click', event => {event.preventDefault();setView('full');scrollToCard(c.id);});
+        body.append(back);list.append(article);return;
+      }
+      body.append(el('p', poem.translator ? `${poem.author} · Translated by ${poem.translator}` : poem.author, 'poem-byline'));
       const text = el('div', null, 'poem-text');
       text.id = poem.id;
       text.lang = poem.language;
@@ -229,10 +237,10 @@
         });
         wholePoem.append(sourceList);
       }
-      body.append(wholePoem);
+      if (poem.wholePoemAnalysis) body.append(wholePoem);
 
       const sources = el('details', null, 'poem-sources');
-      sources.append(el('summary', 'Text & translation source'));
+      sources.append(el('summary', poem.translator ? 'Text & translation source' : 'Text source'));
       const references = el('ul');
       c.referenceIds.forEach(id => references.append(reference(id)));
       sources.append(references);
@@ -405,7 +413,7 @@
     if (!response.ok) throw new Error('Timeline data could not be loaded.');
     data = await response.json();
     renderPoems();
-    const poets = [...data.poets].sort((a, b) => data.cards.find(c => c.id === a.firstCardId).axisDate - data.cards.find(c => c.id === b.firstCardId).axisDate);
+    const poets = [...data.poets];
     poets.forEach(poet => {
       const card = el('article', null, 'poet-intro');
       card.id = `poet-${poet.id}`;
