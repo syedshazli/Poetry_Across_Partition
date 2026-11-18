@@ -91,14 +91,19 @@
   function renderPoems() {
     const list = document.querySelector('#poem-list');
     data.cards.filter(c => c.poem).forEach(c => {
-      const article = el('article', null, 'poem-reader');
+      const article = el('details', null, 'poem-reader');
       article.setAttribute('aria-labelledby', `${c.poem.id}-title`);
       const heading = el('h3', c.poem.title);
       heading.id = `${c.poem.id}-title`;
       heading.tabIndex = -1;
-      article.append(heading);
+      const summary = el('summary', null, 'poem-summary');
+      const state = el('span', 'View poem', 'poem-disclosure-label');
+      summary.append(heading, state);
+      const body = el('div', null, 'poem-reader-body');
+      article.append(summary, body);
+      article.addEventListener('toggle', () => {state.textContent = article.open ? 'Hide poem' : 'View poem';});
       const poem = c.poem;
-      article.append(el('p', `${poem.author} · Translated by ${poem.translator}`, 'poem-byline'));
+      body.append(el('p', `${poem.author} · Translated by ${poem.translator}`, 'poem-byline'));
       const text = el('div', null, 'poem-text');
       text.id = poem.id;
       text.lang = poem.language;
@@ -107,7 +112,7 @@
       const readingHelp = el('p', 'Scroll sideways if needed to read each line as printed.', 'poem-scroll-help');
       readingHelp.id = `${poem.id}-scroll-help`;
       text.setAttribute('aria-describedby', readingHelp.id);
-      article.append(readingHelp);
+      body.append(readingHelp);
       const notes = new Map();
       function annotation(note) {
         if (notes.has(note.id)) return notes.get(note.id);
@@ -202,7 +207,7 @@
         });
         text.append(paragraph, ...[...stanzaNotes].map(id => notes.get(id).panel));
       });
-      article.append(text);
+      body.append(text);
       const wholePoem = el('section', null, 'whole-poem-analysis');
       wholePoem.setAttribute('aria-labelledby', `${poem.id}-analysis-title`);
       const analysisTitle = el('h4', poem.wholePoemAnalysis?.title || 'Whole-poem claim & analysis');
@@ -224,14 +229,14 @@
         });
         wholePoem.append(sourceList);
       }
-      article.append(wholePoem);
+      body.append(wholePoem);
 
       const sources = el('details', null, 'poem-sources');
       sources.append(el('summary', 'Text & translation source'));
       const references = el('ul');
       c.referenceIds.forEach(id => references.append(reference(id)));
       sources.append(references);
-      article.append(sources);
+      body.append(sources);
       const back = el('a', 'Find on timeline ↑', 'text-link');
       back.href = `#card-${c.id}`;
       back.addEventListener('click', event => {
@@ -239,7 +244,7 @@
         setView('full');
         scrollToCard(c.id);
       });
-      article.append(back);
+      body.append(back);
       list.append(article);
     });
   }
@@ -261,6 +266,7 @@
       link.addEventListener('click', event => {
         event.preventDefault();
         const target = document.getElementById(`${c.poem.id}-title`);
+        target.closest('.poem-reader').open = true;
         target.focus({preventScroll: true});
         target.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'start'});
       });

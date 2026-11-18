@@ -133,7 +133,14 @@
     assert(document.querySelector('#timeline').nextElementSibling.id === 'poems', 'Poems section immediately follows timeline');
     assert(document.querySelector('#freedoms-dawn-title').textContent === "Freedom's Dawn (August 1947)", 'Poem has its full title');
     assert(!document.querySelector('#card-detail .poem-text'), 'Timeline detail links to the separate reader');
+    const poemReader = document.querySelector('.poem-reader');
+    assert(!poemReader.open, 'Poem starts collapsed');
+    poemReader.querySelector('.poem-summary').click();
+    assert(poemReader.open && document.querySelector('.poem-text').getBoundingClientRect().height > 0, 'Poem disclosure reveals the reader');
+    poemReader.querySelector('.poem-summary').click();
+    assert(!poemReader.open, 'Poem disclosure can hide the reader again');
     document.querySelector('.read-poem').click();
+    assert(poemReader.open, 'Timeline read link expands the collapsed poem');
     assert(document.activeElement.id === 'freedoms-dawn-title', 'Timeline read link focuses the poem');
     assert(document.querySelector('.poem-byline').textContent.includes('V. G. Kiernan'), 'Poem credits its translator');
     assert(document.querySelectorAll('.poem-stanza').length === 5, 'Poem preserves five stanzas');
