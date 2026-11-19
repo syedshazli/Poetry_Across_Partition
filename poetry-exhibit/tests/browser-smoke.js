@@ -263,7 +263,7 @@
     assert(document.querySelector('#exhibit-reading-heading').textContent.includes('six poems'), 'Exhibit-wide reading section covers six poems');
     assert(!document.querySelector('#exhibit-claim').textContent.trim() && !document.querySelector('#exhibit-analysis').textContent.trim(), 'Overarching claim and analysis remain empty');
     const photographs = [...document.querySelectorAll('.partition-photo-card')];
-    assert(photographs.length === 4, 'Four sourced historical photographs render');
+    assert(photographs.length === 5, 'Five sourced historical photographs render');
     for (const card of photographs) {
       const image = card.querySelector('img');image.scrollIntoView();
       for (let i=0; i<100 && !(image.complete && image.naturalWidth); i++) await wait();
@@ -278,7 +278,7 @@
     document.querySelector('#card-gulzar').click();
     assert(document.querySelector('#card-detail a[href="#photo-karachi"]'), 'Karachi poem links to the city photograph');
     document.querySelector('#card-displacement').click();
-    assert(document.querySelectorAll('#card-detail .related-photographs a').length === 3, 'Displacement links to journey photographs');
+    assert(document.querySelectorAll('#card-detail .related-photographs a').length === 4, 'Displacement links to journey and witness photographs');
     document.querySelector('.close-detail').click();
     const mobile = matchMedia('(max-width: 700px)').matches;
     assert(document.documentElement.scrollWidth <= innerWidth, 'No page horizontal overflow');

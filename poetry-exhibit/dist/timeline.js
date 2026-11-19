@@ -109,6 +109,11 @@
       const credit = el('p', null, 'partition-photo-credit');
       credit.append(document.createTextNode(`${photo.credit}. `),sourceLink('Archive record & reuse information',photo.sourceUrl));
       caption.append(credit);
+      if (photo.quotation) {
+        const quote = el('blockquote', photo.quotation.text, 'partition-witness-quote');
+        quote.cite = photo.quotation.url;
+        caption.append(quote, sourceLink(photo.quotation.attribution, photo.quotation.url));
+      }
       figure.append(full,caption);item.append(figure);
       const story = el('details', null, 'partition-travel-account');
       story.append(el('summary', photo.story.title),el('p',photo.story.text),sourceLink(photo.story.sourceTitle,photo.story.url));

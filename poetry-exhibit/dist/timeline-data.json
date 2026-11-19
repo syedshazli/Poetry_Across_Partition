@@ -113,6 +113,19 @@
     "P17": {
       "title": "Rakhshanda Jalil · Translator’s introduction to Footprints on Zero Line, excerpt published September 2017",
       "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
+    },
+    "H12": {
+      "title": "UK Parliament · Cabinet Mission statement, 16 May 1946, paragraphs 5–6 and 12–15",
+      "url": "https://hansard.parliament.uk/Lords%E2%80%8F/1946-05-16/debates/1c3973b1-ab17-44c5-9e82-16322708241a/IndiaStatementByTheCabinetMission"
+    },
+    "H13": {
+      "title": "Office of the Historian · George R. Merrell’s report on Congress–League negotiations, 22 April 1947",
+      "url": "https://history.state.gov/historicaldocuments/frus1947v03/d95",
+      "note": "A contemporary American diplomatic assessment, reflecting the reporting diplomat’s perspective."
+    },
+    "H14": {
+      "title": "Moni Mohsin · “The wounds have never healed,” The Guardian (2017)",
+      "url": "https://www.theguardian.com/world/2017/aug/02/wounds-have-never-healed-living-through-terror-partition-india-pakistan-1947"
     }
   },
   "cards": [
@@ -363,9 +376,10 @@
       "datePrecision": "month",
       "track": "history",
       "title": "Lahore Resolution",
-      "description": "The Muslim League sets out demands for political arrangements in Muslim-majority regions..",
+      "description": "The Muslim League calls for independent states in Muslim-majority regions in the northwest and east. Its leaders feared that Muslims would be permanently outvoted in a united India with a Hindu majority. They wanted control over political decisions affecting Muslim religious, cultural, and economic life. The demand for Pakistan grew from this concern about representation and self-government.",
       "referenceIds": [
-        "H6"
+        "H6",
+        "H12"
       ],
       "relatedCardIds": [
         "allahabad"
@@ -391,10 +405,12 @@
       "datePrecision": "year",
       "track": "history",
       "title": "Cabinet Mission and escalating violence",
-      "description": "The Cabinet Mission tries to reach an agreement on how India will be governed after British rule. Communal violence grows as negotiations over the transfer of power continue.",
+      "description": "The Cabinet Mission proposes a united India with a limited central government and groups of provinces with substantial powers. This offers a possible way to protect Muslim political influence without creating two separate countries. The League initially accepts the plan, then withdraws amid disagreements with Congress over how it would work, including provincial grouping and the constituent assembly’s powers. Failed negotiations and escalating communal violence help bring Partition closer.",
       "referenceIds": [
         "H6",
-        "H7"
+        "H7",
+        "H12",
+        "H13"
       ],
       "relatedCardIds": [],
       "axisDate": 1946
@@ -852,7 +868,8 @@
       "description": "Across the Partition period, mass displacement and communal violence transform Punjab. Muslims move toward Pakistan, while Sikhs and Hindus toward India. The span has no single end date, as it's ongoing till today. Amrita Pritam’s lament addresses the Punjabi poet Waris Shah through this shared landscape of loss.",
       "referenceIds": [
         "H6",
-        "H7"
+        "H7",
+        "H14"
       ],
       "relatedCardIds": [
         "pritam"
@@ -866,7 +883,8 @@
       "photographIds": [
         "convoy",
         "train",
-        "delhi"
+        "delhi",
+        "punjab-camp"
       ]
     },
     {
@@ -2288,6 +2306,30 @@
         "text": "In a recorded account shared by the Citizens Archive of Pakistan, Sugrah Kazmi remembers finding space aboard the Dumra in the ship’s basement. After reaching Karachi, her family stayed with relatives. She also recalls luggage being lost along the way. Her account gives a sense of arrival as the beginning of another period of uncertainty.",
         "sourceTitle": "Sugrah Kazmi · Citizens Archive of Pakistan interview, shared by Dawn Images (2018)",
         "url": "https://images.dawn.com/news/1180595/partition-survivor-recalls-traveling-to-pakistan-by-ship"
+      }
+    },
+    {
+      "id": "punjab-camp",
+      "src": "images/partition/punjab-camp.jpg",
+      "title": "Fear and uncertainty in Punjab",
+      "date": "Punjab · 1947",
+      "caption": "A refugee camp in Punjab during Partition. It gives a view of the insecurity and displacement of this period. It does not show Shergarh or the people described in the passage below.",
+      "alt": "People walk between rows of tents in a refugee camp in Punjab.",
+      "width": 329,
+      "height": 500,
+      "credit": "Photographer unknown · via Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_refugee_camp,_Punjab,_1947.jpg",
+      "rights": "Public domain in India, as recorded by Wikimedia Commons",
+      "quotation": {
+        "text": "Nonetheless, three months of pure terror followed. “I have never known a period of greater fear and uncertainty,” he says. Shergarh was surrounded by Sikh villages. Once killings began, the villagers braced themselves for an attack every day. “Wild bands of marauding men armed with sickles, axes and swords roamed the open countryside, killing and mutilating anyone they found of the opposite faith.”",
+        "attribution": "Moni Mohsin, recounting her father Syed Mohammed Mohsin’s memories of Shergarh · The Guardian (2017)",
+        "url": "https://www.theguardian.com/world/2017/aug/02/wounds-have-never-healed-living-through-terror-partition-india-pakistan-1947"
+      },
+      "story": {
+        "title": "Remaining at home did not mean being safe",
+        "text": "Syed Mohammed Mohsin’s village became part of Pakistan, and he did not have to leave his ancestral home. His recollection shows that even those who stayed could live in fear of an attack. This account describes one Muslim family’s experience in Punjab, and similar violence occured to Hindus and Sikhs in other villages.",
+        "sourceTitle": "Read Moni Mohsin’s account in The Guardian",
+        "url": "https://www.theguardian.com/world/2017/aug/02/wounds-have-never-healed-living-through-terror-partition-india-pakistan-1947"
       }
     }
   ]
