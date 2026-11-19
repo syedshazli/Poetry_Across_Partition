@@ -195,6 +195,32 @@
         body.append(back);list.append(article);return;
       }
       body.append(el('p', poem.translator ? `${poem.author} · Translated by ${poem.translator}` : poem.author, 'poem-byline'));
+      if (poem.background) {
+        const background = el('section', null, 'poem-background');
+        if (poem.background.image) {
+          const image = poem.background.image;
+          const figure = el('figure', null, 'poem-background-portrait');
+          const portrait = el('img');
+          portrait.src = image.src;
+          portrait.alt = image.alt;
+          portrait.width = image.width;
+          portrait.height = image.height;
+          portrait.loading = 'lazy';
+          const caption = el('figcaption');
+          const credit = el('a', image.caption);
+          credit.href = image.sourceUrl;
+          caption.append(credit);
+          figure.append(portrait, caption);
+          background.append(figure);
+        }
+        background.append(el('h4', poem.background.title), el('p', poem.background.text));
+        if (poem.background.sourceUrl) {
+          const source = el('a', poem.background.sourceLabel || 'Background source', 'text-link');
+          source.href = poem.background.sourceUrl;
+          background.append(source);
+        }
+        body.append(background);
+      }
       const text = el('div', null, 'poem-text');
       text.id = poem.id;
       text.lang = poem.language;

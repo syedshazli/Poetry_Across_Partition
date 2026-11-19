@@ -159,6 +159,21 @@
     "H22": {
       "title": "National Army Museum · Independence and Partition, 1947",
       "url": "https://www.nam.ac.uk/explore/independence-and-partition-1947"
+    },
+    "H23": {
+      "title": "Yasmin Khan · The Great Partition: The Making of India and Pakistan (2007; new edition 2017)",
+      "url": "https://books.google.com/books?newbks=0&vid=ISBN9780300120783",
+      "note": "Historical interpretation of the haste, inadequate preparation, and human consequences of Partition."
+    },
+    "H24": {
+      "title": "Stanley Wolpert · Shameful Flight: The Last Years of the British Empire in India (2006), Introduction",
+      "url": "https://academic.oup.com/book/47714/chapter-abstract/421080704",
+      "note": "Wolpert criticizes Mountbatten’s decision to shorten the timetable by ten months."
+    },
+    "P18": {
+      "title": "Muhammad Iqbal · “Tarana-e Hindi” and “Tarana-e Milli,” translated by Ikram Azam, in Iqbal: The Islamic Futurist, 2nd edition. Lahore, Iqbal Academy Pakistan, 2004, pp. 75 and 80.",
+      "url": "https://www.iqbalcyberlibrary.net/files/019/IAP-Iqbal-Islamic-Futurist-2004.pdf",
+      "note": "English texts selected by the reader and checked against the supplied page images and PDF. Printed pp. 75 and 80 correspond to PDF pages 83 and 88. The translator’s note is on printed p. 71 (PDF page 79)."
     }
   },
   "cards": [
@@ -242,20 +257,16 @@
         "P1",
         "P9",
         "P11",
-        "P12"
+        "P12",
+        "P18"
       ],
       "relatedCardIds": [
         "iqbal"
       ],
       "composition": "1904, as dated in Hillier’s commentary",
       "publication": "Ittehad, August 16, 1904, followed by Zamana, September 1904. These dates are reported in the publication history assembled by Frances W. Pritchett. Journal page numbers have not been verified. Bang-i-Dara, Lahore, Karimi Press, 1924.",
-      "edition": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 83. This page belongs to that edition, not necessarily the 1924 printing. Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+      "edition": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 83. This page belongs to that edition, not necessarily the 1924 printing. English text displayed from Ikram Azam’s English translation in Iqbal: The Islamic Futurist, 2nd edition, Iqbal Academy Pakistan, 2004, p. 75 (PDF page 83).",
       "axisDate": 1904,
-      "readerPlaceholder": {
-        "id": "iqbal-hindi-poem",
-        "title": "Taranah-i-Hindi",
-        "message": "The English text will be added when the exhibit’s translation is selected. Publication details and a link to the source are available below."
-      },
       "publicationDetails": [
         {
           "label": "Written",
@@ -287,12 +298,107 @@
         },
         {
           "label": "English text",
-          "text": "Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+          "text": "Ikram Azam’s English translation in Iqbal: The Islamic Futurist, 2nd edition, Iqbal Academy Pakistan, 2004, p. 75 (PDF page 83). Wording, punctuation, and printed line breaks follow the supplied scan.",
           "referenceIds": [
-            "P9"
+            "P18"
           ]
         }
-      ]
+      ],
+      "poem": {
+        "id": "iqbal-hindi-poem",
+        "title": "Tarana-e Hindi · Hind’s Anthem",
+        "author": "Muhammad Iqbal",
+        "translator": "Ikram Azam",
+        "language": "en",
+        "stanzas": [
+          {
+            "id": "iqbal-hindi-poem-stanza-1",
+            "lines": [
+              {
+                "id": "iqbal-hindi-poem-line-01",
+                "text": "Better than the whole world is our Hindustan"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-02",
+                "text": "We are its nightingales and it is our garden!"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-03",
+                "text": "Even in poverty our heart dwells in the homeland"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-04",
+                "text": "Consider us to be there, right where is this our heart"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-05",
+                "text": "The highest (Himalyan) mountain on earth is the sky’s"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-06",
+                "text": "neighbour"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-07",
+                "text": "He is our own sentry, he is our very guardian"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-08",
+                "text": "Thousands of streams play right in its lap in travel"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-09",
+                "text": "Live is our garden thereby, the envy of the universe!"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-10",
+                "text": "O waters of the Ganges!—Do you remember those days?—"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-11",
+                "text": "When our caravan had alighted on your river banks!"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-12",
+                "text": "Religion teaches not enmity among people"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-13",
+                "text": "We are all Hindi, our homeland is Hindustan!"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-14",
+                "text": "Ancient Lebanon, Egypt and Rome"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-15",
+                "text": "Are all extinct from the glorious globe"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-16",
+                "text": "But we remain still in our name and notation!"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-17",
+                "text": "It is a fact that we have not (yet) perished"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-18",
+                "text": "Though for centuries has time been our enemy!"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-19",
+                "text": "Iqbal!  We have no friend on this earth"
+              },
+              {
+                "id": "iqbal-hindi-poem-line-20",
+                "text": "No one knows our own secret sorrow!"
+              }
+            ]
+          }
+        ],
+        "annotations": []
+      }
     },
     {
       "id": "iqbal",
@@ -304,7 +410,8 @@
       "referenceIds": [
         "P1",
         "P10",
-        "P11"
+        "P11",
+        "P18"
       ],
       "relatedCardIds": [
         "iqbal-hindi",
@@ -312,14 +419,9 @@
       ],
       "composition": "1910, as dated in Pritchett’s text and commentary",
       "publication": "Bang-i-Dara, Lahore, Karimi Press, 1924. An earlier journal appearance has not been verified.",
-      "edition": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 159. This page belongs to that edition, not necessarily the 1924 printing. Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+      "edition": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 159. This page belongs to that edition, not necessarily the 1924 printing. English text displayed from Ikram Azam’s English translation in Iqbal: The Islamic Futurist, 2nd edition, Iqbal Academy Pakistan, 2004, p. 80 (PDF page 88).",
       "axisDate": 1910,
       "poetId": "iqbal",
-      "readerPlaceholder": {
-        "id": "iqbal-milli-poem",
-        "title": "Taranah-i-Milli",
-        "message": "The English text will be added when the exhibit’s translation is selected. Publication details and a link to the source are available below."
-      },
       "publicationDetails": [
         {
           "label": "Written",
@@ -344,12 +446,123 @@
         },
         {
           "label": "English text",
-          "text": "Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+          "text": "Ikram Azam’s English translation in Iqbal: The Islamic Futurist, 2nd edition, Iqbal Academy Pakistan, 2004, p. 80 (PDF page 88). Wording, punctuation, and printed line breaks follow the supplied scan.",
           "referenceIds": [
-            "P10"
+            "P18"
           ]
         }
-      ]
+      ],
+      "poem": {
+        "id": "iqbal-milli-poem",
+        "title": "Tarana-e Milli · National Anthem",
+        "author": "Muhammad Iqbal",
+        "translator": "Ikram Azam",
+        "language": "en",
+        "stanzas": [
+          {
+            "id": "iqbal-milli-poem-stanza-1",
+            "lines": [
+              {
+                "id": "iqbal-milli-poem-line-01",
+                "text": "China and Arabia are ours, Hindustan is ours"
+              },
+              {
+                "id": "iqbal-milli-poem-line-02",
+                "text": "We are Muslims, the whole world is ours"
+              },
+              {
+                "id": "iqbal-milli-poem-line-03",
+                "text": "The trust of “Tauhid” (Oneness) is in our bosoms"
+              },
+              {
+                "id": "iqbal-milli-poem-line-04",
+                "text": "It is not easy to decimate our legacy and heritage"
+              },
+              {
+                "id": "iqbal-milli-poem-line-05",
+                "text": "Among the world’s idol-dens, is the first House of God"
+              },
+              {
+                "id": "iqbal-milli-poem-line-06",
+                "text": "We are its guardians, it is our gracious guardian"
+              },
+              {
+                "id": "iqbal-milli-poem-line-07",
+                "text": "We have grown young in the shadow of swords"
+              },
+              {
+                "id": "iqbal-milli-poem-line-08",
+                "text": "The crescent-like dagger is our national symbol"
+              },
+              {
+                "id": "iqbal-milli-poem-line-09",
+                "text": "Our call to prayer resounded in the West’s valleys"
+              },
+              {
+                "id": "iqbal-milli-poem-line-10",
+                "text": "No one could ever blockade our forward deluge!"
+              },
+              {
+                "id": "iqbal-milli-poem-line-11",
+                "text": "O sky!  We cannot be crushed by any evil"
+              },
+              {
+                "id": "iqbal-milli-poem-line-12",
+                "text": "You have tried and tested us a hundred times over!:"
+              },
+              {
+                "id": "iqbal-milli-poem-line-13",
+                "text": "O garden of Andlusia!  Do you remember those days"
+              },
+              {
+                "id": "iqbal-milli-poem-line-14",
+                "text": "When in your boughs and branches nested"
+              },
+              {
+                "id": "iqbal-milli-poem-line-15",
+                "text": "our home and hamlet?"
+              },
+              {
+                "id": "iqbal-milli-poem-line-16",
+                "text": "O ocean wave of Sicily!  You also deliver to us"
+              },
+              {
+                "id": "iqbal-milli-poem-line-17",
+                "text": "Your sea still sings our stories as our story teller!"
+              },
+              {
+                "id": "iqbal-milli-poem-line-18",
+                "text": "O Land of Purity!  We sacrificed ourselves for your sanctity!"
+              },
+              {
+                "id": "iqbal-milli-poem-line-19",
+                "text": "Our blood still flows through your very veins!"
+              },
+              {
+                "id": "iqbal-milli-poem-line-20",
+                "text": "The leader of our (Ummah) carvan is our Mir"
+              },
+              {
+                "id": "iqbal-milli-poem-line-21",
+                "text": "Muhammad of Hejaz"
+              },
+              {
+                "id": "iqbal-milli-poem-line-22",
+                "text": "The peace of our existence survives by this name!"
+              },
+              {
+                "id": "iqbal-milli-poem-line-23",
+                "text": "Iqbal’s anthem is thus his ‘Road’s Call’—“Bang-e-Dara”"
+              },
+              {
+                "id": "iqbal-milli-poem-line-24",
+                "text": "Once more departs our carvan towards its destination!"
+              }
+            ]
+          }
+        ],
+        "annotations": []
+      }
     },
     {
       "id": "ww1",
@@ -549,7 +762,11 @@
       "description": "After the failure to agree on a constitution for a united India, the June 3 plan provides a route to separate transfers of power and the division of Punjab and Bengal. The League has stayed out of the Constituent Assembly. The British government says it will not impose that assembly’s constitution on unwilling regions. The plan replaces the attempt to hold India together under the Cabinet Mission scheme.",
       "referenceIds": [
         "H7",
-        "H17"
+        "H17",
+        "H20",
+        "H23",
+        "H24",
+        "H22"
       ],
       "relatedCardIds": [
         "talks-breakdown",
@@ -568,7 +785,17 @@
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "mapComparisonId": "partition"
+      "mapComparisonId": "partition",
+      "context": [
+        {
+          "title": "A rushed transfer of power",
+          "text": "The British government had set June 1948 as the latest date for transferring power. Mountbatten brings the date forward by about ten months to August 15, 1947. Once the June plan is announced, officials have little more than ten weeks to prepare the new states."
+        },
+        {
+          "title": "What the shortened timetable meant",
+          "text": "Historians Yasmin Khan and Stanley Wolpert criticize the haste and inadequate preparation. The shortened schedule leaves very little time to arrange protection and relief for mass migration, secure the border regions, and divide the civil service, armed forces, and shared administrative systems. Independence arrives while these arrangements are still being worked out. The lack of preparation leaves civilians more exposed as violence and displacement grow."
+        }
+      ]
     },
     {
       "id": "radcliffe-appointed",
@@ -1021,10 +1248,11 @@
       "datePrecision": "day-range",
       "track": "history",
       "title": "Independence celebrations",
-      "description": "Independence ceremonies take place in Karachi on August 14 and in New Delhi on August 15. The borders have not yet been publicly announced. Faiz’s poem gives us a way to ask whether these celebrations bring the freedom people had hoped for.",
+      "description": "Independence ceremonies take place in Karachi on August 14 and in New Delhi on August 15. The final borders through Punjab and Bengal are still being kept from the public and will be announced on August 17. Many people in the disputed regions celebrate without knowing officially which country their homes will belong to. Faiz’s poem gives us a way to ask whether these celebrations bring the freedom people had hoped for.",
       "referenceIds": [
         "H6",
-        "H7"
+        "H7",
+        "H20"
       ],
       "relatedCardIds": [
         "faiz"
@@ -1045,7 +1273,7 @@
       "datePrecision": "day",
       "track": "history",
       "title": "Radcliffe boundary awards made public",
-      "description": "The boundary awards announce the borders through Punjab and Bengal. In Punjab, Lahore becomes part of Pakistan and Amritsar becomes part of India. Bengal is divided between West Bengal in India and East Bengal in Pakistan, which is now Bangladesh. The map below shows the division. Auden’s poem later looks back at how the border was drawn.",
+      "description": "The Radcliffe boundary awards are made public on August 17, two days after the August 15 transfer of power. The borders through Punjab and Bengal have been withheld from the public during the independence ceremonies. Many people in the disputed areas have celebrated without official confirmation of which country their homes will belong to.",
       "referenceIds": [
         "H6",
         "H7",
@@ -1073,8 +1301,12 @@
       },
       "context": [
         {
-          "title": "Decided before independence, announced afterward",
-          "text": "The Punjab and Bengal awards are dated August 12, but are not made public until August 17, after the independence ceremonies. People in the disputed areas celebrate independence without yet knowing officially which country their homes will belong to."
+          "title": "Why the delayed announcement mattered",
+          "text": "The Punjab and Bengal awards are dated August 12. Mountbatten delays their publication until after independence. Keeping the final borders secret prolongs rumours, fear, and uncertainty and makes it harder for families to plan and for officials to coordinate protection. When the awards are revealed, people who find themselves on the other side of the new border face sudden decisions about whether and where to flee. Violence and migration have already begun, so the announcement adds to an existing crisis rather than starting it."
+        },
+        {
+          "title": "Where the line fell",
+          "text": "Lahore becomes part of Pakistan and Amritsar part of India. Bengal is divided between West Bengal in India and East Bengal in Pakistan, now Bangladesh. The map comparison below shows the division alongside the earlier religious geography."
         },
         {
           "title": "What a border could not preserve",
@@ -1177,6 +1409,20 @@
         "id": "to-waris-shah",
         "title": "To Waris Shah",
         "author": "Amrita Pritam",
+        "background": {
+          "title": "Who was Waris Shah?",
+          "image": {
+            "src": "images/poets/waris-shah.jpg",
+            "alt": "Painted portrait of Waris Shah, seated and wearing a turban.",
+            "width": 800,
+            "height": 790,
+            "caption": "Waris Shah. Lahore, c. 1859. Unknown artist. Public domain.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_the_Punjabi_poet_Waris_Shah_(Lahore,_ca.1859).jpg"
+          },
+          "text": "Waris Shah was an eighteenth-century Punjabi Sufi poet best known for Heer, his telling of the tragic love story of Heer and Ranjha. In this poem, Amrita Pritam asks him to speak from his grave and witness Punjab’s suffering during Partition.",
+          "sourceUrl": "https://www.islam.museum/en/person/waris-shah/",
+          "sourceLabel": "Background source · Islam Museum"
+        },
         "translator": "Kiron Bajaj and Carlo Coppola",
         "language": "en",
         "stanzas": [
@@ -1454,7 +1700,31 @@
             ]
           }
         ],
-        "annotations": []
+        "annotations": [
+          {
+            "id": "to-waris-shah-opening-note",
+            "term": "Calling on Waris Shah",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-line-01",
+                "quote": "Today I asked Waris Shah:"
+              },
+              {
+                "lineId": "to-waris-shah-line-02",
+                "quote": "Speak from your grave;"
+              },
+              {
+                "lineId": "to-waris-shah-line-03",
+                "quote": "Open a new chapter"
+              },
+              {
+                "lineId": "to-waris-shah-line-04",
+                "quote": "In the Book of Love."
+              }
+            ],
+            "analysis": "Why does the speaker call on someone who has died, specifically a poet? Asking him to write again suggests that the current suffering of the people demands another story."
+          }
+        ]
       },
       "photographIds": [
         "train",

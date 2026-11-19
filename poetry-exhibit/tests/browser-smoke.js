@@ -138,7 +138,9 @@
     assert(readers.every(reader => reader.querySelector('.poem-publication dl')), 'Every reader includes publication and edition details');
     for (const id of ['iqbal-hindi-poem', 'iqbal-milli-poem']) {
       const reader = document.getElementById(`${id}-title`).closest('.poem-reader');
-      assert(!reader.open && reader.querySelector('.poem-text-status'), `${id} has a collapsed entry with explicit text status`);
+      assert(!reader.open && reader.querySelector('.poem-text'), `${id} has a collapsed poem reader`);
+      assert(reader.querySelectorAll('.poem-line').length === (id === 'iqbal-hindi-poem' ? 20 : 24), `${id} preserves the supplied edition’s printed lines`);
+      assert(reader.querySelector('.poem-byline').textContent.includes('Ikram Azam'), `${id} credits the selected translator`);
     }
     assert(document.querySelector('#faiz-publication-title').parentElement.textContent.includes('122–127'), 'Faiz cites verified bilingual page range');
     assert(document.querySelector('#pritam-publication-title').parentElement.textContent.includes('27–28'), 'Pritam cites Mahfil pages');
@@ -150,7 +152,7 @@
     assert(pritamReader.querySelector('.poem-byline').textContent.includes('Kiron Bajaj and Carlo Coppola'), 'Pritam credits the supplied translation');
     assert(document.getElementById('to-waris-shah-line-52').textContent === 'In the Book of Love.', 'Pritam ends at the requested Book of Love line');
     assert(!pritamReader.querySelector('.poem-text').textContent.includes('TRAVELER') && !pritamReader.querySelector('.poem-text').textContent.includes('After searching'), 'O Traveler is excluded from Pritam poem text');
-    assert(!pritamReader.querySelector('.poem-highlight'), 'Pritam has no added analysis highlights');
+    assert(pritamReader.querySelectorAll('.poem-highlight').length === 4, 'Pritam highlights the four opening lines');
     pritamReader.querySelector('summary').click();
     const gulzarReader = document.querySelector('#karachi-title').closest('.poem-reader');
     assert(!gulzarReader.open, 'Karachi starts collapsed');
@@ -171,19 +173,19 @@
     const poemReader = document.querySelector('#freedoms-dawn-title').closest('.poem-reader');
     assert(!poemReader.open, 'Poem starts collapsed');
     poemReader.querySelector('.poem-summary').click();
-    assert(poemReader.open && document.querySelector('.poem-text').getBoundingClientRect().height > 0, 'Poem disclosure reveals the reader');
+    assert(poemReader.open && poemReader.querySelector('.poem-text').getBoundingClientRect().height > 0, 'Poem disclosure reveals the reader');
     poemReader.querySelector('.poem-summary').click();
     assert(!poemReader.open, 'Poem disclosure can hide the reader again');
     document.querySelector('.read-poem').click();
     assert(poemReader.open, 'Timeline read link expands the collapsed poem');
     assert(document.activeElement.id === 'freedoms-dawn-title', 'Timeline read link focuses the poem');
-    assert(document.querySelector('.poem-byline').textContent.includes('V. G. Kiernan'), 'Poem credits its translator');
+    assert(poemReader.querySelector('.poem-byline').textContent.includes('V. G. Kiernan'), 'Poem credits its translator');
     assert(document.querySelectorAll('#freedoms-dawn .poem-stanza').length === 5, 'Poem preserves five stanzas');
     assert(document.querySelectorAll('#freedoms-dawn .poem-line').length === 25, 'Poem preserves 25 lines');
     assert(document.querySelectorAll('#freedoms-dawn .poem-stanza br').length === 20, 'Explicit breaks separate lines within stanzas');
     assert(new Set([...document.querySelectorAll('#freedoms-dawn .poem-line')].map(line => line.id)).size === 25, 'Poem lines have unique annotation IDs');
     assert(document.querySelector('#freedoms-dawn-line-25').textContent === 'Let us go on, our goal is not reached yet.', 'Poem ends with supplied final line');
-    assert(getComputedStyle(document.querySelector('.poem-text')).overflowX === 'auto', 'Long verse lines scroll within the poem');
+    assert(getComputedStyle(poemReader.querySelector('.poem-text')).overflowX === 'auto', 'Long verse lines scroll within the poem');
     assert([...document.querySelectorAll('#freedoms-dawn .poem-line')].every(line => line.getBoundingClientRect().height <= parseFloat(getComputedStyle(line).lineHeight) + 4), 'Each printed verse line remains one visual line');
     assert([...document.querySelectorAll('#freedoms-dawn .poem-stanza')].map(stanza => stanza.querySelectorAll('.poem-line').length).join(',') === '4,3,7,2,9', 'Stanza breaks match the supplied scan');
     const highlight = document.querySelector('.poem-highlight');
