@@ -213,11 +213,23 @@
           figure.append(portrait, caption);
           background.append(figure);
         }
-        background.append(el('h4', poem.background.title), el('p', poem.background.text));
+        background.append(el('h4', poem.background.title));
+        poem.background.text.split('\n\n').forEach(paragraph => background.append(el('p', paragraph)));
         if (poem.background.sourceUrl) {
           const source = el('a', poem.background.sourceLabel || 'Background source', 'text-link');
           source.href = poem.background.sourceUrl;
           background.append(source);
+        }
+        if (poem.background.sources?.length) {
+          const sources = el('ul', null, 'reading-sources');
+          poem.background.sources.forEach(source => {
+            const item = el('li', null, 'annotation-source');
+            const link = el('a', source.title);
+            link.href = source.url;
+            item.append(link);
+            sources.append(item);
+          });
+          background.append(sources);
         }
         body.append(background);
       }
@@ -240,6 +252,24 @@
         const title = el('h4', note.term);
         title.id = `${note.id}-heading`;
         panel.append(title);
+        if (note.image) {
+          const figure = el('figure', null, 'annotation-image');
+          const photo = el('img');
+          photo.src = note.image.src;
+          photo.alt = note.image.alt;
+          photo.width = note.image.width;
+          photo.height = note.image.height;
+          photo.loading = 'lazy';
+          const caption = el('figcaption');
+          caption.append(el('p', note.image.caption));
+          const credit = el('a', note.image.credit);
+          credit.href = note.image.sourceUrl;
+          const license = el('a', note.image.license);
+          license.href = note.image.licenseUrl;
+          caption.append(credit, document.createTextNode(' · '), license);
+          figure.append(photo, caption);
+          panel.append(figure);
+        }
         const definitions = note.definitions || (note.definition ? [{word: note.term, definition: note.definition, dictionaryName: note.dictionaryName, dictionaryUrl: note.dictionaryUrl}] : []);
         if (definitions.length) {
           const meanings = el('div', null, 'word-meanings');
@@ -261,14 +291,17 @@
           panel.append(meanings);
         }
         panel.append(el('h5', 'A possible reading'), el('p', note.analysis));
-        if (note.source) {
-          const source = el('p', null, 'annotation-source');
-          const link = el('a', note.source.title);
-          link.href = note.source.url;
-          source.append(link);
-          if (note.source.note) source.append(document.createTextNode(`. ${note.source.note}`));
-          panel.append(source);
+        if (note.translationNote) {
+          panel.append(el('h5', 'Translation note'), el('p', note.translationNote, 'translation-note'));
         }
+        (note.sources || (note.source ? [note.source] : [])).forEach(entry => {
+          const source = el('p', null, 'annotation-source');
+          const link = el('a', entry.title);
+          link.href = entry.url;
+          source.append(link);
+          if (entry.note) source.append(document.createTextNode(`. ${entry.note}`));
+          panel.append(source);
+        });
         const state = {panel, triggers: [], active: null};
         const dismiss = () => {
           panel.hidden = true;

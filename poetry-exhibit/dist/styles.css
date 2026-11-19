@@ -202,3 +202,7 @@ html.poet-popup-open{overflow:hidden;width:100dvw}body.poet-popup-open{position:
 .poem-background-portrait img{display:block;width:100%;height:auto;border:1px solid var(--line)}
 .poem-background-portrait figcaption{margin-top:8px;font-size:12px;line-height:1.5;color:var(--muted)}
 @media(max-width:480px){.poem-background-portrait{float:none;margin:0 0 20px}}
+.annotation-image{max-width:320px;margin:20px 0}
+.annotation-image img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.annotation-image figcaption{font:normal 12px/1.5 Arial,sans-serif;color:var(--muted)}
+.annotation-image figcaption p{font:inherit;margin:8px 0}

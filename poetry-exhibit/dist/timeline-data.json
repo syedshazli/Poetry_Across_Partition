@@ -684,7 +684,217 @@
             ]
           }
         ],
-        "annotations": []
+        "annotations": [
+          {
+            "id": "iqbal-milli-opening-geography",
+            "term": "China, Arabia, and Hindustan",
+            "lineId": "iqbal-milli-poem-line-01",
+            "quote": "China and Arabia are ours, Hindustan is ours",
+            "analysis": "Naming distant places immediately expands the poem’s geography. Hindustan remains important, but the speaker now imagines belonging across several regions. China and Arabia extend this imagined community to the east and west of India. Arabia has a strong connection to Islam, but its place in this line can also show the geographic range of Muslim belonging. Read alongside China and Hindustan, it helps us see a community spread across different places. The repeated “ours” gathers these regions into one collective identity. Compared with the shared homeland in “Tarana-e Hindi,” the speaker’s sense of belonging now reaches beyond Hindustan."
+          },
+          {
+            "id": "iqbal-milli-tauhid-trust",
+            "term": "Tauhid as a shared trust",
+            "lineId": "iqbal-milli-poem-line-03",
+            "quote": "The trust of “Tauhid” (Oneness) is in our bosoms",
+            "definitions": [
+              {
+                "word": "Tauhid (also spelled tawhid)",
+                "definition": "The Islamic belief in the oneness and uniqueness of God."
+              }
+            ],
+            "analysis": "Shared belief becomes something carried inside people, no matter how far they are from one another. Placing Tauhid in “our bosoms” makes this belief personal while keeping it collective. The word “trust” suggests an inheritance that the community has a responsibility to preserve. This helps explain how people can remain connected across geographic distances. Their belonging depends on a belief they carry with them, even when they live in different countries.",
+            "source": {
+              "title": "St Andrews Encyclopaedia of Theology · “Divine Unicity (tawḥīd)”",
+              "url": "https://www.saet.ac.uk/Islam/DivineUnicity",
+              "note": "Source for the definition of Tauhid. The reading of “trust” is the exhibit’s interpretation."
+            }
+          },
+          {
+            "id": "iqbal-milli-legacy-survival",
+            "term": "Legacy, heritage, and survival",
+            "lineId": "iqbal-milli-poem-line-04",
+            "quote": "It is not easy to decimate our legacy and heritage",
+            "analysis": "The confident declaration that it is “not easy” to destroy the community’s legacy and heritage suggests that erasure is a possibility the speaker feels compelled to answer. Pride carries an awareness of vulnerability. In “Tarana-e Hindi,” the speaker insists that the community has survived even though time has been its enemy for centuries. Here, the emphasis shifts toward resisting the destruction of what the community has inherited. One possible reading is that the threat feels immediate or already present, while the speaker insists that the community can withstand it. The line does not identify a particular attack, but it presents survival as something that must continue to be defended."
+          },
+          {
+            "id": "iqbal-milli-house-of-god",
+            "term": "The House of God and reciprocal guardianship",
+            "segments": [
+              {
+                "lineId": "iqbal-milli-poem-line-05",
+                "quote": "Among the world’s idol-dens, is the first House of God"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-06",
+                "quote": "We are its guardians, it is our gracious guardian"
+              }
+            ],
+            "image": {
+              "src": "images/kaaba-2024.jpg",
+              "alt": "The Kaaba draped in black and gold cloth, surrounded by worshippers in the Great Mosque in Mecca.",
+              "width": 960,
+              "height": 1280,
+              "caption": "The Kaaba in Mecca, photographed in February 2024.",
+              "credit": "Bjelica · Wikimedia Commons thumbnail",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaaba_in_2024.jpg",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+            },
+            "analysis": "The “first House of God” refers to the Kaaba in Mecca. It gives the poem’s wide geography a sacred center. The community guards it, and it guards the community. Reversing the roles of guardian and guarded presents religious belonging as a relationship involving both responsibility and protection. The people care for a sacred place, while that place gives their shared belief a focus and a sense of protection.\n\n“Idol-dens” refers to places of idol worship, such as temples or sanctuaries containing idols. The word “dens” gives the description a negative tone, so it expresses the poem’s religious viewpoint. Many Hindu traditions practice worship through sacred images called murtis. Devotees understand these images as forms or presences of the divine, rather than simply objects being worshipped for their own sake. In Islam, worshipping idols is forbidden because worship belongs to God alone. Associating partners with God is called shirk, which the Qur’an describes as a grave sin. This contrast helps explain how the speaker sets the House of God apart from the surrounding places of worship. It also foreshadows or tells readers why there can be hostility between the communities that worship in these different ways. The poem does not describe any particular conflict, but it presents a religious difference that can be a source of tension.",
+            "sources": [
+              {
+                "title": "Qur’an 3:96 and commentary · The first House of worship",
+                "url": "https://quran.com/3/96",
+                "note": "Identifies the Kaaba as the first House of worship in Islamic tradition."
+              },
+              {
+                "title": "Qur’an 4:48 · Associating partners with God",
+                "url": "https://quran.com/en/an-nisa/48-55",
+                "note": "Source for the Islamic prohibition and the description of shirk as a grave sin."
+              },
+              {
+                "title": "BAPS · Why Hindus worship murtis",
+                "url": "https://www.baps.org/austin/learn/mandirs-and-satsang/global-learn/what-is-hinduism",
+                "note": "Explains sacred images and consecration from within a Hindu tradition."
+              }
+            ]
+          },
+          {
+            "id": "iqbal-milli-crescent-dagger",
+            "term": "The crescent-shaped dagger as a symbol",
+            "lineId": "iqbal-milli-poem-line-08",
+            "quote": "The crescent-like dagger is our national symbol",
+            "analysis": "The “crescent-like dagger” brings a recognizable Islamic emblem together with a weapon. Religious identity takes on a martial form, reinforcing the previous line’s account of strength developed “in the shadow of swords.” Calling the dagger “our national symbol” makes this strength part of the community’s shared identity. The image suggests that conflict has helped shape how the speaker understands the community and its ability to defend itself."
+          },
+          {
+            "id": "iqbal-milli-forward-deluge",
+            "term": "The community as a deluge",
+            "lineId": "iqbal-milli-poem-line-10",
+            "quote": "No one could ever blockade our forward deluge!",
+            "definitions": [
+              {
+                "word": "Deluge",
+                "definition": "An immense amount of rain or water. The word can also mean an overwhelming quantity of something.",
+                "dictionaryName": "Cambridge Dictionary",
+                "dictionaryUrl": "https://dictionary.cambridge.org/dictionary/english/deluge"
+              }
+            ],
+            "analysis": "Water symbolizes the community’s collective energy and historical movement. A deluge gathers force and crosses boundaries, making expansion appear unstoppable. The image gives the speakers a triumphant voice as they remember their power together."
+          },
+          {
+            "id": "iqbal-milli-sea-storyteller",
+            "term": "The sea as a storyteller",
+            "analysis": "Water now preserves the memory of that movement. Its continuing flow suggests that the community’s connection to a place survives across generations. Giving the water a voice makes the landscape remember a history that the speakers fear could be forgotten.",
+            "segments": [
+              {
+                "lineId": "iqbal-milli-poem-line-16",
+                "quote": "You also deliver to us"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-17",
+                "quote": "Your sea still sings our stories as our story teller!"
+              }
+            ],
+            "translationNote": "Azam’s version names Sicily and the sea, while the Urdu names the Tigris and its river. Some of the specific imagery discussed here therefore comes from this English rendering. The personification of water as a storyteller appears in both versions.",
+            "sources": [
+              {
+                "title": "Frances W. Pritchett · Urdu text, transliteration, and English gloss, couplet 8",
+                "url": "https://franpritchett.com/00urdu/taranahs/milli_text.html"
+              },
+              {
+                "title": "Ikram Azam · Iqbal: The Islamic Futurist, p. 80 (PDF page 88)",
+                "url": "https://www.iqbalcyberlibrary.net/files/019/IAP-Iqbal-Islamic-Futurist-2004.pdf"
+              }
+            ]
+          },
+          {
+            "id": "iqbal-milli-once-more",
+            "term": "“Once more” and a renewed journey",
+            "lineId": "iqbal-milli-poem-line-24",
+            "quote": "Once more",
+            "analysis": "The phrase makes the journey a renewal of earlier movement. The poem gathers memories of faith, power, and sacrifice to motivate the community toward a future destination.\n\nIn “Tarana-e Hindi,” the caravan has “alighted” on the banks of the Ganges. Its arrival connects the people to a place where they have stopped and made a home. The caravan can symbolize a community whose shared journey has become part of its attachment to Hindustan. In “Tarana-e Milli,” the caravan departs again. Here, it can symbolize a Muslim community moving together toward a shared future, with faith giving the travelers a connection that extends across countries. The earlier poem looks back at arrival and belonging to a homeland, while this ending looks ahead to a destination that remains unnamed. The repeated caravan image lets us see how Iqbal’s understanding of collective belonging has changed."
+          },
+          {
+            "id": "iqbal-milli-apostrophe",
+            "term": "Apostrophe · Addressing the world",
+            "segments": [
+              {
+                "lineId": "iqbal-milli-poem-line-11",
+                "quote": "O sky!"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-13",
+                "quote": "O garden of Andlusia!"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-16",
+                "quote": "O ocean wave of Sicily!"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-18",
+                "quote": "O Land of Purity!"
+              }
+            ],
+            "analysis": "The direct addresses to the sky, Andalusia, water, and land are examples of apostrophe, which is when a speaker addresses someone absent or something nonhuman as though it could hear and respond. The speaker treats the world as something that can hear and remember the community. The repeated addresses make distant places feel personally connected to the speakers. Asking these places to remember also makes them witnesses to the community’s history."
+          },
+          {
+            "id": "iqbal-milli-al-andalus",
+            "term": "Al-Andalus and the memory of a lost home",
+            "segments": [
+              {
+                "lineId": "iqbal-milli-poem-line-13",
+                "quote": "Do you remember those days"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-14",
+                "quote": "When in your boughs and branches nested"
+              },
+              {
+                "lineId": "iqbal-milli-poem-line-15",
+                "quote": "our home and hamlet?"
+              }
+            ],
+            "analysis": "Iqbal invokes al-Andalus, the historical Muslim-ruled territories of the Iberian Peninsula, in present-day Spain and Portugal. Their boundaries changed over time, from the conquests beginning in 711 to the fall of Granada in 1492. The reference extends beyond today’s Spanish region of Andalusia.\n\n“Do you remember those days” turns Andalusia into a witness to a lost home. The nesting imagery suggests shelter and attachment. Calling the home “our” lets the speaker claim that distant past as part of the community’s shared memory. This shifts the tone from the earlier confidence about expansion toward longing for a place where the community once belonged.\n\nIqbal had studied in Europe from 1905 to 1908 and returned to Lahore before this poem’s reported date of 1910. Scholars connect those years with changes in his understanding of nationalism and Muslim community. This background helps us read his address to al-Andalus as part of a wider sense of belonging. A place in Europe becomes part of the community’s remembered home, even for people living far from it. The “we” is connected through faith and a shared past across different countries.",
+            "sources": [
+              {
+                "title": "Museo Arqueológico Nacional · Al-Andalus guidebook",
+                "url": "https://www.man.es/man/en/dam/jcr%3Aa7c8295c-2a1a-4b0f-818e-ba1115beee9c/man-guidebook-medieval-world-al-andalus.pdf"
+              },
+              {
+                "title": "El legado andalusí · Chronology of al-Andalus",
+                "url": "https://www.legadoandalusi.es/history-of-al-andalus/chronology/?lang=en"
+              },
+              {
+                "title": "Mustansir Mir · Iqbal, Poet and Thinker, chapter 1",
+                "url": "https://www.allamaiqbal.com/biography/biographical_material/english_title/iqbal_2ndedition_2008.pdf"
+              },
+              {
+                "title": "Ravi K. Mishra · “Nationalism, Revivalism and Pan-Islamism”",
+                "url": "https://doi.org/10.1177/02576430231208821",
+                "note": "Connects the shift in Iqbal’s political outlook to his years in Europe. The application to this passage is the exhibit’s interpretation."
+              }
+            ]
+          }
+        ],
+        "background": {
+          "title": "Between the two poems · Iqbal’s years in Europe",
+          "text": "A major change between the two poems was Iqbal’s three years studying in Europe, from 1905 to 1908. He studied philosophy at Cambridge, completed a doctorate at Munich on Persian metaphysics, and qualified as a barrister in London. He returned to Lahore in 1908, two years before “Taranah-i-Milli.” Mustansir Mir’s biography identifies these years as an important turning point in his thought.\n\nHis encounter with Europe helped him question whether loyalty to territory could provide an adequate foundation for community. Scholars connect his growing criticism of European nationalism with his interest in Islam as a source of ethical and political solidarity. In this poem, the Muslim “we” extends across countries. Religion already mattered in his earlier work, but it became more central to how he defined collective belonging.\n\nThe poem dates to 1910, which was 37 years before Partition. It emerged from Iqbal’s changing outlook after Europe and provides background to later debates over Muslim identity and political representation. Ravi K. Mishra’s article, first published online in 2023, argues that this shift took shape during 1905–08, well before the 1930 Allahabad Address.",
+          "sources": [
+            {
+              "title": "Mustansir Mir · Iqbal, Poet and Thinker, preface and chapter 1, pp. 6–9",
+              "url": "https://www.allamaiqbal.com/biography/biographical_material/english_title/iqbal_2ndedition_2008.pdf"
+            },
+            {
+              "title": "Iqbal Review · April 1961, background reading supplied for this exhibit",
+              "url": "https://www.allamaiqbal.com/publications/journals/review/apr61/5.htm"
+            },
+            {
+              "title": "Ravi K. Mishra · “Nationalism, Revivalism and Pan-Islamism,” first published online 2023",
+              "url": "https://doi.org/10.1177/02576430231208821"
+            }
+          ]
+        }
       }
     },
     {
