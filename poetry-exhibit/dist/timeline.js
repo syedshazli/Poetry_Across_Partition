@@ -88,6 +88,35 @@
     const rect = poetDialog.getBoundingClientRect();
     if (event.target === poetDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) poetDialog.close();
   });
+  function showMap(map, target) {
+      const figure = el('figure', null, 'timeline-history-map');
+      const full = el('a');
+      full.href = map.src;full.target = '_blank';full.rel = 'noopener noreferrer';
+      full.setAttribute('aria-label', `Open ${map.label || 'Partition map'} at full size`);
+      const image = el('img');
+      image.src = map.src;image.alt = map.alt;image.width = map.width;image.height = map.height;
+      full.append(image);
+      const caption = el('figcaption');
+      caption.append(el('p', map.caption), el('p', map.note, 'source-note'));
+      const credit = el('p', null, 'source-note');
+      credit.append(document.createTextNode(`${map.credit}. `));
+      for (const [label, url] of [['Map source', map.sourceUrl], [map.license, map.licenseUrl], ['Open full-size map', map.src]]) {
+        const link = el('a', label);link.href = url;link.target = '_blank';link.rel = 'noopener noreferrer';
+        credit.append(link, document.createTextNode(' '));
+      }
+      caption.append(credit);figure.append(full, caption);target.append(figure);
+  }
+  function renderPartitionMaps() {
+    const comparison = data.mapComparisons.partition;
+    const section = document.querySelector('#partition-maps-content');
+    section.append(el('p', comparison.standaloneIntro, 'intro'));
+    const maps = el('div', null, 'standalone-map-list');
+    comparison.views.forEach(map => {
+      const article = el('article', null, 'standalone-map-card');
+      article.append(el('h3', map.label));showMap(map, article);maps.append(article);
+    });
+    section.append(maps, el('p', comparison.reading), el('p', comparison.example));
+  }
   function renderPhotographs() {
     const list = document.querySelector('#partition-photo-list');
     const sourceLink = (label, url) => {
@@ -322,6 +351,32 @@
     heading.id = 'detail-title';
     detail.append(heading);
     detail.append(el('p', c.description));
+    (c.context || []).forEach(section => {
+      detail.append(el('h4', section.title), el('p', section.text));
+    });
+    const comparison = data.mapComparisons?.[c.mapComparisonId];
+    if (comparison) {
+      const section = el('section', null, 'timeline-map-comparison');
+      section.setAttribute('aria-labelledby', 'map-comparison-title');
+      const title = el('h4', comparison.title);title.id = 'map-comparison-title';
+      section.append(title, el('p', comparison.intro));
+      const controls = el('div', null, 'map-comparison-controls');
+      controls.setAttribute('role', 'group');controls.setAttribute('aria-label', 'Choose historical map');
+      const panel = el('div');panel.id = 'map-comparison-panel';
+      const buttons = comparison.views.map((map, index) => {
+        const button = el('button', map.label);button.type = 'button';
+        button.setAttribute('aria-controls', panel.id);
+        button.setAttribute('aria-pressed', String(index === 0));
+        button.addEventListener('click', () => {
+          buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+          panel.replaceChildren();showMap(map, panel);
+        });
+        controls.append(button);return button;
+      });
+      showMap(comparison.views[0], panel);
+      section.append(controls, panel, el('p', comparison.reading), el('p', comparison.example));
+      detail.append(section);
+    } else if (c.map) showMap(c.map, detail);
     if (c.photographIds?.length) {
       const photos = el('nav', null, 'related-photographs');
       photos.setAttribute('aria-label', 'Related historical photographs');
@@ -479,6 +534,7 @@
     data = await response.json();
     renderPoems();
     renderPhotographs();
+    renderPartitionMaps();
     const poets = [...data.poets];
     poets.forEach(poet => {
       const card = el('article', null, 'poet-intro');

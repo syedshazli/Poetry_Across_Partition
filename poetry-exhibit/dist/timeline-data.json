@@ -126,6 +126,39 @@
     "H14": {
       "title": "Moni Mohsin · “The wounds have never healed,” The Guardian (2017)",
       "url": "https://www.theguardian.com/world/2017/aug/02/wounds-have-never-healed-living-through-terror-partition-india-pakistan-1947"
+    },
+    "H15": {
+      "title": "UK Parliament · Indian Constitution conversations, 11 December 1946",
+      "url": "https://api.parliament.uk/historic-hansard/commons/1946/dec/11/indian-constitution-conversations",
+      "note": "Attlee’s contemporary explanation of the disputed grouping procedure and the unsuccessful London talks."
+    },
+    "H16": {
+      "title": "UK Parliament · Interim Government (Muslim Participation), 21 October 1946",
+      "url": "https://hansard.parliament.uk/Commons/1946-10-21/debates/d517f236-fbb5-4b38-8f7e-f262edbb9c64/InterimGovernment%28MuslimParticipation%29"
+    },
+    "H17": {
+      "title": "UK Parliament · Statement on the transfer of power, 3 June 1947",
+      "url": "https://hansard.parliament.uk/commons/1947-06-03/debates/53a24ee6-0b6a-4b3c-812b-ce722461eb7b/CommonsChamber"
+    },
+    "H18": {
+      "title": "Cyril Radcliffe · Report of the Punjab Boundary Commission, 12 August 1947",
+      "url": "https://en.wikisource.org/wiki/Radcliffe_Award/Report_of_the_Punjab_Boundary_Commission"
+    },
+    "H19": {
+      "title": "Cyril Radcliffe · Report of the Bengal Boundary Commission, 12 August 1947",
+      "url": "https://en.wikisource.org/wiki/Radcliffe_Award/Report_of_the_Bengal_Boundary_Commission"
+    },
+    "H20": {
+      "title": "Lucy Chester · The 1947 Partition: Drawing the Indo-Pakistani Boundary (2002)",
+      "url": "https://ciaotest.cc.columbia.edu/olj/ad/ad_v7_1/chl01.html"
+    },
+    "H21": {
+      "title": "Sciences Po · India from 1900 to 1947, chronology of mass violence (2007)",
+      "url": "https://www.sciencespo.fr/mass-violence-war-massacre-resistance/en/document/india-1900-1947.html"
+    },
+    "H22": {
+      "title": "National Army Museum · Independence and Partition, 1947",
+      "url": "https://www.nam.ac.uk/explore/independence-and-partition-1947"
     }
   },
   "cards": [
@@ -401,19 +434,111 @@
     },
     {
       "id": "cabinet",
-      "dateLabel": "1946",
-      "datePrecision": "year",
+      "dateLabel": "May–June 1946",
+      "datePrecision": "month-range",
       "track": "history",
-      "title": "Cabinet Mission and escalating violence",
-      "description": "The Cabinet Mission proposes a united India with a limited central government and groups of provinces with substantial powers. This offers a possible way to protect Muslim political influence without creating two separate countries. The League initially accepts the plan, then withdraws amid disagreements with Congress over how it would work, including provincial grouping and the constituent assembly’s powers. Failed negotiations and escalating communal violence help bring Partition closer.",
+      "title": "A proposal for a united India",
+      "description": "The Cabinet Mission proposes a united India whose central government would handle defence, foreign affairs, and communications. Provinces would retain other powers and could form groups to govern some matters together. The League accepts the scheme in June, seeing the groups as a way to protect Muslim political influence. Congress agrees to participate in constitution-making, but the parties do not agree on what accepting the plan requires. Their different readings soon threaten the compromise.",
+      "referenceIds": [
+        "H12",
+        "H13",
+        "H15"
+      ],
+      "relatedCardIds": [
+        "talks-breakdown"
+      ],
+      "axisDate": 1946.37
+    },
+    {
+      "id": "talks-breakdown",
+      "dateLabel": "July–December 1946",
+      "datePrecision": "month-range",
+      "axisDate": 1946.55,
+      "track": "history",
+      "title": "Why the united-India talks broke down",
+      "description": "Congress and the Muslim League disagree over how power would be shared in a united India. Neither trusts the other’s interpretation of the Cabinet Mission plan.",
+      "context": [
+        {
+          "title": "Could provinces refuse to join a group?",
+          "text": "The League wanted the proposed provincial groups to be formed through majority votes within regional sections. This would give it influence in the northwest and east. Congress argued that each province should be free to decide whether to join. The disagreement mattered especially for Assam and the northwest, where Congress feared losing influence. The British interpretation required initial participation, with a right to leave a group after the new constitution’s first elections."
+        },
+        {
+          "title": "Could the compromise be changed later?",
+          "text": "In July, Nehru’s statements that the Constituent Assembly would be free to shape the constitution deepened the League’s fear that Congress could undo the agreed limits on central power. The League withdrew its acceptance at the end of July."
+        },
+        {
+          "title": "Who could represent Muslims?",
+          "text": "The interim-government negotiations also stalled over Congress’s right to nominate a Muslim within its own quota. This challenged the League’s claim to speak for Muslims. The parties disputed both the constitution and who would share power while it was written."
+        },
+        {
+          "title": "Talks continued, but agreement did not follow",
+          "text": "The League joined the interim government in October, but stayed out of the Constituent Assembly. December talks in London failed to resolve the grouping dispute. Political deadlock continued as communal violence escalated, narrowing the possibility of an agreed united India."
+        }
+      ],
+      "referenceIds": [
+        "H12",
+        "H13",
+        "H15",
+        "H16",
+        "H7"
+      ],
+      "relatedCardIds": [
+        "cabinet",
+        "plan",
+        "calcutta-violence"
+      ]
+    },
+    {
+      "id": "calcutta-violence",
+      "dateLabel": "16–19 August 1946",
+      "datePrecision": "day-range",
+      "axisDate": 1946.622,
+      "track": "history",
+      "title": "Mass killings in Calcutta",
+      "description": "On August 16, the Muslim League holds Direct Action Day in support of Pakistan. Mass communal violence breaks out in Calcutta, now Kolkata. Hindu and Muslim civilians are killed, and thousands lose their lives over several days. The killings deepen fear during the negotiations over India’s future.",
+      "referenceIds": [
+        "H21",
+        "H22"
+      ],
+      "relatedCardIds": [
+        "talks-breakdown",
+        "punjab-massacres"
+      ],
+      "dateRange": {
+        "start": 1946.622,
+        "end": 1946.63,
+        "openEnd": false
+      }
+    },
+    {
+      "id": "displacement",
+      "dateLabel": "1947 and its aftermath",
+      "datePrecision": "open-range",
+      "track": "history",
+      "title": "Displacement and violence in Punjab",
+      "description": "Across the Partition period, mass displacement and communal violence transform Punjab. Muslims move toward Pakistan, while Sikhs and Hindus toward India. The span has no single end date, as it's ongoing till today. Amrita Pritam’s lament addresses the Punjabi poet Waris Shah through this shared landscape of loss.",
       "referenceIds": [
         "H6",
         "H7",
-        "H12",
-        "H13"
+        "H14"
       ],
-      "relatedCardIds": [],
-      "axisDate": 1946
+      "relatedCardIds": [
+        "pritam",
+        "punjab-massacres"
+      ],
+      "dateRange": {
+        "start": 1947,
+        "end": 1950,
+        "openEnd": true
+      },
+      "axisDate": 1947,
+      "photographIds": [
+        "convoy",
+        "train",
+        "delhi",
+        "punjab-camp"
+      ],
+      "mapComparisonId": "partition"
     },
     {
       "id": "plan",
@@ -421,35 +546,83 @@
       "datePrecision": "day",
       "track": "history",
       "title": "Partition plan announced",
-      "description": "The plan sets out a transfer of power to two governments and the planned division of Punjab and Bengal.",
+      "description": "After the failure to agree on a constitution for a united India, the June 3 plan provides a route to separate transfers of power and the division of Punjab and Bengal. The League has stayed out of the Constituent Assembly. The British government says it will not impose that assembly’s constitution on unwilling regions. The plan replaces the attempt to hold India together under the Cabinet Mission scheme.",
       "referenceIds": [
-        "H7"
-      ],
-      "relatedCardIds": [],
-      "axisDate": 1947.42
-    },
-    {
-      "id": "independence",
-      "dateLabel": "14–15 August 1947",
-      "datePrecision": "day-range",
-      "track": "history",
-      "title": "Independence celebrations",
-      "description": "Independence ceremonies take place in Karachi on August 14 and in New Delhi on August 15. The borders have not yet been publicly announced. Faiz’s poem gives us a way to ask whether these celebrations bring the freedom people had hoped for.",
-      "referenceIds": [
-        "H6",
-        "H7"
+        "H7",
+        "H17"
       ],
       "relatedCardIds": [
-        "faiz"
+        "talks-breakdown",
+        "radcliffe-appointed"
       ],
-      "dateRange": {
-        "start": 1947.615,
-        "end": 1947.62,
-        "openEnd": false
+      "axisDate": 1947.42,
+      "map": {
+        "src": "images/maps/partition-1947.svg",
+        "alt": "Map of the 1947 Partition showing India, the western and eastern parts of Pakistan, and the divisions of Punjab and Bengal.",
+        "width": 1189,
+        "height": 1170,
+        "caption": "The 1947 division of British India. Pakistan was formed in two separated regions, to the west and east of India. East Bengal became part of Pakistan and is now Bangladesh. This overview also marks Punjab and Bengal, the two provinces divided by the new borders.",
+        "note": "This is a later explanatory map of the eventual division, not a map issued with the June 3 plan. The final boundary awards were made public on August 17. Some smaller princely states are simplified as parts of India or Pakistan, although their accession was a separate process.",
+        "credit": "Superbenjamin, with subsequent contributions by फ़िलप्रो, RaviC, and Jordi escarre · unchanged Wikimedia Commons SVG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_en.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
       },
-      "axisDate": 1947.615,
-      "photographIds": [
-        "karachi"
+      "mapComparisonId": "partition"
+    },
+    {
+      "id": "radcliffe-appointed",
+      "dateLabel": "8 July 1947",
+      "datePrecision": "day",
+      "axisDate": 1947.515,
+      "track": "history",
+      "title": "Radcliffe arrives to draw the borders",
+      "description": "British lawyer Cyril Radcliffe arrives in India to chair the Punjab and Bengal Boundary Commissions. He has never visited India before and has about five weeks before independence to decide the borders.",
+      "context": [
+        {
+          "title": "What had already been decided?",
+          "text": "The June 3 plan had provided for the possible division of Punjab and Bengal. The commissions, established on June 30, now had to decide where the dividing lines would run. Radcliffe was deciding provincial borders, not whether Partition itself should happen."
+        },
+        {
+          "title": "Who was involved?",
+          "text": "Each commission included four judges, two nominated by Congress and two by the League, with Radcliffe as chairman. The instructions made adjoining areas with Muslim or non-Muslim majorities the starting point, while allowing other considerations. That left room for disagreement over how to weigh population against economic and geographic ties."
+        }
+      ],
+      "referenceIds": [
+        "H18",
+        "H19",
+        "H20"
+      ],
+      "relatedCardIds": [
+        "plan",
+        "boundary-hearings"
+      ]
+    },
+    {
+      "id": "boundary-hearings",
+      "dateLabel": "16–31 July 1947",
+      "datePrecision": "day-range",
+      "axisDate": 1947.537,
+      "track": "history",
+      "title": "Hearings and competing claims to the border",
+      "description": "The commissions hear arguments in Calcutta from July 16–24 and Lahore from July 21–31. The parties submit different proposals for where the borders should run.",
+      "context": [
+        {
+          "title": "What did the parties argue over?",
+          "text": "In Punjab, lawyers for Congress, the League, and Sikh legislators present their cases. Disputes include Lahore and Amritsar, canal irrigation, and rail and road links. In Bengal, Congress, the Hindu Mahasabha, the New Bengal Association, and the League argue their cases. Calcutta’s port and river connections, district majorities, and the Chittagong Hill Tracts complicate the decision."
+        },
+        {
+          "title": "Why did Radcliffe decide the lines?",
+          "text": "Radcliffe does not attend the public hearings. He reads their records and submissions, then discusses the issues with the commissioners. Neither commission reaches agreement on the main disputed boundaries. Radcliffe therefore gives his own decisions. The awards reflect choices among competing claims, rather than a line agreed by all sides."
+        }
+      ],
+      "referenceIds": [
+        "H18",
+        "H19"
+      ],
+      "relatedCardIds": [
+        "radcliffe-appointed",
+        "radcliffe"
       ]
     },
     {
@@ -843,48 +1016,104 @@
       ]
     },
     {
-      "id": "radcliffe",
-      "dateLabel": "17 August 1947",
-      "datePrecision": "day",
+      "id": "independence",
+      "dateLabel": "14–15 August 1947",
+      "datePrecision": "day-range",
       "track": "history",
-      "title": "Radcliffe boundary awards made public",
-      "description": "The boundary awards announce the borders through Punjab and Bengal. In Punjab, Lahore becomes part of Pakistan and Amritsar becomes part of India. Bengal is divided between West Bengal in India and East Bengal in Pakistan, which is now Bangladesh. The source includes a map of these borders. Auden’s poem later looks back at how the border was drawn.",
+      "title": "Independence celebrations",
+      "description": "Independence ceremonies take place in Karachi on August 14 and in New Delhi on August 15. The borders have not yet been publicly announced. Faiz’s poem gives us a way to ask whether these celebrations bring the freedom people had hoped for.",
       "referenceIds": [
         "H6",
         "H7"
       ],
       "relatedCardIds": [
-        "auden",
-        "bangladesh"
+        "faiz"
       ],
-      "axisDate": 1947.625
+      "dateRange": {
+        "start": 1947.615,
+        "end": 1947.62,
+        "openEnd": false
+      },
+      "axisDate": 1947.615,
+      "photographIds": [
+        "karachi"
+      ]
     },
     {
-      "id": "displacement",
-      "dateLabel": "1947 and its aftermath",
-      "datePrecision": "open-range",
+      "id": "radcliffe",
+      "dateLabel": "17 August 1947",
+      "datePrecision": "day",
       "track": "history",
-      "title": "Displacement and violence in Punjab",
-      "description": "Across the Partition period, mass displacement and communal violence transform Punjab. Muslims move toward Pakistan, while Sikhs and Hindus toward India. The span has no single end date, as it's ongoing till today. Amrita Pritam’s lament addresses the Punjabi poet Waris Shah through this shared landscape of loss.",
+      "title": "Radcliffe boundary awards made public",
+      "description": "The boundary awards announce the borders through Punjab and Bengal. In Punjab, Lahore becomes part of Pakistan and Amritsar becomes part of India. Bengal is divided between West Bengal in India and East Bengal in Pakistan, which is now Bangladesh. The map below shows the division. Auden’s poem later looks back at how the border was drawn.",
       "referenceIds": [
         "H6",
         "H7",
-        "H14"
+        "H18",
+        "H19",
+        "H20"
       ],
       "relatedCardIds": [
+        "auden",
+        "bangladesh",
+        "boundary-hearings"
+      ],
+      "axisDate": 1947.625,
+      "map": {
+        "src": "images/maps/partition-1947.svg",
+        "alt": "Map of the 1947 Partition showing India, the western and eastern parts of Pakistan, and the divisions of Punjab and Bengal.",
+        "width": 1189,
+        "height": 1170,
+        "caption": "The 1947 division of British India. Pakistan was formed in two separated regions, to the west and east of India. East Bengal became part of Pakistan and is now Bangladesh. This overview also marks Punjab and Bengal, the two provinces divided by the new borders.",
+        "note": "This is a later explanatory map of the eventual division, not a map issued with the June 3 plan. The final boundary awards were made public on August 17. Some smaller princely states are simplified as parts of India or Pakistan, although their accession was a separate process.",
+        "credit": "Superbenjamin, with subsequent contributions by फ़िलप्रो, RaviC, and Jordi escarre · unchanged Wikimedia Commons SVG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_en.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "context": [
+        {
+          "title": "Decided before independence, announced afterward",
+          "text": "The Punjab and Bengal awards are dated August 12, but are not made public until August 17, after the independence ceremonies. People in the disputed areas celebrate independence without yet knowing officially which country their homes will belong to."
+        },
+        {
+          "title": "What a border could not preserve",
+          "text": "The awards divide connected regions as well as territory. In Punjab, canal systems cross the new border. In Bengal, river and railway connections are interrupted. Radcliffe’s reports acknowledge these disruptions and call for cooperation between the new states. The map below shows the eventual division. Auden’s later poem asks us to consider the person and process behind it."
+        }
+      ],
+      "mapComparisonId": "partition"
+    },
+    {
+      "id": "punjab-massacres",
+      "dateLabel": "August–September 1947",
+      "datePrecision": "month-range",
+      "axisDate": 1947.64,
+      "track": "history",
+      "title": "Massacres along the Punjab border",
+      "description": "Armed groups attack villages, refugee trains, and convoys travelling through Punjab. Hindus and Sikhs face mass attacks in western Punjab, while Muslims face mass attacks in eastern Punjab and adjoining Sikh princely states. Killings, sexual violence, and abductions make both remaining at home and crossing the new border dangerous. Many people flee to escape attacks or the threat of them.",
+      "context": [
+        {
+          "title": "Protection breaks down",
+          "text": "The Punjab Boundary Force fails to contain the violence and is dissolved on August 31. The armies of the new states take over responsibility. This period connects the line on the map with the dangerous journeys remembered by survivors and in the poems."
+        }
+      ],
+      "referenceIds": [
+        "H21",
+        "H22"
+      ],
+      "relatedCardIds": [
+        "calcutta-violence",
+        "displacement",
         "pritam"
       ],
       "dateRange": {
-        "start": 1947,
-        "end": 1950,
-        "openEnd": true
+        "start": 1947.58,
+        "end": 1947.75,
+        "openEnd": false
       },
-      "axisDate": 1947,
       "photographIds": [
-        "convoy",
         "train",
-        "delhi",
-        "punjab-camp"
+        "convoy"
       ]
     },
     {
@@ -899,7 +1128,8 @@
         "P4"
       ],
       "relatedCardIds": [
-        "displacement"
+        "displacement",
+        "punjab-massacres"
       ],
       "composition": "1948, reported composition date",
       "publication": "“To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil, vol. 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Published by the Asian Studies Center, Michigan State University.",
@@ -2332,5 +2562,55 @@
         "url": "https://www.theguardian.com/world/2017/aug/02/wounds-have-never-healed-living-through-terror-partition-india-pakistan-1947"
       }
     }
-  ]
+  ],
+  "mapComparisons": {
+    "partition": {
+      "title": "Religious communities before Partition and the new borders",
+      "intro": "Compare where religious communities lived before Partition with the countries created in 1947. Start with Punjab’s district majorities, look at the wider subcontinent, then switch to the borders. The maps use different scales and dates.",
+      "reading": "A majority colour does not mean everyone in an area shared that religion. Hindus and Sikhs lived in western Punjab, and Muslims lived in eastern Punjab. When the border divided the province, many fled across it in opposite directions. Others stayed. Religion and location alone cannot tell us whether a particular person moved.",
+      "example": "For example, Amrita Pritam left Lahore for India, while Syed Mohammed Mohsin remained in Shergarh, which became part of Pakistan. His account below shows that staying at home could still mean living in fear.",
+      "views": [
+        {
+          "label": "Punjab majorities · 1941",
+          "src": "images/maps/punjab-religion-1941.jpg",
+          "alt": "Map of pre-Partition Punjab districts, with Muslim-majority districts in green, non-Muslim-majority districts in pink, and princely states in yellow.",
+          "width": 2424,
+          "height": 1684,
+          "caption": "Punjab before Partition. Green marks Muslim-majority districts and pink marks non-Muslim-majority districts. Yellow identifies princely states, not a religion. This map groups Hindus, Sikhs, and other non-Muslims together and does not show population percentages.",
+          "note": "The Commons record describes this later map as based on the 1941 census. It shows district majorities, not the 1947 border or individual villages. Gurdaspur illustrates why a majority map cannot substitute for the boundary award, since the district itself was divided.",
+          "credit": "Khan Ahmed Raza · unchanged map from Wikimedia Commons (2015)",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punjab-religion-2.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "label": "Wider religious pattern · 1909",
+          "src": "images/maps/religions-1909.jpg",
+          "alt": "1909 map of prevailing religions across British India, with Hindu regions in pink, Muslim regions in green, and Sikh areas marked with diagonal lines in Punjab.",
+          "width": 1368,
+          "height": 1077,
+          "caption": "The wider pre-Partition pattern. Pink marks Hindu areas, green Muslim areas, and diagonal shading Sikh areas. Yellow marks Buddhist areas, blue Christian areas, and purple areas described by the colonial map as “Animist.”",
+          "note": "Published in 1909 using the 1901 census. This is an earlier overview, not a census map of 1947 or a complete picture of religious diversity within each area. The original colonial labels are preserved.",
+          "credit": "Imperial Gazetteer of India, Oxford University Press (1909) · cropped scan via Fowler&fowler and Wikimedia Commons",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:India_religion_map_1909_en.jpg",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:India_religion_map_1909_en.jpg"
+        },
+        {
+          "src": "images/maps/partition-1947.svg",
+          "alt": "Map of the 1947 Partition showing India, the western and eastern parts of Pakistan, and the divisions of Punjab and Bengal.",
+          "width": 1189,
+          "height": 1170,
+          "caption": "The 1947 division of British India. Pakistan was formed in two separated regions, to the west and east of India. East Bengal became part of Pakistan and is now Bangladesh. This overview also marks Punjab and Bengal, the two provinces divided by the new borders.",
+          "note": "This is a later explanatory map of the eventual division, not a map issued with the June 3 plan. The final boundary awards were made public on August 17. Some smaller princely states are simplified as parts of India or Pakistan, although their accession was a separate process.",
+          "credit": "Superbenjamin, with subsequent contributions by फ़िलप्रो, RaviC, and Jordi escarre · unchanged Wikimedia Commons SVG",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_en.svg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "label": "Partition borders · 1947"
+        }
+      ],
+      "standaloneIntro": "These three maps follow religious communities before Partition and the borders created during it. The Punjab view shows district majorities in 1941, the wider overview was published in 1909, and the final map shows the 1947 division. They are not a before-and-after census comparison. Select any map to read it at full size."
+    }
+  }
 }

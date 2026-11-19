@@ -14,7 +14,7 @@ python3 -m http.server 8000 --directory poetry-exhibit/dist
 
 Then open http://localhost:8000. No dependencies or build step are required.
 
-- `dist/timeline-data.json` holds all 22 cards, references, relationships, and August markers. Edit content here without changing rendering code.
+- `dist/timeline-data.json` holds all timeline cards, references, relationships, and August markers. Edit content here without changing rendering code.
 - Each card has a stable `id`, `dateLabel`, `datePrecision`, `track`, `title`, `description`, `referenceIds`, and `relatedCardIds`. Poetry adds separate `composition`, `publication`, and `edition` fields.
 - `axisDate` is a numeric chronological sorting coordinate (fractional years for dates within a year). Approximate coordinates are presentation aids, not claims of exact dates. The displayed date and precision are authoritative.
 - Optional `dateRange` stores numeric `start` and `end` coordinates and `openEnd`. The displacement endpoint is illustrative and explicitly labeled as open. Span geometry is calculated from the same shared axis as the cards.
@@ -100,3 +100,15 @@ Four local archival photographs appear below the timeline axis, with source link
 Karachi’s poem citation now includes p. 36 as confirmed by the user. P17 remains a source for the translator’s introduction, not the poem text.
 
 A fifth archival photograph shows a Punjab refugee camp in 1947, paired with the user-supplied Shergarh passage from Moni Mohsin’s Guardian article. The caption distinguishes the photographed camp from the witness’s village. The Lahore Resolution and Cabinet Mission cards now explain the League’s concerns about majority rule and the failed power-sharing negotiations, with linked primary sources.
+
+The June 3 Partition plan and August 17 boundary cards display a locally stored, licensed overview map directly in their details. Captions distinguish the eventual borders from the June announcement and identify the map’s simplification of smaller princely states. Map attribution and CC BY-SA 4.0 terms appear beneath it.
+
+A dedicated July–December 1946 entry explains the failed united-India negotiations through provincial grouping, the constituent assembly’s powers, Muslim representation, and the unsuccessful December talks. Its linked May–June entry presents the proposed compromise, and the June 1947 entry explains the move to separate transfers of power.
+
+The July 1947 entries cover Radcliffe’s arrival and the boundary hearings in Punjab and Bengal. They explain competing claims, the commissioners’ deadlock, and the August 17 announcement, with links to primary reports and Lucy Chester’s historical account.
+
+The plan, boundary award, and displacement entries share a three-view map comparison. `mapComparisons.partition` holds Punjab’s 1941 district-majority map, the 1909 Gazetteer religious overview based on the 1901 census, and the 1947 border map. Each preserves its own scale, date, legend, and source. Majority areas are distinguished from population percentages and individual migration histories. All assets are local.
+
+Two dated violence entries cover Calcutta on August 16–19, 1946 and the Punjab massacres in August–September 1947. They link the political negotiations to attacks on civilians and refugee journeys, with sources from Sciences Po and the National Army Museum.
+
+All three comparison maps also appear in the standalone “Before and after the border” section immediately after the timeline, with full captions and source links. The shared image renderer and metadata keep those figures consistent with the timeline comparison.

@@ -130,7 +130,7 @@
       }
     }
     document.querySelector('#card-faiz').click();
-    assert(document.querySelector('#timeline').nextElementSibling.id === 'poems', 'Poems section immediately follows timeline');
+    assert(document.querySelector('#partition-maps').nextElementSibling.getAttribute('aria-labelledby') === 'photographs-heading' && document.querySelector('.partition-photographs').nextElementSibling.id === 'poems', 'Maps and photographs sit between the timeline and poems');
     assert(document.querySelector('#freedoms-dawn-title').textContent === "Freedom's Dawn (August 1947)", 'Poem has its full title');
     assert(!document.querySelector('#card-detail .poem-text'), 'Timeline detail links to the separate reader');
     const readers = [...document.querySelectorAll('.poem-reader')];
@@ -262,6 +262,30 @@
     assert(![...document.querySelectorAll('h2')].some(heading => heading.textContent === 'An exhibit in progress.'), 'Old exhibit-in-progress heading removed');
     assert(document.querySelector('#exhibit-reading-heading').textContent.includes('six poems'), 'Exhibit-wide reading section covers six poems');
     assert(!document.querySelector('#exhibit-claim').textContent.trim() && !document.querySelector('#exhibit-analysis').textContent.trim(), 'Overarching claim and analysis remain empty');
+    for (const id of ['plan', 'radcliffe', 'displacement']) {
+      document.getElementById(`card-${id}`).click();
+      const section = document.querySelector('#card-detail .timeline-map-comparison');
+      const choices = [...section.querySelectorAll('button')];
+      assert(choices.length === 3 && choices[0].getAttribute('aria-pressed') === 'true', `Religious geography comparison opens on Punjab: ${id}`);
+      for (const choice of choices) {
+        choice.click();
+        const map = section.querySelector('img');
+        for (let i=0; i<100 && !(map.complete && map.naturalWidth); i++) await wait();
+        assert(map.naturalWidth > 0 && map.alt, `Map loads: ${id} / ${choice.textContent}`);
+        assert(choices.filter(button => button.getAttribute('aria-pressed') === 'true').length === 1, 'Exactly one map is selected');
+        assert(map.getBoundingClientRect().right <= innerWidth, 'Comparison map fits the viewport');
+      }
+      assert(section.textContent.includes('August 17'), 'Border view distinguishes final borders from June plan');
+      assert(section.textContent.includes('Others stayed'), 'Comparison distinguishes demographic patterns from individual journeys');
+    }
+    const standaloneMaps = document.querySelector('#partition-maps');
+    assert(document.querySelector('#timeline').nextElementSibling === standaloneMaps, 'Standalone maps appear directly after timeline');
+    assert(standaloneMaps.querySelectorAll('figure').length === 3, 'All three standalone maps are visible without selecting a timeline card');
+    for (const image of standaloneMaps.querySelectorAll('img')) {
+      for (let i=0; i<100 && !(image.complete && image.naturalWidth); i++) await wait();
+      assert(image.naturalWidth > 0 && image.alt, 'Standalone map loads with accessible text');
+      assert(image.getBoundingClientRect().right <= innerWidth, 'Standalone map fits viewport');
+    }
     const photographs = [...document.querySelectorAll('.partition-photo-card')];
     assert(photographs.length === 5, 'Five sourced historical photographs render');
     for (const card of photographs) {
