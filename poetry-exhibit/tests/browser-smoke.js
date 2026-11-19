@@ -136,6 +136,21 @@
     const readers = [...document.querySelectorAll('.poem-reader')];
     assert(readers.map(r => r.querySelector('h3').id).join(',') === 'iqbal-hindi-poem-title,iqbal-milli-poem-title,freedoms-dawn-title,to-waris-shah-title,karachi-title,auden-partition-title', 'Readers place both Iqbal poems before Faiz, Pritam after Faiz, and Auden after Gulzar');
     assert(readers.every(reader => reader.querySelector('.poem-publication dl')), 'Every reader includes publication and edition details');
+    for (const card of data.cards.filter(card => card.poem || card.readerPlaceholder)) {
+      const poem = card.poem || card.readerPlaceholder;
+      const poet = data.poets.find(poet => poet.id === card.poetId);
+      const reader = document.getElementById(`${poem.id}-title`).closest('.poem-reader');
+      assert(reader.querySelector('.poem-summary-author').textContent === poet.name, `Collapsed poem shows its author: ${poem.id}`);
+      assert(reader.querySelector('.poem-poet-card').getAttribute('aria-controls') === 'poet-background', `Poem has a background calling card: ${poem.id}`);
+    }
+    const iqbalReader = document.getElementById('iqbal-hindi-poem-title').closest('.poem-reader');
+    iqbalReader.open = true;
+    const callingCard = iqbalReader.querySelector('.poem-poet-card');
+    callingCard.click();
+    assert(document.querySelector('#poet-background').open && document.querySelector('#poet-background-title').textContent === 'Muhammad Iqbal', 'Reader calling card opens the correct biography');
+    document.querySelector('#close-poet-background').click();await wait();
+    assert(document.activeElement === callingCard, 'Closing biography returns focus to the reader calling card');
+    iqbalReader.open = false;
     for (const id of ['iqbal-hindi-poem', 'iqbal-milli-poem']) {
       const reader = document.getElementById(`${id}-title`).closest('.poem-reader');
       assert(!reader.open && reader.querySelector('.poem-text'), `${id} has a collapsed poem reader`);
@@ -267,7 +282,7 @@
     for (const id of ['plan', 'radcliffe', 'displacement']) {
       document.getElementById(`card-${id}`).click();
       const section = document.querySelector('#card-detail .timeline-map-comparison');
-      const choices = [...section.querySelectorAll('button')];
+      const choices = [...section.querySelectorAll('.map-comparison-controls button')];
       assert(choices.length === 3 && choices[0].getAttribute('aria-pressed') === 'true', `Religious geography comparison opens on Punjab: ${id}`);
       for (const choice of choices) {
         choice.click();
@@ -283,6 +298,31 @@
     const standaloneMaps = document.querySelector('#partition-maps');
     assert(document.querySelector('#timeline').nextElementSibling === standaloneMaps, 'Standalone maps appear directly after timeline');
     assert(standaloneMaps.querySelectorAll('figure').length === 3, 'All three standalone maps are visible without selecting a timeline card');
+    assert(!data.cards.some(card => ['sindh-annexation', 'awadh-annexation', 'hyderabad', 'goa', 'sikkim'].includes(card.id)), 'Added regional backgrounds are absent from the timeline');
+    const regionMap = document.querySelector('#territorial-changes-map');
+    assert(regionMap.querySelector('img').src.includes('partition-1947.svg'), 'Regional backgrounds use the requested Partition overview map');
+    const pins = [...regionMap.querySelectorAll('.map-history-pin')];
+    const markerLinks = [...regionMap.querySelectorAll('.map-history-link')];
+    const regions = data.mapComparisons.partition.views[2].historyMarkers;
+    assert(pins.length === 4 && markerLinks.length === 4, 'Map has four post-Partition region pins and labeled controls');
+    for (let index = 0; index < pins.length; index++) {
+      const selectedTitle = document.querySelector('#detail-title')?.textContent;
+      pins[index].click();
+      const popup = document.querySelector('.map-background-dialog');
+      const region = data.mapBackgrounds[regions[index].backgroundId];
+      assert(popup.open && popup.querySelector('h2').textContent === region.title, `Map pin opens its sourced background: ${regions[index].backgroundId}`);
+      assert(popup.querySelectorAll('li').length === region.referenceIds.length, 'Map background includes its sources');
+      assert(document.querySelector('#detail-title')?.textContent === selectedTitle, 'Map popup leaves timeline selection unchanged');
+      popup.querySelector('button').click();await wait();
+      assert(document.activeElement === pins[index], 'Closing map background restores pin focus');
+      markerLinks[index].click();
+      assert(popup.open && popup.querySelector('h2').textContent === region.title, 'Labeled region control opens the same background');
+      popup.querySelector('button').click();await wait();
+    }
+    for (let a = 0; a < pins.length; a++) for (let b = a + 1; b < pins.length; b++) {
+      const x = pins[a].getBoundingClientRect(), y = pins[b].getBoundingClientRect();
+      assert(x.right <= y.left || y.right <= x.left || x.bottom <= y.top || y.bottom <= x.top, 'Regional map pins do not overlap');
+    }
     for (const image of standaloneMaps.querySelectorAll('img')) {
       for (let i=0; i<100 && !(image.complete && image.naturalWidth); i++) await wait();
       assert(image.naturalWidth > 0 && image.alt, 'Standalone map loads with accessible text');

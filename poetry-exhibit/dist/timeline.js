@@ -88,6 +88,30 @@
     const rect = poetDialog.getBoundingClientRect();
     if (event.target === poetDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) poetDialog.close();
   });
+  const mapDialog = el('dialog', null, 'map-background-dialog');
+  mapDialog.setAttribute('aria-labelledby', 'map-background-title');
+  document.body.append(mapDialog);
+  let mapBackgroundTrigger = null;
+  mapDialog.addEventListener('close', () => mapBackgroundTrigger?.focus({preventScroll:true}));
+  function openMapBackground(id, trigger) {
+    const region = data.mapBackgrounds[id];
+    mapBackgroundTrigger = trigger;
+    mapDialog.replaceChildren();
+    const close = el('button', 'Close background', 'close-detail');
+    close.type = 'button';
+    close.addEventListener('click', () => mapDialog.close());
+    const title = el('h2', region.title);
+    title.id = 'map-background-title';
+    title.tabIndex = -1;
+    mapDialog.append(close, el('p', region.dateLabel, 'eyebrow'), title, el('p', region.description));
+    (region.context || []).forEach(section => mapDialog.append(el('h3', section.title), el('p', section.text)));
+    mapDialog.append(el('h3', 'Sources'));
+    const sources = el('ul');
+    region.referenceIds.forEach(ref => sources.append(reference(ref)));
+    mapDialog.append(sources);
+    mapDialog.showModal();
+    title.focus({preventScroll:true});
+  }
   function showMap(map, target) {
       const figure = el('figure', null, 'timeline-history-map');
       const full = el('a');
@@ -96,6 +120,37 @@
       const image = el('img');
       image.src = map.src;image.alt = map.alt;image.width = map.width;image.height = map.height;
       full.append(image);
+      const stage = el('div', null, 'history-map-stage');
+      stage.append(full);
+      const markerLinks = el('div', null, 'map-history-links');
+      (map.historyMarkers || []).forEach(marker => {
+        const button = el('button', marker.number ? String(marker.number) : marker.label, 'map-history-marker');
+        if (marker.number) button.classList.add('map-history-pin');
+        button.type = 'button';
+        button.style.left = `${marker.x}%`;
+        button.style.top = `${marker.y}%`;
+        button.setAttribute('aria-label', marker.accessibleLabel || marker.label);
+        const openBackground = event => {
+          if (marker.backgroundId) {
+            openMapBackground(marker.backgroundId, event.currentTarget);
+            return;
+          }
+          setView('full');
+          scrollToCard(marker.cardId);
+          openCard(marker.cardId, true);
+          const title = document.querySelector('#detail-title');
+          title.tabIndex = -1;
+          title.focus({preventScroll:true});
+        };
+        button.addEventListener('click', openBackground);
+        stage.append(button);
+        if (marker.number) {
+          const link = el('button', `${marker.number} · ${marker.label}`, 'map-history-link');
+          link.type = 'button';
+          link.addEventListener('click', openBackground);
+          markerLinks.append(link);
+        }
+      });
       const caption = el('figcaption');
       caption.append(el('p', map.caption), el('p', map.note, 'source-note'));
       const credit = el('p', null, 'source-note');
@@ -104,7 +159,9 @@
         const link = el('a', label);link.href = url;link.target = '_blank';link.rel = 'noopener noreferrer';
         credit.append(link, document.createTextNode(' '));
       }
-      caption.append(credit);figure.append(full, caption);target.append(figure);
+      if (map.historyMarkerNote) caption.append(el('p', map.historyMarkerNote, 'source-note'));
+      if (markerLinks.childNodes.length) caption.append(markerLinks);
+      caption.append(credit);figure.append(stage, caption);target.append(figure);
   }
   function renderPartitionMaps() {
     const comparison = data.mapComparisons.partition;
@@ -113,6 +170,7 @@
     const maps = el('div', null, 'standalone-map-list');
     comparison.views.forEach(map => {
       const article = el('article', null, 'standalone-map-card');
+      if (map.id) article.id = map.id;
       article.append(el('h3', map.label));showMap(map, article);maps.append(article);
     });
     section.append(maps, el('p', comparison.reading), el('p', comparison.example));
@@ -175,6 +233,7 @@
     const poetOrder = data.poets.map(poet => poet.id);
     data.cards.filter(c => c.poem || c.readerPlaceholder).sort((a, b) => poetOrder.indexOf(a.poetId) - poetOrder.indexOf(b.poetId)).forEach(c => {
       const poem = c.poem || c.readerPlaceholder;
+      const poet = data.poets.find(item => item.id === c.poetId);
       const article = el('details', null, 'poem-reader');
       article.setAttribute('aria-labelledby', `${poem.id}-title`);
       const heading = el('h3', poem.title);
@@ -183,10 +242,35 @@
       const summary = el('summary', null, 'poem-summary');
       const closedLabel = c.poem ? 'View poem' : 'View details';
       const state = el('span', closedLabel, 'poem-disclosure-label');
-      summary.append(heading, state);
+      const label = el('div', null, 'poem-summary-label');
+      label.append(heading);
+      if (poet) label.append(el('span', poet.name, 'poem-summary-author'));
+      summary.append(label, state);
       const body = el('div', null, 'poem-reader-body');
       article.append(summary, body);
       article.addEventListener('toggle', () => {state.textContent = article.open ? (c.poem ? 'Hide poem' : 'Hide details') : closedLabel;});
+      if (poet) {
+        const callingCard = el('button', null, 'poem-poet-card');
+        callingCard.type = 'button';
+        callingCard.setAttribute('aria-label', `Read ${poet.name}’s background`);
+        callingCard.setAttribute('aria-haspopup', 'dialog');
+        callingCard.setAttribute('aria-controls', 'poet-background');
+        if (poet.image) {
+          const portrait = el('img');
+          portrait.src = poet.image.src;
+          portrait.alt = '';
+          portrait.width = 56;
+          portrait.height = 64;
+          portrait.loading = 'lazy';
+          portrait.style.objectPosition = poet.image.position;
+          callingCard.append(portrait);
+        }
+        const identity = el('span');
+        identity.append(el('strong', poet.name), el('span', 'Life & background ↗'));
+        callingCard.append(identity);
+        callingCard.addEventListener('click', () => openPoetBackground(poet, callingCard));
+        body.append(callingCard);
+      }
       if (c.readerPlaceholder && !c.poem) {
         body.append(el('p', poem.message, 'poem-text-status'), publicationDetails(c));
         const back = el('a', 'Find on timeline ↑', 'text-link');
@@ -413,6 +497,11 @@
     (c.context || []).forEach(section => {
       detail.append(el('h4', section.title), el('p', section.text));
     });
+    if (c.mapLink) {
+      const link = el('a', c.mapLink.label, 'text-link');
+      link.href = c.mapLink.href;
+      detail.append(link);
+    }
     const comparison = data.mapComparisons?.[c.mapComparisonId];
     if (comparison) {
       const section = el('section', null, 'timeline-map-comparison');

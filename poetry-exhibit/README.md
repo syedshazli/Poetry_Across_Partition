@@ -116,3 +116,7 @@ All three comparison maps also appear in the standalone “Before and after the 
 The June plan details explicitly address Mountbatten bringing the transfer-of-power deadline forward from June 1948 to August 15, 1947, and the preparation problems emphasized by Yasmin Khan and Stanley Wolpert. The independence and August 17 entries explain the withheld boundary awards and their effects on an already developing displacement crisis.
 
 Both Iqbal readers now display Ikram Azam’s translations from *Iqbal: The Islamic Futurist*, 2nd edition, Iqbal Academy Pakistan, 2004. “Tarana-e Hindi” is on printed p. 75 (PDF page 83), and “Tarana-e Milli” on printed p. 80 (PDF page 88). Reference P18 links the supplied PDF. Their 20 and 24 printed lines, respectively, preserve the scan’s wording and line wrapping, including apparent typographical errors. The Urdu edition and original publication dates remain separately identified.
+
+Collapsed poem readers show the poet’s name. Each open reader includes a portrait calling card that opens the existing biography dialog and restores focus when closed.
+
+Regional backgrounds open directly on the Partition overview map in a native dialog. `mapBackgrounds` holds the sourced notes, and the overview’s `historyMarkers` refer to `backgroundId`. Map notes cover only post-Partition territorial changes in Kalat (1948), Hyderabad (1948), Goa (1961), and Sikkim (1975). The original Punjab timeline entry remains. Closing a background returns focus to its marker or labeled button.

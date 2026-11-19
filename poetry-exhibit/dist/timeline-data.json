@@ -174,6 +174,38 @@
       "title": "Muhammad Iqbal · “Tarana-e Hindi” and “Tarana-e Milli,” translated by Ikram Azam, in Iqbal: The Islamic Futurist, 2nd edition. Lahore, Iqbal Academy Pakistan, 2004, pp. 75 and 80.",
       "url": "https://www.iqbalcyberlibrary.net/files/019/IAP-Iqbal-Islamic-Futurist-2004.pdf",
       "note": "English texts selected by the reader and checked against the supplied page images and PDF. Printed pp. 75 and 80 correspond to PDF pages 83 and 88. The translator’s note is on printed p. 71 (PDF page 79)."
+    },
+    "H25": {
+      "title": "Sindh Archives · Historical Background",
+      "url": "https://archives.sindhculture.gov.pk/historical_background/",
+      "note": "Dates the annexation to 1843 and incorporation into the Bombay Presidency to 1847."
+    },
+    "H26": {
+      "title": "National Army Museum · Oudh Volunteer Rifles, historical background",
+      "url": "https://collection.nam.ac.uk/detail.php?acc=2013-10-20-83-103",
+      "note": "Identifies Oudh as a northern Indian princely state annexed in 1856."
+    },
+    "H27": {
+      "title": "Rudrangshu Mukherjee · Awadh in Revolt, 1857–1858, Introduction, Oxford University Press",
+      "url": "https://academic.oup.com/book/6151/chapter-abstract/149704385",
+      "note": "Discusses annexation in 1856 and its place among the grievances behind the 1857 uprising."
+    },
+    "H28": {
+      "title": "International Review of the Red Cross · Historical account of Hyderabad’s incorporation in 1948",
+      "url": "https://international-review.icrc.org/sites/default/files/S0020860400091026a.pdf"
+    },
+    "H29": {
+      "title": "U.S. Department of State · Historical documents on the December 1961 Goa military operation",
+      "url": "https://history.state.gov/historicaldocuments/frus1961-63v19/d76"
+    },
+    "H30": {
+      "title": "U.S. Department of State · Historical background to Sikkim’s incorporation in 1975",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76ve08/d261"
+    },
+    "H31": {
+      "title": "Conquering the Maharajas · “Kalat: Pakistan’s frontier challenge”",
+      "url": "https://www.cambridge.org/core/books/abs/conquering-the-maharajas/kalat-pakistans-frontier-challenge/FE5175FB97A1A5DF087D8687DC6DDD20",
+      "note": "Discusses negotiations, Pakistani pressure, accession in late March 1948, and the subsequent rebellion."
     }
   },
   "cards": [
@@ -206,7 +238,17 @@
         "H8"
       ],
       "relatedCardIds": [],
-      "axisDate": 1849
+      "axisDate": 1849,
+      "context": [
+        {
+          "title": "What annexation meant",
+          "text": "Annexation means taking a territory into another state’s rule. After the Second Sikh War of 1848–49, the East India Company took control of Punjab and ended the Sikh kingdom’s rule. The young Maharaja Duleep Singh was deposed. This brought Punjab under Company government before the transfer to British Crown rule in 1858."
+        },
+        {
+          "title": "Why Punjab matters here",
+          "text": "Punjab is a historical region that extends across what are now Pakistan and India. Its annexation in 1849 and its division in 1947 were different events, separated by almost a century. Iqbal, Faiz, Pritam, and Gulzar all had connections to places in this region, so this earlier change in rule is part of the background to the lives and poems in the exhibit."
+        }
+      ]
     },
     {
       "id": "raj",
@@ -894,6 +936,17 @@
               "url": "https://doi.org/10.1177/02576430231208821"
             }
           ]
+        },
+        "wholePoemAnalysis": {
+          "title": "Reading the Poem",
+          "analysis": "“Taranah-i-Milli” expands the homeland imagined in “Taranah-i-Hindi.” Both poems repeatedly use “our” to create a collective identity, but the community in each case changes. In the earlier poem, Hindustan is the garden its people share no matter religious differences. Here, the opening names several regions east and west of India before identifying the speakers as Muslims. Hillier describes this shift as a movement from Indian nationalism toward pan-Islamic nationalism and connects it to Iqbal’s changing outlook after his years in Europe (167).\n\nThe poems share images of gardens, water, and caravans, but those images take on different roles. In “Taranah-i-Hindi,” the speaker asks the Ganges to remember when the caravan settled on its banks, making arrival part of the community’s connection to Hindustan. In “Taranah-i-Milli,” the caravan has the Prophet Muhammad as its leader and prepares to depart again. The image moves from remembering a sweet arrival to imagining renewed movement. Similarly, water changes from streams sustaining the homeland’s garden to a deluge expressing collective power and a storyteller preserving memories of distant places.\n\nTheir endings reinforce this difference. When read together, the poems show Iqbal exploring different foundations for belonging long before Partition. The later poem gathers geographically separated people into a community connected through faith, memory, and a shared direction.",
+          "sources": [
+            {
+              "title": "H. C. Hillier · Iqbal, Bergson and the Reconstruction of the Divine Nexus in Political Thought",
+              "url": "https://www.cambridge.org/core/books/abs/muhammad-iqbal/iqbal-bergson-and-the-reconstruction-of-the-divine-nexus-in-political-thought/F1B35A5EF7B36862DEBCD898291B8C3B",
+              "note": "Page 167, as cited in the supplied analysis."
+            }
+          ]
         }
       }
     },
@@ -1515,7 +1568,7 @@
         "wholePoemAnalysis": {
           "title": "Reading the Poem",
           "claim": "The poem suggests that reaching independence does not mean the travelers have reached the future they hoped for. However, its meaning also comes from the language of love and longing that makes this hope feel personal.",
-          "analysis": "The opening asks whether this is the dawn the travelers had been waiting for. It describes a dawn that has already been wounded, which makes the promised new beginning seem uncertain. The memories of the journey show how much the friends believed in that promise. They imagined a place where their grief could rest, and their hope made even the work of traveling feel light.\n\nA poem’s title can also shape what a reader expects before reading it. One possible connection here is with Dawn, the newspaper founded by Muhammad Ali Jinnah in 1941. For someone familiar with the newspaper, the word in “Freedom’s Dawn” could bring that history to mind. This connection came to mind since I have seen my father reading from Dawn.com for my whole life. If my dad were to approach the poem with that association, he might connect the title to the hope for a new beginning that came with Pakistan’s creation. However, the poem then presents a dawn that has been wounded. This could make the difference between the promise of a new beginning and what people experienced feel more personal. Although “Freedom’s Dawn” is Kiernan’s English translation of an Urdu title, a reader could still make this connection. This is a hypothetical association, rather than evidence that Faiz intended to refer to the newspaper.\n\nFoster’s quest approach gives us a way to connect this journey to the ending. The travelers have reached the moment of independence, but they have learned that it has not brought the rest they imagined. The movement from “Our leaders” to “Let us” suggests that they are no longer just listening to claims that they have arrived. They decide that their goal has not yet been reached. This is the exhibit’s application of Foster’s reading approach.\n\nHowever, Gopi Chand Narang’s “How not to Read Faiz Ahmad Faiz” gives us a reason to question whether a political explanation is enough. Narang acknowledges Faiz’s political commitments, but argues that a reading can become restrictive when it allows only one political meaning. He asks readers to pay attention to how the language creates meaning, including what is left unsaid (pp. 44–45). Later, he examines the tension between political commitment and the inherited language of love and beauty in Faiz’s poetry (pp. 52–54).\n\nNarang’s main example is “Dast-e Teh-e Sang Amada,” rather than “Freedom’s Dawn.” Applying his argument to this poem is a step taken in this exhibit. One important example is the stanza where hands pull at the travelers’ sleeves and bodies call to them. Dawn then takes on a cheek and a robe of its own. We can connect that dawn to the promise of independence, but calling it only a political symbol would leave out how the stanza makes that promise feel like someone the travelers long to reach. The words “dearer” and “closer” in Kiernan’s translation make their shared hope feel personal.\n\nNarang’s attention to what remains unsaid also gives us another way to look at “Somewhere.” The word begins three lines, but the poem never names the place where the travelers’ grief can rest. We might connect that place to a hoped-for political future. However, the absence of a name keeps that interpretation from becoming the only possible answer. This is our reading of the repeated word, rather than an example Narang discusses himself.\n\nReading Foster alongside Narang lets us keep the political disappointment in view while also asking how the poem makes us feel it. The wounded dawn, the beautiful cheek, and the ship carrying heartache give that disappointment different forms. The ending responds to the opening’s question through an action. “Let us go on” calls for the travelers to keep moving toward what they still hope to experience, even though the poem has not given that destination a final name.",
+          "analysis": "The opening asks whether this is the dawn the travelers had been waiting for. It describes a dawn that has already been wounded, which makes the promised new beginning seem uncertain. The memories of the journey show how much the friends believed in that promise. They imagined a place where their grief could rest, and their hope made even the work of traveling feel light.\n\nA poem’s title can also shape what a reader expects before reading it. One possible connection here is with Dawn, the newspaper founded by Muhammad Ali Jinnah in 1941. For someone familiar with the newspaper, the word in “Freedom’s Dawn” could bring that history to mind. This connection came to mind since I have seen my father reading from Dawn.com for my whole life. If my dad were to approach the poem with that association, he might connect the title to the hope for a new beginning that came with Pakistan’s creation. However, the poem then presents a dawn that has been wounded. This could make the difference between the promise of a new beginning and what people experienced feel more personal. Although “Freedom’s Dawn” is Kiernan’s English translation of an Urdu title, a reader could still make this connection. This is a hypothetical association, rather than evidence that Faiz intended to refer to the newspaper.\n\nAnother interesting parallel was the ending of Freedom's Dawn and Tarana-e Milli. While Iqbal describes a caravan that must continue forward, Faiz mentions they must move on even after Partition.\n\nFoster’s quest approach gives us a way to connect this journey to the ending. The travelers have reached the moment of independence, but they have learned that it has not brought the rest they imagined. The movement from “Our leaders” to “Let us” suggests that they are no longer just listening to claims that they have arrived. They decide that their goal has not yet been reached. This is the exhibit’s application of Foster’s reading approach.\n\nHowever, Gopi Chand Narang’s “How not to Read Faiz Ahmad Faiz” gives us a reason to question whether a political explanation is enough. Narang acknowledges Faiz’s political commitments, but argues that a reading can become restrictive when it allows only one political meaning. He asks readers to pay attention to how the language creates meaning, including what is left unsaid (pp. 44–45). Later, he examines the tension between political commitment and the inherited language of love and beauty in Faiz’s poetry (pp. 52–54).\n\nNarang’s main example is “Dast-e Teh-e Sang Amada,” rather than “Freedom’s Dawn.” Applying his argument to this poem is a step taken in this exhibit. One important example is the stanza where hands pull at the travelers’ sleeves and bodies call to them. Dawn then takes on a cheek and a robe of its own. We can connect that dawn to the promise of independence, but calling it only a political symbol would leave out how the stanza makes that promise feel like someone the travelers long to reach. The words “dearer” and “closer” in Kiernan’s translation make their shared hope feel personal.\n\nNarang’s attention to what remains unsaid also gives us another way to look at “Somewhere.” The word begins three lines, but the poem never names the place where the travelers’ grief can rest. We might connect that place to a hoped-for political future. However, the absence of a name keeps that interpretation from becoming the only possible answer. This is our reading of the repeated word, rather than an example Narang discusses himself.\n\nReading Foster alongside Narang lets us keep the political disappointment in view while also asking how the poem makes us feel it. The wounded dawn, the beautiful cheek, and the ship carrying heartache give that disappointment different forms. The ending responds to the opening’s question through an action. “Let us go on” calls for the travelers to keep moving toward what they still hope to experience, even though the poem has not given that destination a final name.",
           "sources": [
             {
               "title": "Thomas C. Foster, How to Read Literature Like a Professor",
@@ -3210,10 +3263,82 @@
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_en.svg",
           "license": "CC BY-SA 4.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-          "label": "Partition borders · 1947"
+          "label": "Partition borders · 1947",
+          "id": "territorial-changes-map",
+          "historyMarkers": [
+            {
+              "number": 1,
+              "label": "1948 · Kalat",
+              "x": 16,
+              "y": 28,
+              "backgroundId": "kalat"
+            },
+            {
+              "number": 2,
+              "label": "1948 · Hyderabad",
+              "x": 46,
+              "y": 62,
+              "backgroundId": "hyderabad"
+            },
+            {
+              "number": 3,
+              "label": "1961 · Goa",
+              "x": 34,
+              "y": 69,
+              "backgroundId": "goa"
+            },
+            {
+              "number": 4,
+              "label": "1975 · Sikkim",
+              "x": 75,
+              "y": 31,
+              "backgroundId": "sikkim"
+            }
+          ],
+          "historyMarkerNote": "Select a numbered marker or a region below to explore territorial changes after Partition. The notes cover Kalat and Hyderabad in 1948, Goa in 1961, and Sikkim in 1975, explaining their different circumstances. This overview includes later changes and is not a snapshot of every boundary in August 1947. Markers locate regions approximately and do not outline historical borders."
         }
       ],
       "standaloneIntro": "These three maps follow religious communities before Partition and the borders created during it. The Punjab view shows district majorities in 1941, the wider overview was published in 1909, and the final map shows the 1947 division. They are not a before-and-after census comparison. Select any map to read it at full size."
+    }
+  },
+  "mapBackgrounds": {
+    "hyderabad": {
+      "title": "Hyderabad · Military takeover and incorporation",
+      "dateLabel": "September 1948",
+      "description": "Indian forces entered Hyderabad in September 1948 and defeated the Nizam’s forces. The former princely state was subsequently incorporated into India. This took place after Partition, rather than at the August 1947 transfer of power.",
+      "referenceIds": [
+        "H28"
+      ]
+    },
+    "goa": {
+      "title": "Goa · End of Portuguese rule",
+      "dateLabel": "December 1961",
+      "description": "Indian forces took control of Goa, Daman, and Diu in December 1961, ending Portuguese rule there. India described the operation as liberation from colonial rule, while Portugal opposed the takeover. Goa’s incorporation came fourteen years after Partition.",
+      "referenceIds": [
+        "H29"
+      ]
+    },
+    "sikkim": {
+      "title": "Sikkim · From protectorate to Indian state",
+      "dateLabel": "1975",
+      "description": "Sikkim became an Indian state in 1975 following Indian military intervention, a vote on ending the monarchy, and constitutional change. Its earlier relationship with India was that of a protectorate. This was a different process from the partition of British India in 1947.",
+      "referenceIds": [
+        "H30"
+      ]
+    },
+    "kalat": {
+      "title": "Kalat · Contested accession to Pakistan",
+      "dateLabel": "March 1948",
+      "description": "Kalat became part of Pakistan in late March 1948, several months after Partition. Its accession followed negotiations and pressure from the Pakistani government. The circumstances remain disputed, particularly over whether the Khan’s agreement was freely given.",
+      "context": [
+        {
+          "title": "Accession and resistance",
+          "text": "The map labels Kalat as annexed in 1948. Historical scholarship describes a pressured accession followed by a rebellion led by the Khan’s brother, which Pakistan’s military suppressed. This helps explain why accounts differ over whether to describe the incorporation as accession or forced annexation."
+        }
+      ],
+      "referenceIds": [
+        "H31"
+      ]
     }
   }
 }
