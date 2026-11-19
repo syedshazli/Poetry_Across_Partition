@@ -397,7 +397,130 @@
             ]
           }
         ],
-        "annotations": []
+        "annotations": [
+          {
+            "id": "iqbal-hindi-hindustan",
+            "term": "Hindustan",
+            "lineId": "iqbal-hindi-poem-line-01",
+            "quote": "Hindustan",
+            "definitions": [
+              {
+                "word": "Hindustan",
+                "definition": "A name for India used in Urdu and Hindi, borrowed from Persian.",
+                "dictionaryName": "Rekhta",
+                "dictionaryUrl": "https://www.rekhta.org/urdudictionary?keyword=hindustaan"
+              }
+            ],
+            "analysis": "“Hindustan” can feel more elegant and poetic here than simply saying “India.” Its Persian ending “-stan” means land, while “Hindu” is historically connected to Sindhu, the name of the Indus River. The name is sometimes explained as “land of the Hindus,” but this older geographic meaning should not be confused with a homeland belonging only to followers of Hinduism. In this poem, the repeated “our” and the later rejection of religious enmity make the homeland a shared place.",
+            "source": {
+              "title": "South Asia Multidisciplinary Academic Journal · Historical names for India and their connection to Sindhu",
+              "url": "https://journals.openedition.org/samaj/pdf/3717",
+              "note": "Supports the shared etymological connection between Hindustan and the Indus River. The comment on elegance is an interpretation of the poem."
+            }
+          },
+          {
+            "id": "iqbal-hindi-garden",
+            "term": "Nightingales and our garden",
+            "lineId": "iqbal-hindi-poem-line-02",
+            "quote": "We are its nightingales and it is our garden!",
+            "analysis": "A garden is something humans nurture from seed to sprout, and something that lives far beyond the life of one human if maintained properly. The garden metaphor makes the homeland a place the people inhabit and bring to life. Nightingales also suggest song, so you could read the poem itself as one of those voices expressing attachment to the garden. The repeated “our” makes belonging to the garden collective, no matter the differences."
+          },
+          {
+            "id": "iqbal-hindi-poverty-and-homeland",
+            "term": "Poverty and attachment to the homeland",
+            "segments": [
+              {
+                "lineId": "iqbal-hindi-poem-line-03",
+                "quote": "Even in poverty our heart dwells in the homeland"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-04",
+                "quote": "Consider us to be there, right where is this our heart"
+              }
+            ],
+            "analysis": "People can often leave and uproot their families in search of a better life because of the poverty they live in. One possible reading is that Iqbal presents the people of Hindustan as loving their homeland so much that they would rather stay there in poverty than leave. The repeated “our” makes this attachment collective, rather than just his own. However, “our heart dwells in the homeland” could also suggest that even those who leave remain attached to it. In this reading, the heart stays in Hindustan even when the person is somewhere else."
+          },
+          {
+            "id": "iqbal-hindi-mountain-guardian",
+            "term": "The mountain as guardian",
+            "segments": [
+              {
+                "lineId": "iqbal-hindi-poem-line-05",
+                "quote": "The highest (Himalyan) mountain on earth is the sky’s"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-06",
+                "quote": "neighbour"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-07",
+                "quote": "He is our own sentry, he is our very guardian"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-08",
+                "quote": "Thousands of streams play right in its lap in travel"
+              }
+            ],
+            "analysis": "Iqbal calls the mountain a “sentry” and a “guardian,” which gives it the role of someone watching over the homeland and protecting its people. The mountain is also the “sky’s neighbour,” so its height makes this guardian seem powerful. However, the streams “play” in its “lap,” which gives the mountain a gentler role as well. This image makes the streams seem like children resting or playing close to someone who cares for them. Through personification, the landscape becomes both protective and nurturing. This helps explain why the heart belongs in the homeland in the earlier lines. It is a place where the people can feel protected and cared for."
+          },
+          {
+            "id": "iqbal-hindi-shared-homeland",
+            "term": "Religion and a shared homeland",
+            "segments": [
+              {
+                "lineId": "iqbal-hindi-poem-line-12",
+                "quote": "Religion teaches not enmity among people"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-13",
+                "quote": "We are all Hindi, our homeland is Hindustan!"
+              }
+            ],
+            "definitions": [
+              {
+                "word": "Enmity",
+                "definition": "A feeling of hatred or strong dislike toward someone.",
+                "dictionaryName": "Cambridge Dictionary",
+                "dictionaryUrl": "https://dictionary.cambridge.org/dictionary/english/enmity"
+              }
+            ],
+            "analysis": "These lines present Muslims and Hindus as people who can live in peace and share a responsibility to protect their homeland. They state the shared identity that the earlier descriptions of the landscape have helped establish. In this context, “Hindi” refers to belonging to Hindustan. The word “we” includes the community being addressed, while “all” brings people of different religions into that shared identity. Iqbal presents religion as compatible with belonging to a common homeland because it does not teach people to hate one another. The repeated “our” makes the homeland something they belong to and care for together."
+          },
+          {
+            "id": "iqbal-hindi-secret-sorrow",
+            "term": "Survival and secret sorrow",
+            "segments": [
+              {
+                "lineId": "iqbal-hindi-poem-line-17",
+                "quote": "It is a fact that we have not (yet) perished"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-18",
+                "quote": "Though for centuries has time been our enemy!"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-19",
+                "quote": "Iqbal!  We have no friend on this earth"
+              },
+              {
+                "lineId": "iqbal-hindi-poem-line-20",
+                "quote": "No one knows our own secret sorrow!"
+              }
+            ],
+            "analysis": "The ending changes the tone after the praise of the homeland and its survival. The people have survived for centuries, but calling time their “enemy” suggests that this survival has involved suffering. Naming “Iqbal” creates an address to the poet himself, while “we” and “our” keep the sorrow collective. The poem leaves readers with a people whose pride coexists with feeling unheard by those outside Hindustan. Read after Partition, “not (yet) perished” can also feel like an unintentional foreshadowing of the violence and loss to come. This is a connection readers can make in hindsight, rather than evidence that Iqbal predicted Partition."
+          }
+        ],
+        "wholePoemAnalysis": {
+          "title": "Reading the Poem",
+          "analysis": "The poem presents Hindustan as a shared homeland through its landscape and the speaker’s repeated use of “our.” Calling the people nightingales and the country their garden makes belonging feel natural and personal. The mountain becomes a guardian, while the streams bring the garden to life. These images connect attachment to the homeland with the places that sustain and protect its people.\n\nHillier describes the poem as imagining India’s people united across religious differences (167). This becomes explicit in “Religion teaches not enmity among people” and “We are all Hindi.” The collective “we” brings different communities into a common identity. Addressing the Ganges as a witness to the caravan’s arrival also connects that belonging to a remembered relationship between people and place.\n\nHowever, the ending introduces loneliness beneath the poem’s pride. After celebrating the community’s survival, the speaker closes with a “secret sorrow” that others fail to understand. This makes belonging both a source of strength and an emotional vulnerability. Written in 1904, the poem provides an earlier vision to compare with “Taranah-i-Milli,” which Hillier dates six years later (167). Reading them together raises the question of who belongs to Iqbal’s “we” and how his understanding of homeland changes.",
+          "sources": [
+            {
+              "title": "H. C. Hillier · Iqbal, Bergson and the Reconstruction of the Divine Nexus in Political Thought",
+              "url": "https://www.cambridge.org/core/books/abs/muhammad-iqbal/iqbal-bergson-and-the-reconstruction-of-the-divine-nexus-in-political-thought/F1B35A5EF7B36862DEBCD898291B8C3B",
+              "note": "Page 167, as cited in the supplied analysis."
+            }
+          ]
+        }
       }
     },
     {

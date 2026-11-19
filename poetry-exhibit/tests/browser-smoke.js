@@ -188,7 +188,7 @@
     assert(getComputedStyle(poemReader.querySelector('.poem-text')).overflowX === 'auto', 'Long verse lines scroll within the poem');
     assert([...document.querySelectorAll('#freedoms-dawn .poem-line')].every(line => line.getBoundingClientRect().height <= parseFloat(getComputedStyle(line).lineHeight) + 4), 'Each printed verse line remains one visual line');
     assert([...document.querySelectorAll('#freedoms-dawn .poem-stanza')].map(stanza => stanza.querySelectorAll('.poem-line').length).join(',') === '4,3,7,2,9', 'Stanza breaks match the supplied scan');
-    const highlight = document.querySelector('.poem-highlight');
+    const highlight = poemReader.querySelector('.poem-highlight');
     assert(highlight.textContent === "night's fangs have mangled", 'Correct phrase highlighted');
     const note = document.getElementById(highlight.getAttribute('aria-controls'));
     assert(note.hidden, 'Annotation starts closed');
@@ -230,7 +230,7 @@
     finalNote.querySelector('.close-annotation').click();
     assert(document.activeElement === festive[1], 'Last stanza note restores focus');
     assert(finalNote.querySelectorAll('.word-meaning').length === 4, 'Final stanza defines physic, reproved, unslaked, and severance');
-    const dictionaryLinks = [...document.querySelectorAll('.word-meaning a')];
+    const dictionaryLinks = [...poemReader.querySelectorAll('.word-meaning a')];
     assert(dictionaryLinks.length === 6, 'All six word meanings have dictionary links');
     assert(dictionaryLinks.every(link => /^(www\.)?(merriam-webster\.com|collinsdictionary\.com)$/.test(new URL(link.href).hostname)), 'Definitions link directly to dictionary publishers');
     assert(dictionaryLinks.every(link => link.target === '_blank' && link.rel.includes('noopener')), 'Dictionary entries open safely without leaving the poem');
