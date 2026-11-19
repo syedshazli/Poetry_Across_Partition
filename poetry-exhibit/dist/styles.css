@@ -140,3 +140,12 @@ html.poet-popup-open{overflow:hidden;width:100dvw}body.poet-popup-open{position:
 .poem-summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .poem-reader-body{padding:0 32px 32px}
 @media(max-width:700px){.poem-summary{padding:20px 16px;align-items:flex-start;flex-direction:column;gap:12px}.poem-reader-body{padding:0 16px 20px}}
+
+.poem-publication{border:1px solid var(--line);padding:20px;margin:20px 0 28px;background:#f7f5ed}
+.poem-publication h4{font:normal 20px Georgia,serif;margin:0 0 16px}
+.poem-publication dl{display:grid;grid-template-columns:minmax(120px,1fr) minmax(0,4fr);gap:14px 20px;margin:0;font-size:14px;line-height:1.65}
+.poem-publication dt{color:var(--muted)}
+.poem-publication dd{margin:0;overflow-wrap:anywhere}
+.publication-citations a{font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.poem-text-status{font-size:15px;line-height:1.7;color:var(--muted)}
+@media(max-width:700px){.poem-publication{padding:16px}.poem-publication dl{grid-template-columns:1fr;gap:5px}.poem-publication dd+dt{margin-top:12px}}

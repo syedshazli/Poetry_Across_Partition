@@ -38,7 +38,7 @@
     },
     "P1": {
       "title": "H. C. Hillier · Iqbal, Bergson and the Reconstruction of the Divine Nexus in Political Thought",
-      "note": "Commentary only. Primary poem text and credited translation awaiting verification.",
+      "note": "Secondary commentary. Primary text and edition details are linked separately in P9–P12.",
       "url": "https://www.cambridge.org/core/books/abs/muhammad-iqbal/iqbal-bergson-and-the-reconstruction-of-the-divine-nexus-in-political-thought/F1B35A5EF7B36862DEBCD898291B8C3B"
     },
     "P2": {
@@ -46,8 +46,8 @@
       "url": "https://www.cse.iitk.ac.in/users/amit/books/faiz-1971-poems-by-faiz.html"
     },
     "P3": {
-      "title": "Amrita Pritam · To Waris Shah, translated by Kiron Bajaj and Carlo Coppola, Mahfil 5(3), 1968–69, pp. 27–28",
-      "url": "https://www.jstor.org/stable/i40039223"
+      "title": "Amrita Pritam · “To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Asian Studies Center, Michigan State University.",
+      "url": "https://www.jstor.org/stable/40874237"
     },
     "P4": {
       "title": "The Indian Express · Writers who chronicled Partition",
@@ -55,11 +55,11 @@
     },
     "P5": {
       "title": "W. H. Auden · Collected Poems, edited by Edward Mendelson, Modern Library, 2007, pp. 802–03",
-      "note": "Print edition supplied for the exhibit; first publication awaiting verification."
+      "note": "Print edition identified in the exhibit brief. The earlier December 1966 journal version is linked separately in P15."
     },
     "P6": {
       "title": "Gulzar · Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil, Harper Perennial, 2017",
-      "note": "English collection; individual poem selection pending."
+      "note": "English collection containing the selected poem “Karachi.” Its text was supplied in a book photograph. Poem page number not visible in the photograph."
     },
     "P7": {
       "title": "Rakhshanda Jalil · Why the Partition Is Not Just a Historical Event but a Work in Progress for Gulzar",
@@ -77,6 +77,42 @@
       "title": "Gopi Chand Narang, “How not to Read Faiz Ahmad Faiz,” translated from Urdu by Baidar Bakht. Indian Literature 53, no. 1 (249), January–February 2009, pp. 44–56. Sahitya Akademi.",
       "url": "https://www.jstor.org/stable/23348482",
       "note": "Used here especially on pp. 44–45 and 52–54. Narang mainly analyzes “Dast-e Teh-e Sang Amada.” The application to “Freedom’s Dawn” is the exhibit’s interpretation."
+    },
+    "P9": {
+      "title": "Muhammad Iqbal · Taranah-e Hindi, Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 83. Text and edition identified by Frances W. Pritchett.",
+      "url": "https://franpritchett.com/00urdu/taranahs/hindi_text.html"
+    },
+    "P10": {
+      "title": "Muhammad Iqbal · Taranah-e Milli, Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 159. Text and edition identified by Frances W. Pritchett.",
+      "url": "https://franpritchett.com/00urdu/taranahs/milli_text.html"
+    },
+    "P11": {
+      "title": "Iqbal Academy Pakistan · Bang-e-Dra, Lahore, Karimi Press, 1924, library catalogue record",
+      "url": "https://iqbalcyberlibrary.net/en/listsubject/subjectwoi.php"
+    },
+    "P12": {
+      "title": "Frances W. Pritchett · Two Taranahs, publication history and comparison",
+      "url": "https://franpritchett.com/00urdu/taranahs/juxtaposition.html"
+    },
+    "P13": {
+      "title": "Faiz Ahmad Faiz · Poems by Faiz, translated by Victor G. Kiernan, London, George Allen and Unwin, 1971, poem 19, pp. 122–127 (bilingual text)",
+      "url": "https://franpritchett.com/00urdu/3mod/kiernan_faiz/19_freedomsdawn.pdf"
+    },
+    "P14": {
+      "title": "Poems by Faiz · Contents and original collection dates, digital facsimile indexed by Frances W. Pritchett",
+      "url": "https://franpritchett.com/00urdu/3mod/kiernan_faiz/index.html"
+    },
+    "P15": {
+      "title": "W. H. Auden · Partition, The Atlantic, December 1966 (earlier version)",
+      "url": "https://www.theatlantic.com/magazine/archive/1966/12/partition/660585/"
+    },
+    "P16": {
+      "title": "W. H. Auden Society · Books by Auden, including City Without Walls, Faber, 1969",
+      "url": "https://audensociety.org/books.html"
+    },
+    "P17": {
+      "title": "Rakhshanda Jalil · Translator’s introduction to Footprints on Zero Line, excerpt published September 2017",
+      "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
     }
   },
   "cards": [
@@ -157,15 +193,60 @@
       "title": "Iqbal · Taranah-i-Hindi",
       "description": "Muhammad Iqbal imagines India as a home shared by people from different religious communities. Reading this poem alongside “Taranah-i-Milli” gives us a way to look at how his ideas about home and community change.",
       "referenceIds": [
-        "P1"
+        "P1",
+        "P9",
+        "P11",
+        "P12"
       ],
       "relatedCardIds": [
         "iqbal"
       ],
       "composition": "1904, as dated in Hillier’s commentary",
-      "publication": "First publication and edition not yet verified",
-      "edition": "Primary text and credited translation pending. No translated excerpt is displayed.",
-      "axisDate": 1904
+      "publication": "Ittehad, August 16, 1904, followed by Zamana, September 1904. These dates are reported in the publication history assembled by Frances W. Pritchett. Journal page numbers have not been verified. Bang-i-Dara, Lahore, Karimi Press, 1924.",
+      "edition": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 83. This page belongs to that edition, not necessarily the 1924 printing. Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+      "axisDate": 1904,
+      "readerPlaceholder": {
+        "id": "iqbal-hindi-poem",
+        "title": "Taranah-i-Hindi",
+        "message": "The English text will be added when the exhibit’s translation is selected. Publication details and a link to the source are available below."
+      },
+      "publicationDetails": [
+        {
+          "label": "Written",
+          "text": "1904.",
+          "referenceIds": [
+            "P9"
+          ]
+        },
+        {
+          "label": "Early journal publication",
+          "text": "Ittehad, August 16, 1904, followed by Zamana, September 1904. These dates are reported in the publication history assembled by Frances W. Pritchett. Journal page numbers have not been verified.",
+          "referenceIds": [
+            "P12"
+          ]
+        },
+        {
+          "label": "Book collection",
+          "text": "Bang-i-Dara, Lahore, Karimi Press, 1924.",
+          "referenceIds": [
+            "P11"
+          ]
+        },
+        {
+          "label": "Urdu edition and page",
+          "text": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 83. This page belongs to that edition, not necessarily the 1924 printing.",
+          "referenceIds": [
+            "P9"
+          ]
+        },
+        {
+          "label": "English text",
+          "text": "Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+          "referenceIds": [
+            "P9"
+          ]
+        }
+      ]
     },
     {
       "id": "iqbal",
@@ -175,17 +256,54 @@
       "title": "Iqbal · Taranah-i-Milli",
       "description": "Muhammad Iqbal imagines a Muslim community that crosses geographic boundaries. His later Allahabad Address gives us another way to look at how he thinks about community and political organization.",
       "referenceIds": [
-        "P1"
+        "P1",
+        "P10",
+        "P11"
       ],
       "relatedCardIds": [
         "iqbal-hindi",
         "allahabad"
       ],
-      "composition": "Circa 1910. Primary edition and translation still under review",
-      "publication": "Not yet verified",
-      "edition": "Primary text and credited translation pending. No translated excerpt is displayed.",
+      "composition": "1910, as dated in Pritchett’s text and commentary",
+      "publication": "Bang-i-Dara, Lahore, Karimi Press, 1924. An earlier journal appearance has not been verified.",
+      "edition": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 159. This page belongs to that edition, not necessarily the 1924 printing. Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
       "axisDate": 1910,
-      "poetId": "iqbal"
+      "poetId": "iqbal",
+      "readerPlaceholder": {
+        "id": "iqbal-milli-poem",
+        "title": "Taranah-i-Milli",
+        "message": "The English text will be added when the exhibit’s translation is selected. Publication details and a link to the source are available below."
+      },
+      "publicationDetails": [
+        {
+          "label": "Written",
+          "text": "1910, as dated in Pritchett’s text and commentary.",
+          "referenceIds": [
+            "P10"
+          ]
+        },
+        {
+          "label": "Book collection",
+          "text": "Bang-i-Dara, Lahore, Karimi Press, 1924. An earlier journal appearance has not been verified.",
+          "referenceIds": [
+            "P11"
+          ]
+        },
+        {
+          "label": "Urdu edition and page",
+          "text": "Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 159. This page belongs to that edition, not necessarily the 1924 printing.",
+          "referenceIds": [
+            "P10"
+          ]
+        },
+        {
+          "label": "English text",
+          "text": "Translation selection pending. The linked source includes the Urdu text, transliteration, and Pritchett’s English gloss.",
+          "referenceIds": [
+            "P10"
+          ]
+        }
+      ]
     },
     {
       "id": "ww1",
@@ -323,14 +441,16 @@
       "title": "Faiz · Freedom’s Dawn",
       "description": "Faiz Ahmad Faiz’s Urdu poem is dated August 1947. The English translation shown here is by V. G. Kiernan.",
       "referenceIds": [
-        "P2"
+        "P2",
+        "P13",
+        "P14"
       ],
       "relatedCardIds": [
         "independence"
       ],
       "composition": "Dated August 1947",
-      "publication": "First publication not yet verified",
-      "edition": "English translation by V. G. Kiernan. Text supplied for the exhibit. Line breaks and stanza spacing checked against the linked transcription of Poems by Faiz (Oxford University Press, 1971/2000).",
+      "publication": "Included in Dast-e Saba (1952). This identifies a collection appearance and does not establish the poem’s first journal printing.",
+      "edition": "Poems by Faiz, translated with an introduction and notes by Victor G. Kiernan. London, George Allen and Unwin, 1971. Poem 19, pp. 122–127, including Urdu and English pages.",
       "axisDate": 1947.6,
       "poetId": "faiz",
       "poem": {
@@ -662,7 +782,46 @@
             }
           ]
         }
-      }
+      },
+      "publicationDetails": [
+        {
+          "label": "Dated",
+          "text": "August 1947.",
+          "referenceIds": [
+            "P13"
+          ]
+        },
+        {
+          "label": "Urdu collection",
+          "text": "Included in Dast-e Saba (1952). This identifies a collection appearance and does not establish the poem’s first journal printing.",
+          "referenceIds": [
+            "P14"
+          ]
+        },
+        {
+          "label": "English edition and pages",
+          "text": "Poems by Faiz, translated with an introduction and notes by Victor G. Kiernan. London, George Allen and Unwin, 1971. Poem 19, pp. 122–127, including Urdu and English pages.",
+          "referenceIds": [
+            "P13",
+            "P14"
+          ]
+        },
+        {
+          "label": "Later edition",
+          "text": "Oxford University Press, 2000 reissue, ISBN 0195651987. The page range above is verified against the 1971 facsimile.",
+          "referenceIds": [
+            "P2"
+          ]
+        },
+        {
+          "label": "Text displayed",
+          "text": "Kiernan’s translation, supplied for this exhibit.",
+          "referenceIds": [
+            "P2",
+            "P13"
+          ]
+        }
+      ]
     },
     {
       "id": "radcliffe",
@@ -717,28 +876,350 @@
         "displacement"
       ],
       "composition": "1948, reported composition date",
-      "publication": "English translation published 1968–69 in Mahfil, pp. 27–28",
-      "edition": "Translated by Kiron Bajaj and Carlo Coppola.",
+      "publication": "“To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil, vol. 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Published by the Asian Studies Center, Michigan State University.",
+      "edition": "English translation by Kiron Bajaj and Carlo Coppola. Mahfil 5(3), 1968–69, pp. 27–28. Text transcribed from the supplied PDF and checked against its page images.",
       "axisDate": 1948,
-      "poetId": "pritam"
+      "poetId": "pritam",
+      "publicationDetails": [
+        {
+          "label": "Written",
+          "text": "1948 is the reported composition year.",
+          "referenceIds": [
+            "P4"
+          ]
+        },
+        {
+          "label": "English journal publication",
+          "text": "“To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil, vol. 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Published by the Asian Studies Center, Michigan State University.",
+          "referenceIds": [
+            "P3"
+          ]
+        },
+        {
+          "label": "Original Punjabi publication",
+          "text": "The first Punjabi journal or book appearance has not been verified. The Mahfil date refers to the English translation.",
+          "referenceIds": [
+            "P3"
+          ]
+        },
+        {
+          "label": "English text",
+          "text": "Kiron Bajaj and Carlo Coppola’s translation, transcribed from the supplied Mahfil PDF, pp. 27–28. The poem ends with “In the Book of Love.” The following “O Traveler!” is a separate poem.",
+          "referenceIds": [
+            "P3"
+          ]
+        },
+        {
+          "label": "Earlier English translation",
+          "text": "The editorial footnote on p. 27 also identifies an earlier translation in Modern Indian Poetry, edited by A. V. Rajeswara Rau, Delhi, Kavita, 1958. Its translator is not named. This is a different translation from the one displayed.",
+          "referenceIds": [
+            "P3"
+          ]
+        }
+      ],
+      "poem": {
+        "id": "to-waris-shah",
+        "title": "To Waris Shah",
+        "author": "Amrita Pritam",
+        "translator": "Kiron Bajaj and Carlo Coppola",
+        "language": "en",
+        "stanzas": [
+          {
+            "id": "to-waris-shah-stanza-1",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-01",
+                "text": "Today I asked Waris Shah:"
+              },
+              {
+                "id": "to-waris-shah-line-02",
+                "text": "Speak from your grave;"
+              },
+              {
+                "id": "to-waris-shah-line-03",
+                "text": "Open a new chapter"
+              },
+              {
+                "id": "to-waris-shah-line-04",
+                "text": "In the Book of Love."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-2",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-05",
+                "text": "A daughter of the Punjab once wept;"
+              },
+              {
+                "id": "to-waris-shah-line-06",
+                "text": "You wrote her long story for her."
+              },
+              {
+                "id": "to-waris-shah-line-07",
+                "text": "Today millions of daughters weep,"
+              },
+              {
+                "id": "to-waris-shah-line-08",
+                "text": "Waris Shah. They're calling you."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-3",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-09",
+                "text": "O Friend of sorrow,"
+              },
+              {
+                "id": "to-waris-shah-line-10",
+                "text": "Look at the Punjab."
+              },
+              {
+                "id": "to-waris-shah-line-11",
+                "text": "The village square heaped with corpses,"
+              },
+              {
+                "id": "to-waris-shah-line-12",
+                "text": "The Chenab flooded with blood!"
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-4",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-13",
+                "text": "Someone mixed poison"
+              },
+              {
+                "id": "to-waris-shah-line-14",
+                "text": "In the five rivers;"
+              },
+              {
+                "id": "to-waris-shah-line-15",
+                "text": "Their flow"
+              },
+              {
+                "id": "to-waris-shah-line-16",
+                "text": "Watered the Punjab."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-5",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-17",
+                "text": "Poison has sprouted"
+              },
+              {
+                "id": "to-waris-shah-line-18",
+                "text": "From this fertile land."
+              },
+              {
+                "id": "to-waris-shah-line-19",
+                "text": "Look, how far the red has spread."
+              },
+              {
+                "id": "to-waris-shah-line-20",
+                "text": "Curse how far the red has spread!"
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-6",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-21",
+                "text": "Poisoned air"
+              },
+              {
+                "id": "to-waris-shah-line-22",
+                "text": "Floated into the jungles"
+              },
+              {
+                "id": "to-waris-shah-line-23",
+                "text": "Turning all bamboo flutes"
+              },
+              {
+                "id": "to-waris-shah-line-24",
+                "text": "To snakes"
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-7",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-25",
+                "text": "Biting everyone's lips;"
+              },
+              {
+                "id": "to-waris-shah-line-26",
+                "text": "Their tongue tips rose up"
+              },
+              {
+                "id": "to-waris-shah-line-27",
+                "text": "And quickly all parts"
+              },
+              {
+                "id": "to-waris-shah-line-28",
+                "text": "Of the Punjab turned blue."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-8",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-29",
+                "text": "Song is crushed in every throat;"
+              },
+              {
+                "id": "to-waris-shah-line-30",
+                "text": "Every spinning wheel's thread is snapped;"
+              },
+              {
+                "id": "to-waris-shah-line-31",
+                "text": "Friends parted from one another;"
+              },
+              {
+                "id": "to-waris-shah-line-32",
+                "text": "The hum of spinning wheels fell silent."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-9",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-33",
+                "text": "Oars have left all boats"
+              },
+              {
+                "id": "to-waris-shah-line-34",
+                "text": "And float in the current;"
+              },
+              {
+                "id": "to-waris-shah-line-35",
+                "text": "Peepal branches with swings"
+              },
+              {
+                "id": "to-waris-shah-line-36",
+                "text": "Lie broken."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-10",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-37",
+                "text": "Where is the grove where love songs"
+              },
+              {
+                "id": "to-waris-shah-line-38",
+                "text": "Used to echo, where the flute?"
+              },
+              {
+                "id": "to-waris-shah-line-39",
+                "text": "All Ranjha's brothers"
+              },
+              {
+                "id": "to-waris-shah-line-40",
+                "text": "Have forgotten how to play the flute."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-11",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-41",
+                "text": "Blood keeps falling upon the earth,"
+              },
+              {
+                "id": "to-waris-shah-line-42",
+                "text": "Oozing out drop by drop from graves."
+              },
+              {
+                "id": "to-waris-shah-line-43",
+                "text": "The queens of love"
+              },
+              {
+                "id": "to-waris-shah-line-44",
+                "text": "Weep in tombs."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-12",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-45",
+                "text": "It seems all people have become Kaidos,"
+              },
+              {
+                "id": "to-waris-shah-line-46",
+                "text": "Thieves of beauty and love--"
+              },
+              {
+                "id": "to-waris-shah-line-47",
+                "text": "Where should I search out"
+              },
+              {
+                "id": "to-waris-shah-line-48",
+                "text": "Another Waris Shah."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-13",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-49",
+                "text": "Waris Shah!"
+              },
+              {
+                "id": "to-waris-shah-line-50",
+                "text": "Open your grave;"
+              },
+              {
+                "id": "to-waris-shah-line-51",
+                "text": "Write a new page"
+              },
+              {
+                "id": "to-waris-shah-line-52",
+                "text": "In the Book of Love."
+              }
+            ]
+          }
+        ],
+        "annotations": []
+      }
     },
     {
       "id": "auden",
-      "dateLabel": "Late 1960s",
-      "datePrecision": "approximate",
+      "dateLabel": "December 1966",
+      "datePrecision": "month",
       "track": "poetry",
       "title": "Auden · Partition",
       "description": "W. H. Auden looks back at how the border was drawn. Although the poem describes the events of 1947, it was written years later. This gives us a way to look at how Partition is remembered after it happens.",
       "referenceIds": [
-        "P5"
+        "P5",
+        "P15",
+        "P16"
       ],
       "relatedCardIds": [
         "radcliffe"
       ],
-      "composition": "Late 1960s. Approximate placement",
-      "publication": "First publication not yet verified",
-      "edition": "Collected Poems, edited by Edward Mendelson, Modern Library, 2007, pp. 802–03.",
-      "axisDate": 1968,
+      "composition": "Written by December 1966, when an earlier version appeared in The Atlantic.",
+      "publication": "The Atlantic, December 1966. The archive preserves an earlier version with wording that differs from the text displayed here. The original magazine page number has not been verified. City Without Walls, Faber, 1969. The Auden Society lists the Random House edition in 1970.",
+      "edition": "Collected Poems, edited by Edward Mendelson. Modern Library, 2007, pp. 802–803. This is the edition identified in the exhibit brief.",
+      "axisDate": 1966,
       "poetId": "auden",
       "poem": {
         "id": "auden-partition",
@@ -863,7 +1344,37 @@
           }
         ],
         "annotations": []
-      }
+      },
+      "publicationDetails": [
+        {
+          "label": "Early journal publication",
+          "text": "The Atlantic, December 1966. The archive preserves an earlier version with wording that differs from the text displayed here. The original magazine page number has not been verified.",
+          "referenceIds": [
+            "P15"
+          ]
+        },
+        {
+          "label": "Book collection",
+          "text": "City Without Walls, Faber, 1969. The Auden Society lists the Random House edition in 1970.",
+          "referenceIds": [
+            "P16"
+          ]
+        },
+        {
+          "label": "Exhibit edition and pages",
+          "text": "Collected Poems, edited by Edward Mendelson. Modern Library, 2007, pp. 802–803. This is the edition identified in the exhibit brief.",
+          "referenceIds": [
+            "P5"
+          ]
+        },
+        {
+          "label": "Text displayed",
+          "text": "Original English text supplied for the exhibit. Its wording is preserved.",
+          "referenceIds": [
+            "P5"
+          ]
+        }
+      ]
     },
     {
       "id": "bangladesh",
@@ -891,22 +1402,101 @@
       "dateLabel": "2017",
       "datePrecision": "publication-year",
       "track": "poetry",
-      "title": "Gulzar · Footprints on Zero Line",
-      "description": "This English collection brings together Gulzar’s writing about Partition and how it continues to affect people’s memories. The individual poem is still being chosen while “Eyes Don’t Need a Visa” and “Bhameri” are checked.",
+      "title": "Gulzar · Karachi",
+      "description": "Gulzar’s “Karachi” is presented in Rakhshanda Jalil’s English translation from Footprints on Zero Line: Writings on the Partition.",
       "referenceIds": [
         "P6",
-        "P7"
+        "P7",
+        "P17"
       ],
       "relatedCardIds": [],
-      "composition": "Individual poem dates unverified",
-      "publication": "English collection published 2017",
-      "edition": "Translated by Rakhshanda Jalil. Harper Perennial, 2017. Individual selection pending.",
+      "composition": "Original composition date not yet verified",
+      "publication": "Footprints on Zero Line: Writings on the Partition. Translated from Urdu by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
+      "edition": "“Karachi,” in Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil, Harper Perennial / HarperCollins India, 2017. Text checked against the supplied photograph. Page number not visible in the photograph.",
       "axisDate": 2017,
       "poetId": "gulzar",
-      "readerPlaceholder": {
-        "id": "gulzar-selection",
-        "title": "Gulzar · poem selection pending",
-        "message": "The individual poem from Footprints on Zero Line is still being selected. The text will appear here once the selection is ready."
+      "publicationDetails": [
+        {
+          "label": "English collection",
+          "text": "Footprints on Zero Line: Writings on the Partition. Translated from Urdu by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
+          "referenceIds": [
+            "P6",
+            "P17"
+          ]
+        },
+        {
+          "label": "Publication context",
+          "text": "The translator’s introduction was excerpted in September 2017.",
+          "referenceIds": [
+            "P17"
+          ]
+        },
+        {
+          "label": "Poem and pages",
+          "text": "“Karachi.” Text transcribed from the supplied book photograph. Its page number and any earlier journal publication have not been verified.",
+          "referenceIds": [
+            "P6"
+          ]
+        },
+        {
+          "label": "Text displayed",
+          "text": "Rakhshanda Jalil’s English translation, with the eight lines and two stanzas shown in the supplied photograph.",
+          "referenceIds": [
+            "P6"
+          ]
+        }
+      ],
+      "poem": {
+        "id": "karachi",
+        "title": "Karachi",
+        "author": "Gulzar",
+        "translator": "Rakhshanda Jalil",
+        "language": "en",
+        "stanzas": [
+          {
+            "id": "karachi-stanza-1",
+            "lines": [
+              {
+                "id": "karachi-line-01",
+                "text": "Kites hover over corpses in your city"
+              },
+              {
+                "id": "karachi-line-02",
+                "text": "In much the same way they do"
+              },
+              {
+                "id": "karachi-line-03",
+                "text": "In my city, on its crossroads,"
+              },
+              {
+                "id": "karachi-line-04",
+                "text": "When bodies fall"
+              },
+              {
+                "id": "karachi-line-05",
+                "text": "Prey to police firing"
+              },
+              {
+                "id": "karachi-line-06",
+                "text": "The vultures begin to descend"
+              }
+            ]
+          },
+          {
+            "id": "karachi-stanza-2",
+            "lines": [
+              {
+                "id": "karachi-line-07",
+                "text": "In this, our two countries"
+              },
+              {
+                "id": "karachi-line-08",
+                "text": "So much is common among the common people."
+              }
+            ]
+          }
+        ],
+        "annotations": []
       }
     }
   ],
@@ -1362,7 +1952,7 @@
       "id": "gulzar",
       "name": "Gulzar",
       "firstCardId": "gulzar",
-      "description": "His writing looks back on childhood displacement and explores how the border continues to shape memory. The individual poem selection remains open while the collection is checked.",
+      "description": "His writing looks back on childhood displacement and explores how the border continues to shape memory. “Karachi” comes from the collection Footprints on Zero Line.",
       "image": {
         "src": "images/poets/gulzar.jpg",
         "alt": "Portrait of Gulzar",

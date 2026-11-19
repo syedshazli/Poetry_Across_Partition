@@ -134,7 +134,32 @@
     assert(document.querySelector('#freedoms-dawn-title').textContent === "Freedom's Dawn (August 1947)", 'Poem has its full title');
     assert(!document.querySelector('#card-detail .poem-text'), 'Timeline detail links to the separate reader');
     const readers = [...document.querySelectorAll('.poem-reader')];
-    assert(readers.map(r => r.querySelector('h3').id).join(',') === 'freedoms-dawn-title,gulzar-selection-title,auden-partition-title', 'Auden dropdown follows Gulzar');
+    assert(readers.map(r => r.querySelector('h3').id).join(',') === 'iqbal-hindi-poem-title,iqbal-milli-poem-title,freedoms-dawn-title,to-waris-shah-title,karachi-title,auden-partition-title', 'Readers place both Iqbal poems before Faiz, Pritam after Faiz, and Auden after Gulzar');
+    assert(readers.every(reader => reader.querySelector('.poem-publication dl')), 'Every reader includes publication and edition details');
+    for (const id of ['iqbal-hindi-poem', 'iqbal-milli-poem']) {
+      const reader = document.getElementById(`${id}-title`).closest('.poem-reader');
+      assert(!reader.open && reader.querySelector('.poem-text-status'), `${id} has a collapsed entry with explicit text status`);
+    }
+    assert(document.querySelector('#faiz-publication-title').parentElement.textContent.includes('122–127'), 'Faiz cites verified bilingual page range');
+    assert(document.querySelector('#pritam-publication-title').parentElement.textContent.includes('27–28'), 'Pritam cites Mahfil pages');
+    assert(document.querySelector('#auden-publication-title').parentElement.textContent.includes('earlier version'), 'Auden distinguishes the 1966 journal version from the supplied text');
+    const pritamReader = document.querySelector('#to-waris-shah-title').closest('.poem-reader');
+    assert(!pritamReader.open, 'Pritam poem starts collapsed');
+    pritamReader.querySelector('summary').click();
+    assert(pritamReader.querySelectorAll('.poem-line').length === 52 && pritamReader.querySelectorAll('.poem-stanza').length === 13, 'Pritam preserves 52 lines in 13 four-line stanzas');
+    assert(pritamReader.querySelector('.poem-byline').textContent.includes('Kiron Bajaj and Carlo Coppola'), 'Pritam credits the supplied translation');
+    assert(document.getElementById('to-waris-shah-line-52').textContent === 'In the Book of Love.', 'Pritam ends at the requested Book of Love line');
+    assert(!pritamReader.querySelector('.poem-text').textContent.includes('TRAVELER') && !pritamReader.querySelector('.poem-text').textContent.includes('After searching'), 'O Traveler is excluded from Pritam poem text');
+    assert(!pritamReader.querySelector('.poem-highlight'), 'Pritam has no added analysis highlights');
+    pritamReader.querySelector('summary').click();
+    const gulzarReader = document.querySelector('#karachi-title').closest('.poem-reader');
+    assert(!gulzarReader.open, 'Karachi starts collapsed');
+    gulzarReader.querySelector('summary').click();
+    assert(gulzarReader.querySelectorAll('.poem-line').length === 8 && [...gulzarReader.querySelectorAll('.poem-stanza')].map(s => s.querySelectorAll('.poem-line').length).join(',') === '6,2', 'Karachi preserves the photographed eight lines and two stanzas');
+    assert(document.getElementById('karachi-line-08').textContent === 'So much is common among the common people.', 'Karachi ends with the photographed final line');
+    assert(gulzarReader.querySelector('.poem-byline').textContent.includes('Rakhshanda Jalil') && !gulzarReader.querySelector('.poem-highlight'), 'Karachi credits the translator without adding annotations');
+    assert(document.getElementById('card-gulzar').textContent.includes('Karachi'), 'Gulzar timeline card names the selected poem');
+    gulzarReader.querySelector('summary').click();
     const audenReader = document.querySelector('#auden-partition-title').closest('.poem-reader');
     assert(!audenReader.open, 'Auden poem starts collapsed');
     audenReader.querySelector('summary').click();
@@ -143,7 +168,7 @@
     assert(audenReader.querySelector('.poem-byline').textContent === 'W. H. Auden', 'Original English poem has no translator credit');
     assert(!audenReader.querySelector('.poem-highlight') && !audenReader.querySelector('.whole-poem-analysis'), 'Auden has no added annotations or analysis');
     audenReader.querySelector('summary').click();
-    const poemReader = document.querySelector('.poem-reader');
+    const poemReader = document.querySelector('#freedoms-dawn-title').closest('.poem-reader');
     assert(!poemReader.open, 'Poem starts collapsed');
     poemReader.querySelector('.poem-summary').click();
     assert(poemReader.open && document.querySelector('.poem-text').getBoundingClientRect().height > 0, 'Poem disclosure reveals the reader');
@@ -218,7 +243,7 @@
 
 
 
-    document.querySelector('.poem-reader .text-link').click();
+    document.querySelector('#freedoms-dawn-title').closest('.poem-reader').querySelector('.text-link').click();
     assert(document.activeElement.id === 'card-faiz', 'Poem return link focuses Faiz on full timeline');
     document.querySelector('[data-view="august"]').click();
     assert(document.querySelector('#view-title').textContent === 'August 1947 detail', 'Detail scale labeled');

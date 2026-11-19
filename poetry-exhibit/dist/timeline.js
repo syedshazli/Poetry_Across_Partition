@@ -88,6 +88,27 @@
     const rect = poetDialog.getBoundingClientRect();
     if (event.target === poetDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) poetDialog.close();
   });
+  function publicationDetails(card) {
+    const section = el('section', null, 'poem-publication');
+    const title = el('h4', 'Publication & edition');
+    title.id = `${card.id}-publication-title`;
+    section.setAttribute('aria-labelledby', title.id);
+    const list = el('dl');
+    (card.publicationDetails || []).forEach(item => {
+      const value = el('dd', item.text);
+      const links = el('span', null, 'publication-citations');
+      (item.referenceIds || []).forEach(id => {
+        const source = data.references[id];
+        if (!source?.url) return;
+        const link = el('a', id);
+        link.href = source.url;link.target = '_blank';link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-label', source.title);
+        links.append(document.createTextNode(' '), link);
+      });
+      value.append(links);list.append(el('dt', item.label), value);
+    });
+    section.append(title, list);return section;
+  }
   function renderPoems() {
     const list = document.querySelector('#poem-list');
     const poetOrder = data.poets.map(poet => poet.id);
@@ -99,14 +120,15 @@
       heading.id = `${poem.id}-title`;
       heading.tabIndex = -1;
       const summary = el('summary', null, 'poem-summary');
-      const state = el('span', 'View poem', 'poem-disclosure-label');
+      const closedLabel = c.poem ? 'View poem' : 'View details';
+      const state = el('span', closedLabel, 'poem-disclosure-label');
       summary.append(heading, state);
       const body = el('div', null, 'poem-reader-body');
       article.append(summary, body);
-      article.addEventListener('toggle', () => {state.textContent = article.open ? 'Hide poem' : 'View poem';});
+      article.addEventListener('toggle', () => {state.textContent = article.open ? (c.poem ? 'Hide poem' : 'Hide details') : closedLabel;});
       if (c.readerPlaceholder && !c.poem) {
-        body.append(el('p', poem.message));
-        const back = el('a', 'Explore Gulzar on the timeline ↑', 'text-link');
+        body.append(el('p', poem.message, 'poem-text-status'), publicationDetails(c));
+        const back = el('a', 'Find on timeline ↑', 'text-link');
         back.href = `#card-${c.id}`;
         back.addEventListener('click', event => {event.preventDefault();setView('full');scrollToCard(c.id);});
         body.append(back);list.append(article);return;
@@ -120,7 +142,7 @@
       const readingHelp = el('p', 'Scroll sideways if needed to read each line as printed.', 'poem-scroll-help');
       readingHelp.id = `${poem.id}-scroll-help`;
       text.setAttribute('aria-describedby', readingHelp.id);
-      body.append(readingHelp);
+      body.append(publicationDetails(c), readingHelp);
       const notes = new Map();
       function annotation(note) {
         if (notes.has(note.id)) return notes.get(note.id);
@@ -268,12 +290,13 @@
     heading.id = 'detail-title';
     detail.append(heading);
     detail.append(el('p', c.description));
-    if (c.poem) {
-      const link = el('a', 'Read the poem ↓', 'text-link read-poem');
-      link.href = `#${c.poem.id}-title`;
+    if (c.poem || c.readerPlaceholder) {
+      const reader = c.poem || c.readerPlaceholder;
+      const link = el('a', c.poem ? 'Read the poem ↓' : 'View poem details ↓', 'text-link read-poem');
+      link.href = `#${reader.id}-title`;
       link.addEventListener('click', event => {
         event.preventDefault();
-        const target = document.getElementById(`${c.poem.id}-title`);
+        const target = document.getElementById(`${reader.id}-title`);
         target.closest('.poem-reader').open = true;
         target.focus({preventScroll: true});
         target.scrollIntoView({behavior: reduced.matches ? 'instant' : 'smooth', block: 'start'});
