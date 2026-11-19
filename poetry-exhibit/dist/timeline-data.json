@@ -58,8 +58,8 @@
       "note": "Print edition identified in the exhibit brief. The earlier December 1966 journal version is linked separately in P15."
     },
     "P6": {
-      "title": "Gulzar · Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil, Harper Perennial, 2017",
-      "note": "English collection containing the selected poem “Karachi.” Its text was supplied in a book photograph. Poem page number not visible in the photograph."
+      "title": "Gulzar · “Karachi,” p. 36, in Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
+      "note": "The book is the source for the poem. Text supplied in a photograph and page number confirmed by the reader. P17 is background reading from the translator’s introduction."
     },
     "P7": {
       "title": "Rakhshanda Jalil · Why the Partition Is Not Just a Historical Event but a Work in Progress for Gulzar",
@@ -431,7 +431,10 @@
         "end": 1947.62,
         "openEnd": false
       },
-      "axisDate": 1947.615
+      "axisDate": 1947.615,
+      "photographIds": [
+        "karachi"
+      ]
     },
     {
       "id": "faiz",
@@ -859,7 +862,12 @@
         "end": 1950,
         "openEnd": true
       },
-      "axisDate": 1947
+      "axisDate": 1947,
+      "photographIds": [
+        "convoy",
+        "train",
+        "delhi"
+      ]
     },
     {
       "id": "pritam",
@@ -1199,7 +1207,11 @@
           }
         ],
         "annotations": []
-      }
+      },
+      "photographIds": [
+        "train",
+        "delhi"
+      ]
     },
     {
       "id": "auden",
@@ -1411,17 +1423,16 @@
       ],
       "relatedCardIds": [],
       "composition": "Original composition date not yet verified",
-      "publication": "Footprints on Zero Line: Writings on the Partition. Translated from Urdu by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
-      "edition": "“Karachi,” in Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil, Harper Perennial / HarperCollins India, 2017. Text checked against the supplied photograph. Page number not visible in the photograph.",
+      "publication": "Footprints on Zero Line: Writings on the Partition. Translated from Hindi by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
+      "edition": "“Karachi,” p. 36, in Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil, Harper Perennial / HarperCollins India, 2017. Text supplied in a book photograph. Page number confirmed by the reader.",
       "axisDate": 2017,
       "poetId": "gulzar",
       "publicationDetails": [
         {
           "label": "English collection",
-          "text": "Footprints on Zero Line: Writings on the Partition. Translated from Urdu by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
+          "text": "Footprints on Zero Line: Writings on the Partition. Translated from Hindi by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
           "referenceIds": [
-            "P6",
-            "P17"
+            "P6"
           ]
         },
         {
@@ -1433,7 +1444,7 @@
         },
         {
           "label": "Poem and pages",
-          "text": "“Karachi.” Text transcribed from the supplied book photograph. Its page number and any earlier journal publication have not been verified.",
+          "text": "“Karachi,” p. 36. Page number confirmed by the reader from the book. Any earlier journal publication remains unverified.",
           "referenceIds": [
             "P6"
           ]
@@ -1497,7 +1508,11 @@
           }
         ],
         "annotations": []
-      }
+      },
+      "photographIds": [
+        "delhi",
+        "karachi"
+      ]
     }
   ],
   "views": {
@@ -2195,6 +2210,84 @@
         "died": "1973-09-29",
         "sourceUrl": "https://academic.oup.com/american-national-biography/reference/63042/reference-article-abstract/570335972",
         "checkedOn": "2026-11-15"
+      }
+    }
+  ],
+  "photographs": [
+    {
+      "id": "convoy",
+      "src": "images/partition/convoy.jpg",
+      "title": "Leaving with what could be carried",
+      "date": "Scene identified as 1947 · archive record dated February 1954",
+      "caption": "The Government of India’s photo record identifies this as a convoy of evacuees travelling from West Pakistan to India in 1947. The catalogue entry is dated February 1954, so the scene date and record date are kept separate.",
+      "alt": "A group of evacuees with vehicles, carts, belongings, and a camel in an open landscape.",
+      "width": 895,
+      "height": 602,
+      "credit": "Photo Division, Government of India",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_convoy_of_evacuees_of_India_from_West_Pakistan_in_1947.jpg",
+      "rights": "Public domain, as recorded by Wikimedia Commons",
+      "story": {
+        "title": "Journeys on foot and by vehicle",
+        "text": "BFI’s archival film of arrivals in Lahore shows people travelling with different resources. Some brought cars and belongings, while others made the journey on foot. The footage offers another view of the movement that a single photograph can only partly show.",
+        "sourceTitle": "BFI · Lahore — Refugees from India (1947)",
+        "url": "https://www.youtube.com/watch?v=yfkHdttQSYM"
+      }
+    },
+    {
+      "id": "train",
+      "src": "images/partition/train.jpg",
+      "title": "Finding space on a train",
+      "date": "Partition-era scene · archive record dated February 1954",
+      "caption": "At Ambala station, travellers sit on carriage roofs as people stand beside the train. The government record calls it a refugee special and describes the carriages as full. Its catalogue entry is dated February 1954.",
+      "alt": "Travellers and bundles crowd the roofs of railway carriages at Ambala while people stand beside the tracks.",
+      "width": 873,
+      "height": 576,
+      "credit": "Photo Division, Government of India",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_refugee_special_train_at_Ambala_Station_during_partition_of_India.jpg",
+      "rights": "Public domain, as recorded by Wikimedia Commons",
+      "story": {
+        "title": "Twelve days by rail, then three days at sea",
+        "text": "In an interview summary shared by The 1947 Partition Archive, Saleem Murtaza Qureshi remembers leaving Shimla with his family. They had hoped to reach Lahore directly. Instead, their journey took them through Kalka to Bombay over twelve days. After staying at a military camp, they boarded a ship for Karachi. He recalls three more days at sea and seasickness on the crossing.",
+        "sourceTitle": "Saleem Murtaza Qureshi · interview summary, The 1947 Partition Archive, reproduced in The News (2016)",
+        "url": "https://www.thenews.com.pk/amp/143438-STORIES-OF-PARTITION"
+      }
+    },
+    {
+      "id": "delhi",
+      "src": "images/partition/delhi.jpg",
+      "title": "From Delhi station to a camp",
+      "date": "Delhi, India · September 27, 1947",
+      "caption": "The original government caption identifies these people as refugees being taken from Delhi Railway Station to camps. Reaching a station was one part of the journey. Transport and a place to stay still had to be found.",
+      "alt": "Adults and children gather beside an open vehicle carrying refugees from Delhi Railway Station toward camps.",
+      "width": 1498,
+      "height": 1453,
+      "credit": "Photo Division, Government of India",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Refugees_taken_to_camps_from_Delhi_Station.jpg",
+      "rights": "Public domain, as recorded by Wikimedia Commons",
+      "story": {
+        "title": "Arriving did not always mean having a home",
+        "text": "A September 1947 report reproduced by The National Archives records refugees in Delhi staying with friends and relatives as well as in camps. Another official report describes movement by refugee trains and motor lorries. These records show how travel continued through stations, temporary accommodation, and organised transport.",
+        "sourceTitle": "The National Archives · Indian independence, part two, official reports on refugees",
+        "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/indian-independence-part-two/"
+      }
+    },
+    {
+      "id": "karachi",
+      "src": "images/partition/karachi.jpg",
+      "title": "A crowd in Karachi",
+      "date": "Karachi, Pakistan today · August 14, 1947",
+      "caption": "Crowds surround a carriage during the Mountbattens’ visit to Karachi at the transfer of power. The photograph records a public occasion in the city. The separate account below recalls arriving there by sea.",
+      "alt": "A large crowd surrounds a horse-drawn carriage during the Mountbattens’ visit to Karachi in August 1947.",
+      "width": 800,
+      "height": 450,
+      "credit": "Photographer unidentified · reproduced by BBC Urdu, via Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_and_his_wife_Advena_in_Karachi_14_August_1947.jpg",
+      "rights": "Public domain, as recorded by Wikimedia Commons",
+      "story": {
+        "title": "Reaching Karachi by ship",
+        "text": "In a recorded account shared by the Citizens Archive of Pakistan, Sugrah Kazmi remembers finding space aboard the Dumra in the ship’s basement. After reaching Karachi, her family stayed with relatives. She also recalls luggage being lost along the way. Her account gives a sense of arrival as the beginning of another period of uncertainty.",
+        "sourceTitle": "Sugrah Kazmi · Citizens Archive of Pakistan interview, shared by Dawn Images (2018)",
+        "url": "https://images.dawn.com/news/1180595/partition-survivor-recalls-traveling-to-pakistan-by-ship"
       }
     }
   ]

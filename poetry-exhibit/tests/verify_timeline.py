@@ -76,6 +76,12 @@ try:
                 screenshot=cdp.command('Page.captureScreenshot', {'format':'png', 'captureBeyondViewport':False})
                 Path(f'/tmp/pritam-map-before-{width}.png').write_bytes(base64.b64decode(screenshot['data']))
                 cdp.evaluate('document.querySelector("#close-poet-background").click();')
+                cdp.evaluate('document.querySelector("#photographs-heading").scrollIntoView();')
+                screenshot=cdp.command('Page.captureScreenshot', {'format':'png', 'captureBeyondViewport':False})
+                Path(f'/tmp/partition-photographs-{width}.png').write_bytes(base64.b64decode(screenshot['data']))
+                cdp.evaluate('document.querySelector("#exhibit-reading").scrollIntoView();')
+                screenshot=cdp.command('Page.captureScreenshot', {'format':'png', 'captureBeyondViewport':False})
+                Path(f'/tmp/partition-summary-{width}.png').write_bytes(base64.b64decode(screenshot['data']))
                 for poet_id in ('faiz', 'gulzar'):
                     cdp.evaluate(f'document.querySelector("#poet-{poet_id} .poet-background-button").click();')
                     for _ in range(100):

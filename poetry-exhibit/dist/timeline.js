@@ -88,6 +88,33 @@
     const rect = poetDialog.getBoundingClientRect();
     if (event.target === poetDialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) poetDialog.close();
   });
+  function renderPhotographs() {
+    const list = document.querySelector('#partition-photo-list');
+    const sourceLink = (label, url) => {
+      const link = el('a', label);link.href = url;link.target = '_blank';link.rel = 'noopener noreferrer';return link;
+    };
+    (data.photographs || []).forEach(photo => {
+      const item = el('article', null, 'partition-photo-card');
+      item.id = `photo-${photo.id}`;item.tabIndex = -1;
+      const figure = el('figure');
+      const full = sourceLink(`View ${photo.title} at full size`, photo.src);
+      full.className = 'partition-photo-image';
+      const image = el('img');image.src = photo.src;image.alt = photo.alt;
+      image.width = photo.width;image.height = photo.height;image.loading = 'lazy';image.decoding = 'async';
+      full.replaceChildren(image);
+      const caption = el('figcaption');
+      const heading = el('h4', photo.title);heading.id = `photo-${photo.id}-title`;
+      item.setAttribute('aria-labelledby', heading.id);
+      caption.append(el('p', photo.date, 'partition-photo-date'), heading, el('p', photo.caption));
+      const credit = el('p', null, 'partition-photo-credit');
+      credit.append(document.createTextNode(`${photo.credit}. `),sourceLink('Archive record & reuse information',photo.sourceUrl));
+      caption.append(credit);
+      figure.append(full,caption);item.append(figure);
+      const story = el('details', null, 'partition-travel-account');
+      story.append(el('summary', photo.story.title),el('p',photo.story.text),sourceLink(photo.story.sourceTitle,photo.story.url));
+      item.append(story);list.append(item);
+    });
+  }
   function publicationDetails(card) {
     const section = el('section', null, 'poem-publication');
     const title = el('h4', 'Publication & edition');
@@ -290,6 +317,16 @@
     heading.id = 'detail-title';
     detail.append(heading);
     detail.append(el('p', c.description));
+    if (c.photographIds?.length) {
+      const photos = el('nav', null, 'related-photographs');
+      photos.setAttribute('aria-label', 'Related historical photographs');
+      c.photographIds.forEach(id => {
+        const photo = data.photographs.find(p => p.id === id);
+        if (!photo) return;
+        const link = el('a', photo.title);link.href = `#photo-${id}`;photos.append(link);
+      });
+      detail.append(photos);
+    }
     if (c.poem || c.readerPlaceholder) {
       const reader = c.poem || c.readerPlaceholder;
       const link = el('a', c.poem ? 'Read the poem ↓' : 'View poem details ↓', 'text-link read-poem');
@@ -436,6 +473,7 @@
     if (!response.ok) throw new Error('Timeline data could not be loaded.');
     data = await response.json();
     renderPoems();
+    renderPhotographs();
     const poets = [...data.poets];
     poets.forEach(poet => {
       const card = el('article', null, 'poet-intro');

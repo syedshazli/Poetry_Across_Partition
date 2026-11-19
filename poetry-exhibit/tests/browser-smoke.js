@@ -259,6 +259,27 @@
     document.querySelector('[data-jump="displacement"]').click();
     assert(document.querySelector('#view-title').textContent === 'Full timeline', 'Jump restores full timeline');
     assert(document.activeElement.id === 'card-displacement', 'Jump focuses destination');
+    assert(![...document.querySelectorAll('h2')].some(heading => heading.textContent === 'An exhibit in progress.'), 'Old exhibit-in-progress heading removed');
+    assert(document.querySelector('#exhibit-reading-heading').textContent.includes('six poems'), 'Exhibit-wide reading section covers six poems');
+    assert(!document.querySelector('#exhibit-claim').textContent.trim() && !document.querySelector('#exhibit-analysis').textContent.trim(), 'Overarching claim and analysis remain empty');
+    const photographs = [...document.querySelectorAll('.partition-photo-card')];
+    assert(photographs.length === 4, 'Four sourced historical photographs render');
+    for (const card of photographs) {
+      const image = card.querySelector('img');image.scrollIntoView();
+      for (let i=0; i<100 && !(image.complete && image.naturalWidth); i++) await wait();
+      assert(image.naturalWidth > 0 && image.alt && card.querySelector('.partition-photo-credit a'), `Archival photograph loads with alt text and source: ${card.id}`);
+      const account = card.querySelector('details');
+      assert(!account.open && account.querySelector('a'), `Travel account starts collapsed with a source: ${card.id}`);
+      account.querySelector('summary').click();assert(account.open, `Travel account expands: ${card.id}`);
+      account.querySelector('summary').click();
+    }
+    assert(document.querySelector('#photo-delhi').textContent.includes('September 27, 1947') && document.querySelector('#photo-karachi').textContent.includes('August 14, 1947'), 'City photographs identify locations and dates');
+    assert(document.querySelector('#photo-train').textContent.includes('1954') && document.querySelector('#photo-convoy').textContent.includes('1954'), 'Photograph captions distinguish archival record dates');
+    document.querySelector('#card-gulzar').click();
+    assert(document.querySelector('#card-detail a[href="#photo-karachi"]'), 'Karachi poem links to the city photograph');
+    document.querySelector('#card-displacement').click();
+    assert(document.querySelectorAll('#card-detail .related-photographs a').length === 3, 'Displacement links to journey photographs');
+    document.querySelector('.close-detail').click();
     const mobile = matchMedia('(max-width: 700px)').matches;
     assert(document.documentElement.scrollWidth <= innerWidth, 'No page horizontal overflow');
     const history = r('independence'), poetry = r('faiz');
