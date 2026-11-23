@@ -11,13 +11,19 @@
   <a class="skip" href="#main">Skip to content</a>
   <header>
     <a class="wordmark" href="#home" aria-label="Poetry Across the Partition home">P / P</a>
-    <nav aria-label="Main navigation">
+    <details class="exhibit-menu" open>
+      <summary>Explore the exhibit</summary>
+      <nav aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#poets">Meet the Poets</a>
       <a href="#timeline">Timeline</a>
+      <a href="#partition-maps">Maps</a>
+      <a href="#photographs">Photographs</a>
       <a href="#poems">Poems</a>
+      <a href="#exhibit-reading">Reading together</a>
       <a href="#sources">Sources</a>
-    </nav>
+      </nav>
+    </details>
     <span class="edition">Pakistan · India</span>
   </header>
   <main id="main">
@@ -25,14 +31,23 @@
       <div class="eyebrow"><span class="dot"></span> An exhibit by Syed Shazli</div>
       <div class="country-line" aria-label="Pakistan and India"><span class="pakistan">Pakistan <span lang="ur" dir="rtl">پاکستان</span></span><span class="country-divider" aria-hidden="true"></span><span class="india"><span lang="hi">भारत</span> India</span></div>
       <h1 id="title">Poetry Across<br>the <em>Partition</em><span class="period">.</span></h1>
-      <div class="hero-bottom"><p class="placeholder">History may record a border, but poetry carries the implications. Explore the making of partition and its echoes in verses.</p><a class="explore" href="#poets">Enter the exhibit <span aria-hidden="true">↘</span></a></div>
+      <div class="hero-bottom"><p class="placeholder">History may record a border, but poetry carries the implications. Explore the making of partition and its echoes in verses.</p><a class="explore" href="#poets">Enter the exhibit</a></div>
       <div class="decor" aria-hidden="true"><span></span><span></span></div>
+
+      <nav class="section-navigation" aria-label="Home section navigation">
+        <a class="section-next" href="#poets"><span>Next</span><strong>Meet the Poets</strong></a>
+      </nav>
     </section>
     <section class="poets-section" id="poets" aria-labelledby="poets-heading">
       <div class="section-label"><span>01</span><span>The voices in this exhibit</span></div>
       <h2 id="poets-heading">Meet the Poets</h2>
       <div id="poet-list" class="poet-grid"></div>
       <noscript><p>Meet Muhammad Iqbal, Faiz Ahmad Faiz, Amrita Pritam, W. H. Auden, and Gulzar through the <a href="timeline-data.json">exhibit’s poet introductions and timeline data</a>.</p></noscript>
+
+      <nav class="section-navigation" aria-label="Meet the Poets section navigation">
+        <a class="section-back" href="#home"><span>Back</span><strong>Home</strong></a>
+        <a class="section-next" href="#timeline"><span>Next</span><strong>History &amp; Poetry</strong></a>
+      </nav>
     </section>
     <section class="timeline-section" id="timeline" aria-labelledby="timeline-heading">
       <div class="section-label"><span>02</span><span>History &amp; poetry · 1757–2017</span></div>
@@ -52,23 +67,45 @@
       <p id="timeline-status" class="sr-only" role="status"></p>
       <noscript><p>The interactive timeline needs JavaScript. <a href="timeline-data.json">Read the complete timeline data and references.</a></p></noscript>
       <section id="card-detail" class="card-detail" aria-labelledby="detail-title" hidden></section>
+
+      <nav class="section-navigation" aria-label="History &amp; Poetry section navigation">
+        <a class="section-back" href="#poets"><span>Back</span><strong>Meet the Poets</strong></a>
+        <a class="section-next" href="#partition-maps"><span>Next</span><strong>Maps</strong></a>
+      </nav>
     </section>
     <section class="partition-maps-section" id="partition-maps" aria-labelledby="partition-maps-heading">
       <div class="section-label"><span>03</span><span>Communities &amp; borders</span></div>
       <h2 id="partition-maps-heading">Before and after the border</h2>
       <div id="partition-maps-content"></div>
       <noscript><p><a href="images/maps/punjab-religion-1941.jpg">Punjab majorities, 1941</a> · <a href="images/maps/religions-1909.jpg">Religious pattern, 1909</a> · <a href="images/maps/partition-1947.svg">Partition borders, 1947</a></p></noscript>
+
+      <nav class="section-navigation" aria-label="Maps section navigation">
+        <a class="section-back" href="#timeline"><span>Back</span><strong>History &amp; Poetry</strong></a>
+        <a class="section-next" href="#photographs"><span>Next</span><strong>Photographs</strong></a>
+      </nav>
     </section>
-      <section class="partition-photographs" aria-labelledby="photographs-heading">
-        <h3 id="photographs-heading">Journeys, arrivals, and places</h3>
+      <section id="photographs" class="partition-photographs" aria-labelledby="photographs-heading">
+        <h2 id="photographs-heading">Journeys, arrivals, and places</h2>
+        <div id="partition-featured-account"></div>
         <p class="photographs-intro">Photographs from the archive, alongside accounts of travelling by road, rail, and sea. Select a photograph to see it at full size, or open an account to follow a journey.</p>
         <div id="partition-photo-list" class="partition-photo-grid"></div>
-      </section>
+
+      <nav class="section-navigation" aria-label="Photographs section navigation">
+        <a class="section-back" href="#partition-maps"><span>Back</span><strong>Maps</strong></a>
+        <a class="section-next" href="#poems"><span>Next</span><strong>Poems</strong></a>
+      </nav>
+    </section>
     <section class="poems-section" id="poems" aria-labelledby="poems-heading">
       <div class="section-label"><span>04</span><span>The poems</span></div>
       <h2 id="poems-heading">Poems</h2>
+      <p class="intro">The reading order follows the exhibit’s argument. Iqbal’s two poems move from pride in a united India toward a shared Islamic identity. Faiz, Pritam, and Gulzar then bring perspectives shaped by their experiences of Partition and its aftermath. Auden closes the sequence with a British perspective. The <a class="text-link" href="#timeline">timeline</a> places the poems alongside historical events using their composition and publication dates.</p>
       <div id="poem-list"></div>
       <noscript><p><a href="timeline-data.json">Read the poem in the exhibit data.</a></p></noscript>
+
+      <nav class="section-navigation" aria-label="Poems section navigation">
+        <a class="section-back" href="#photographs"><span>Back</span><strong>Photographs</strong></a>
+        <a class="section-next" href="#exhibit-reading"><span>Next</span><strong>Reading together</strong></a>
+      </nav>
     </section>
     <section class="exhibit-section" id="exhibit-reading" aria-labelledby="exhibit-reading-heading">
       <div class="section-label"><span>05</span><span>Reading across the poems</span></div>
@@ -83,6 +120,11 @@
           <div class="exhibit-summary-empty" id="exhibit-analysis"></div>
         </section>
       </div>
+
+      <nav class="section-navigation" aria-label="Reading together section navigation">
+        <a class="section-back" href="#poems"><span>Back</span><strong>Poems</strong></a>
+        <a class="section-next" href="#sources"><span>Next</span><strong>Sources &amp; editions</strong></a>
+      </nav>
     </section>
     <section class="exhibit-section" id="sources" aria-labelledby="sources-heading">
       <div class="section-label"><span>06</span><span>Sources &amp; editions</span></div>
@@ -92,6 +134,11 @@
         <details><summary>Browse the reference list</summary><ul id="reference-list"></ul></details>
         <a class="text-link" href="#timeline">Return to the full timeline ↑</a>
       </div>
+
+      <nav class="section-navigation" aria-label="Sources &amp; editions section navigation">
+        <a class="section-back" href="#exhibit-reading"><span>Back</span><strong>Reading together</strong></a>
+        <a class="section-next" href="#home"><span>Start again</span><strong>Home</strong></a>
+      </nav>
     </section>
   </main>
   <footer><span>Poetry Across the Partition</span><span>Pakistan · India / Syed Shazli</span><a href="#home">Back to top ↑</a></footer>
@@ -101,6 +148,7 @@
     <div id="poet-background-content"></div>
   </dialog>
   <script src="pritam-map.js" defer></script>
+  <script src="navigation.js" defer></script>
   <script src="timeline.js" defer></script>
 </body>
 </html>

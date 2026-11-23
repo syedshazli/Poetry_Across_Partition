@@ -120,3 +120,10 @@ Both Iqbal readers now display Ikram Azam’s translations from *Iqbal: The Isla
 Collapsed poem readers show the poet’s name. Each open reader includes a portrait calling card that opens the existing biography dialog and restores focus when closed.
 
 Regional backgrounds open directly on the Partition overview map in a native dialog. `mapBackgrounds` holds the sourced notes, and the overview’s `historyMarkers` refer to `backgroundId`. Map notes cover only post-Partition territorial changes in Kalat (1948), Hyderabad (1948), Goa (1961), and Sikkim (1975). The original Punjab timeline entry remains. Closing a background returns focus to its marker or labeled button.
+## Exhibit navigation
+
+The main menu now opens one section at a time, including dedicated Maps and Photographs destinations. On narrow screens, “Explore the exhibit” opens a native disclosure menu. Fragment URLs preserve links to individual poems, poets, timeline cards, photographs, and sources. Browser Back and Forward restore the selected section. Without JavaScript, all sections remain readable on the original page.
+
+`dist/navigation.js` reveals destinations before the timeline's own focus handlers run. The timeline dispatches `exhibit-ready` after rendering its fetched data so initial deep links can resolve. The Poems introduction explains the thematic reading order separately from the timeline's historical dates. Poem text and translations are unchanged.
+
+After these changes, the Chrome smoke checks passed at 1440, 390, and 320 CSS pixels, with 383 assertions per width and native Escape/focus-return checks. These are desktop Chrome and emulated mobile viewports, not physical-device or cross-browser certification. Firefox and Safari remain untested.

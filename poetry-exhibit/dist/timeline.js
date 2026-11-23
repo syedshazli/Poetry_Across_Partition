@@ -199,12 +199,33 @@
       if (photo.quotation) {
         const quote = el('blockquote', photo.quotation.text, 'partition-witness-quote');
         quote.cite = photo.quotation.url;
-        caption.append(quote, sourceLink(photo.quotation.attribution, photo.quotation.url));
+        if (photo.id === 'punjab-camp') {
+          const featured = el('figure', null, 'featured-witness');
+          const label = el('p', photo.story.title, 'featured-witness-label');
+          const attribution = el('figcaption');
+          attribution.append(sourceLink(photo.quotation.attribution, photo.quotation.url));
+          const context = el('p', photo.story.text, 'featured-witness-context');
+          featured.append(label, quote, attribution, context);
+          document.querySelector('#partition-featured-account').append(featured);
+        } else {
+          caption.append(quote, sourceLink(photo.quotation.attribution, photo.quotation.url));
+        }
       }
       figure.append(full,caption);item.append(figure);
       const story = el('details', null, 'partition-travel-account');
       story.append(el('summary', photo.story.title),el('p',photo.story.text),sourceLink(photo.story.sourceTitle,photo.story.url));
       item.append(story);list.append(item);
+      if (photo.featuredExcerpt) {
+        const excerpt = photo.featuredExcerpt;
+        const featured = el('figure', null, 'featured-witness featured-witness-inline');
+        const quote = el('blockquote', excerpt.text, 'partition-witness-quote');
+        quote.cite = excerpt.url;
+        const attribution = el('figcaption');
+        attribution.append(sourceLink(excerpt.attribution, excerpt.url));
+        featured.append(el('p', excerpt.title, 'featured-witness-label'), quote, attribution,
+          el('p', excerpt.context, 'featured-witness-context'));
+        list.append(featured);
+      }
     });
   }
   function publicationDetails(card) {
@@ -749,6 +770,7 @@
     document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => {setView(b.dataset.view); viewport.focus({preventScroll: true});}));
     document.querySelectorAll('[data-jump]').forEach(b => b.addEventListener('click', () => {setView('full'); scrollToCard(b.dataset.jump);}));
     document.querySelectorAll('a[href="#timeline"]').forEach(a => a.addEventListener('click', () => setView('full')));
+    document.dispatchEvent(new Event('exhibit-ready'));
     mobile.addEventListener('change', render);
     viewport.addEventListener('keydown', e => {
       if (e.key === 'Escape' && !detail.hidden) {closeDetail(); return;}

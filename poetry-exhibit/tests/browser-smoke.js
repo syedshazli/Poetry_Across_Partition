@@ -5,6 +5,21 @@
   const wait = () => new Promise(resolve => setTimeout(resolve, 50));
   try {
     for (let i = 0; i < 60 && !document.querySelector('#card-company'); i++) await wait();
+    const mainNav = document.querySelector('nav[aria-label="Main navigation"]');
+    for (const link of mainNav.querySelectorAll('a')) {
+      link.click();
+      assert(document.querySelectorAll('main > section:not([hidden])').length === 1, `One visible destination: ${link.hash}`);
+      assert(!document.querySelector(link.hash).hidden && link.getAttribute('aria-current') === 'page', `Destination and active navigation agree: ${link.hash}`);
+    }
+    mainNav.querySelector('a[href="#partition-maps"]').click();
+    mainNav.querySelector('a[href="#poems"]').click();
+    window.history.back();
+    for (let i = 0; i < 40 && location.hash !== '#partition-maps'; i++) await wait();
+    assert(!document.querySelector('#partition-maps').hidden, 'Browser Back restores the map view');
+    window.history.forward();
+    for (let i = 0; i < 40 && location.hash !== '#poems'; i++) await wait();
+    assert(!document.querySelector('#poems').hidden, 'Browser Forward restores the poem view');
+    mainNav.querySelector('a[href="#timeline"]').click();
     const data = await (await fetch('timeline-data.json')).json();
     assert(data.cards.length > 0, 'Timeline card data present');
     assert(new Set(data.cards.map(c => c.id)).size === data.cards.length, 'Stable IDs are unique');
@@ -143,6 +158,7 @@
       assert(reader.querySelector('.poem-summary-author').textContent === poet.name, `Collapsed poem shows its author: ${poem.id}`);
       assert(reader.querySelector('.poem-poet-card').getAttribute('aria-controls') === 'poet-background', `Poem has a background calling card: ${poem.id}`);
     }
+    document.querySelector('nav[aria-label="Main navigation"] a[href="#poems"]').click();
     const iqbalReader = document.getElementById('iqbal-hindi-poem-title').closest('.poem-reader');
     iqbalReader.open = true;
     const callingCard = iqbalReader.querySelector('.poem-poet-card');
@@ -295,6 +311,7 @@
       assert(section.textContent.includes('August 17'), 'Border view distinguishes final borders from June plan');
       assert(section.textContent.includes('Others stayed'), 'Comparison distinguishes demographic patterns from individual journeys');
     }
+    document.querySelector('nav[aria-label="Main navigation"] a[href="#partition-maps"]').click();
     const standaloneMaps = document.querySelector('#partition-maps');
     assert(document.querySelector('#timeline').nextElementSibling === standaloneMaps, 'Standalone maps appear directly after timeline');
     assert(standaloneMaps.querySelectorAll('figure').length === 3, 'All three standalone maps are visible without selecting a timeline card');
@@ -331,6 +348,7 @@
     const photographs = [...document.querySelectorAll('.partition-photo-card')];
     assert(photographs.length === 5, 'Five sourced historical photographs render');
     for (const card of photographs) {
+      document.querySelector('nav[aria-label="Main navigation"] a[href="#photographs"]').click();
       const image = card.querySelector('img');image.scrollIntoView();
       for (let i=0; i<100 && !(image.complete && image.naturalWidth); i++) await wait();
       assert(image.naturalWidth > 0 && image.alt && card.querySelector('.partition-photo-credit a'), `Archival photograph loads with alt text and source: ${card.id}`);
@@ -341,6 +359,7 @@
     }
     assert(document.querySelector('#photo-delhi').textContent.includes('September 27, 1947') && document.querySelector('#photo-karachi').textContent.includes('August 14, 1947'), 'City photographs identify locations and dates');
     assert(document.querySelector('#photo-train').textContent.includes('1954') && document.querySelector('#photo-convoy').textContent.includes('1954'), 'Photograph captions distinguish archival record dates');
+    document.querySelector('nav[aria-label="Main navigation"] a[href="#timeline"]').click();
     document.querySelector('#card-gulzar').click();
     assert(document.querySelector('#card-detail a[href="#photo-karachi"]'), 'Karachi poem links to the city photograph');
     document.querySelector('#card-displacement').click();
@@ -351,6 +370,7 @@
     const history = r('independence'), poetry = r('faiz');
     if (mobile) assert(history.right < poetry.left, 'Mobile tracks are on opposite sides');
     else assert(history.bottom < poetry.top, 'Desktop tracks are above and below axis');
+    document.querySelector('nav[aria-label="Main navigation"] a[href="#timeline"]').click();
     const viewport = document.querySelector('#timeline-viewport');
     viewport.focus();
     viewport.dispatchEvent(new KeyboardEvent('keydown', {key:'Home', bubbles:true}));

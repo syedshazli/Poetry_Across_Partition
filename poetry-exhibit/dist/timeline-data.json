@@ -2348,7 +2348,7 @@
         },
         {
           "label": "Poem and pages",
-          "text": "“Karachi,” p. 36. Page number confirmed by the reader from the book. Any earlier journal publication remains unverified.",
+          "text": "“Karachi,” p. 36.",
           "referenceIds": [
             "P6"
           ]
@@ -3149,6 +3149,13 @@
       "credit": "Photo Division, Government of India",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_refugee_special_train_at_Ambala_Station_during_partition_of_India.jpg",
       "rights": "Public domain, as recorded by Wikimedia Commons",
+      "featuredExcerpt": {
+        "title": "Attacks on refugee trains",
+        "text": "Trains filled with refugees crossing the border were stopped and every man, woman and child on board slaughtered.",
+        "attribution": "Moni Mohsin · The Guardian · 2 August 2017",
+        "url": "https://www.theguardian.com/world/2017/aug/02/wounds-have-never-healed-living-through-terror-partition-india-pakistan-1947",
+        "context": "The Ambala photograph above shows a crowded refugee train. It does not document the attack described in this excerpt."
+      },
       "story": {
         "title": "Twelve days by rail, then three days at sea",
         "text": "In an interview summary shared by The 1947 Partition Archive, Saleem Murtaza Qureshi remembers leaving Shimla with his family. They had hoped to reach Lahore directly. Instead, their journey took them through Kalka to Bombay over twelve days. After staying at a military camp, they boarded a ship for Karachi. He recalls three more days at sea and seasickness on the crossing.",
@@ -3199,7 +3206,7 @@
       "src": "images/partition/punjab-camp.jpg",
       "title": "Fear and uncertainty in Punjab",
       "date": "Punjab · 1947",
-      "caption": "A refugee camp in Punjab during Partition. It gives a view of the insecurity and displacement of this period. It does not show Shergarh or the people described in the passage below.",
+      "caption": "A refugee camp in Punjab during Partition. It gives a view of the insecurity and displacement of this period. It does not show Shergarh or the people described in the featured account.",
       "alt": "People walk between rows of tents in a refugee camp in Punjab.",
       "width": 329,
       "height": 500,
