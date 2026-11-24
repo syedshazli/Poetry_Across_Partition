@@ -2160,6 +2160,91 @@
               "url": "https://www.oxfordlearnersdictionaries.com/definition/english/grass_1",
               "note": "Supports the English association with an untrustworthy person who appears friendly. The connection to the poem is the exhibit’s interpretation."
             }
+          },
+          {
+            "id": "to-waris-shah-self-broken-life-note",
+            "term": "Punjab’s body and the breaking of everyday life",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-23",
+                "quote": "A moment, so brief, and the limbs of Punjab turned blue"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-24",
+                "quote": "Threads snapped from their shuttles"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-25",
+                "quote": "and rent the songs at the throat,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-26",
+                "quote": "silenced was the spinning wheel's hum,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-27",
+                "quote": "severed from their gatherings, the women,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-28",
+                "quote": "Branches heavy with swings,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-29",
+                "quote": "cracked from peepul trees,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-30",
+                "quote": "boats laden with trappings,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-31",
+                "quote": "loosened from anchors to sink."
+              }
+            ],
+            "analysis": "The “limbs of Punjab” turning blue carries the image of poison into the body of the region itself. Punjab is presented as though it is suffering alongside its people. However, Pritam also shows this suffering through the everyday activities that have been interrupted. The threads snap, songs are cut off at the throat, and the spinning wheel loses its familiar hum. These images suggest that the violence has broken the routines through which people worked and expressed themselves. Additionally, the women are “severed from their gatherings,” which connects this loss to the relationships between them. The word “severed” makes their separation feel like another wound to Punjab’s body. The branches breaking and boats sinking continue this movement from familiar parts of life to images of destruction. Boats loosened from their anchors could also suggest people losing their attachment to home during displacement. Through these images, the poem presents Partition’s violence as a tearing apart of the work, songs, gatherings, and connections that made Punjab a shared home."
+          },
+          {
+            "id": "to-waris-shah-self-kedu-note",
+            "term": "Each man now turned a Kedu",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-33",
+                "quote": "each man now turned a Kedu"
+              }
+            ],
+            "analysis": "Pritam goes back to Shah’s writings. Kedu, also called Kaido or Qaidon, is Heer’s uncle, who is involved in poisoning her and destroying her relationship with Ranjha. Pritam uses his name to connect the betrayal of one woman in the story to the collective suffering of women across Punjab. Just as one daughter became a million daughters earlier in the poem, one Kedu now becomes “each man.” This suggests that the betrayal in Heer’s story has spread across the region.",
+            "source": {
+              "title": "University of Lucknow · “To Waris Shah,” explanatory footnote",
+              "url": "https://udrc.lkouniv.ac.in/Content/DepartmentContent/SM_65c74f52-4e90-43cf-887d-e8ff0f567598_6.pdf",
+              "note": "The footnote identifies Kedu, also called Qaidon, as Heer’s uncle and the villain who gives her poisoned sweets. The connection to the poem’s other images and its question about Waris Shah is the exhibit’s interpretation."
+            }
+          },
+          {
+            "id": "to-waris-shah-self-another-waris-note",
+            "term": "Where can another Waris Shah be found?",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-34",
+                "quote": "where can we seek for another like"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-35",
+                "quote": "Waris Shah today ?"
+              }
+            ],
+            "analysis": "After describing people bearing similarities to the story of Kedu, the speaker asks where another Waris Shah can be found. Those who destroy beauty and love seem to be everywhere in the region, while someone who can express the suffering they cause is yet to be found. The question returns us to the need for a poet who can give Punjab’s daughters a voice."
+          },
+          {
+            "id": "to-waris-shah-self-only-you-note",
+            "term": "Only you can speak from the grave",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-36",
+                "quote": "Only you can speak from the grave,"
+              }
+            ],
+            "analysis": "The opening asks Waris Shah to speak from his grave, but the ending adds “Only you.” This makes the appeal feel more desperate because the speaker seems unable to find anyone else who can respond to Punjab’s suffering. However, what’s interesting to note is that Pritam’s own poem is already giving that suffering a voice. Perhaps, by calling on Waris Shah, she also begins to carry on the work she asks him to do."
           }
         ],
         "textSource": {
