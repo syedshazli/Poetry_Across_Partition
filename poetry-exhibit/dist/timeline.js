@@ -412,10 +412,10 @@
             }
             meanings.append(item);
           });
-          meanings.append(el('p', 'Meanings are paraphrased from the linked dictionaries.', 'dictionary-note'));
+          meanings.append(el('p', 'Meanings are paraphrased from the linked sources.', 'dictionary-note'));
           panel.append(meanings);
         }
-        panel.append(el('h5', 'A possible reading'), el('p', note.analysis));
+        if (note.analysis) panel.append(el('h5', 'A possible reading'), el('p', note.analysis));
         if (note.translationNote) {
           panel.append(el('h5', 'Translation note'), el('p', note.translationNote, 'translation-note'));
         }

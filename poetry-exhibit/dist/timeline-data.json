@@ -2857,6 +2857,24 @@
             "analysis": "The repetition of “no time” and the references to time throughout the poem emphasize how urgency takes priority over checking the information used to draw the border. As seen in the preceding lines, the maps are described as outdated and the census returns as almost certainly incorrect. This becomes especially troubling beside the reference to “millions.” The decision affects countless lives, but the process continues despite its acknowledged uncertainties."
           },
           {
+            "id": "auden-dysentery-note",
+            "term": "Dysentery",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-20",
+                "quote": "dysentery"
+              }
+            ],
+            "definitions": [
+              {
+                "word": "Dysentery",
+                "definition": "An infection that causes diarrhea containing blood, sometimes with mucus, and may also cause stomach pain and fever.",
+                "dictionaryName": "NHS",
+                "dictionaryUrl": "https://www.nhs.uk/conditions/dysentery/"
+              }
+            ]
+          },
+          {
             "id": "auden-divided-note",
             "term": "For better or worse divided",
             "segments": [
@@ -2882,7 +2900,24 @@
             ],
             "analysis": "Calling the division a “case” turns people’s lives into a professional assignment that can be closed. The description of a “good lawyer” becomes ironic because professional detachment appears to allow him to forget. He can return home, while the people whose homes he divided must live with the result."
           }
-        ]
+        ],
+        "wholePoemAnalysis": {
+          "title": "Reading the Poem",
+          "claim": "The poem suggests that having the authority to divide a country does not mean understanding the people who live there.",
+          "analysis": "The opening presents the official as “unbiased,” but his unfamiliarity with the land makes us question whether distance is enough to make someone fair. Elena Spandri argues that Auden exposes the urgency and carelessness of the process while presenting Radcliffe as an overwhelmed imperial official (116). This helps connect the opening to the repeated insistence that there is “no time.” The maps and census returns are described as unreliable, yet the decision continues because finishing the task takes priority over resolving those uncertainties. The official’s discomfort also receives attention beside the fate of millions, making the difference between his experience and theirs especially troubling.\n\nJisha Menon helps us see that the problem goes beyond whether the information is accurate. She argues that colonial maps, surveys, and censuses simplified interconnected communities into separate religious groups, helping those identities become rigid political categories (32). This complicates the description of “different diets and incompatible gods.” The line makes separation seem natural, although it overlooks the relationships and shared practices connecting people. Both Menon and Spandri question how Auden’s language repeats these colonial assumptions. We might read the description as mocking British thinking, but their arguments encourage us to consider whether the poem also carries that thinking forward. Even while criticizing how the border is drawn, it gives little space to the people being divided to explain their own lives.\n\nThe ending shows how differently the official and those people experience the decision. Calling Partition a “case” makes it sound like an assignment that can be completed and forgotten. Menon describes how British withdrawal allowed officials to distance themselves from responsibility while survivors experienced independence through violence and displacement (33–34). This gives the official’s return to England a larger meaning: he can leave the place where his decision will continue to affect people’s homes and relationships. Compared with Pritam’s appeal to remember Punjab’s suffering and Gulzar’s recognition of suffering across the border, Auden’s ending shows someone able to turn away. The task has ended for him, but its consequences have not ended for those who are forced to live with it.",
+          "sources": [
+            {
+              "title": "Menon, Jisha. The Performance of Nationalism: India, Pakistan, and the Memory of Partition. Cambridge University Press, 2013.",
+              "url": "https://apnaorg.com/books/english/performance-nationalism-india-pakistan/performance-nationalism-india-pakistan.pdf#page=45",
+              "note": "Printed pp. 32–34 (PDF pages 45–47). Page 32 discusses colonial categories and Auden’s repetition of them. Pages 33–34 discuss British withdrawal and the violent experience of independence. The application to the poem’s ending is the exhibit’s interpretation."
+            },
+            {
+              "title": "Spandri, Elena. “Performing the «miasma» of Indian Partition. Terror and Romance in Howard Brenton’s Drawing the Line.” La violenza nel teatro contemporaneo: Lingue e linguaggi a confronto, edited by Paola Bellomi et al., Firenze University Press and USiena Press, 2023, pp. 115–29.",
+              "url": "https://doi.org/10.36253/979-12-215-0278-7.10",
+              "note": "Printed p. 116 (chapter PDF page 2) discusses Auden’s urgency, carelessness, overwhelmed official, and repetition of colonial rhetoric."
+            }
+          ]
+        }
       },
       "publicationDetails": [
         {
