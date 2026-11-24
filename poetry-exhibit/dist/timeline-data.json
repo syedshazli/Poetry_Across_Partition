@@ -2247,6 +2247,23 @@
             "analysis": "The opening asks Waris Shah to speak from his grave, but the ending adds “Only you.” This makes the appeal feel more desperate because the speaker seems unable to find anyone else who can respond to Punjab’s suffering. However, what’s interesting to note is that Pritam’s own poem is already giving that suffering a voice. Perhaps, by calling on Waris Shah, she also begins to carry on the work she asks him to do."
           }
         ],
+        "wholePoemAnalysis": {
+          "title": "Reading the Poem",
+          "claim": "“To Waris Shah” by Amrita Pritam presents Partition as the destruction of a shared home, with women’s suffering at the center of that loss.",
+          "analysis": "The poem moves from one daughter to a million in order to connect Heer’s familiar story to violence on a much larger scale. However, these daughters also call on someone to recognize and acknowledge what has happened to them. Sara Kazmi argues that Pritam’s poem challenges the patriarchal power within both regional communities and national identities (par. 12). Kazmi says, “In my reading, Pritam’s poem does not merely bemoan the violence of Partition: it provides a feminist critique of regional and national patriarchies. This is accomplished by an appropriation of Waris Shah’s authorial privilege—in the tradition of Hir’s voice—to present a feminist reconstruction of identity that participated in a debate on national culture on both sides of the newly-created border.” This helps us understand why the poem measures Partition through the experiences of Punjab’s daughters rather than through the achievements of its new nations.\n\nThe poisoned rivers show how violence spreads through the relationships that sustain this shared home. Water that should nourish the earth carries destruction, while musical reeds become snakes and women’s gatherings fall silent. Kazmi connects this poison imagery to Heer, where serpents and venom symbolize greed and patriarchal control. Pritam extends that imagery across Punjab, linking communal hatred with the power exercised over women’s lives (pars. 14–16). Read this way, the silenced songs and broken threads suggest that Partition destroys the everyday practices through which people belong to one another.\n\nThe ending returns to the question of who can express this suffering. Although the speaker insists that only Waris Shah can answer, Pritam has already given Punjab’s daughters a place in poetry by writing the poem itself. Kazmi reads this act as a woman taking ownership of a literary tradition largely associated with male poets (par. 17). Anindya Raychaudhuri’s broader argument that poetic mourning can challenge nationalist accounts of Partition offers another way to understand this ending (121). Pritam’s appeal keeps the losses of a shared Punjab before the reader, asking what independence means when its people remain unheard.",
+          "sources": [
+            {
+              "title": "Kazmi, Sara. “Radical Re-tellings of Hir: Gender and the Politics of Voice in Postcolonial Punjabi Poetry.” South Asia Multidisciplinary Academic Journal, Free-Standing Articles, 20 May 2019.",
+              "url": "https://doi.org/10.4000/samaj.5294",
+              "note": "Citations refer to numbered paragraphs 12, 14–16, and 17. Paragraph 12 supplies the quotation, paragraphs 14–16 discuss the poison imagery, and paragraph 17 discusses Pritam’s intervention in the literary tradition."
+            },
+            {
+              "title": "Raychaudhuri, Anindya. “'Friends from an Earlier Life': Radical Possibilities of Nostalgic Melancholy in Poems of the 1947 Indian Partition.” Revista Canaria de Estudios Ingleses, no. 76, 2018, pp. 121–35.",
+              "url": "https://doi.org/10.25145/j.recaesin.2018.76.009",
+              "note": "Page 121 supplies the broader framework of poetic melancholy challenging nationalist accounts of Partition. Its application to Pritam’s ending here is the exhibit’s interpretation."
+            }
+          ]
+        },
         "textSource": {
           "title": "Source scan · Selected Poems of Amrita Pritam, PDF page 3",
           "url": "https://warp.whistlingwoods.net/docs/coursenotes/Amrita%20Pritam%20Poems%20-%202-1684999753-812008505Selected%20Poems%20of%20Amrita%20Pritam.pdf#page=3"
@@ -2860,7 +2877,24 @@
             ]
           }
         ],
-        "annotations": [],
+        "annotations": [
+          {
+            "id": "karachi-kites-city-note",
+            "term": "Kites over corpses in your city",
+            "segments": [
+              {
+                "lineId": "karachi-line-01",
+                "quote": "Kites hover over corpses in your city"
+              }
+            ],
+            "analysis": "The word “kites” here suggests birds that feed on dead bodies. The later reference to vultures descending supports this reading. Their hovering over corpses makes death the first thing we encounter in the city. Additionally, the words “your city” suggest that the speaker is addressing someone in a place separate from his own. The title identifies that city as Karachi, while the later reference to “our two countries” places the comparison across the border between India and Pakistan. However, the movement from “your city” to “my city” begins to question how different these places really are. The speaker recognizes the violence in the other city because something similar happens in his own.",
+            "source": {
+              "title": "Australian Museum · Black Kite",
+              "url": "https://australian.museum/learn/animals/birds/black-kite/",
+              "note": "Explains that black kites eat both live prey and carrion. The poem does not identify a species. Reading “kites” as birds and interpreting “your city” are based on the poem’s surrounding lines."
+            }
+          }
+        ],
         "alternativeTranslation": {
           "translator": "Pavan K. Varma",
           "excerpt": "The common man looks so similar!",
