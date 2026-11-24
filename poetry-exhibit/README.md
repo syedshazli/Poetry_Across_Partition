@@ -41,6 +41,8 @@ The dependency-free smoke runner checks all cards and reference IDs, reciprocal 
 
 The repository's `.github/workflows/deploy-pages.yml` publishes only `poetry-exhibit/dist/` when changes are pushed to `main`. No build step or dependency installation is required.
 
+Upload and deployment run in separate jobs, with deployment waiting for upload to finish. This avoids the intermittent artifact lookup failure reported in [actions/deploy-pages#451](https://github.com/actions/deploy-pages/issues/451). If deployment fails after a successful upload, rerun only the failed deployment job to reuse the existing artifact.
+
 In the GitHub repository, open **Settings → Pages** and select **GitHub Actions** as the publishing source. Push the workflow to `main`, or run **Deploy exhibit to GitHub Pages** manually from the Actions tab after enabling Pages.
 
 Expected address after a successful deployment: https://syedshazli.github.io/Poetry_Across_Partition/
