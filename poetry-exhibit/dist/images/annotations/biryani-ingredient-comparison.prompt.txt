@@ -1,0 +1,4 @@
+Generated with the built-in image generation tool.
+
+Final prompt:
+Create a modest editorial food illustration for a literary exhibit annotation, landscape 1536x1024. Two matching shallow bowls of biryani side by side on an off-white tabletop, overhead view, warm natural colors, fine watercolor and colored pencil style. Left bowl has long basmati rice with clearly visible browned goat meat pieces, right bowl has the same rice presentation but clearly visible golden potato chunks instead of meat. Both have similar saffron rice, fried onions and herbs. No flags, no religious symbols, no people, no lettering or labels, no borders. Show the similarity of dishes with an ingredient substitution, without implying either dish belongs exclusively to a religion or country. This is an illustrative comparison, not a historical image.

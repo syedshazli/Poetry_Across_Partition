@@ -2775,7 +2775,114 @@
             ]
           }
         ],
-        "annotations": []
+        "annotations": [
+          {
+            "id": "auden-unbiased-note",
+            "term": "Unbiased, but unfamiliar with the land",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-01",
+                "quote": "Unbiased at least he was"
+              },
+              {
+                "lineId": "auden-partition-line-02",
+                "quote": "Having never set eyes on the land"
+              }
+            ],
+            "analysis": "The opening makes being “unbiased” sound reassuring, but the next line and the phrase “at least he was” give us a reason to question it. His lack of connection to the land is presented as a qualification, even though it also means he likely knows little about the place he must divide. We can ask whether distance really makes someone fair when the decision requires understanding people’s lives and culture."
+          },
+          {
+            "id": "auden-diets-gods-note",
+            "term": "Different diets and incompatible gods",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-04",
+                "quote": "different diets and incompatible gods"
+              }
+            ],
+            "analysis": "The description reduces the communities to differences in food and religion. However, speaking from experience, many of the dishes remain mostly the same while an ingredient changes. For example, some Muslims eat beef biryani, while a potato variation offers a way to make a similar dish without beef, which many Hindus avoid. Neither community has a single diet, but this comparison shows how rice, spices, and preparation can remain similar despite a difference in ingredients. This makes the differences in diet seem less absolute than the line suggests. The word “incompatible” makes living together sound impossible, although these communities had lived alongside one another for hundreds of years, with both shared practices and periods of conflict.",
+            "image": {
+              "src": "images/annotations/biryani-ingredient-comparison.png",
+              "alt": "Illustration comparing biryani with meat pieces on the left and a potato variation on the right.",
+              "width": 1536,
+              "height": 1024,
+              "caption": "Beef biryani and a potato variation. Some Muslims eat beef, while many Hindus avoid it. Rice, spices, and presentation can remain similar while an ingredient changes. The meat in this illustration stands for beef in this comparison. Neither dish represents everyone in either community.",
+              "credit": "AI-generated illustration created for this exhibit."
+            }
+          },
+          {
+            "id": "auden-judges-note",
+            "term": "Four judges, but whose decision?",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-11",
+                "quote": "We can give you four judges, two Moslem and two Hindu,"
+              },
+              {
+                "lineId": "auden-partition-line-12",
+                "quote": "To consult with, but the final decision must rest with you.\""
+              }
+            ],
+            "analysis": "The four judges are allowed to give their input, but the final decision still rests with the man called to divide the land. Additionally, the poem identifies them as “two Moslem and two Hindu.” Their religious identities are emphasized, while the different regions they come from and the people whose lives they might understand are left unmentioned. These four judges are advisers, rather than a representative sample of the population. However, their small number beside the “millions” affected makes us question how much of those people’s lives can enter the decision. Being consulted does not mean being given the power to decide."
+          },
+          {
+            "id": "auden-maps-census-note",
+            "term": "Outdated maps and uncertain census returns",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-16",
+                "quote": "The maps at his disposal were out of date"
+              },
+              {
+                "lineId": "auden-partition-line-17",
+                "quote": "And the Census Returns almost certainly incorrect,"
+              }
+            ],
+            "analysis": "These lines return us to the earlier Maps section, where we considered the information used to turn a map into a border. Auden describes the maps as outdated and the census returns as “almost certainly incorrect,” making us question the basis of a decision affecting millions. However, the Maps section also helps us distinguish the poem’s criticism from the historical evidence. The reliability of the 1941 census was disputed, and the maps displayed in the exhibit are not necessarily the maps Radcliffe used. The connection is the problem of making an enormous decision with limited time and contested information. The following repetition of “no time” shows how the process continues without resolving these uncertainties.",
+            "source": {
+              "title": "Return to Maps · How was a map turned into a border?",
+              "url": "#map-methodology",
+              "note": "See “A rushed boundary-making process” and “Population figures could not decide the line alone” for the historical context and sources."
+            }
+          },
+          {
+            "id": "auden-no-time-note",
+            "term": "No time to check, no time to inspect",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-18",
+                "quote": "no time to check them, no time to inspect"
+              }
+            ],
+            "analysis": "The repetition of “no time” and the references to time throughout the poem emphasize how urgency takes priority over checking the information used to draw the border. As seen in the preceding lines, the maps are described as outdated and the census returns as almost certainly incorrect. This becomes especially troubling beside the reference to “millions.” The decision affects countless lives, but the process continues despite its acknowledged uncertainties."
+          },
+          {
+            "id": "auden-divided-note",
+            "term": "For better or worse divided",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-22",
+                "quote": "for better or worse divided"
+              }
+            ],
+            "analysis": "This familiar expression makes the division sound almost casually accepted. However, “better or worse” leaves the consequences unresolved, as if the British officials were more concerned with getting out of the situation than with what would happen afterward. This is a possible reading of the poem’s dismissive tone. The task can be declared finished even though the people affected must still discover what the border will mean for them."
+          },
+          {
+            "id": "auden-forget-case-note",
+            "term": "Quickly forget the case",
+            "segments": [
+              {
+                "lineId": "auden-partition-line-23",
+                "quote": "quickly forget"
+              },
+              {
+                "lineId": "auden-partition-line-24",
+                "quote": "The case, as a good lawyer must."
+              }
+            ],
+            "analysis": "Calling the division a “case” turns people’s lives into a professional assignment that can be closed. The description of a “good lawyer” becomes ironic because professional detachment appears to allow him to forget. He can return home, while the people whose homes he divided must live with the result."
+          }
+        ]
       },
       "publicationDetails": [
         {

@@ -384,11 +384,14 @@
           photo.loading = 'lazy';
           const caption = el('figcaption');
           caption.append(el('p', note.image.caption));
-          const credit = el('a', note.image.credit);
-          credit.href = note.image.sourceUrl;
-          const license = el('a', note.image.license);
-          license.href = note.image.licenseUrl;
-          caption.append(credit, document.createTextNode(' · '), license);
+          const credit = el(note.image.sourceUrl ? 'a' : 'span', note.image.credit);
+          if (note.image.sourceUrl) credit.href = note.image.sourceUrl;
+          caption.append(credit);
+          if (note.image.license) {
+            const license = el(note.image.licenseUrl ? 'a' : 'span', note.image.license);
+            if (note.image.licenseUrl) license.href = note.image.licenseUrl;
+            caption.append(document.createTextNode(' · '), license);
+          }
           figure.append(photo, caption);
           panel.append(figure);
         }
