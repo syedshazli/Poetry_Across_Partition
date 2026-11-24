@@ -499,8 +499,8 @@
         const sourceList = el('ul', null, 'reading-sources');
         readingSources.forEach(source => {
           const credit = el('li', null, 'annotation-source');
-          const link = el('a', source.title);
-          link.href = source.url;
+          const link = el(source.url ? 'a' : 'span', source.title);
+          if (source.url) link.href = source.url;
           credit.append(link);
           if (source.note) credit.append(el('p', source.note));
           sourceList.append(credit);
