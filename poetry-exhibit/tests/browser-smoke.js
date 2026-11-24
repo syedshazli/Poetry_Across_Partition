@@ -179,11 +179,22 @@
     const pritamReader = document.querySelector('#to-waris-shah-title').closest('.poem-reader');
     assert(!pritamReader.open, 'Pritam poem starts collapsed');
     pritamReader.querySelector('summary').click();
-    assert(pritamReader.querySelectorAll('.poem-line').length === 52 && pritamReader.querySelectorAll('.poem-stanza').length === 13, 'Pritam preserves 52 lines in 13 four-line stanzas');
-    assert(pritamReader.querySelector('.poem-byline').textContent.includes('Kiron Bajaj and Carlo Coppola'), 'Pritam credits the supplied translation');
+    assert(pritamReader.querySelector('.alternative-poem').querySelectorAll('.poem-line').length === 52 && pritamReader.querySelector('.alternative-poem').querySelectorAll('.poem-stanza').length === 13, 'Pritam alternative preserves 52 lines in 13 four-line stanzas');
+    assert(pritamReader.querySelector('.poem-byline').textContent.includes('Amrita Pritam'), 'Pritam credits her self-translation as the main version');
     assert(document.getElementById('to-waris-shah-line-52').textContent === 'In the Book of Love.', 'Pritam ends at the requested Book of Love line');
     assert(!pritamReader.querySelector('.poem-text').textContent.includes('TRAVELER') && !pritamReader.querySelector('.poem-text').textContent.includes('After searching'), 'O Traveler is excluded from Pritam poem text');
-    assert(pritamReader.querySelectorAll('.poem-highlight').length === 4, 'Pritam highlights the four opening lines');
+    assert(pritamReader.querySelector('.poem-text').querySelectorAll('.poem-line').length === 39 && pritamReader.querySelector('.poem-text').querySelectorAll('.poem-stanza').length === 5, 'Pritam self-translation preserves the supplied scan’s 39 lines and five stanza groups');
+    assert(document.getElementById('to-waris-shah-self-line-39').textContent === 'today.', 'Pritam self-translation includes its complete ending');
+    assert(pritamReader.textContent.includes('Dialogue Calcutta Publications') && pritamReader.textContent.includes('Pritish Nandy'), 'Pritam self-translation identifies publisher and editor');
+    const pritamHighlights = pritamReader.querySelectorAll('#to-waris-shah-self-stanza-1 .poem-highlight');
+    assert(pritamHighlights.length === 4, 'Pritam opening has four annotation highlights');
+    pritamHighlights[0].click();
+    const pritamNote = document.getElementById('to-waris-shah-self-opening-note');
+    assert(!pritamNote.hidden && pritamNote.textContent.includes('Why does she turn to a poet'), 'Pritam opening highlight reveals the shared reading');
+    pritamNote.querySelector('.close-annotation').click();
+    assert(pritamNote.hidden && document.activeElement === pritamHighlights[0], 'Closing Pritam note restores focus');
+    assert(document.querySelectorAll('.alternative-translation').length === 5, 'Both Iqbal readers, Faiz, Pritam and Gulzar have translation comparisons');
+    assert([...document.querySelectorAll('.alternative-translation .text-link')].every(link => link.href.startsWith('https://')), 'Every translation comparison links to its source');
     pritamReader.querySelector('summary').click();
     const gulzarReader = document.querySelector('#karachi-title').closest('.poem-reader');
     assert(!gulzarReader.open, 'Karachi starts collapsed');
@@ -276,7 +287,7 @@
 
 
 
-    document.querySelector('#freedoms-dawn-title').closest('.poem-reader').querySelector('.text-link').click();
+    document.querySelector('#freedoms-dawn-title').closest('.poem-reader').querySelector('a[href="#card-faiz"]').click();
     assert(document.activeElement.id === 'card-faiz', 'Poem return link focuses Faiz on full timeline');
     document.querySelector('[data-view="august"]').click();
     assert(document.querySelector('#view-title').textContent === 'August 1947 detail', 'Detail scale labeled');

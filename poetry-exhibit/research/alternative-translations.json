@@ -1,0 +1,1014 @@
+{
+  "purpose": "Saved translation versions, citations, and comparison paragraphs for future discussion. Main and alternative texts remain identified separately.",
+  "poems": [
+    {
+      "cardId": "iqbal-hindi",
+      "title": "Tarana-e Hindi · Hind’s Anthem",
+      "mainTranslator": "Ikram Azam",
+      "mainStanzas": [
+        {
+          "id": "iqbal-hindi-poem-stanza-1",
+          "lines": [
+            {
+              "id": "iqbal-hindi-poem-line-01",
+              "text": "Better than the whole world is our Hindustan"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-02",
+              "text": "We are its nightingales and it is our garden!"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-03",
+              "text": "Even in poverty our heart dwells in the homeland"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-04",
+              "text": "Consider us to be there, right where is this our heart"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-05",
+              "text": "The highest (Himalyan) mountain on earth is the sky’s"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-06",
+              "text": "neighbour"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-07",
+              "text": "He is our own sentry, he is our very guardian"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-08",
+              "text": "Thousands of streams play right in its lap in travel"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-09",
+              "text": "Live is our garden thereby, the envy of the universe!"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-10",
+              "text": "O waters of the Ganges!—Do you remember those days?—"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-11",
+              "text": "When our caravan had alighted on your river banks!"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-12",
+              "text": "Religion teaches not enmity among people"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-13",
+              "text": "We are all Hindi, our homeland is Hindustan!"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-14",
+              "text": "Ancient Lebanon, Egypt and Rome"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-15",
+              "text": "Are all extinct from the glorious globe"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-16",
+              "text": "But we remain still in our name and notation!"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-17",
+              "text": "It is a fact that we have not (yet) perished"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-18",
+              "text": "Though for centuries has time been our enemy!"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-19",
+              "text": "Iqbal!  We have no friend on this earth"
+            },
+            {
+              "id": "iqbal-hindi-poem-line-20",
+              "text": "No one knows our own secret sorrow!"
+            }
+          ]
+        }
+      ],
+      "mainTextSource": null,
+      "alternativeTranslation": {
+        "translator": "Frances W. Pritchett",
+        "excerpt": "abroad",
+        "analysis": "Pritchett’s literal translation places the speaker away from the homeland, while Azam’s version describes poverty. This changes what we see in the heart’s attachment to Hindustan. In Pritchett’s version, people can leave the country without losing their connection to it. Belonging survives the distance between the person and the place. This is particularly useful in an exhibit about Partition because it gives us a way to consider how a homeland can remain important after someone has left it.",
+        "source": {
+          "title": "Frances W. Pritchett · Literal translations of the two taranahs. Urdu source, Kulliyat-e Iqbal, 1973, pp. 83, 159.",
+          "url": "https://franpritchett.com/00routesdata/1900_1999/iqbal/taranahs/taranahs.html"
+        }
+      },
+      "references": {
+        "P1": {
+          "title": "H. C. Hillier · Iqbal, Bergson and the Reconstruction of the Divine Nexus in Political Thought",
+          "note": "Secondary commentary. Primary text and edition details are linked separately in P9–P12.",
+          "url": "https://www.cambridge.org/core/books/abs/muhammad-iqbal/iqbal-bergson-and-the-reconstruction-of-the-divine-nexus-in-political-thought/F1B35A5EF7B36862DEBCD898291B8C3B"
+        },
+        "P9": {
+          "title": "Muhammad Iqbal · Taranah-e Hindi, Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 83. Text and edition identified by Frances W. Pritchett.",
+          "url": "https://franpritchett.com/00urdu/taranahs/hindi_text.html"
+        },
+        "P11": {
+          "title": "Iqbal Academy Pakistan · Bang-e-Dra, Lahore, Karimi Press, 1924, library catalogue record",
+          "url": "https://iqbalcyberlibrary.net/en/listsubject/subjectwoi.php"
+        },
+        "P12": {
+          "title": "Frances W. Pritchett · Two Taranahs, publication history and comparison",
+          "url": "https://franpritchett.com/00urdu/taranahs/juxtaposition.html"
+        },
+        "P18": {
+          "title": "Muhammad Iqbal · “Tarana-e Hindi” and “Tarana-e Milli,” translated by Ikram Azam, in Iqbal: The Islamic Futurist, 2nd edition. Lahore, Iqbal Academy Pakistan, 2004, pp. 75 and 80.",
+          "url": "https://www.iqbalcyberlibrary.net/files/019/IAP-Iqbal-Islamic-Futurist-2004.pdf",
+          "note": "English texts selected by the reader and checked against the supplied page images and PDF. Printed pp. 75 and 80 correspond to PDF pages 83 and 88. The translator’s note is on printed p. 71 (PDF page 79)."
+        }
+      }
+    },
+    {
+      "cardId": "iqbal",
+      "title": "Tarana-e Milli · National Anthem",
+      "mainTranslator": "Ikram Azam",
+      "mainStanzas": [
+        {
+          "id": "iqbal-milli-poem-stanza-1",
+          "lines": [
+            {
+              "id": "iqbal-milli-poem-line-01",
+              "text": "China and Arabia are ours, Hindustan is ours"
+            },
+            {
+              "id": "iqbal-milli-poem-line-02",
+              "text": "We are Muslims, the whole world is ours"
+            },
+            {
+              "id": "iqbal-milli-poem-line-03",
+              "text": "The trust of “Tauhid” (Oneness) is in our bosoms"
+            },
+            {
+              "id": "iqbal-milli-poem-line-04",
+              "text": "It is not easy to decimate our legacy and heritage"
+            },
+            {
+              "id": "iqbal-milli-poem-line-05",
+              "text": "Among the world’s idol-dens, is the first House of God"
+            },
+            {
+              "id": "iqbal-milli-poem-line-06",
+              "text": "We are its guardians, it is our gracious guardian"
+            },
+            {
+              "id": "iqbal-milli-poem-line-07",
+              "text": "We have grown young in the shadow of swords"
+            },
+            {
+              "id": "iqbal-milli-poem-line-08",
+              "text": "The crescent-like dagger is our national symbol"
+            },
+            {
+              "id": "iqbal-milli-poem-line-09",
+              "text": "Our call to prayer resounded in the West’s valleys"
+            },
+            {
+              "id": "iqbal-milli-poem-line-10",
+              "text": "No one could ever blockade our forward deluge!"
+            },
+            {
+              "id": "iqbal-milli-poem-line-11",
+              "text": "O sky!  We cannot be crushed by any evil"
+            },
+            {
+              "id": "iqbal-milli-poem-line-12",
+              "text": "You have tried and tested us a hundred times over!:"
+            },
+            {
+              "id": "iqbal-milli-poem-line-13",
+              "text": "O garden of Andlusia!  Do you remember those days"
+            },
+            {
+              "id": "iqbal-milli-poem-line-14",
+              "text": "When in your boughs and branches nested"
+            },
+            {
+              "id": "iqbal-milli-poem-line-15",
+              "text": "our home and hamlet?"
+            },
+            {
+              "id": "iqbal-milli-poem-line-16",
+              "text": "O ocean wave of Sicily!  You also deliver to us"
+            },
+            {
+              "id": "iqbal-milli-poem-line-17",
+              "text": "Your sea still sings our stories as our story teller!"
+            },
+            {
+              "id": "iqbal-milli-poem-line-18",
+              "text": "O Land of Purity!  We sacrificed ourselves for your sanctity!"
+            },
+            {
+              "id": "iqbal-milli-poem-line-19",
+              "text": "Our blood still flows through your very veins!"
+            },
+            {
+              "id": "iqbal-milli-poem-line-20",
+              "text": "The leader of our (Ummah) carvan is our Mir"
+            },
+            {
+              "id": "iqbal-milli-poem-line-21",
+              "text": "Muhammad of Hejaz"
+            },
+            {
+              "id": "iqbal-milli-poem-line-22",
+              "text": "The peace of our existence survives by this name!"
+            },
+            {
+              "id": "iqbal-milli-poem-line-23",
+              "text": "Iqbal’s anthem is thus his ‘Road’s Call’—“Bang-e-Dara”"
+            },
+            {
+              "id": "iqbal-milli-poem-line-24",
+              "text": "Once more departs our carvan towards its destination!"
+            }
+          ]
+        }
+      ],
+      "mainTextSource": null,
+      "alternativeTranslation": {
+        "translator": "Frances W. Pritchett",
+        "excerpt": "our homeland is the whole world",
+        "analysis": "Pritchett explicitly describes the world as the Muslims’ homeland, while Azam’s version says that the world belongs to them. This makes the connection with Tarana-e Hindi easier to see. The earlier poem places the homeland in Hindustan, while this poem extends it beyond one country. We can therefore read the two poems as changing the boundaries of belonging. Pritchett also describes the crescent as a sign of the community where Azam uses national language, which encourages us to consider a religious community that crosses national borders.",
+        "source": {
+          "title": "Frances W. Pritchett · Literal translations of the two taranahs. Urdu source, Kulliyat-e Iqbal, 1973, pp. 83, 159.",
+          "url": "https://franpritchett.com/00routesdata/1900_1999/iqbal/taranahs/taranahs.html"
+        }
+      },
+      "references": {
+        "P1": {
+          "title": "H. C. Hillier · Iqbal, Bergson and the Reconstruction of the Divine Nexus in Political Thought",
+          "note": "Secondary commentary. Primary text and edition details are linked separately in P9–P12.",
+          "url": "https://www.cambridge.org/core/books/abs/muhammad-iqbal/iqbal-bergson-and-the-reconstruction-of-the-divine-nexus-in-political-thought/F1B35A5EF7B36862DEBCD898291B8C3B"
+        },
+        "P10": {
+          "title": "Muhammad Iqbal · Taranah-e Milli, Kulliyat-e Iqbal Urdu, Lahore, Shaikh Ghulam Ali and Sons, 1973 and later reprints, p. 159. Text and edition identified by Frances W. Pritchett.",
+          "url": "https://franpritchett.com/00urdu/taranahs/milli_text.html"
+        },
+        "P11": {
+          "title": "Iqbal Academy Pakistan · Bang-e-Dra, Lahore, Karimi Press, 1924, library catalogue record",
+          "url": "https://iqbalcyberlibrary.net/en/listsubject/subjectwoi.php"
+        },
+        "P18": {
+          "title": "Muhammad Iqbal · “Tarana-e Hindi” and “Tarana-e Milli,” translated by Ikram Azam, in Iqbal: The Islamic Futurist, 2nd edition. Lahore, Iqbal Academy Pakistan, 2004, pp. 75 and 80.",
+          "url": "https://www.iqbalcyberlibrary.net/files/019/IAP-Iqbal-Islamic-Futurist-2004.pdf",
+          "note": "English texts selected by the reader and checked against the supplied page images and PDF. Printed pp. 75 and 80 correspond to PDF pages 83 and 88. The translator’s note is on printed p. 71 (PDF page 79)."
+        }
+      }
+    },
+    {
+      "cardId": "faiz",
+      "title": "Freedom's Dawn (August 1947)",
+      "mainTranslator": "V. G. Kiernan",
+      "mainStanzas": [
+        {
+          "id": "freedoms-dawn-stanza-1",
+          "lines": [
+            {
+              "id": "freedoms-dawn-line-01",
+              "text": "This leprous daybreak, dawn night's fangs have mangled --"
+            },
+            {
+              "id": "freedoms-dawn-line-02",
+              "text": "This is not that long-looked-for break of day,"
+            },
+            {
+              "id": "freedoms-dawn-line-03",
+              "text": "Not that clear dawn in quest of which those comrades"
+            },
+            {
+              "id": "freedoms-dawn-line-04",
+              "text": "Set out, believing that in heaven's wide void"
+            }
+          ]
+        },
+        {
+          "id": "freedoms-dawn-stanza-2",
+          "lines": [
+            {
+              "id": "freedoms-dawn-line-05",
+              "text": "Somewhere must be the stars' last halting-place,"
+            },
+            {
+              "id": "freedoms-dawn-line-06",
+              "text": "Somewhere the verge of night's slow-washing tide,"
+            },
+            {
+              "id": "freedoms-dawn-line-07",
+              "text": "Somewhere an anchorage for the ship of heartache."
+            }
+          ]
+        },
+        {
+          "id": "freedoms-dawn-stanza-3",
+          "lines": [
+            {
+              "id": "freedoms-dawn-line-08",
+              "text": "When we set out, we friends, taking youth's secret"
+            },
+            {
+              "id": "freedoms-dawn-line-09",
+              "text": "Pathways, how many hands plucked at our sleeves!"
+            },
+            {
+              "id": "freedoms-dawn-line-10",
+              "text": "From beauty's dwellings and their panting casements"
+            },
+            {
+              "id": "freedoms-dawn-line-11",
+              "text": "Soft arms invoked us, flesh cried out to us;"
+            },
+            {
+              "id": "freedoms-dawn-line-12",
+              "text": "But dearer was the lure of dawn's bright cheek,"
+            },
+            {
+              "id": "freedoms-dawn-line-13",
+              "text": "Closer her shimmering robe of fairy rays;"
+            },
+            {
+              "id": "freedoms-dawn-line-14",
+              "text": "Light-winged that longing, feather-light that toil."
+            }
+          ]
+        },
+        {
+          "id": "freedoms-dawn-stanza-4",
+          "lines": [
+            {
+              "id": "freedoms-dawn-line-15",
+              "text": "But now, word goes, the birth of day from darkness"
+            },
+            {
+              "id": "freedoms-dawn-line-16",
+              "text": "Is finished, wandering feet stand at their goal;"
+            }
+          ]
+        },
+        {
+          "id": "freedoms-dawn-stanza-5",
+          "lines": [
+            {
+              "id": "freedoms-dawn-line-17",
+              "text": "Our leaders' ways are altering, festive looks"
+            },
+            {
+              "id": "freedoms-dawn-line-18",
+              "text": "Are all the fashion, discontent reproved; --"
+            },
+            {
+              "id": "freedoms-dawn-line-19",
+              "text": "And yet this physic still on unslaked eye"
+            },
+            {
+              "id": "freedoms-dawn-line-20",
+              "text": "Or heart fevered by severance works no cure."
+            },
+            {
+              "id": "freedoms-dawn-line-21",
+              "text": "Where did that fine breeze, that the wayside lamp"
+            },
+            {
+              "id": "freedoms-dawn-line-22",
+              "text": "Has not once felt, blow from -- where has it fled?"
+            },
+            {
+              "id": "freedoms-dawn-line-23",
+              "text": "Night's heaviness is unlessened still, the hour"
+            },
+            {
+              "id": "freedoms-dawn-line-24",
+              "text": "Of mind and spirit's ransom has not struck;"
+            },
+            {
+              "id": "freedoms-dawn-line-25",
+              "text": "Let us go on, our goal is not reached yet."
+            }
+          ]
+        }
+      ],
+      "mainTextSource": null,
+      "alternativeTranslation": {
+        "translator": "Agha Shahid Ali",
+        "excerpt": "These tarnished rays, this night-smudged light —",
+        "analysis": "Ali’s opening makes the light seem stained and dimmed, while Kiernan’s version makes dawn seem diseased and physically wounded. Both suggest that the hoped-for beginning has been damaged, but the images make that damage feel different. The ending also changes the emphasis. Kiernan asks the travelers to continue because they have not reached their goal. Ali more explicitly asks them to turn away from a misleading light and search for the dawn they were promised. Read beside Iqbal’s caravan, this makes continuing the journey involve questioning whether the apparent arrival deserves to be accepted.",
+        "source": {
+          "title": "Faiz Ahmad Faiz · The Dawn of Freedom (August 1947), translated by Agha Shahid Ali. Teaching handout, PDF pp. 1–2.",
+          "url": "https://warp.whistlingwoods.net/docs/coursenotes/Poems%20of%20Faiz%20-1709650066-1155751255Poems%20of%20Faiz.pdf"
+        }
+      },
+      "references": {
+        "P2": {
+          "title": "Faiz Ahmad Faiz · Freedom’s Dawn (August 1947), translated by V. G. Kiernan",
+          "url": "https://www.cse.iitk.ac.in/users/amit/books/faiz-1971-poems-by-faiz.html"
+        },
+        "P13": {
+          "title": "Faiz Ahmad Faiz · Poems by Faiz, translated by Victor G. Kiernan, London, George Allen and Unwin, 1971, poem 19, pp. 122–127 (bilingual text)",
+          "url": "https://franpritchett.com/00urdu/3mod/kiernan_faiz/19_freedomsdawn.pdf"
+        },
+        "P14": {
+          "title": "Poems by Faiz · Contents and original collection dates, digital facsimile indexed by Frances W. Pritchett",
+          "url": "https://franpritchett.com/00urdu/3mod/kiernan_faiz/index.html"
+        }
+      }
+    },
+    {
+      "cardId": "pritam",
+      "title": "To Waris Shah",
+      "mainTranslator": "Amrita Pritam",
+      "mainStanzas": [
+        {
+          "id": "to-waris-shah-self-stanza-1",
+          "lines": [
+            {
+              "id": "to-waris-shah-self-line-01",
+              "text": "Speak from the depths of the grave,"
+            },
+            {
+              "id": "to-waris-shah-self-line-02",
+              "text": "to Waris Shah I say"
+            },
+            {
+              "id": "to-waris-shah-self-line-03",
+              "text": "and add a new page to your saga of love"
+            },
+            {
+              "id": "to-waris-shah-self-line-04",
+              "text": "today."
+            }
+          ]
+        },
+        {
+          "id": "to-waris-shah-self-stanza-2",
+          "lines": [
+            {
+              "id": "to-waris-shah-self-line-05",
+              "text": "Once wept a daughter of Punjab,"
+            },
+            {
+              "id": "to-waris-shah-self-line-06",
+              "text": "your pen unleashed a million cries,"
+            },
+            {
+              "id": "to-waris-shah-self-line-07",
+              "text": "a million daughters weep today,"
+            },
+            {
+              "id": "to-waris-shah-self-line-08",
+              "text": "to you Waris Shah they turn their eyes."
+            }
+          ]
+        },
+        {
+          "id": "to-waris-shah-self-stanza-3",
+          "lines": [
+            {
+              "id": "to-waris-shah-self-line-09",
+              "text": "Awake, decry your Punjab,"
+            },
+            {
+              "id": "to-waris-shah-self-line-10",
+              "text": "O sufferer with those suffering !"
+            },
+            {
+              "id": "to-waris-shah-self-line-11",
+              "text": "Corpses entomb the fields today,"
+            },
+            {
+              "id": "to-waris-shah-self-line-12",
+              "text": "the Chenab is flowing with blood."
+            },
+            {
+              "id": "to-waris-shah-self-line-13",
+              "text": "Mingled with poison by some,"
+            },
+            {
+              "id": "to-waris-shah-self-line-14",
+              "text": "are the waters of five rivers,"
+            },
+            {
+              "id": "to-waris-shah-self-line-15",
+              "text": "and this torrent of pollution,"
+            },
+            {
+              "id": "to-waris-shah-self-line-16",
+              "text": "unceasingly covers our earth."
+            },
+            {
+              "id": "to-waris-shah-self-line-17",
+              "text": "And heavy with venom were the winds,"
+            },
+            {
+              "id": "to-waris-shah-self-line-18",
+              "text": "that blew through the forests,"
+            },
+            {
+              "id": "to-waris-shah-self-line-19",
+              "text": "transmuting into a snake,"
+            },
+            {
+              "id": "to-waris-shah-self-line-20",
+              "text": "The reed of each musical branch."
+            },
+            {
+              "id": "to-waris-shah-self-line-21",
+              "text": "With sting after sting did the serpents"
+            },
+            {
+              "id": "to-waris-shah-self-line-22",
+              "text": "suppress the voice of people."
+            },
+            {
+              "id": "to-waris-shah-self-line-23",
+              "text": "A moment, so brief, and the limbs of Punjab turned blue"
+            },
+            {
+              "id": "to-waris-shah-self-line-24",
+              "text": "Threads snapped from their shuttles"
+            },
+            {
+              "id": "to-waris-shah-self-line-25",
+              "text": "and rent the songs at the throat,"
+            },
+            {
+              "id": "to-waris-shah-self-line-26",
+              "text": "silenced was the spinning wheel's hum,"
+            },
+            {
+              "id": "to-waris-shah-self-line-27",
+              "text": "severed from their gatherings, the women,"
+            },
+            {
+              "id": "to-waris-shah-self-line-28",
+              "text": "Branches heavy with swings,"
+            },
+            {
+              "id": "to-waris-shah-self-line-29",
+              "text": "cracked from peepul trees,"
+            },
+            {
+              "id": "to-waris-shah-self-line-30",
+              "text": "boats laden with trappings,"
+            },
+            {
+              "id": "to-waris-shah-self-line-31",
+              "text": "loosened from anchors to sink."
+            }
+          ]
+        },
+        {
+          "id": "to-waris-shah-self-stanza-4",
+          "lines": [
+            {
+              "id": "to-waris-shah-self-line-32",
+              "text": "Despoilers of beauty and love,"
+            },
+            {
+              "id": "to-waris-shah-self-line-33",
+              "text": "each man now turned a Kedu"
+            },
+            {
+              "id": "to-waris-shah-self-line-34",
+              "text": "where can we seek for another like"
+            },
+            {
+              "id": "to-waris-shah-self-line-35",
+              "text": "Waris Shah today ?"
+            }
+          ]
+        },
+        {
+          "id": "to-waris-shah-self-stanza-5",
+          "lines": [
+            {
+              "id": "to-waris-shah-self-line-36",
+              "text": "Only you can speak from the grave,"
+            },
+            {
+              "id": "to-waris-shah-self-line-37",
+              "text": "to Waris Shah I say"
+            },
+            {
+              "id": "to-waris-shah-self-line-38",
+              "text": "add another page to your epic of love"
+            },
+            {
+              "id": "to-waris-shah-self-line-39",
+              "text": "today."
+            }
+          ]
+        }
+      ],
+      "mainTextSource": {
+        "title": "Source scan · Selected Poems of Amrita Pritam, PDF page 3",
+        "url": "https://warp.whistlingwoods.net/docs/coursenotes/Amrita%20Pritam%20Poems%20-%202-1684999753-812008505Selected%20Poems%20of%20Amrita%20Pritam.pdf#page=3"
+      },
+      "alternativeTranslation": {
+        "translator": "Kiron Bajaj and Carlo Coppola",
+        "stanzas": [
+          {
+            "id": "to-waris-shah-stanza-1",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-01",
+                "text": "Today I asked Waris Shah:"
+              },
+              {
+                "id": "to-waris-shah-line-02",
+                "text": "Speak from your grave;"
+              },
+              {
+                "id": "to-waris-shah-line-03",
+                "text": "Open a new chapter"
+              },
+              {
+                "id": "to-waris-shah-line-04",
+                "text": "In the Book of Love."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-2",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-05",
+                "text": "A daughter of the Punjab once wept;"
+              },
+              {
+                "id": "to-waris-shah-line-06",
+                "text": "You wrote her long story for her."
+              },
+              {
+                "id": "to-waris-shah-line-07",
+                "text": "Today millions of daughters weep,"
+              },
+              {
+                "id": "to-waris-shah-line-08",
+                "text": "Waris Shah. They're calling you."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-3",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-09",
+                "text": "O Friend of sorrow,"
+              },
+              {
+                "id": "to-waris-shah-line-10",
+                "text": "Look at the Punjab."
+              },
+              {
+                "id": "to-waris-shah-line-11",
+                "text": "The village square heaped with corpses,"
+              },
+              {
+                "id": "to-waris-shah-line-12",
+                "text": "The Chenab flooded with blood!"
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-4",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-13",
+                "text": "Someone mixed poison"
+              },
+              {
+                "id": "to-waris-shah-line-14",
+                "text": "In the five rivers;"
+              },
+              {
+                "id": "to-waris-shah-line-15",
+                "text": "Their flow"
+              },
+              {
+                "id": "to-waris-shah-line-16",
+                "text": "Watered the Punjab."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-5",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-17",
+                "text": "Poison has sprouted"
+              },
+              {
+                "id": "to-waris-shah-line-18",
+                "text": "From this fertile land."
+              },
+              {
+                "id": "to-waris-shah-line-19",
+                "text": "Look, how far the red has spread."
+              },
+              {
+                "id": "to-waris-shah-line-20",
+                "text": "Curse how far the red has spread!"
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-6",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-21",
+                "text": "Poisoned air"
+              },
+              {
+                "id": "to-waris-shah-line-22",
+                "text": "Floated into the jungles"
+              },
+              {
+                "id": "to-waris-shah-line-23",
+                "text": "Turning all bamboo flutes"
+              },
+              {
+                "id": "to-waris-shah-line-24",
+                "text": "To snakes"
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-7",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-25",
+                "text": "Biting everyone's lips;"
+              },
+              {
+                "id": "to-waris-shah-line-26",
+                "text": "Their tongue tips rose up"
+              },
+              {
+                "id": "to-waris-shah-line-27",
+                "text": "And quickly all parts"
+              },
+              {
+                "id": "to-waris-shah-line-28",
+                "text": "Of the Punjab turned blue."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-8",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-29",
+                "text": "Song is crushed in every throat;"
+              },
+              {
+                "id": "to-waris-shah-line-30",
+                "text": "Every spinning wheel's thread is snapped;"
+              },
+              {
+                "id": "to-waris-shah-line-31",
+                "text": "Friends parted from one another;"
+              },
+              {
+                "id": "to-waris-shah-line-32",
+                "text": "The hum of spinning wheels fell silent."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-9",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-33",
+                "text": "Oars have left all boats"
+              },
+              {
+                "id": "to-waris-shah-line-34",
+                "text": "And float in the current;"
+              },
+              {
+                "id": "to-waris-shah-line-35",
+                "text": "Peepal branches with swings"
+              },
+              {
+                "id": "to-waris-shah-line-36",
+                "text": "Lie broken."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-10",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-37",
+                "text": "Where is the grove where love songs"
+              },
+              {
+                "id": "to-waris-shah-line-38",
+                "text": "Used to echo, where the flute?"
+              },
+              {
+                "id": "to-waris-shah-line-39",
+                "text": "All Ranjha's brothers"
+              },
+              {
+                "id": "to-waris-shah-line-40",
+                "text": "Have forgotten how to play the flute."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-11",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-41",
+                "text": "Blood keeps falling upon the earth,"
+              },
+              {
+                "id": "to-waris-shah-line-42",
+                "text": "Oozing out drop by drop from graves."
+              },
+              {
+                "id": "to-waris-shah-line-43",
+                "text": "The queens of love"
+              },
+              {
+                "id": "to-waris-shah-line-44",
+                "text": "Weep in tombs."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-12",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-45",
+                "text": "It seems all people have become Kaidos,"
+              },
+              {
+                "id": "to-waris-shah-line-46",
+                "text": "Thieves of beauty and love--"
+              },
+              {
+                "id": "to-waris-shah-line-47",
+                "text": "Where should I search out"
+              },
+              {
+                "id": "to-waris-shah-line-48",
+                "text": "Another Waris Shah."
+              }
+            ]
+          },
+          {
+            "id": "to-waris-shah-stanza-13",
+            "lines": [
+              {
+                "id": "to-waris-shah-line-49",
+                "text": "Waris Shah!"
+              },
+              {
+                "id": "to-waris-shah-line-50",
+                "text": "Open your grave;"
+              },
+              {
+                "id": "to-waris-shah-line-51",
+                "text": "Write a new page"
+              },
+              {
+                "id": "to-waris-shah-line-52",
+                "text": "In the Book of Love."
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "id": "to-waris-shah-opening-note",
+            "term": "Calling on Waris Shah",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-line-01",
+                "quote": "Today I asked Waris Shah:"
+              },
+              {
+                "lineId": "to-waris-shah-line-02",
+                "quote": "Speak from your grave;"
+              },
+              {
+                "lineId": "to-waris-shah-line-03",
+                "quote": "Open a new chapter"
+              },
+              {
+                "lineId": "to-waris-shah-line-04",
+                "quote": "In the Book of Love."
+              }
+            ],
+            "analysis": "Why does the speaker call on someone who has died, specifically a poet? Asking him to write again suggests that the current suffering of the people demands another story."
+          }
+        ],
+        "analysis": "Bajaj and Coppola present Waris Shah’s response to one daughter as the writing of her story. Pritam’s self-translation instead emphasizes the lament his writing produces. This makes the poet’s role feel different. He records suffering in one version, while his writing gives that suffering a voice in the other. Pritam’s version also specifically describes women being separated from their gatherings where Bajaj and Coppola describe friends parting. This helps us see Partition’s damage to women’s shared lives alongside the poem’s larger grief for Punjab.",
+        "source": {
+          "title": "Amrita Pritam · To Waris Shah, translated by Kiron Bajaj and Carlo Coppola. Mahfil 5(3), 1968–69, pp. 27–28.",
+          "referenceId": "P3",
+          "url": "https://www.jstor.org/stable/40874237"
+        }
+      },
+      "references": {
+        "P3": {
+          "title": "Amrita Pritam · “To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Asian Studies Center, Michigan State University.",
+          "url": "https://www.jstor.org/stable/40874237"
+        },
+        "P4": {
+          "title": "The Indian Express · Writers who chronicled Partition",
+          "url": "https://indianexpress.com/article/books-and-literature/6-writers-amrita-pritam-faiz-ahmad-faiz-chronicled-partition-10187337/"
+        },
+        "P19": {
+          "title": "Pritam, Amrita. “To Waris Shah.” Translated by the author. Selected Poems of Amrita Pritam, edited by Pritish Nandy, Dialogue Calcutta Publications, n.d. Unpaginated in the supplied scan (PDF page 3).",
+          "url": "https://warp.whistlingwoods.net/docs/coursenotes/Amrita%20Pritam%20Poems%20-%202-1684999753-812008505Selected%20Poems%20of%20Amrita%20Pritam.pdf#page=3",
+          "note": "Full text transcribed from the reader-supplied page image. The poem explicitly credits Amrita Pritam as translator. The facing imprint identifies Dialogue Calcutta Publications, Calcutta, and Pritish Nandy as editor. No publication year or printed page number is visible. PDF page 3 is a digital locator, not a printed page number."
+        }
+      }
+    },
+    {
+      "cardId": "gulzar",
+      "title": "Karachi",
+      "mainTranslator": "Rakhshanda Jalil",
+      "mainStanzas": [
+        {
+          "id": "karachi-stanza-1",
+          "lines": [
+            {
+              "id": "karachi-line-01",
+              "text": "Kites hover over corpses in your city"
+            },
+            {
+              "id": "karachi-line-02",
+              "text": "In much the same way they do"
+            },
+            {
+              "id": "karachi-line-03",
+              "text": "In my city, on its crossroads,"
+            },
+            {
+              "id": "karachi-line-04",
+              "text": "When bodies fall"
+            },
+            {
+              "id": "karachi-line-05",
+              "text": "Prey to police firing"
+            },
+            {
+              "id": "karachi-line-06",
+              "text": "The vultures begin to descend"
+            }
+          ]
+        },
+        {
+          "id": "karachi-stanza-2",
+          "lines": [
+            {
+              "id": "karachi-line-07",
+              "text": "In this, our two countries"
+            },
+            {
+              "id": "karachi-line-08",
+              "text": "So much is common among the common people."
+            }
+          ]
+        }
+      ],
+      "mainTextSource": null,
+      "alternativeTranslation": {
+        "translator": "Pavan K. Varma",
+        "excerpt": "The common man looks so similar!",
+        "analysis": "Jalil’s ending emphasizes what ordinary people in the two countries have in common. Varma’s ending instead asks us to notice their resemblance. This makes the comparison feel like an act of recognizing someone across the border. The earlier descriptions of bodies and birds give that resemblance a painful context because people on both sides face similar violence. Both translations connect the two countries through ordinary people, but Varma’s wording makes seeing that connection more immediate.",
+        "source": {
+          "title": "Pavan K. Varma’s translation of Karachi, reproduced in “70 years on: The common man looks so similar,” Aman Ki Asha, August 23, 2017.",
+          "url": "https://amankiasha.com/70-years-on-the-common-man-looks-so-similar/"
+        }
+      },
+      "references": {
+        "P6": {
+          "title": "Gulzar · “Karachi,” p. 36, in Footprints on Zero Line: Writings on the Partition, translated by Rakhshanda Jalil. Harper Perennial / HarperCollins India, 2017.",
+          "note": "The book is the source for the poem. Text supplied in a photograph and page number confirmed by the reader. P17 is background reading from the translator’s introduction."
+        },
+        "P7": {
+          "title": "Rakhshanda Jalil · Why the Partition Is Not Just a Historical Event but a Work in Progress for Gulzar",
+          "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
+        },
+        "P17": {
+          "title": "Rakhshanda Jalil · Translator’s introduction to Footprints on Zero Line, excerpt published September 2017",
+          "url": "https://scroll.in/article/846133/why-the-partition-is-not-just-a-historical-event-but-a-work-in-progress-for-gulzar"
+        }
+      }
+    }
+  ]
+}

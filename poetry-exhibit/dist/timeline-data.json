@@ -206,6 +206,15 @@
       "title": "Conquering the Maharajas · “Kalat: Pakistan’s frontier challenge”",
       "url": "https://www.cambridge.org/core/books/abs/conquering-the-maharajas/kalat-pakistans-frontier-challenge/FE5175FB97A1A5DF087D8687DC6DDD20",
       "note": "Discusses negotiations, Pakistani pressure, accession in late March 1948, and the subsequent rebellion."
+    },
+    "P19": {
+      "title": "Pritam, Amrita. “To Waris Shah.” Translated by the author. Selected Poems of Amrita Pritam, edited by Pritish Nandy, Dialogue Calcutta Publications, n.d. Unpaginated in the supplied scan (PDF page 3).",
+      "url": "https://warp.whistlingwoods.net/docs/coursenotes/Amrita%20Pritam%20Poems%20-%202-1684999753-812008505Selected%20Poems%20of%20Amrita%20Pritam.pdf#page=3",
+      "note": "Full text transcribed from the reader-supplied page image. The poem explicitly credits Amrita Pritam as translator. The facing imprint identifies Dialogue Calcutta Publications, Calcutta, and Pritish Nandy as editor. No publication year or printed page number is visible. PDF page 3 is a digital locator, not a printed page number."
+    },
+    "H32": {
+      "title": "United Nations Military Observer Group in India and Pakistan · Background",
+      "url": "https://unmogip.unmissions.org/en/unmogip-background"
     }
   },
   "cards": [
@@ -562,6 +571,15 @@
               "note": "Page 167, as cited in the supplied analysis."
             }
           ]
+        },
+        "alternativeTranslation": {
+          "translator": "Frances W. Pritchett",
+          "excerpt": "abroad",
+          "analysis": "Pritchett’s literal translation places the speaker away from the homeland, while Azam’s version describes poverty. This changes what we see in the heart’s attachment to Hindustan. In Pritchett’s version, people can leave the country without losing their connection to it. Belonging survives the distance between the person and the place. This is particularly useful in an exhibit about Partition because it gives us a way to consider how a homeland can remain important after someone has left it.",
+          "source": {
+            "title": "Frances W. Pritchett · Literal translations of the two taranahs. Urdu source, Kulliyat-e Iqbal, 1973, pp. 83, 159.",
+            "url": "https://franpritchett.com/00routesdata/1900_1999/iqbal/taranahs/taranahs.html"
+          }
         }
       }
     },
@@ -947,6 +965,15 @@
               "note": "Page 167, as cited in the supplied analysis."
             }
           ]
+        },
+        "alternativeTranslation": {
+          "translator": "Frances W. Pritchett",
+          "excerpt": "our homeland is the whole world",
+          "analysis": "Pritchett explicitly describes the world as the Muslims’ homeland, while Azam’s version says that the world belongs to them. This makes the connection with Tarana-e Hindi easier to see. The earlier poem places the homeland in Hindustan, while this poem extends it beyond one country. We can therefore read the two poems as changing the boundaries of belonging. Pritchett also describes the crescent as a sign of the community where Azam uses national language, which encourages us to consider a religious community that crosses national borders.",
+          "source": {
+            "title": "Frances W. Pritchett · Literal translations of the two taranahs. Urdu source, Kulliyat-e Iqbal, 1973, pp. 83, 159.",
+            "url": "https://franpritchett.com/00routesdata/1900_1999/iqbal/taranahs/taranahs.html"
+          }
         }
       }
     },
@@ -1586,6 +1613,15 @@
               "note": "Provides historical context for Dawn’s founding by Jinnah in 1941. It does not establish a connection to Faiz’s poem or explain why the newspaper’s name was chosen."
             }
           ]
+        },
+        "alternativeTranslation": {
+          "translator": "Agha Shahid Ali",
+          "excerpt": "These tarnished rays, this night-smudged light —",
+          "analysis": "Ali’s opening makes the light seem stained and dimmed, while Kiernan’s version makes dawn seem diseased and physically wounded. Both suggest that the hoped-for beginning has been damaged, but the images make that damage feel different. The ending also changes the emphasis. Kiernan asks the travelers to continue because they have not reached their goal. Ali more explicitly asks them to turn away from a misleading light and search for the dawn they were promised. Read beside Iqbal’s caravan, this makes continuing the journey involve questioning whether the apparent arrival deserves to be accepted.",
+          "source": {
+            "title": "Faiz Ahmad Faiz · The Dawn of Freedom (August 1947), translated by Agha Shahid Ali. Teaching handout, PDF pp. 1–2.",
+            "url": "https://warp.whistlingwoods.net/docs/coursenotes/Poems%20of%20Faiz%20-1709650066-1155751255Poems%20of%20Faiz.pdf"
+          }
         }
       },
       "publicationDetails": [
@@ -1743,15 +1779,16 @@
       "description": "Amrita Pritam calls on Waris Shah, who wrote the Punjabi romance Heer, to witness Punjab’s suffering. The reported date when she wrote the poem is different from the date when its English translation was published.",
       "referenceIds": [
         "P3",
-        "P4"
+        "P4",
+        "P19"
       ],
       "relatedCardIds": [
         "displacement",
         "punjab-massacres"
       ],
       "composition": "1948, reported composition date",
-      "publication": "“To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil, vol. 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Published by the Asian Studies Center, Michigan State University.",
-      "edition": "English translation by Kiron Bajaj and Carlo Coppola. Mahfil 5(3), 1968–69, pp. 27–28. Text transcribed from the supplied PDF and checked against its page images.",
+      "publication": "Self-translation in Selected Poems of Amrita Pritam, edited by Pritish Nandy, Dialogue Calcutta Publications. Publication year not verified. Bajaj and Coppola’s alternative translation appeared in Mahfil 5(3), 1968–69, pp. 27–28.",
+      "edition": "Amrita Pritam’s self-translation in Selected Poems of Amrita Pritam, edited by Pritish Nandy, Dialogue Calcutta Publications, n.d. Full text transcribed from the supplied scan, preserving its line breaks and five stanza groups. No printed page number is visible (PDF page 3).",
       "axisDate": 1948,
       "poetId": "pritam",
       "publicationDetails": [
@@ -1763,13 +1800,6 @@
           ]
         },
         {
-          "label": "English journal publication",
-          "text": "“To Waris Shah (waaris shaah nuuN),” translated by Kiron Bajaj and Carlo Coppola. Mahfil, vol. 5, no. 3, Amrita Pritam Number, 1968–69, pp. 27–28. Published by the Asian Studies Center, Michigan State University.",
-          "referenceIds": [
-            "P3"
-          ]
-        },
-        {
           "label": "Original Punjabi publication",
           "text": "The first Punjabi journal or book appearance has not been verified. The Mahfil date refers to the English translation.",
           "referenceIds": [
@@ -1777,15 +1807,22 @@
           ]
         },
         {
-          "label": "English text",
-          "text": "Kiron Bajaj and Carlo Coppola’s translation, transcribed from the supplied Mahfil PDF, pp. 27–28. The poem ends with “In the Book of Love.” The following “O Traveler!” is a separate poem.",
+          "label": "Earlier English translation",
+          "text": "The editorial footnote on p. 27 also identifies an earlier translation in Modern Indian Poetry, edited by A. V. Rajeswara Rau, Delhi, Kavita, 1958. Its translator is not named. This is a different translation from the one displayed.",
           "referenceIds": [
             "P3"
           ]
         },
         {
-          "label": "Earlier English translation",
-          "text": "The editorial footnote on p. 27 also identifies an earlier translation in Modern Indian Poetry, edited by A. V. Rajeswara Rau, Delhi, Kavita, 1958. Its translator is not named. This is a different translation from the one displayed.",
+          "label": "Main English version",
+          "text": "Amrita Pritam’s self-translation in Selected Poems of Amrita Pritam, edited by Pritish Nandy, Dialogue Calcutta Publications, n.d. Full text transcribed from the supplied scan, preserving its line breaks and five stanza groups. No printed page number is visible (PDF page 3).",
+          "referenceIds": [
+            "P19"
+          ]
+        },
+        {
+          "label": "Alternative English translation",
+          "text": "Kiron Bajaj and Carlo Coppola, Mahfil 5(3), 1968–69, pp. 27–28.",
           "referenceIds": [
             "P3"
           ]
@@ -1809,308 +1846,635 @@
           "sourceUrl": "https://www.islam.museum/en/person/waris-shah/",
           "sourceLabel": "Background source · Islam Museum"
         },
-        "translator": "Kiron Bajaj and Carlo Coppola",
+        "translator": "Amrita Pritam",
         "language": "en",
         "stanzas": [
           {
-            "id": "to-waris-shah-stanza-1",
+            "id": "to-waris-shah-self-stanza-1",
             "lines": [
               {
-                "id": "to-waris-shah-line-01",
-                "text": "Today I asked Waris Shah:"
+                "id": "to-waris-shah-self-line-01",
+                "text": "Speak from the depths of the grave,"
               },
               {
-                "id": "to-waris-shah-line-02",
-                "text": "Speak from your grave;"
+                "id": "to-waris-shah-self-line-02",
+                "text": "to Waris Shah I say"
               },
               {
-                "id": "to-waris-shah-line-03",
-                "text": "Open a new chapter"
+                "id": "to-waris-shah-self-line-03",
+                "text": "and add a new page to your saga of love"
               },
               {
-                "id": "to-waris-shah-line-04",
-                "text": "In the Book of Love."
+                "id": "to-waris-shah-self-line-04",
+                "text": "today."
               }
             ]
           },
           {
-            "id": "to-waris-shah-stanza-2",
+            "id": "to-waris-shah-self-stanza-2",
             "lines": [
               {
-                "id": "to-waris-shah-line-05",
-                "text": "A daughter of the Punjab once wept;"
+                "id": "to-waris-shah-self-line-05",
+                "text": "Once wept a daughter of Punjab,"
               },
               {
-                "id": "to-waris-shah-line-06",
-                "text": "You wrote her long story for her."
+                "id": "to-waris-shah-self-line-06",
+                "text": "your pen unleashed a million cries,"
               },
               {
-                "id": "to-waris-shah-line-07",
-                "text": "Today millions of daughters weep,"
+                "id": "to-waris-shah-self-line-07",
+                "text": "a million daughters weep today,"
               },
               {
-                "id": "to-waris-shah-line-08",
-                "text": "Waris Shah. They're calling you."
+                "id": "to-waris-shah-self-line-08",
+                "text": "to you Waris Shah they turn their eyes."
               }
             ]
           },
           {
-            "id": "to-waris-shah-stanza-3",
+            "id": "to-waris-shah-self-stanza-3",
             "lines": [
               {
-                "id": "to-waris-shah-line-09",
-                "text": "O Friend of sorrow,"
+                "id": "to-waris-shah-self-line-09",
+                "text": "Awake, decry your Punjab,"
               },
               {
-                "id": "to-waris-shah-line-10",
-                "text": "Look at the Punjab."
+                "id": "to-waris-shah-self-line-10",
+                "text": "O sufferer with those suffering !"
               },
               {
-                "id": "to-waris-shah-line-11",
-                "text": "The village square heaped with corpses,"
+                "id": "to-waris-shah-self-line-11",
+                "text": "Corpses entomb the fields today,"
               },
               {
-                "id": "to-waris-shah-line-12",
-                "text": "The Chenab flooded with blood!"
+                "id": "to-waris-shah-self-line-12",
+                "text": "the Chenab is flowing with blood."
+              },
+              {
+                "id": "to-waris-shah-self-line-13",
+                "text": "Mingled with poison by some,"
+              },
+              {
+                "id": "to-waris-shah-self-line-14",
+                "text": "are the waters of five rivers,"
+              },
+              {
+                "id": "to-waris-shah-self-line-15",
+                "text": "and this torrent of pollution,"
+              },
+              {
+                "id": "to-waris-shah-self-line-16",
+                "text": "unceasingly covers our earth."
+              },
+              {
+                "id": "to-waris-shah-self-line-17",
+                "text": "And heavy with venom were the winds,"
+              },
+              {
+                "id": "to-waris-shah-self-line-18",
+                "text": "that blew through the forests,"
+              },
+              {
+                "id": "to-waris-shah-self-line-19",
+                "text": "transmuting into a snake,"
+              },
+              {
+                "id": "to-waris-shah-self-line-20",
+                "text": "The reed of each musical branch."
+              },
+              {
+                "id": "to-waris-shah-self-line-21",
+                "text": "With sting after sting did the serpents"
+              },
+              {
+                "id": "to-waris-shah-self-line-22",
+                "text": "suppress the voice of people."
+              },
+              {
+                "id": "to-waris-shah-self-line-23",
+                "text": "A moment, so brief, and the limbs of Punjab turned blue"
+              },
+              {
+                "id": "to-waris-shah-self-line-24",
+                "text": "Threads snapped from their shuttles"
+              },
+              {
+                "id": "to-waris-shah-self-line-25",
+                "text": "and rent the songs at the throat,"
+              },
+              {
+                "id": "to-waris-shah-self-line-26",
+                "text": "silenced was the spinning wheel's hum,"
+              },
+              {
+                "id": "to-waris-shah-self-line-27",
+                "text": "severed from their gatherings, the women,"
+              },
+              {
+                "id": "to-waris-shah-self-line-28",
+                "text": "Branches heavy with swings,"
+              },
+              {
+                "id": "to-waris-shah-self-line-29",
+                "text": "cracked from peepul trees,"
+              },
+              {
+                "id": "to-waris-shah-self-line-30",
+                "text": "boats laden with trappings,"
+              },
+              {
+                "id": "to-waris-shah-self-line-31",
+                "text": "loosened from anchors to sink."
               }
             ]
           },
           {
-            "id": "to-waris-shah-stanza-4",
+            "id": "to-waris-shah-self-stanza-4",
             "lines": [
               {
-                "id": "to-waris-shah-line-13",
-                "text": "Someone mixed poison"
+                "id": "to-waris-shah-self-line-32",
+                "text": "Despoilers of beauty and love,"
               },
               {
-                "id": "to-waris-shah-line-14",
-                "text": "In the five rivers;"
+                "id": "to-waris-shah-self-line-33",
+                "text": "each man now turned a Kedu"
               },
               {
-                "id": "to-waris-shah-line-15",
-                "text": "Their flow"
+                "id": "to-waris-shah-self-line-34",
+                "text": "where can we seek for another like"
               },
               {
-                "id": "to-waris-shah-line-16",
-                "text": "Watered the Punjab."
+                "id": "to-waris-shah-self-line-35",
+                "text": "Waris Shah today ?"
               }
             ]
           },
           {
-            "id": "to-waris-shah-stanza-5",
+            "id": "to-waris-shah-self-stanza-5",
             "lines": [
               {
-                "id": "to-waris-shah-line-17",
-                "text": "Poison has sprouted"
+                "id": "to-waris-shah-self-line-36",
+                "text": "Only you can speak from the grave,"
               },
               {
-                "id": "to-waris-shah-line-18",
-                "text": "From this fertile land."
+                "id": "to-waris-shah-self-line-37",
+                "text": "to Waris Shah I say"
               },
               {
-                "id": "to-waris-shah-line-19",
-                "text": "Look, how far the red has spread."
+                "id": "to-waris-shah-self-line-38",
+                "text": "add another page to your epic of love"
               },
               {
-                "id": "to-waris-shah-line-20",
-                "text": "Curse how far the red has spread!"
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-6",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-21",
-                "text": "Poisoned air"
-              },
-              {
-                "id": "to-waris-shah-line-22",
-                "text": "Floated into the jungles"
-              },
-              {
-                "id": "to-waris-shah-line-23",
-                "text": "Turning all bamboo flutes"
-              },
-              {
-                "id": "to-waris-shah-line-24",
-                "text": "To snakes"
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-7",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-25",
-                "text": "Biting everyone's lips;"
-              },
-              {
-                "id": "to-waris-shah-line-26",
-                "text": "Their tongue tips rose up"
-              },
-              {
-                "id": "to-waris-shah-line-27",
-                "text": "And quickly all parts"
-              },
-              {
-                "id": "to-waris-shah-line-28",
-                "text": "Of the Punjab turned blue."
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-8",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-29",
-                "text": "Song is crushed in every throat;"
-              },
-              {
-                "id": "to-waris-shah-line-30",
-                "text": "Every spinning wheel's thread is snapped;"
-              },
-              {
-                "id": "to-waris-shah-line-31",
-                "text": "Friends parted from one another;"
-              },
-              {
-                "id": "to-waris-shah-line-32",
-                "text": "The hum of spinning wheels fell silent."
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-9",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-33",
-                "text": "Oars have left all boats"
-              },
-              {
-                "id": "to-waris-shah-line-34",
-                "text": "And float in the current;"
-              },
-              {
-                "id": "to-waris-shah-line-35",
-                "text": "Peepal branches with swings"
-              },
-              {
-                "id": "to-waris-shah-line-36",
-                "text": "Lie broken."
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-10",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-37",
-                "text": "Where is the grove where love songs"
-              },
-              {
-                "id": "to-waris-shah-line-38",
-                "text": "Used to echo, where the flute?"
-              },
-              {
-                "id": "to-waris-shah-line-39",
-                "text": "All Ranjha's brothers"
-              },
-              {
-                "id": "to-waris-shah-line-40",
-                "text": "Have forgotten how to play the flute."
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-11",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-41",
-                "text": "Blood keeps falling upon the earth,"
-              },
-              {
-                "id": "to-waris-shah-line-42",
-                "text": "Oozing out drop by drop from graves."
-              },
-              {
-                "id": "to-waris-shah-line-43",
-                "text": "The queens of love"
-              },
-              {
-                "id": "to-waris-shah-line-44",
-                "text": "Weep in tombs."
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-12",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-45",
-                "text": "It seems all people have become Kaidos,"
-              },
-              {
-                "id": "to-waris-shah-line-46",
-                "text": "Thieves of beauty and love--"
-              },
-              {
-                "id": "to-waris-shah-line-47",
-                "text": "Where should I search out"
-              },
-              {
-                "id": "to-waris-shah-line-48",
-                "text": "Another Waris Shah."
-              }
-            ]
-          },
-          {
-            "id": "to-waris-shah-stanza-13",
-            "lines": [
-              {
-                "id": "to-waris-shah-line-49",
-                "text": "Waris Shah!"
-              },
-              {
-                "id": "to-waris-shah-line-50",
-                "text": "Open your grave;"
-              },
-              {
-                "id": "to-waris-shah-line-51",
-                "text": "Write a new page"
-              },
-              {
-                "id": "to-waris-shah-line-52",
-                "text": "In the Book of Love."
+                "id": "to-waris-shah-self-line-39",
+                "text": "today."
               }
             ]
           }
         ],
         "annotations": [
           {
-            "id": "to-waris-shah-opening-note",
-            "term": "Calling on Waris Shah",
+            "id": "to-waris-shah-self-opening-note",
+            "term": "Why call on a poet who is gone?",
             "segments": [
               {
-                "lineId": "to-waris-shah-line-01",
-                "quote": "Today I asked Waris Shah:"
+                "lineId": "to-waris-shah-self-line-01",
+                "quote": "Speak from the depths of the grave,"
               },
               {
-                "lineId": "to-waris-shah-line-02",
-                "quote": "Speak from your grave;"
+                "lineId": "to-waris-shah-self-line-02",
+                "quote": "to Waris Shah I say"
               },
               {
-                "lineId": "to-waris-shah-line-03",
-                "quote": "Open a new chapter"
+                "lineId": "to-waris-shah-self-line-03",
+                "quote": "and add a new page to your saga of love"
               },
               {
-                "lineId": "to-waris-shah-line-04",
-                "quote": "In the Book of Love."
+                "lineId": "to-waris-shah-self-line-04",
+                "quote": "today."
               }
             ],
-            "analysis": "Why does the speaker call on someone who has died, specifically a poet? Asking him to write again suggests that the current suffering of the people demands another story."
+            "analysis": "“Speak from the depths of the grave” emphasizes that Waris Shah is long gone, yet the speaker still calls on him to tell another story. Why does she turn to a poet who can no longer answer? His telling of Heer’s suffering gives her a way to approach the suffering of Punjab’s daughters during Partition. However, the movement from one daughter to a million suggests that the earlier story is no longer enough. Asking him to add a page to his “saga of love” suggests that this new suffering also needs to be heard and mourned. The call becomes both a recognition of poetry’s power to express grief and a question about who can carry on that work when the poet is gone."
+          },
+          {
+            "id": "to-waris-shah-self-daughters-note",
+            "term": "From one daughter to a million",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-05",
+                "quote": "Once wept a daughter of Punjab,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-06",
+                "quote": "your pen unleashed a million cries,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-07",
+                "quote": "a million daughters weep today,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-08",
+                "quote": "to you Waris Shah they turn their eyes."
+              }
+            ],
+            "analysis": "The “daughter of Punjab” refers to Heer, whose tragic love story Waris Shah told. However, this stanza moves from one daughter’s suffering to “a million daughters” weeping during Partition. Heer’s pain becomes a way to connect a familiar story of personal grief to the suffering of women across Punjab. Calling them “daughters” also presents Punjab as a shared home for all whose people have a distinct relationship to one another. The poet’s “pen” symbolizes his ability to give suffering a voice. Now, the women turn toward him as though the poet who mourned Heer might also find words for their ongoing grief, nearly two centuries later.",
+            "source": {
+              "title": "Islam Museum · Waris Shah",
+              "url": "https://www.islam.museum/en/person/waris-shah/",
+              "note": "Background on Heer and its completion in 1766. The interpretation of the stanza is the exhibit’s reading."
+            }
+          },
+          {
+            "id": "to-waris-shah-self-poisoned-rivers",
+            "term": "The Chenab and the poisoned rivers",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-11",
+                "quote": "Corpses entomb the fields today,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-12",
+                "quote": "the Chenab is flowing with blood."
+              },
+              {
+                "lineId": "to-waris-shah-self-line-13",
+                "quote": "Mingled with poison by some,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-14",
+                "quote": "are the waters of five rivers,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-15",
+                "quote": "and this torrent of pollution,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-16",
+                "quote": "unceasingly covers our earth."
+              }
+            ],
+            "analysis": "Poison can symbolize corruption or betrayal, and Pritam’s words give us a way to see communal violence through that image. The Chenab flowing with blood connects the river to the lives being lost. The five rivers, which normally sustain the region, now carry poison across the earth. Perhaps the communal violence is poisoning the lives of Punjab’s daughters, polluting their shared home through the loss of life and dignity. The violence reaches beyond individual victims and damages the land and relationships that connect them.",
+            "image": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Chenab_River_Gujrat_Pakistan.jpg",
+              "alt": "The Chenab River near Gujrat, Pakistan, photographed in 2017.",
+              "width": 3264,
+              "height": 2448,
+              "caption": "The Chenab River near Gujrat, Pakistan, May 17, 2017. A modern view of the river named in the poem, not a photograph of Partition violence.",
+              "credit": "Zohaib latif · Wikimedia Commons · original photograph, unchanged",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chenab_River_Gujrat_Pakistan.jpg",
+              "license": "CC BY-SA 4.0",
+              "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+            }
+          },
+          {
+            "id": "to-waris-shah-self-serpents-note",
+            "term": "From music to venom",
+            "segments": [
+              {
+                "lineId": "to-waris-shah-self-line-17",
+                "quote": "And heavy with venom were the winds,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-18",
+                "quote": "that blew through the forests,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-19",
+                "quote": "transmuting into a snake,"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-20",
+                "quote": "The reed of each musical branch."
+              },
+              {
+                "lineId": "to-waris-shah-self-line-21",
+                "quote": "With sting after sting did the serpents"
+              },
+              {
+                "lineId": "to-waris-shah-self-line-22",
+                "quote": "suppress the voice of people."
+              }
+            ],
+            "analysis": "Pritam could have described venom through another animal, such as a spider, but the snake gives us a particular way to think about betrayal. In English, a snake can describe a deceitful person, so readers of this translation might connect the image to danger coming from someone they once trusted. Read in the context of communal violence, this could suggest relationships between people in a shared region turning into sources of harm. However, the transformation of the musical reed is just as important. Something that once made music becomes a serpent that suppresses people’s voices. The repeated “sting after sting” makes this harm feel ongoing. Violence destroys lives while also silencing the songs and voices through which people express their shared culture. This is a possible reading of the image, rather than evidence that Pritam intended a particular English idiom or biblical reference.",
+            "source": {
+              "title": "Oxford Advanced Learner’s Dictionary · “a snake (in the grass)”",
+              "url": "https://www.oxfordlearnersdictionaries.com/definition/english/grass_1",
+              "note": "Supports the English association with an untrustworthy person who appears friendly. The connection to the poem is the exhibit’s interpretation."
+            }
           }
-        ]
+        ],
+        "textSource": {
+          "title": "Source scan · Selected Poems of Amrita Pritam, PDF page 3",
+          "url": "https://warp.whistlingwoods.net/docs/coursenotes/Amrita%20Pritam%20Poems%20-%202-1684999753-812008505Selected%20Poems%20of%20Amrita%20Pritam.pdf#page=3"
+        },
+        "alternativeTranslation": {
+          "translator": "Kiron Bajaj and Carlo Coppola",
+          "stanzas": [
+            {
+              "id": "to-waris-shah-stanza-1",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-01",
+                  "text": "Today I asked Waris Shah:"
+                },
+                {
+                  "id": "to-waris-shah-line-02",
+                  "text": "Speak from your grave;"
+                },
+                {
+                  "id": "to-waris-shah-line-03",
+                  "text": "Open a new chapter"
+                },
+                {
+                  "id": "to-waris-shah-line-04",
+                  "text": "In the Book of Love."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-2",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-05",
+                  "text": "A daughter of the Punjab once wept;"
+                },
+                {
+                  "id": "to-waris-shah-line-06",
+                  "text": "You wrote her long story for her."
+                },
+                {
+                  "id": "to-waris-shah-line-07",
+                  "text": "Today millions of daughters weep,"
+                },
+                {
+                  "id": "to-waris-shah-line-08",
+                  "text": "Waris Shah. They're calling you."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-3",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-09",
+                  "text": "O Friend of sorrow,"
+                },
+                {
+                  "id": "to-waris-shah-line-10",
+                  "text": "Look at the Punjab."
+                },
+                {
+                  "id": "to-waris-shah-line-11",
+                  "text": "The village square heaped with corpses,"
+                },
+                {
+                  "id": "to-waris-shah-line-12",
+                  "text": "The Chenab flooded with blood!"
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-4",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-13",
+                  "text": "Someone mixed poison"
+                },
+                {
+                  "id": "to-waris-shah-line-14",
+                  "text": "In the five rivers;"
+                },
+                {
+                  "id": "to-waris-shah-line-15",
+                  "text": "Their flow"
+                },
+                {
+                  "id": "to-waris-shah-line-16",
+                  "text": "Watered the Punjab."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-5",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-17",
+                  "text": "Poison has sprouted"
+                },
+                {
+                  "id": "to-waris-shah-line-18",
+                  "text": "From this fertile land."
+                },
+                {
+                  "id": "to-waris-shah-line-19",
+                  "text": "Look, how far the red has spread."
+                },
+                {
+                  "id": "to-waris-shah-line-20",
+                  "text": "Curse how far the red has spread!"
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-6",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-21",
+                  "text": "Poisoned air"
+                },
+                {
+                  "id": "to-waris-shah-line-22",
+                  "text": "Floated into the jungles"
+                },
+                {
+                  "id": "to-waris-shah-line-23",
+                  "text": "Turning all bamboo flutes"
+                },
+                {
+                  "id": "to-waris-shah-line-24",
+                  "text": "To snakes"
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-7",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-25",
+                  "text": "Biting everyone's lips;"
+                },
+                {
+                  "id": "to-waris-shah-line-26",
+                  "text": "Their tongue tips rose up"
+                },
+                {
+                  "id": "to-waris-shah-line-27",
+                  "text": "And quickly all parts"
+                },
+                {
+                  "id": "to-waris-shah-line-28",
+                  "text": "Of the Punjab turned blue."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-8",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-29",
+                  "text": "Song is crushed in every throat;"
+                },
+                {
+                  "id": "to-waris-shah-line-30",
+                  "text": "Every spinning wheel's thread is snapped;"
+                },
+                {
+                  "id": "to-waris-shah-line-31",
+                  "text": "Friends parted from one another;"
+                },
+                {
+                  "id": "to-waris-shah-line-32",
+                  "text": "The hum of spinning wheels fell silent."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-9",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-33",
+                  "text": "Oars have left all boats"
+                },
+                {
+                  "id": "to-waris-shah-line-34",
+                  "text": "And float in the current;"
+                },
+                {
+                  "id": "to-waris-shah-line-35",
+                  "text": "Peepal branches with swings"
+                },
+                {
+                  "id": "to-waris-shah-line-36",
+                  "text": "Lie broken."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-10",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-37",
+                  "text": "Where is the grove where love songs"
+                },
+                {
+                  "id": "to-waris-shah-line-38",
+                  "text": "Used to echo, where the flute?"
+                },
+                {
+                  "id": "to-waris-shah-line-39",
+                  "text": "All Ranjha's brothers"
+                },
+                {
+                  "id": "to-waris-shah-line-40",
+                  "text": "Have forgotten how to play the flute."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-11",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-41",
+                  "text": "Blood keeps falling upon the earth,"
+                },
+                {
+                  "id": "to-waris-shah-line-42",
+                  "text": "Oozing out drop by drop from graves."
+                },
+                {
+                  "id": "to-waris-shah-line-43",
+                  "text": "The queens of love"
+                },
+                {
+                  "id": "to-waris-shah-line-44",
+                  "text": "Weep in tombs."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-12",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-45",
+                  "text": "It seems all people have become Kaidos,"
+                },
+                {
+                  "id": "to-waris-shah-line-46",
+                  "text": "Thieves of beauty and love--"
+                },
+                {
+                  "id": "to-waris-shah-line-47",
+                  "text": "Where should I search out"
+                },
+                {
+                  "id": "to-waris-shah-line-48",
+                  "text": "Another Waris Shah."
+                }
+              ]
+            },
+            {
+              "id": "to-waris-shah-stanza-13",
+              "lines": [
+                {
+                  "id": "to-waris-shah-line-49",
+                  "text": "Waris Shah!"
+                },
+                {
+                  "id": "to-waris-shah-line-50",
+                  "text": "Open your grave;"
+                },
+                {
+                  "id": "to-waris-shah-line-51",
+                  "text": "Write a new page"
+                },
+                {
+                  "id": "to-waris-shah-line-52",
+                  "text": "In the Book of Love."
+                }
+              ]
+            }
+          ],
+          "annotations": [
+            {
+              "id": "to-waris-shah-opening-note",
+              "term": "Calling on Waris Shah",
+              "segments": [
+                {
+                  "lineId": "to-waris-shah-line-01",
+                  "quote": "Today I asked Waris Shah:"
+                },
+                {
+                  "lineId": "to-waris-shah-line-02",
+                  "quote": "Speak from your grave;"
+                },
+                {
+                  "lineId": "to-waris-shah-line-03",
+                  "quote": "Open a new chapter"
+                },
+                {
+                  "lineId": "to-waris-shah-line-04",
+                  "quote": "In the Book of Love."
+                }
+              ],
+              "analysis": "Why does the speaker call on someone who has died, specifically a poet? Asking him to write again suggests that the current suffering of the people demands another story."
+            }
+          ],
+          "analysis": "Bajaj and Coppola present Waris Shah’s response to one daughter as the writing of her story. Pritam’s self-translation instead emphasizes the lament his writing produces. This makes the poet’s role feel different. He records suffering in one version, while his writing gives that suffering a voice in the other. Pritam’s version also specifically describes women being separated from their gatherings where Bajaj and Coppola describe friends parting. This helps us see Partition’s damage to women’s shared lives alongside the poem’s larger grief for Punjab.",
+          "source": {
+            "title": "Amrita Pritam · To Waris Shah, translated by Kiron Bajaj and Carlo Coppola. Mahfil 5(3), 1968–69, pp. 27–28.",
+            "referenceId": "P3",
+            "url": "https://www.jstor.org/stable/40874237"
+          }
+        }
       },
       "photographIds": [
         "train",
@@ -2411,7 +2775,16 @@
             ]
           }
         ],
-        "annotations": []
+        "annotations": [],
+        "alternativeTranslation": {
+          "translator": "Pavan K. Varma",
+          "excerpt": "The common man looks so similar!",
+          "analysis": "Jalil’s ending emphasizes what ordinary people in the two countries have in common. Varma’s ending instead asks us to notice their resemblance. This makes the comparison feel like an act of recognizing someone across the border. The earlier descriptions of bodies and birds give that resemblance a painful context because people on both sides face similar violence. Both translations connect the two countries through ordinary people, but Varma’s wording makes seeing that connection more immediate.",
+          "source": {
+            "title": "Pavan K. Varma’s translation of Karachi, reproduced in “70 years on: The common man looks so similar,” Aman Ki Asha, August 23, 2017.",
+            "url": "https://amankiasha.com/70-years-on-the-common-man-looks-so-similar/"
+          }
+        }
       },
       "photographIds": [
         "delhi",
@@ -3180,6 +3553,13 @@
         "text": "A September 1947 report reproduced by The National Archives records refugees in Delhi staying with friends and relatives as well as in camps. Another official report describes movement by refugee trains and motor lorries. These records show how travel continued through stations, temporary accommodation, and organised transport.",
         "sourceTitle": "The National Archives · Indian independence, part two, official reports on refugees",
         "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/indian-independence-part-two/"
+      },
+      "featuredExcerpt": {
+        "title": "Delhi during the violence",
+        "text": "New Delhi was in chaos, with constant murdering and rioting in August and September, throngs of refugees arriving, local people living under the daily threat of death, armed gangs roaming the streets […]",
+        "attribution": "Yasmin Khan, “Leprous Daybreak,” in The Great Partition: The Making of India and Pakistan, new edition, Yale University Press, 2017, chapter 8, pp. 143–166. Exact quotation page not verified.",
+        "url": "https://www.jstor.org/stable/j.ctv1bzfp93.17?seq=1",
+        "context": "Khan’s description gives the wider context for this September 27 photograph of refugees being taken from Delhi Railway Station to camps. It does not identify the people in the photograph or describe this particular journey."
       }
     },
     {
@@ -3305,7 +3685,42 @@
           "historyMarkerNote": "Select a numbered marker or a region below to explore territorial changes after Partition. The notes cover Kalat and Hyderabad in 1948, Goa in 1961, and Sikkim in 1975, explaining their different circumstances. This overview includes later changes and is not a snapshot of every boundary in August 1947. Markers locate regions approximately and do not outline historical borders."
         }
       ],
-      "standaloneIntro": "These three maps follow religious communities before Partition and the borders created during it. The Punjab view shows district majorities in 1941, the wider overview was published in 1909, and the final map shows the 1947 division. They are not a before-and-after census comparison. Select any map to read it at full size."
+      "standaloneIntro": "These three maps follow religious communities before Partition and the borders created during it. The Punjab view shows district majorities in 1941, the wider overview was published in 1909, and the final map shows the 1947 division. They are not a before-and-after census comparison. Select any map to read it at full size.",
+      "methodology": {
+        "title": "How was a map turned into a border?",
+        "sections": [
+          {
+            "title": "A rushed boundary-making process",
+            "text": "Radcliffe had about five weeks to complete the boundaries of Punjab and Bengal. Historian Lucy Chester argues that the commissions lacked geographical expertise and enough time for the surveys and information gathering that boundary-making required. This helps us read Auden’s description of outdated maps as a criticism of the process. The poem is a later literary response, rather than evidence of the date of every map used.",
+            "referenceIds": [
+              "H20"
+            ]
+          },
+          {
+            "title": "Population figures could not decide the line alone",
+            "text": "The commissions considered the 1941 census, whose reliability was disputed by Congress and defended by the Muslim League. The task also allowed considerations beyond religious majorities. A district-majority map can hide differences within a district, so the colors cannot tell us where every village should belong. The Punjab map displayed here is a later illustration based on 1941 figures. It is not an original working map used by Radcliffe.",
+            "referenceIds": [
+              "H20"
+            ]
+          },
+          {
+            "title": "Canals and railways crossed the proposed border",
+            "text": "Radcliffe’s Punjab report discusses canal headworks, irrigation, railways, and power supplies. He acknowledged that he could not keep the Upper Bari Doab Canal system under one territorial authority and hoped the two states would arrange joint control of shared services. His Bengal report similarly acknowledges interruptions to railways and river systems. These reports show that infrastructure was considered, but the resulting border still divided connected systems. Better maps alone could not settle the competing political claims.",
+            "referenceIds": [
+              "H18",
+              "H19"
+            ]
+          },
+          {
+            "title": "Kashmir’s dividing line came later",
+            "text": "The Radcliffe award divided the British Indian provinces of Punjab and Bengal. It did not draw a line through the princely state of Jammu and Kashmir. India and Pakistan agreed a ceasefire line there in 1949 after war. The 1972 agreement defined a Line of Control that largely followed the earlier ceasefire line. These lines have a different history from the provincial borders drawn in 1947.",
+            "referenceIds": [
+              "H20",
+              "H32"
+            ]
+          }
+        ]
+      }
     }
   },
   "mapBackgrounds": {

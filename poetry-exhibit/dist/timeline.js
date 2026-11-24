@@ -174,6 +174,23 @@
       article.append(el('h3', map.label));showMap(map, article);maps.append(article);
     });
     section.append(maps, el('p', comparison.reading), el('p', comparison.example));
+    if (comparison.methodology) {
+      const methodology = el('section', null, 'map-methodology');
+      methodology.id = 'map-methodology';
+      const heading = el('h3', comparison.methodology.title);
+      heading.id = 'map-methodology-heading';
+      methodology.setAttribute('aria-labelledby', heading.id);
+      methodology.append(heading);
+      comparison.methodology.sections.forEach(item => {
+        const subsection = el('section');
+        subsection.append(el('h4', item.title), el('p', item.text));
+        const sources = el('ul', null, 'reading-sources');
+        item.referenceIds.forEach(id => sources.append(reference(id)));
+        subsection.append(sources);
+        methodology.append(subsection);
+      });
+      section.append(methodology);
+    }
   }
   function renderPhotographs() {
     const list = document.querySelector('#partition-photo-list');
@@ -463,6 +480,12 @@
         text.append(paragraph, ...[...stanzaNotes].map(id => notes.get(id).panel));
       });
       body.append(text);
+      if (poem.textNotice) body.append(el('p', poem.textNotice, 'poem-text-status'));
+      if (poem.textSource) {
+        const link = el('a', poem.textSource.title, 'text-link');
+        link.href = poem.textSource.url;
+        body.append(link);
+      }
       const wholePoem = el('section', null, 'whole-poem-analysis');
       wholePoem.setAttribute('aria-labelledby', `${poem.id}-analysis-title`);
       const analysisTitle = el('h4', poem.wholePoemAnalysis?.title || 'Whole-poem claim & analysis');
@@ -485,6 +508,43 @@
         wholePoem.append(sourceList);
       }
       if (poem.wholePoemAnalysis) body.append(wholePoem);
+
+      if (poem.alternativeTranslation) {
+        const alternative = poem.alternativeTranslation;
+        const section = el('section', null, 'alternative-translation');
+        const heading = el('h4', 'Alternative translation');
+        heading.id = `${poem.id}-alternative-title`;
+        section.setAttribute('aria-labelledby', heading.id);
+        section.append(heading, el('p', `Translated by ${alternative.translator}`, 'poem-byline'));
+        if (alternative.excerpt) {
+          section.append(el('p', 'Selected excerpt', 'translation-excerpt-label'));
+          section.append(el('blockquote', alternative.excerpt, 'translation-excerpt'));
+        }
+        if (alternative.stanzas) {
+          const disclosure = el('details', null, 'alternative-poem');
+          disclosure.append(el('summary', 'Read the alternative translation'));
+          const verse = el('div', null, 'poem-text');
+          verse.lang = poem.language;
+          alternative.stanzas.forEach(stanza => {
+            const paragraph = el('p', null, 'poem-stanza');
+            stanza.lines.forEach((line, index) => {
+              const span = el('span', line.text, 'poem-line');
+              span.id = line.id;
+              paragraph.append(span);
+              if (index < stanza.lines.length - 1) paragraph.append(el('br'));
+            });
+            verse.append(paragraph);
+          });
+          disclosure.append(verse);
+          section.append(disclosure);
+        }
+        section.append(el('p', alternative.analysis));
+        const source = alternative.source;
+        const credit = el('a', source.title, 'text-link');
+        credit.href = source.url || `#ref-${source.referenceId}`;
+        section.append(credit);
+        body.append(section);
+      }
 
       const sources = el('details', null, 'poem-sources');
       sources.append(el('summary', poem.translator ? 'Text & translation source' : 'Text source'));
@@ -698,7 +758,7 @@
     status.textContent = next === 'august' ? 'August 1947 detail opened.' : 'Full timeline opened.';
   }
   try {
-    const response = await fetch('timeline-data.json');
+    const response = await fetch('timeline-data.json', {cache: 'no-cache'});
     if (!response.ok) throw new Error('Timeline data could not be loaded.');
     data = await response.json();
     renderPoems();
