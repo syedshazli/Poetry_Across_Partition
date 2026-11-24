@@ -516,13 +516,28 @@
         heading.id = `${poem.id}-alternative-title`;
         section.setAttribute('aria-labelledby', heading.id);
         section.append(heading, el('p', `Translated by ${alternative.translator}`, 'poem-byline'));
+        const mainLines = new Map(poem.stanzas.flatMap(stanza => stanza.lines).map(line => [line.id, line]));
+        const mainPassage = el('div', null, 'translation-main-passage');
+        mainPassage.append(el('p', `Corresponding lines · ${poem.translator}`, 'translation-excerpt-label'));
+        const mainQuote = el('blockquote', null, 'translation-excerpt');
+        (alternative.mainLineIds || []).forEach((id, index) => {
+          const line = mainLines.get(id);
+          if (!line) return;
+          if (index) mainQuote.append(el('br'));
+          const link = el('a', line.text);
+          link.href = `#${id}`;
+          mainQuote.append(link);
+        });
+        mainPassage.append(mainQuote);
         if (alternative.excerpt) {
+          section.append(mainPassage);
           section.append(el('p', 'Selected excerpt', 'translation-excerpt-label'));
           section.append(el('blockquote', alternative.excerpt, 'translation-excerpt'));
         }
         if (alternative.stanzas) {
           const disclosure = el('details', null, 'alternative-poem');
-          disclosure.append(el('summary', 'Read the alternative translation'));
+          disclosure.append(el('summary', 'Compare the full translations'), mainPassage);
+          disclosure.append(el('p', `Alternative translation · ${alternative.translator}`, 'translation-excerpt-label'));
           const verse = el('div', null, 'poem-text');
           verse.lang = poem.language;
           alternative.stanzas.forEach(stanza => {

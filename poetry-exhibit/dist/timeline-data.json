@@ -579,7 +579,10 @@
           "source": {
             "title": "Frances W. Pritchett · Literal translations of the two taranahs. Urdu source, Kulliyat-e Iqbal, 1973, pp. 83, 159.",
             "url": "https://franpritchett.com/00routesdata/1900_1999/iqbal/taranahs/taranahs.html"
-          }
+          },
+          "mainLineIds": [
+            "iqbal-hindi-poem-line-03"
+          ]
         }
       }
     },
@@ -973,7 +976,10 @@
           "source": {
             "title": "Frances W. Pritchett · Literal translations of the two taranahs. Urdu source, Kulliyat-e Iqbal, 1973, pp. 83, 159.",
             "url": "https://franpritchett.com/00routesdata/1900_1999/iqbal/taranahs/taranahs.html"
-          }
+          },
+          "mainLineIds": [
+            "iqbal-milli-poem-line-02"
+          ]
         }
       }
     },
@@ -1621,7 +1627,10 @@
           "source": {
             "title": "Faiz Ahmad Faiz · The Dawn of Freedom (August 1947), translated by Agha Shahid Ali. Teaching handout, PDF pp. 1–2.",
             "url": "https://warp.whistlingwoods.net/docs/coursenotes/Poems%20of%20Faiz%20-1709650066-1155751255Poems%20of%20Faiz.pdf"
-          }
+          },
+          "mainLineIds": [
+            "freedoms-dawn-line-01"
+          ]
         }
       },
       "publicationDetails": [
@@ -2575,7 +2584,48 @@
             "title": "Amrita Pritam · To Waris Shah, translated by Kiron Bajaj and Carlo Coppola. Mahfil 5(3), 1968–69, pp. 27–28.",
             "referenceId": "P3",
             "url": "https://www.jstor.org/stable/40874237"
-          }
+          },
+          "mainLineIds": [
+            "to-waris-shah-self-line-01",
+            "to-waris-shah-self-line-02",
+            "to-waris-shah-self-line-03",
+            "to-waris-shah-self-line-04",
+            "to-waris-shah-self-line-05",
+            "to-waris-shah-self-line-06",
+            "to-waris-shah-self-line-07",
+            "to-waris-shah-self-line-08",
+            "to-waris-shah-self-line-09",
+            "to-waris-shah-self-line-10",
+            "to-waris-shah-self-line-11",
+            "to-waris-shah-self-line-12",
+            "to-waris-shah-self-line-13",
+            "to-waris-shah-self-line-14",
+            "to-waris-shah-self-line-15",
+            "to-waris-shah-self-line-16",
+            "to-waris-shah-self-line-17",
+            "to-waris-shah-self-line-18",
+            "to-waris-shah-self-line-19",
+            "to-waris-shah-self-line-20",
+            "to-waris-shah-self-line-21",
+            "to-waris-shah-self-line-22",
+            "to-waris-shah-self-line-23",
+            "to-waris-shah-self-line-24",
+            "to-waris-shah-self-line-25",
+            "to-waris-shah-self-line-26",
+            "to-waris-shah-self-line-27",
+            "to-waris-shah-self-line-28",
+            "to-waris-shah-self-line-29",
+            "to-waris-shah-self-line-30",
+            "to-waris-shah-self-line-31",
+            "to-waris-shah-self-line-32",
+            "to-waris-shah-self-line-33",
+            "to-waris-shah-self-line-34",
+            "to-waris-shah-self-line-35",
+            "to-waris-shah-self-line-36",
+            "to-waris-shah-self-line-37",
+            "to-waris-shah-self-line-38",
+            "to-waris-shah-self-line-39"
+          ]
         }
       },
       "photographIds": [
@@ -2893,6 +2943,51 @@
               "url": "https://australian.museum/learn/animals/birds/black-kite/",
               "note": "Explains that black kites eat both live prey and carrion. The poem does not identify a species. Reading “kites” as birds and interpreting “your city” are based on the poem’s surrounding lines."
             }
+          },
+          {
+            "id": "karachi-my-city-note",
+            "term": "In my city, on its crossroads",
+            "segments": [
+              {
+                "lineId": "karachi-line-03",
+                "quote": "In my city, on its crossroads,"
+              }
+            ],
+            "analysis": "The movement from “your city” to “my city” brings the suffering closer to the speaker, on a level he can relate to. He recognizes the reality of what happens in Karachi because something similar happens where he lives. The crossroads then place this violence in public, open spaces where people would ordinarily meet and travel. Although the cities belong to separate countries, the speaker begins to show how closely their people’s experiences resemble one another."
+          },
+          {
+            "id": "karachi-police-prey-note",
+            "term": "Prey to police firing",
+            "segments": [
+              {
+                "lineId": "karachi-line-04",
+                "quote": "When bodies fall"
+              },
+              {
+                "lineId": "karachi-line-05",
+                "quote": "Prey to police firing"
+              },
+              {
+                "lineId": "karachi-line-06",
+                "quote": "The vultures begin to descend"
+              }
+            ],
+            "analysis": "The word “Prey” presents the people being shot as vulnerable to those exercising power over them, almost like an animal that can be ruthlessly hunted by those meant to serve and protect. It also connects the police firing to the vultures feeding on the dead. The people first fall victim to violence, and then their bodies become food for vultures. This makes the comparison between the cities more specific because the speaker identifies the violence ordinary people face from the police."
+          },
+          {
+            "id": "karachi-common-people-note",
+            "term": "Common among the common people",
+            "segments": [
+              {
+                "lineId": "karachi-line-07",
+                "quote": "In this, our two countries"
+              },
+              {
+                "lineId": "karachi-line-08",
+                "quote": "So much is common among the common people."
+              }
+            ],
+            "analysis": "The repetition of “common” connects what people share with their position as ordinary people across the Partition border. Repetition in poetry draws attention to a word by returning to it, encouraging us to consider why it matters or how its meaning changes. Here, the first “common” describes what people share, while the second identifies the ordinary people themselves. Using the same word for both connects their shared experiences to their position in society. However, what brings them together here is their exposure to violence, rather than the same food, language, or clothes. The movement from “your” and “my” to “our” also gives the ending a sense of shared belonging, pain, and suffering. The border separates their countries, but it has not made their suffering different."
           }
         ],
         "alternativeTranslation": {
@@ -2902,7 +2997,11 @@
           "source": {
             "title": "Pavan K. Varma’s translation of Karachi, reproduced in “70 years on: The common man looks so similar,” Aman Ki Asha, August 23, 2017.",
             "url": "https://amankiasha.com/70-years-on-the-common-man-looks-so-similar/"
-          }
+          },
+          "mainLineIds": [
+            "karachi-line-07",
+            "karachi-line-08"
+          ]
         }
       },
       "photographIds": [
